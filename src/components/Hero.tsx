@@ -1,4 +1,5 @@
 import React from 'react';
+import TransitioningInsight from './TransitioningInsight';
 
 
 const Hero: React.FC = () => {
@@ -31,17 +32,7 @@ const Hero: React.FC = () => {
           </article>
 
           <article className="justify-center items-center self-stretch flex min-w-60 flex-col text-[#156082] leading-none w-[385px] gap-10 my-auto">
-            <div className="flex min-h-[365px] max-w-full w-[385px] flex-col items-stretch text-center justify-center">
-              <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-[#0B3041] leading-none p-2.5">
-                <div className="text-[#0B3041] text-4xl font-light leading-[48px]">13/8 = Φ = ~1.62</div>
-              </div>
-              <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-black leading-[48px] mt-2.5 p-2.5">
-                <p className="text-4xl font-light leading-[48px]">
-                  <span className="text-[#0B3041]">A pinecone's spirals follow the golden ratio. Nature's design for</span>{' '}
-                  <span className="text-[#5A9BA6]">Optimal Growth Rate.</span>
-                </p>
-              </div>
-            </div>
+            <TransitioningInsight />
             <h2 className="text-[#156082] text-4xl font-light leading-[48px] mt-10">REAL INSIGHT</h2>
           </article>
         </div>
