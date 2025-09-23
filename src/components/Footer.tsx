@@ -18,61 +18,49 @@ const FooterLink: React.FC<FooterLinkProps> = ({ text, isHeader = false }) => {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="justify-center items-center flex w-full gap-2.5 bg-[#0B3041] max-md:max-w-full">
-      <div className="self-stretch flex min-w-60 w-[1440px] max-w-[1440px] flex-col overflow-hidden items-stretch justify-center my-auto p-2.5">
-        <div className="flex w-full gap-10 flex-wrap p-2.5 max-md:max-w-full">
-          <div className="min-w-60 text-2xl text-white font-medium text-center w-[345px]">
-            <div className="flex w-full flex-col overflow-hidden justify-center p-5 rounded-[20px]">
-              <div className="text-white text-2xl font-medium leading-9">
-                QUARX LLC
-              </div>
+    <footer className="w-full bg-[#0B3041] py-12">
+      <div className="max-w-[1440px] mx-auto px-6">
+        <div className="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+          {/* Company Name */}
+          <div className="text-white text-xl font-medium">
+            QUARX LLC
+          </div>
+          
+          {/* Products */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-[#7097AA] text-lg font-light">PRODUCTS</h3>
+            <div className="flex flex-col gap-2">
+              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">BASIS</span>
+              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CHORD</span>
+              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">LARA</span>
             </div>
           </div>
           
-          <nav className="flex flex-col overflow-hidden items-stretch text-xl text-white font-light whitespace-nowrap leading-[1.6] justify-center p-5 rounded-[20px]">
-            <div className="flex flex-col">
-              <FooterLink text="PRODUCTS" isHeader />
-              <div className="flex items-center gap-2.5 justify-center mt-2.5">
-                <FooterLink text="BASIS" />
-              </div>
-              <div className="flex items-center gap-2.5 justify-center mt-2.5">
-                <FooterLink text="CHORD" />
-              </div>
-              <div className="flex items-center gap-2.5 justify-center mt-2.5">
-                <FooterLink text="LARA" />
-              </div>
+          {/* Solutions */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-[#7097AA] text-lg font-light">SOLUTIONS</h3>
+            <div className="flex flex-col gap-2">
+              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">ACCESS & REIMBURSEMENT</span>
+              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CUSTOMER SEGMENTATION</span>
             </div>
-          </nav>
+          </div>
           
-          <nav className="flex min-w-60 flex-col overflow-hidden items-stretch text-xl text-white font-light leading-[1.6] justify-center p-5 rounded-[20px]">
-            <div>
-              <FooterLink text="SOLUTIONS" isHeader />
-              <div className="flex items-center gap-2.5 justify-center mt-2.5">
-                <FooterLink text="ACCESS & REIMBURSEMENT" />
-              </div>
-              <div className="flex items-center gap-2.5 justify-center mt-2.5">
-                <FooterLink text="CUSTOMER SEGMENTATION" />
-              </div>
-            </div>
-          </nav>
+          {/* Team */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-[#7097AA] text-lg font-light">TEAM</h3>
+          </div>
           
-          <nav className="flex flex-col overflow-hidden items-stretch text-xl text-[#7097AA] font-light whitespace-nowrap leading-[1.6] justify-center p-5 rounded-[20px]">
-            <div>
-              <FooterLink text="TEAM" isHeader />
-            </div>
-          </nav>
+          {/* Contact */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-[#7097AA] text-lg font-light">CONTACT</h3>
+          </div>
           
-          <nav className="flex flex-col overflow-hidden items-stretch text-xl text-[#7097AA] font-light whitespace-nowrap leading-[1.6] justify-center p-5 rounded-[20px]">
-            <div>
-              <FooterLink text="CONTACT" isHeader />
-            </div>
-          </nav>
-          
-          <div className="flex flex-col overflow-hidden items-stretch justify-center w-[70px] p-5 rounded-[20px]">
+          {/* LinkedIn Icon */}
+          <div className="flex items-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
-              alt="Social media icon"
-              className="aspect-[1] object-contain w-[30px] hover:scale-110 transition-transform duration-300 cursor-pointer"
+              alt="LinkedIn"
+              className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer"
             />
           </div>
         </div>
