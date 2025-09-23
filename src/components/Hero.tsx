@@ -1,4 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import sunflowerInsight from '@/assets/sunflower-insight.png';
+
+const RealInsightSection: React.FC = () => {
+  const [showSunflower, setShowSunflower] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowSunflower(prev => !prev);
+    }, 4000); // Switch every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <article className="justify-center items-center self-stretch flex min-w-60 flex-col w-[385px] gap-10 my-auto">
+      <div className="relative flex min-h-[365px] max-w-full w-[385px] flex-col items-stretch text-center justify-center">
+        {/* Mathematical Formula Frame */}
+        <div className={`absolute inset-0 transition-opacity duration-1000 ${showSunflower ? 'opacity-0' : 'opacity-100'}`}>
+          <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-[#0B3041] leading-none p-2.5">
+            <div className="text-[#0B3041] text-4xl font-light leading-[48px]">
+              13/8 = Φ = ~1.62
+            </div>
+          </div>
+          <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-black leading-[48px] mt-2.5 p-2.5">
+            <p className="text-4xl font-light leading-[48px]">
+              <span className="text-[#0B3041]">
+                A pinecone's spirals follow the golden ratio. Nature's
+                design for
+              </span>{" "}
+              <span className="text-[#5A9BA6]">
+                Optimal Growth Rate.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        {/* Sunflower Frame */}
+        <div className={`absolute inset-0 transition-opacity duration-1000 ${showSunflower ? 'opacity-100' : 'opacity-0'}`}>
+          <img
+            src={sunflowerInsight}
+            alt="Sunflower showing golden ratio in nature"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+      <h2 className="text-[#156082] text-4xl font-light leading-[48px] mt-10">
+        REAL INSIGHT
+      </h2>
+    </article>
+  );
+};
 
 const Hero: React.FC = () => {
   return (
@@ -31,29 +82,7 @@ const Hero: React.FC = () => {
               REAL BEHAVIOUR
             </h2>
           </article>
-          <article className="justify-center items-center self-stretch flex min-w-60 flex-col w-[385px] gap-10 my-auto">
-            <div className="flex min-h-[365px] max-w-full w-[385px] flex-col items-stretch text-center justify-center">
-              <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-[#0B3041] leading-none p-2.5">
-                <div className="text-[#0B3041] text-4xl font-light leading-[48px]">
-                  13/8 = Φ = ~1.62
-                </div>
-              </div>
-              <div className="justify-center items-stretch flex w-full flex-col overflow-hidden text-black leading-[48px] mt-2.5 p-2.5">
-                <p className="text-4xl font-light leading-[48px]">
-                  <span className="text-[#0B3041]">
-                    A pinecone's spirals follow the golden ratio. Nature's
-                    design for
-                  </span>{" "}
-                  <span className="text-[#5A9BA6]">
-                    Optimal Growth Rate.
-                  </span>
-                </p>
-              </div>
-            </div>
-            <h2 className="text-[#156082] text-4xl font-light leading-[48px] mt-10">
-              REAL INSIGHT
-            </h2>
-          </article>
+          <RealInsightSection />
         </div>
       </div>
     </section>
