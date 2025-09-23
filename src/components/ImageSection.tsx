@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageSection: React.FC = () => {
   return (
-    <section className="flex flex-col relative min-h-[900px] w-full items-center justify-center max-md:max-w-full">
+    <section className="flex flex-col relative min-h-screen w-full items-center justify-center max-md:max-w-full">
       <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/b4b76248befd29444a1212a6a9156299cdf19d84?placeholderIfAbsent=true"
         alt="Background visualization"

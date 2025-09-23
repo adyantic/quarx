@@ -46,7 +46,7 @@ const PrinciplesSection: React.FC = () => {
   ];
 
   return (
-    <section className="justify-center items-center flex min-h-[900px] w-full gap-2.5 bg-[#F1F4F1] max-md:max-w-full">
+    <section className="justify-center items-center flex min-h-screen w-full gap-2.5 bg-[#F1F4F1] max-md:max-w-full">
       <div className="max-w-[1440px] items-stretch self-stretch flex min-w-60 w-[1440px] flex-col overflow-hidden gap-16 my-auto px-2.5 py-[50px]">
         <div className="self-center flex w-[919px] max-w-full flex-col items-center text-5xl text-[#0B3041] font-medium leading-none max-md:text-[40px]">
           <div className="justify-center items-center flex w-[845px] max-w-full flex-col gap-4 max-md:text-[40px]">

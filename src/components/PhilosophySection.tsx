@@ -46,7 +46,7 @@ const PhilosophySection: React.FC = () => {
   ];
 
   return (
-    <section className="flex min-h-[900px] w-full items-center gap-2.5 justify-center max-md:max-w-full">
+    <section className="flex min-h-screen w-full items-center gap-2.5 justify-center max-md:max-w-full">
       <div className="max-w-[1440px] self-stretch min-w-60 w-[1440px] overflow-hidden gap-16 my-auto px-2.5 py-[50px]">
         <div className="flex w-full items-center gap-2.5 text-5xl text-[#0b3041] font-medium text-center leading-[64px] max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]">
           <h2 className="text-5xl font-medium leading-[64px] self-stretch flex-1 shrink basis-[0%] my-auto max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]">
