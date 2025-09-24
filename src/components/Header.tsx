@@ -5,59 +5,50 @@ const Header: React.FC = () => {
   const location = useLocation();
   
   return (
-    <header className="w-full bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo Section */}
-          <Link to="/" className="flex items-center">
-            <div className="relative">
-              {/* Quarx logo placeholder - you can replace with actual logo */}
-              <div className="w-8 h-8 bg-[#5A9BA6] rounded-full flex items-center justify-center mr-3">
-                <div className="w-4 h-4 bg-white rounded-full"></div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="text-[#0B3041] text-3xl font-light tracking-wide">
-                QUARX
-              </div>
-              <div className="text-[#5A9BA6] text-xs font-light absolute right-0 -bottom-1">
-                Biopharma Consulting
-              </div>
-            </div>
-          </Link>
-
-          {/* Navigation Menu */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/products" 
-              className={`text-lg font-light transition-colors duration-200 ${
-                location.pathname === '/products' 
-                  ? 'text-[#5A9BA6]' 
-                  : 'text-[#0B3041] hover:text-[#156082]'
-              }`}
-            >
-              PRODUCTS
-            </Link>
-            <button className="text-[#0B3041] hover:text-[#156082] text-lg font-light transition-colors duration-200">
-              SOLUTIONS
-            </button>
-            <button className="text-[#0B3041] hover:text-[#156082] text-lg font-light transition-colors duration-200">
-              TEAM
-            </button>
-            <button className="text-[#0B3041] hover:text-[#156082] text-lg font-light transition-colors duration-200">
-              CONTACT
-            </button>
-          </nav>
-
-          {/* Mobile Menu Button - for future implementation */}
-          <div className="md:hidden">
-            <button className="text-[#0B3041] hover:text-[#156082] transition-colors duration-200">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+    <header className="w-full bg-white">
+      <div className="flex items-center justify-between px-8 py-6 max-w-[1200px] mx-auto">
+        {/* Logo Section */}
+        <Link to="/" className="flex items-center gap-3">
+          {/* QUARX Logo - Using a molecular/scientific icon design */}
+          <div className="relative">
+            <svg width="32" height="32" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" clipRule="evenodd" d="M35.6265 13.838C29.8551 15.2595 25.1296 18.0425 21.2384 22.3111C9.93435 34.7103 10.3014 52.2643 22.1038 63.6963C31.3962 72.6985 44.2758 74.5264 55.7218 68.4677C59.8321 66.292 59.9748 66.267 63.0251 67.1992C67.3869 68.5324 72.3035 68.4596 72.8345 67.0536C73.5247 65.227 72.0878 64.311 67.9324 63.9282C60.0059 63.1982 55.5957 59.1481 56.1499 53.1069C56.5076 49.2083 55.5499 47.9297 52.2726 47.9297C51.0209 47.9297 49.9968 47.8064 49.9968 47.6554C49.9968 47.5044 50.8443 45.4574 51.8804 43.1058C52.9164 40.7542 53.9458 37.2547 54.1674 35.3283C55.1132 27.1323 60.2382 22.003 68.3287 21.1545C72.1243 20.7568 73.5055 19.7963 72.8345 18.0216C72.2989 16.6042 67.9868 16.5604 63.5421 17.9266C60.2986 18.9235 60.2635 18.9174 55.605 16.5866C48.3827 12.9726 42.4513 12.1563 35.6265 13.838ZM50.9923 19.0421C56.4313 21.1059 56.432 21.1066 54.04 24.4895C51.7914 27.6688 49.9968 32.7415 49.9968 35.9181C49.9968 36.9783 48.6568 40.556 47.0188 43.8674C45.3795 47.1829 44.2187 50.3575 44.4351 50.9311C44.7218 51.6894 45.783 51.9738 48.3243 51.9738H51.8193L52.1365 55.3271C52.3297 57.3747 53.1248 59.7109 54.1767 61.3258L55.9003 63.9707L52.6224 65.4029C45.4399 68.5405 38.6483 68.5506 31.517 65.4353L28.1646 63.9707L29.8883 61.3258C30.9402 59.7109 31.7353 57.3747 31.9284 55.3271L32.2457 51.9738H35.8329C38.2833 51.9738 39.5317 51.6766 39.7733 51.0363C39.9684 50.5213 38.7645 47.3427 37.0979 43.9726C35.4314 40.6032 34.0682 36.9857 34.0682 35.9329C34.0682 32.7442 32.2245 27.4734 30.1199 24.6492C29.0268 23.1812 28.1235 21.7901 28.1135 21.5575C28.0823 20.8424 34.8135 18.1537 38.0119 17.6044C41.9495 16.927 46.8496 17.4703 50.9923 19.0421ZM29.0659 31.6496C29.6274 33.3218 30.086 35.5171 30.086 36.5288C30.086 37.5405 30.982 40.3956 32.0771 42.8746C33.1722 45.3537 34.0682 47.5044 34.0682 47.6554C34.0682 47.8064 33.0979 47.9345 31.9112 47.9399C28.614 47.956 27.8069 48.7905 27.9934 51.9927C28.1832 55.2637 27.1419 58.9074 25.6599 60.1571C24.7758 60.9019 24.377 60.7327 23.0011 59.0315C15.447 49.6842 15.2625 36.3326 22.5531 26.6254L24.3969 24.1707L26.2214 26.3902C27.2249 27.6115 28.5051 29.978 29.0659 31.6496ZM20.9098 34.6611C19.1099 36.6076 19.0674 38.7618 20.7943 40.5156C23.6502 43.4159 28.095 41.4572 28.095 37.2992C28.095 33.4195 23.5892 31.7655 20.9098 34.6611ZM59.9522 34.4494C57.2078 37.2365 59.0005 41.8636 62.8253 41.8636C66.7006 41.8636 68.6067 37.1307 65.8 34.4757C63.9569 32.7314 61.6539 32.7212 59.9522 34.4494Z" fill="#5A9BA6"/>
+            </svg>
           </div>
-        </div>
+          
+          {/* Brand Text */}
+          <div className="relative">
+            <div className="text-[#0B3041] text-[42px] font-light leading-tight tracking-wide">
+              QUARX
+            </div>
+            <div className="text-[#5A9BA6] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+              Biopharma Consulting
+            </div>
+          </div>
+        </Link>
+
+        {/* Navigation Menu */}
+        <nav className="flex items-center gap-12">
+          <Link 
+            to="/products" 
+            className={`text-2xl font-light transition-colors duration-200 ${
+              location.pathname === '/products' 
+                ? 'text-[#5A9BA6]' 
+                : 'text-[#0B3041] hover:text-[#156082]'
+            }`}
+          >
+            PRODUCTS
+          </Link>
+          <button className="text-[#0B3041] hover:text-[#156082] text-2xl font-light transition-colors duration-200">
+            SOLUTIONS
+          </button>
+          <button className="text-[#0B3041] hover:text-[#156082] text-2xl font-light transition-colors duration-200">
+            TEAM
+          </button>
+          <button className="text-[#0B3041] hover:text-[#156082] text-2xl font-light transition-colors duration-200">
+            CONTACT
+          </button>
+        </nav>
       </div>
     </header>
   );
