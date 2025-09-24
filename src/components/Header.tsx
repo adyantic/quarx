@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <Link to="/" className="flex items-center gap-3">
           {/* QUARX Logo */}
           <img 
-            src="/quarx-logo.png" 
+            src="/lovable-uploads/logo (2).png.png" 
             alt="QUARX Logo" 
             className="w-8 h-8"
           />
