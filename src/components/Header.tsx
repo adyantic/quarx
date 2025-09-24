@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="w-full bg-white">
       <div className="flex items-center justify-between px-[30px] py-6 max-w-[2400px] mx-auto">
         {/* Logo Section */}
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-2">
           {/* QUARX Logo */}
           <img 
             src="/lovable-uploads/logo (2).png.png" 
