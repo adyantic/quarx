@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           
           {/* Brand Text */}
           <div className="relative">
-            <div className="text-[#0B3041] text-[42px] font-light leading-tight tracking-wide">
+            <div className="text-[#0B3041] text-[42px] font-medium leading-tight tracking-wide">
               QUARX
             </div>
             <div className="text-[#5A9BA6] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
