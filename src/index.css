@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --background: 120 13% 95%;          /* brand-sage for subtle warmth */
     --foreground: 201 86% 16%;          /* brand-navy for text */
 
-    --card: 0 0% 100%;
+    --card: 120 13% 95%;               /* brand-sage #F1F4F1 */
     --card-foreground: 201 86% 16%;
 
     --popover: 0 0% 100%;
