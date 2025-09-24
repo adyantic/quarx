@@ -8,89 +8,112 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors - Main Palette */
+    --brand-navy: 201 86% 16%;         /* #0B3041 */
+    --brand-teal: 188 32% 55%;         /* #5A9BA6 */
+    --brand-sage: 120 13% 95%;         /* #F1F4F1 */
+    --brand-blue: 202 69% 30%;         /* #156082 */
+    --brand-blue-light: 195 30% 59%;   /* #7097AA */
+    --brand-purple: 309 79% 30%;       /* #86117A */
+    --brand-sky: 193 71% 71%;          /* #83CBEB */
+    --brand-cyan: 197 76% 57%;         /* #46B1E1 */
+    
+    /* Neutral Grays */
+    --gray-50: 220 13% 91%;            /* #E5E7EB */
+    --gray-100: 214 32% 91%;           /* #D1D5DB */
+    --gray-400: 215 14% 50%;           /* #6B7280 */
+
+    /* Core Design Tokens */
+    --background: 120 13% 95%;          /* brand-sage for subtle warmth */
+    --foreground: 201 86% 16%;          /* brand-navy for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 201 86% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 201 86% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 201 86% 16%;             /* brand-navy */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 188 32% 55%;           /* brand-teal */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 91%;               /* gray-50 */
+    --muted-foreground: 215 14% 50%;    /* gray-400 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 193 71% 71%;              /* brand-sky for highlights */
+    --accent-foreground: 201 86% 16%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;              /* gray-100 */
+    --input: 214 32% 91%;
+    --ring: 188 32% 55%;                /* brand-teal for focus */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-navy)), hsl(var(--brand-teal)));
+    --gradient-sky: linear-gradient(135deg, hsl(var(--brand-sky)), hsl(var(--brand-cyan)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--gray-50)));
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar */
+    --sidebar-background: 120 13% 95%;
+    --sidebar-foreground: 201 86% 16%;
+    --sidebar-primary: 188 32% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 193 71% 71%;
+    --sidebar-accent-foreground: 201 86% 16%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 188 32% 55%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode using brand colors */
+    --background: 201 86% 16%;          /* brand-navy background */
+    --foreground: 120 13% 95%;          /* brand-sage text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 202 69% 30%;                /* brand-blue for cards */
+    --card-foreground: 120 13% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 202 69% 30%;
+    --popover-foreground: 120 13% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 193 71% 71%;             /* brand-sky */
+    --primary-foreground: 201 86% 16%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 188 32% 55%;           /* brand-teal */
+    --secondary-foreground: 201 86% 16%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 195 30% 59%;               /* brand-blue-light */
+    --muted-foreground: 120 13% 95%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 197 76% 57%;              /* brand-cyan for highlights */
+    --accent-foreground: 201 86% 16%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 120 13% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 195 30% 59%;              /* brand-blue-light */
+    --input: 195 30% 59%;
+    --ring: 193 71% 71%;                /* brand-sky for focus */
+
+    /* Gradients for dark mode */
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-navy)), hsl(var(--brand-purple)));
+    --gradient-sky: linear-gradient(135deg, hsl(var(--brand-cyan)), hsl(var(--brand-sky)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--brand-blue)));
+
+    /* Sidebar dark mode */
+    --sidebar-background: 201 86% 16%;
+    --sidebar-foreground: 120 13% 95%;
+    --sidebar-primary: 188 32% 55%;
+    --sidebar-primary-foreground: 201 86% 16%;
+    --sidebar-accent: 193 71% 71%;
+    --sidebar-accent-foreground: 201 86% 16%;
+    --sidebar-border: 195 30% 59%;
+    --sidebar-ring: 188 32% 55%;
   }
 }
 
