@@ -2,7 +2,10 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ChevronRight, TrendingDown, DollarSign, Target } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import BasisIcon from '@/assets/BASIS.svg';
+import ChordIcon from '@/assets/CHORD.svg';
+import LaraIcon from '@/assets/LARA.svg';
 
 const Products: React.FC = () => {
   const products = [
@@ -10,24 +13,24 @@ const Products: React.FC = () => {
       title: "BASIS",
       subtitle: "Brand Access Strategy Impact Simulator",
       description: "Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify the impact of access shifts on brand utilization & GTN",
-      icon: TrendingDown
+      icon: BasisIcon
     },
     {
       title: "CHORD",
       subtitle: "Cross-Channel Hospital OP\nReimbursement Dashboard",
       description: "CHORD is a comprehensive analytics-ready database of reimbursement rates by product, procedure, channel, payer, health system and hospital.",
-      icon: DollarSign
+      icon: ChordIcon
     },
     {
       title: "LARA",
       subtitle: "Launch Analog Recommendation Agent",
       description: "Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance",
-      icon: Target
+      icon: LaraIcon
     }
   ];
 
   return (
-    <div className="bg-background min-h-screen flex flex-col">
+    <div className="bg-neutral-50 min-h-screen flex flex-col">
       <Header />
       
       <div className="flex min-h-px w-full bg-muted" />
@@ -42,9 +45,8 @@ const Products: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {products.map((product, index) => {
-              const IconComponent = product.icon;
               return (
-                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col">
+                <Card key={index} className="bg-white border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col">
                   <CardHeader className="text-center pb-6 pt-8">
                     <CardTitle className="text-5xl font-medium text-foreground mb-6">
                       {product.title}
@@ -57,10 +59,10 @@ const Products: React.FC = () => {
                   <CardContent className="text-center flex flex-col justify-between flex-1 px-6 pb-8">
                     <div className="flex justify-center mb-8">
                       <div className="w-[85px] h-[85px] flex items-center justify-center">
-                        <IconComponent 
-                          size={56} 
-                          className="text-primary" 
-                          strokeWidth={1.5}
+                        <img 
+                          src={product.icon} 
+                          alt={`${product.title} icon`}
+                          className="w-[85px] h-[85px]" 
                         />
                       </div>
                     </div>
