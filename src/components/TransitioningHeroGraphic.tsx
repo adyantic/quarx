@@ -16,7 +16,7 @@ const TransitioningHeroGraphic: React.FC = () => {
         setCurrentImage((prev) => (prev + 1) % images.length);
         setIsVisible(true);
       }, 500); // Longer fade duration for smoother transition
-    }, 5000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -26,7 +26,7 @@ const TransitioningHeroGraphic: React.FC = () => {
       <img
         src={images[currentImage]}
         alt={currentImage === 0 ? "Sunflower insight - Maximum Efficiency" : "Pinecone insight - Optimal Growth"}
-        className={`w-full h-auto max-h-full object-contain transition-all duration-1000 ease-in-out transform ${
+        className={`absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform ${
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
       />
