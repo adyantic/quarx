@@ -33,13 +33,13 @@ const TransitioningHeroGraphic: React.FC = () => {
         />
       </div>
       <div className="grid grid-cols-3 w-full items-center justify-items-center">
-        <div className="text-center">
+        <div className="text-center w-[365px]">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL WORLD DATA</div>
         </div>
-        <div className="text-center">
+        <div className="text-center w-[365px]">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL BEHAVIOUR</div>
         </div>
-        <div className="text-center">
+        <div className="text-center w-[365px]">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL INSIGHT</div>
         </div>
       </div>
