@@ -15,19 +15,19 @@ const TransitioningHeroGraphic: React.FC = () => {
       setTimeout(() => {
         setCurrentImage((prev) => (prev + 1) % images.length);
         setIsVisible(true);
-      }, 300); // Half of transition duration
-    }, 4000); // Change image every 4 seconds
+      }, 500); // Longer fade duration for smoother transition
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto">
+    <div className="w-full max-w-[1200px] mx-auto h-[400px] flex items-center justify-center relative overflow-hidden">
       <img
         src={images[currentImage]}
         alt={currentImage === 0 ? "Sunflower insight - Maximum Efficiency" : "Pinecone insight - Optimal Growth"}
-        className={`w-full h-auto transition-opacity duration-600 ${
-          isVisible ? 'opacity-100' : 'opacity-0'
+        className={`w-full h-auto max-h-full object-contain transition-all duration-1000 ease-in-out transform ${
+          isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
       />
     </div>
