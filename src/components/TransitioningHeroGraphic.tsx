@@ -16,7 +16,7 @@ const TransitioningHeroGraphic: React.FC = () => {
         setCurrentImage((prev) => (prev + 1) % images.length);
         setIsVisible(true);
       }, 500); // Longer fade duration for smoother transition
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
