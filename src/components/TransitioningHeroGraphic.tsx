@@ -32,14 +32,14 @@ const TransitioningHeroGraphic: React.FC = () => {
           }`}
         />
       </div>
-      <div className="flex justify-between w-full px-4">
-        <div className="flex-1 text-center">
+      <div className="flex w-full px-8">
+        <div className="w-1/3 text-center">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL WORLD DATA</div>
         </div>
-        <div className="flex-1 text-center">
+        <div className="w-1/3 text-center">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL BEHAVIOUR</div>
         </div>
-        <div className="flex-1 text-center">
+        <div className="w-1/3 text-center">
           <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL INSIGHT</div>
         </div>
       </div>
