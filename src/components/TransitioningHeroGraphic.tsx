@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import sunflowerImage from '@/assets/sunflower-insight.png';
-import pineconeImage from '@/assets/pinecone-insight.png';
+import sunflowerImage from '@/assets/sunflower-analysis.png';
+import pineconeImage from '@/assets/pinecone-analysis.png';
 
 const TransitioningHeroGraphic: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -25,7 +25,7 @@ const TransitioningHeroGraphic: React.FC = () => {
     <div className="w-full max-w-[1200px] mx-auto h-[400px] flex items-center justify-center relative overflow-hidden">
       <img
         src={images[currentImage]}
-        alt={currentImage === 0 ? "Sunflower insight - Maximum Efficiency" : "Pinecone insight - Optimal Growth"}
+        alt={currentImage === 0 ? "Sunflower mathematical analysis - Maximum Efficiency" : "Pinecone mathematical analysis - Optimal Growth"}
         className={`absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform ${
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
