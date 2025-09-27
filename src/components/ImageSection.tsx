@@ -45,8 +45,8 @@ const ImageSection: React.FC = () => {
         playsInline
         className="absolute h-full w-full object-cover inset-0"
       />
-      <div className="relative z-10 flex flex-col items-center justify-start h-full w-full px-8 pt-5 max-md:px-4">
-        <div className="max-w-4xl text-center space-y-6">
+      <div className="relative z-10 flex flex-col items-center justify-start h-full w-full px-8 pt-[60px] max-md:px-4">
+        <div className="max-w-[1440px] w-full text-center space-y-6">
           <h2 
             className={`text-[#0b3041] text-[48px] font-medium leading-tight transition-all duration-1000 ${
               showFirstStatement ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
