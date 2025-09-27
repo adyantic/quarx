@@ -36,7 +36,7 @@ const ImageSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="flex flex-col relative h-screen w-full items-start justify-start max-md:max-w-full">
+    <section ref={sectionRef} className="flex flex-col relative h-[80vh] w-full items-start justify-start max-md:max-w-full">
       <video
         src="/video-background.mp4"
         autoPlay
