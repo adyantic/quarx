@@ -48,7 +48,7 @@ const ImageSection: React.FC = () => {
       <div className="relative z-10 flex flex-col items-center justify-start h-full w-full px-8 pt-[60px] max-md:px-4">
         <div className="max-w-[1440px] w-full text-center space-y-6">
           <h2 
-            className={`text-[#0b3041] text-[48px] font-medium leading-tight transition-all duration-1000 ${
+            className={`text-[#0b3041] text-[48px] max-md:text-[28px] max-sm:text-[24px] font-medium leading-tight transition-all duration-1000 ${
               showFirstStatement ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -58,10 +58,10 @@ const ImageSection: React.FC = () => {
           <div className={`space-y-4 transition-all duration-1000 delay-500 ${
             showSecondStatements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <p className="text-[#0b3041] text-[48px] font-medium leading-tight">
+            <p className="text-[#0b3041] text-[48px] max-md:text-[28px] max-sm:text-[24px] font-medium leading-tight">
               We follow the "data crumbs" to help our clients
             </p>
-            <p className="text-[#5A9BA6] text-[48px] font-medium leading-tight">
+            <p className="text-[#5A9BA6] text-[48px] max-md:text-[28px] max-sm:text-[24px] font-medium leading-tight">
               optimize their market access and customer engagement.
             </p>
           </div>
