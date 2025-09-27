@@ -17,7 +17,7 @@ const ImageSection: React.FC = () => {
 
             setTimeout(() => {
               setShowSecondStatements(true);
-            }, 4000); // 2 seconds initial delay + 2 seconds between animations
+            }, 2000); // 1 second initial delay + 1 second between animations
           }
         });
       },
