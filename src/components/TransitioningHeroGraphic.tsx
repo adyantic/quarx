@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import sunflowerImage from '@/assets/sunflower-analysis.png';
-import pineconeImage from '@/assets/pinecone-analysis.png';
+import sunflowerImage from '@/assets/sunflower.png';
+import pineconeImage from '@/assets/pinecone.png';
 import sunflowerInsight from '@/assets/sunflower-insight.png';
 import pineconeInsight from '@/assets/pinecone-insight.png';
 import TransitioningInsight from './TransitioningInsight';
