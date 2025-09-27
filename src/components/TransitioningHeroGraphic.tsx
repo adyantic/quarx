@@ -33,7 +33,7 @@ const TransitioningHeroGraphic: React.FC = () => {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[52px] items-start">
         {/* Column 1: Data Images + Real World Data */}
         <div className="flex flex-col items-center">
           <div className="h-[400px] w-full flex items-center justify-center relative mb-8">
