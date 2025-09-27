@@ -13,7 +13,7 @@ const ImageSection: React.FC = () => {
             // Start animations after 2 seconds delay when section is visible
             setTimeout(() => {
               setShowFirstStatement(true);
-            }, 2000);
+            }, 1000);
 
             setTimeout(() => {
               setShowSecondStatements(true);
