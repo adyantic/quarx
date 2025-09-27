@@ -1,28 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const ImageSection: React.FC = () => {
   const [showFirstStatement, setShowFirstStatement] = useState(false);
   const [showSecondStatements, setShowSecondStatements] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    // Show first statement after 1 second
-    const firstTimer = setTimeout(() => {
-      setShowFirstStatement(true);
-    }, 1000);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start animations after 2 seconds delay when section is visible
+            setTimeout(() => {
+              setShowFirstStatement(true);
+            }, 2000);
 
-    // Show second and third statements after 3 seconds
-    const secondTimer = setTimeout(() => {
-      setShowSecondStatements(true);
-    }, 3000);
+            setTimeout(() => {
+              setShowSecondStatements(true);
+            }, 4000); // 2 seconds initial delay + 2 seconds between animations
+          }
+        });
+      },
+      { threshold: 0.3 } // Trigger when 30% of section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
     return () => {
-      clearTimeout(firstTimer);
-      clearTimeout(secondTimer);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
     };
   }, []);
 
   return (
-    <section className="flex flex-col relative h-screen w-full items-center justify-center max-md:max-w-full">
+    <section ref={sectionRef} className="flex flex-col relative h-screen w-full items-start justify-start max-md:max-w-full">
       <video
         src="/video-background.mp4"
         autoPlay
@@ -31,10 +45,10 @@ const ImageSection: React.FC = () => {
         playsInline
         className="absolute h-full w-full object-cover inset-0"
       />
-      <div className="relative z-10 flex flex-col items-center justify-center h-full w-full px-8 max-md:px-4">
+      <div className="relative z-10 flex flex-col items-center justify-start h-full w-full px-8 pt-5 max-md:px-4">
         <div className="max-w-4xl text-center space-y-6">
           <h2 
-            className={`text-[#0b3041] text-4xl md:text-5xl lg:text-6xl font-medium leading-tight transition-all duration-1000 ${
+            className={`text-[#0b3041] text-[48px] font-medium leading-tight transition-all duration-1000 ${
               showFirstStatement ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -44,10 +58,10 @@ const ImageSection: React.FC = () => {
           <div className={`space-y-4 transition-all duration-1000 delay-500 ${
             showSecondStatements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <p className="text-[#0b3041] text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed">
+            <p className="text-[#0b3041] text-[48px] font-medium leading-tight">
               We follow the "data crumbs" to help our clients
             </p>
-            <p className="text-[#5A9BA6] text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed">
+            <p className="text-[#5A9BA6] text-[48px] font-medium leading-tight">
               optimize their market access and customer engagement.
             </p>
           </div>
