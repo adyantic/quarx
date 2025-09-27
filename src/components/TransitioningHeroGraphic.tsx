@@ -3,7 +3,8 @@ import sunflowerImage from '@/assets/sunflower.png';
 import pineconeImage from '@/assets/pinecone.png';
 import sunflowerInsight from '@/assets/sunflower-behaviour.png';
 import pineconeInsight from '@/assets/pinecone-behaviour.png';
-import TransitioningInsight from './TransitioningInsight';
+import sunflowerInsightNew from '@/assets/sunflower-insight-new.png';
+import pineconeInsightNew from '@/assets/pinecone-insight-new.png';
 
 const TransitioningHeroGraphic: React.FC = () => {
   const [currentDataImage, setCurrentDataImage] = useState(0);
@@ -68,7 +69,13 @@ const TransitioningHeroGraphic: React.FC = () => {
         {/* Column 3: Transitioning Insight + Real Insight */}
         <div className="flex flex-col items-center">
           <div className="h-[400px] w-full flex items-center justify-center relative mb-8">
-            <TransitioningInsight />
+            <img
+              src={currentGraphicImage === 0 ? sunflowerInsightNew : pineconeInsightNew}
+              alt={currentGraphicImage === 0 ? "Sunflower Golden Ratio insight" : "Pinecone Golden Ratio insight"}
+              className={`absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform ${
+                isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+              }`}
+            />
           </div>
           <div className="text-center">
             <div className="text-[#5A9BA6] text-[36px] font-light font-sans">REAL INSIGHT</div>
