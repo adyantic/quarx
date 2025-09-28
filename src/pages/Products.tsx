@@ -46,7 +46,7 @@ const Products: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-11 max-w-6xl mx-auto">
             {products.map((product, index) => {
               return (
-                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col w-[calc(100%+30px)]">
+                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col">
                   <CardHeader className="text-center pb-6 pt-8">
                     <CardTitle className="text-5xl font-medium text-foreground mb-6">
                       {product.title}
