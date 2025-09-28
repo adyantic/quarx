@@ -30,7 +30,7 @@ const Products: React.FC = () => {
   ];
 
   return (
-    <div className="bg-neutral-50 min-h-screen flex flex-col">
+    <div className="bg-white min-h-screen flex flex-col">
       <Header />
       
       <div className="flex min-h-px w-full bg-muted" />
