@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Navigation Menu */}
-        <nav className="hidden xl:flex items-center gap-8 lg:gap-12">
+        <nav className="hidden lg:flex items-center gap-8 lg:gap-12">
           <Link 
             to="/products" 
             className={`text-lg lg:text-2xl font-light transition-colors duration-200 ${
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
 
         {/* Mobile & Tablet Hamburger Menu */}
         <button 
-          className="xl:hidden p-2"
+          className="lg:hidden p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
         {/* Mobile & Tablet Navigation Menu */}
         {isMenuOpen && (
-          <div className="xl:hidden bg-white border-t border-gray-200 shadow-lg">
+          <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
             <nav className="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
               <Link 
                 to="/products" 
