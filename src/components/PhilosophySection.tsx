@@ -9,12 +9,12 @@ interface PhilosophyCardProps {
 const PhilosophyCard: React.FC<PhilosophyCardProps> = ({ title, character, description }) => {
   return (
     <article className="justify-center items-center self-stretch flex min-w-60 flex-col w-[350px] gap-5 my-auto">
-      <div className="justify-between items-center flex min-h-[350px] max-w-full w-[350px] flex-col overflow-hidden px-5 py-8 rounded-3xl hover:shadow-lg transition-shadow duration-300">
+      <div className="justify-between items-center flex min-h-[350px] max-w-full w-[350px] flex-col overflow-hidden px-5 py-8 rounded-3xl">
         <h3 className="text-[#5A9BA6] text-3xl font-bold leading-10">
           {title}
         </h3>
-        <div className="items-stretch border flex flex-col overflow-hidden text-[55px] justify-center mt-[60px] p-2.5 rounded-[10px] border-solid border-[#5A9BA6] hover:bg-[#5A9BA6] hover:text-white transition-colors duration-300 max-md:text-[40px] max-md:mt-10">
-          <div className="text-[#5A9BA6] hover:text-white transition-colors duration-300 max-md:text-[40px]">
+        <div className="items-stretch border flex flex-col overflow-hidden text-[55px] justify-center mt-[60px] p-2.5 rounded-[10px] border-solid border-[#5A9BA6] max-md:text-[40px] max-md:mt-10">
+          <div className="text-[#5A9BA6] max-md:text-[40px]">
             {character}
           </div>
         </div>
