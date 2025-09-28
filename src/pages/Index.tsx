@@ -8,12 +8,12 @@ import Footer from '@/components/Footer';
 
 const Index: React.FC = () => {
   return (
-    <div className="bg-white flex flex-col items-stretch">
+    <div className="bg-white flex flex-col items-stretch w-screen overflow-x-hidden">
       <Header />
       
-      <div className="flex min-h-px w-full bg-[#E2E2E9] max-md:max-w-full" />
+      <div className="flex min-h-px w-full bg-[#E2E2E9]" />
       
-      <main className="pt-[88px]">
+      <main className="pt-[88px] w-screen overflow-x-hidden">
         <Hero />
         <ImageSection />
         <PhilosophySection />
