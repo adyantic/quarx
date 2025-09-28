@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface PrincipleCardProps {
   icon: string;
   title: string;
   description: string;
+  index: number;
+  isVisible: boolean;
 }
 
-const PrincipleCard: React.FC<PrincipleCardProps> = ({ icon, title, description }) => {
+const PrincipleCard: React.FC<PrincipleCardProps> = ({ icon, title, description, index, isVisible }) => {
   return (
-    <article className="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-shadow duration-300">
+    <article 
+      className={`items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-700 ${
+        isVisible 
+          ? 'translate-y-0 opacity-100' 
+          : 'translate-y-8 opacity-0'
+      }`}
+      style={{
+        transitionDelay: `${index * 200}ms`
+      }}
+    >
       <div className="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
         <img
           src={icon}
@@ -27,6 +38,9 @@ const PrincipleCard: React.FC<PrincipleCardProps> = ({ icon, title, description 
 };
 
 const PrinciplesSection: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
   const principles = [
     {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/87ebd5298308768e3f4bcdb7b309d155524b6b2e?placeholderIfAbsent=true",
@@ -45,6 +59,23 @@ const PrinciplesSection: React.FC = () => {
     }
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="justify-center items-center flex min-h-screen w-full gap-2.5 bg-[#F1F4F1] max-md:max-w-full">
       <div className="max-w-[1440px] items-stretch self-stretch flex min-w-60 w-[1440px] flex-col overflow-hidden gap-16 my-auto px-2.5 py-[50px]">
@@ -55,13 +86,15 @@ const PrinciplesSection: React.FC = () => {
             </h2>
           </div>
         </div>
-        <div className="justify-center items-center flex w-full gap-5 flex-wrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">
+        <div ref={ref} className="justify-center items-center flex w-full gap-5 flex-wrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">
           {principles.map((principle, index) => (
             <PrincipleCard
               key={index}
               icon={principle.icon}
               title={principle.title}
               description={principle.description}
+              index={index}
+              isVisible={isVisible}
             />
           ))}
         </div>
