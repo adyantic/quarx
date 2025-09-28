@@ -39,42 +39,45 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
-          {/* Products */}
-          <div className="flex flex-col gap-4">
-            <h3 className="text-[#7097AA] text-lg font-light">PRODUCTS</h3>
-            <div className="flex flex-col gap-2">
-              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">BASIS</span>
-              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CHORD</span>
-              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">LARA</span>
+          {/* Right side - Navigation and Social */}
+          <div className="flex items-start gap-20">
+            {/* Products */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#7097AA] text-lg font-light">PRODUCTS</h3>
+              <div className="flex flex-col gap-2">
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">BASIS</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CHORD</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">LARA</span>
+              </div>
             </div>
-          </div>
-          
-          {/* Solutions */}
-          <div className="flex flex-col gap-4">
-            <h3 className="text-[#7097AA] text-lg font-light">SOLUTIONS</h3>
-            <div className="flex flex-col gap-2">
-              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">ACCESS & REIMBURSEMENT</span>
-              <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CUSTOMER SEGMENTATION</span>
+            
+            {/* Solutions */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#7097AA] text-lg font-light">SOLUTIONS</h3>
+              <div className="flex flex-col gap-2">
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">ACCESS & REIMBURSEMENT</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CUSTOMER SEGMENTATION</span>
+              </div>
             </div>
-          </div>
-          
-          {/* Team */}
-          <div className="flex flex-col gap-4">
-            <h3 className="text-[#7097AA] text-lg font-light">TEAM</h3>
-          </div>
-          
-          {/* Contact */}
-          <div className="flex flex-col gap-4">
-            <h3 className="text-[#7097AA] text-lg font-light">CONTACT</h3>
-          </div>
-          
-          {/* LinkedIn Icon */}
-          <div className="flex items-center">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
-              alt="LinkedIn"
-              className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer"
-            />
+            
+            {/* Team */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#7097AA] text-lg font-light">TEAM</h3>
+            </div>
+            
+            {/* Contact */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#7097AA] text-lg font-light">CONTACT</h3>
+            </div>
+            
+            {/* LinkedIn Icon */}
+            <div className="flex items-center">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+                alt="LinkedIn"
+                className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer"
+              />
+            </div>
           </div>
         </div>
       </div>
