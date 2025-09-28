@@ -56,7 +56,7 @@ const Products: React.FC = () => {
                     </h3>
                   </CardHeader>
                   
-                  <CardContent className="text-center flex flex-col justify-between flex-1 px-4 sm:px-6 pb-6 sm:pb-8">
+                  <CardContent className="text-center flex flex-col justify-start flex-1 px-4 sm:px-6 pb-6 sm:pb-8">
                     <div className="flex justify-center mb-6 sm:mb-8">
                       <div className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] flex items-center justify-center">
                         <img 
