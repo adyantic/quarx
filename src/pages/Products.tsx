@@ -43,7 +43,7 @@ const Products: React.FC = () => {
             </h1>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-[74px] max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[74px] max-w-6xl mx-auto">
             {products.map((product, index) => {
               return (
                 <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg min-h-[650px] flex flex-col w-full">
@@ -67,7 +67,7 @@ const Products: React.FC = () => {
                       </div>
                     </div>
                     
-                    <div className="flex-1 flex items-start justify-center mb-6 sm:mb-8">
+                    <div className="flex-1 flex items-start justify-center mb-3 sm:mb-4">
                       <p className="text-base sm:text-lg lg:text-xl font-medium text-foreground leading-relaxed text-center">
                         {product.description}
                       </p>
