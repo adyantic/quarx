@@ -1,4 +1,5 @@
 import React from 'react';
+import bottomLogo from '@/assets/bottom-logo.png';
 
 interface FooterLinkProps {
   text: string;
@@ -18,12 +19,24 @@ const FooterLink: React.FC<FooterLinkProps> = ({ text, isHeader = false }) => {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-[#0B3041] py-12">
-      <div className="max-w-[1440px] mx-auto px-6">
+    <footer className="w-full bg-[#0B3041] py-6">
+      <div className="max-w-[2400px] mx-auto px-[30px]">
         <div className="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
-          {/* Company Name */}
-          <div className="text-white text-xl font-medium">
-            QUARX LLC
+          {/* Company Logo and Name */}
+          <div className="flex items-center gap-2">
+            <img 
+              src={bottomLogo} 
+              alt="QUARX Logo" 
+              className="w-8 h-8"
+            />
+            <div className="relative">
+              <div className="text-white text-[42px] font-medium leading-tight tracking-wide">
+                QUARX
+              </div>
+              <div className="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+                Biopharma Consulting
+              </div>
+            </div>
           </div>
           
           {/* Products */}
