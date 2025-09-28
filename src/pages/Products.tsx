@@ -43,32 +43,32 @@ const Products: React.FC = () => {
             </h1>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[74px] max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-[74px] max-w-6xl mx-auto">
             {products.map((product, index) => {
               return (
-                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col w-full md:w-[calc(100%+30px)]">
-                  <CardHeader className="text-center pb-6 pt-8">
-                    <CardTitle className="text-5xl font-medium text-foreground mb-6">
+                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg min-h-[650px] flex flex-col w-full">
+                  <CardHeader className="text-center pb-4 pt-6 px-4 sm:px-6">
+                    <CardTitle className="text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-4 sm:mb-6">
                       {product.title}
                     </CardTitle>
-                    <h3 className="text-2xl font-medium text-secondary leading-10 whitespace-pre-line">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-secondary leading-relaxed whitespace-pre-line">
                       {product.subtitle}
                     </h3>
                   </CardHeader>
                   
-                  <CardContent className="text-center flex flex-col justify-between flex-1 px-6 pb-8">
-                    <div className="flex justify-center mb-8">
-                      <div className="w-[85px] h-[85px] flex items-center justify-center">
+                  <CardContent className="text-center flex flex-col justify-between flex-1 px-4 sm:px-6 pb-6 sm:pb-8">
+                    <div className="flex justify-center mb-6 sm:mb-8">
+                      <div className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] flex items-center justify-center">
                         <img 
                           src={product.icon} 
                           alt={`${product.title} icon`}
-                          className="w-[85px] h-[85px]" 
+                          className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px]" 
                         />
                       </div>
                     </div>
                     
-                    <div className="h-[200px] flex items-start justify-center mb-8">
-                      <p className="text-xl font-medium text-foreground leading-9 text-center">
+                    <div className="flex-1 flex items-start justify-center mb-6 sm:mb-8">
+                      <p className="text-base sm:text-lg lg:text-xl font-medium text-foreground leading-relaxed text-center">
                         {product.description}
                       </p>
                     </div>
