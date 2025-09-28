@@ -78,7 +78,7 @@ const PrinciplesSection: React.FC = () => {
       <div className="max-w-[1440px] items-stretch self-stretch flex w-full flex-col gap-16 my-auto px-2.5 py-[50px] mx-auto">
         <div className="self-center flex w-[919px] max-w-full flex-col items-center text-5xl text-[#0B3041] font-medium leading-none max-md:text-[40px]">
           <div className="justify-center items-center flex w-[845px] max-w-full flex-col gap-4 max-md:text-[40px]">
-            <h2 className="text-[#0B3041] text-5xl font-medium leading-[64px] max-md:max-w-full max-md:text-[40px]">
+            <h2 className="text-[#0B3041] text-center text-5xl font-medium leading-[64px] max-md:max-w-full max-md:text-[40px]">
               Our Guiding Principles
             </h2>
           </div>
