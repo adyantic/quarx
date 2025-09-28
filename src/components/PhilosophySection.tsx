@@ -1,4 +1,5 @@
 import React from 'react';
+import AnimatedText from './AnimatedText';
 
 interface PhilosophyCardProps {
   title: string;
@@ -49,16 +50,12 @@ const PhilosophySection: React.FC = () => {
     <section className="flex min-h-screen w-full items-center gap-2.5 justify-center max-md:max-w-full">
       <div className="max-w-[1440px] self-stretch min-w-60 w-[1440px] overflow-hidden gap-16 my-auto px-2.5 py-[50px]">
         <div className="flex w-full items-center gap-2.5 text-5xl text-[#0b3041] font-medium text-center leading-[64px] max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]">
-          <h2 className="text-5xl font-medium leading-[64px] self-stretch flex-1 shrink basis-[0%] my-auto max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]">
-            We are deliberate about driving
-            <span className="text-[#5A9BA6]">
-              {" "}
-              innovation and efficiency
-            </span>
-            <br /> incrementally and continuously – 
-            <br />
-            both in our craft and in how we serve.
-          </h2>
+          <AnimatedText
+            text="We are deliberate about driving innovation and efficiency incrementally and continuously – both in our craft and in how we serve."
+            className="text-5xl font-medium leading-[64px] self-stretch flex-1 shrink basis-[0%] my-auto max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]"
+            delay={500}
+            speed={30}
+          />
         </div>
         <div className="justify-center items-center flex w-full gap-16 text-3xl text-[#5A9BA6] font-bold whitespace-nowrap leading-none flex-wrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">
           {philosophyItems.map((item, index) => (
