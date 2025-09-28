@@ -35,7 +35,7 @@ const Products: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      <main className="flex-1 py-12 px-4">
+      <main className="h-screen py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl font-medium text-foreground mb-8 max-w-4xl mx-auto leading-tight">
