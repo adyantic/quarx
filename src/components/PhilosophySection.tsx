@@ -54,7 +54,7 @@ const PhilosophySection: React.FC = () => {
             text="We are deliberate about driving innovation and efficiency incrementally and continuously – both in our craft and in how we serve."
             className="text-5xl font-medium leading-[64px] self-stretch flex-1 shrink basis-[0%] my-auto max-md:max-w-full max-md:text-[40px] max-md:leading-[60px]"
             delay={500}
-            speed={30}
+            speed={150}
           />
         </div>
         <div className="justify-center items-center flex w-full gap-16 text-3xl text-[#5A9BA6] font-bold whitespace-nowrap leading-none flex-wrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">

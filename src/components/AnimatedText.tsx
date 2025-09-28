@@ -26,7 +26,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
           const startAnimation = () => {
             const interval = setInterval(() => {
               setVisibleCount((prev) => {
-                if (prev >= text.length) {
+                if (prev >= text.split(' ').length) {
                   clearInterval(interval);
                   return prev;
                 }
@@ -50,21 +50,21 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     }
 
     return () => observer.disconnect();
-  }, [text.length, delay, speed, hasStarted]);
+  }, [text.split(' ').length, delay, speed, hasStarted]);
 
   return (
     <div ref={ref} className={className}>
-      {text.split('').map((char, index) => (
+      {text.split(' ').map((word, wordIndex) => (
         <span
-          key={index}
-          className={`inline-block transition-opacity duration-200 ${
-            index < visibleCount ? 'opacity-100' : 'opacity-0'
+          key={wordIndex}
+          className={`inline-block transition-opacity duration-300 mr-1 ${
+            wordIndex < visibleCount ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
-            transitionDelay: `${index * 20}ms`
+            transitionDelay: `${wordIndex * 100}ms`
           }}
         >
-          {char === ' ' ? '\u00A0' : char}
+          {word}
         </span>
       ))}
     </div>
