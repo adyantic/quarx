@@ -16,9 +16,6 @@ const PrincipleCard: React.FC<PrincipleCardProps> = ({ icon, title, description,
           ? 'translate-y-0 opacity-100' 
           : 'translate-y-8 opacity-0'
       }`}
-      style={{
-        transitionDelay: `${index * 200}ms`
-      }}
     >
       <div className="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
         <img
@@ -66,7 +63,7 @@ const PrinciplesSection: React.FC = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.5 }
     );
 
     if (ref.current) {
