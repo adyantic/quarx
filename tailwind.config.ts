@@ -9,6 +9,8 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
+        "xs": "384px",
+        "s24": "412px",
         "2xl": "1400px",
       },
     },
