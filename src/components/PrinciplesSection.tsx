@@ -11,10 +11,10 @@ interface PrincipleCardProps {
 const PrincipleCard: React.FC<PrincipleCardProps> = ({ icon, title, description, index, isVisible }) => {
   return (
     <article 
-      className={`items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-700 ${
+      className={`items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out ${
         isVisible 
           ? 'translate-y-0 opacity-100' 
-          : 'translate-y-8 opacity-0'
+          : 'translate-y-12 opacity-0'
       }`}
     >
       <div className="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
