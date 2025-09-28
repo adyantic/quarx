@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ChevronRight } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
 import ChordIcon from '@/assets/CHORD.svg';
@@ -10,20 +9,20 @@ import LaraIcon from '@/assets/LARA.svg';
 const Products: React.FC = () => {
   const products = [
     {
-      title: "BASIS",
-      subtitle: "Brand Access Strategy Impact Simulator",
-      description: "Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify the impact of access shifts on brand utilization & GTN",
-      icon: BasisIcon
-    },
-    {
       title: "CHORD",
       subtitle: "Cross-Channel Hospital OP\nReimbursement Dashboard",
       description: "CHORD is a comprehensive analytics-ready database of reimbursement rates by product, procedure, channel, payer, health system and hospital.",
       icon: ChordIcon
     },
     {
+      title: "BASIS",
+      subtitle: "Brand Access Strategy\nImpact Simulator",
+      description: "Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify impact of access shifts on brand utilization & GTN",
+      icon: BasisIcon
+    },
+    {
       title: "LARA",
-      subtitle: "Launch Analog Recommendation Agent",
+      subtitle: "Launch Analog\nRecommendation Agent",
       description: "Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance",
       icon: LaraIcon
     }
@@ -35,53 +34,47 @@ const Products: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      <main className="min-h-screen pt-24 pb-12 px-4 flex items-center justify-center">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 md:mb-16">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium text-foreground mb-8 max-w-4xl mx-auto leading-tight">
+      <main className="py-12 px-2.5 overflow-hidden flex flex-col justify-center items-center gap-10">
+        <div className="w-full max-w-[1440px] px-2.5 py-12 overflow-hidden flex flex-col justify-center items-center gap-10">
+          <div className="flex flex-col justify-start items-center gap-8">
+            <h1 className="text-center text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
               Our Products: for Accelerated Analytics & Insight Generation
             </h1>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[74px] max-w-6xl mx-auto">
-            {products.map((product, index) => {
-              return (
-                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg min-h-[650px] flex flex-col w-full">
-                  <CardHeader className="text-center pb-4 pt-6 px-4 sm:px-6">
-                    <CardTitle className="text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-4 sm:mb-6">
-                      {product.title}
-                    </CardTitle>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-secondary leading-relaxed whitespace-pre-line">
-                      {product.subtitle}
-                    </h3>
-                  </CardHeader>
-                  
-                  <CardContent className="text-center flex flex-col justify-start flex-1 px-4 sm:px-6 pb-6 sm:pb-8">
-                    <div className="flex justify-center mb-6 sm:mb-8">
-                      <div className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] flex items-center justify-center">
-                        <img 
-                          src={product.icon} 
-                          alt={`${product.title} icon`}
-                          className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px]" 
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className="flex-1 flex items-start justify-center mb-[30px]">
-                      <p className="text-base sm:text-lg lg:text-xl font-medium text-foreground leading-relaxed text-center">
-                        {product.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex justify-center">
-                      <div className="w-[58px] h-[58px] rounded-full bg-secondary flex items-center justify-center hover:bg-secondary/80 transition-colors cursor-pointer">
-                        <ChevronRight className="w-6 h-6 text-white" strokeWidth={2} />
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+          <div className="w-full flex flex-col lg:flex-row justify-start items-center gap-5">
+            {products.map((product, index) => (
+              <div 
+                key={index} 
+                className="flex-1 p-5 bg-[#F1F4F1] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] rounded-[20px] flex flex-col justify-start items-center gap-8 w-full"
+              >
+                <h2 className="text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
+                  {product.title}
+                </h2>
+                
+                <div className="w-full text-center text-[#5A9BA6] text-2xl md:text-3xl font-medium leading-10 whitespace-pre-line">
+                  {product.subtitle}
+                </div>
+                
+                <div className="w-[85px] h-[85px] flex justify-center items-center">
+                  <img 
+                    src={product.icon} 
+                    alt={`${product.title} icon`}
+                    className="w-[85px] h-[85px]" 
+                  />
+                </div>
+                
+                <div className="w-full flex justify-center items-start gap-2.5">
+                  <p className="flex-1 text-center text-[#0B3041] text-xl md:text-2xl font-medium leading-9">
+                    {product.description}
+                  </p>
+                </div>
+                
+                <div className="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer">
+                  <ChevronRight className="w-6 h-6 text-white" strokeWidth={2} />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </main>
