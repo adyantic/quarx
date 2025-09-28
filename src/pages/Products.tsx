@@ -67,7 +67,7 @@ const Products: React.FC = () => {
                       </div>
                     </div>
                     
-                    <div className="flex-1 flex items-start justify-center mb-2 md:mb-4">
+                    <div className="flex-1 flex items-start justify-center mb-1 sm:mb-2 lg:mb-6">
                       <p className="text-base sm:text-lg lg:text-xl font-medium text-foreground leading-relaxed text-center">
                         {product.description}
                       </p>
