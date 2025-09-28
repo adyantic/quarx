@@ -40,34 +40,34 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Right side - Navigation and Social */}
-          <div className="flex items-start gap-20">
+          <div className="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
             {/* Products */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-[#7097AA] text-lg font-light">PRODUCTS</h3>
+            <div className="flex flex-col gap-4 min-w-0">
+              <h3 className="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</h3>
               <div className="flex flex-col gap-2">
-                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">BASIS</span>
-                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CHORD</span>
-                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">LARA</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</span>
               </div>
             </div>
             
             {/* Solutions */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-[#7097AA] text-lg font-light">SOLUTIONS</h3>
+            <div className="flex flex-col gap-4 min-w-0 max-sm:w-full">
+              <h3 className="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</h3>
               <div className="flex flex-col gap-2">
-                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">ACCESS & REIMBURSEMENT</span>
-                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer">CUSTOMER SEGMENTATION</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</span>
+                <span className="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</span>
               </div>
             </div>
             
             {/* Team */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-[#7097AA] text-lg font-light">TEAM</h3>
+            <div className="flex flex-col gap-4 min-w-0">
+              <h3 className="text-[#7097AA] text-lg font-light max-sm:text-base">TEAM</h3>
             </div>
             
             {/* Contact */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-[#7097AA] text-lg font-light">CONTACT</h3>
+            <div className="flex flex-col gap-4 min-w-0">
+              <h3 className="text-[#7097AA] text-lg font-light max-sm:text-base">CONTACT</h3>
             </div>
             
             {/* LinkedIn Icon */}
