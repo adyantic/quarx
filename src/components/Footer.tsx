@@ -1,5 +1,5 @@
 import React from 'react';
-import bottomLogo from '@/assets/bottom-logo.png';
+import quarxLogo from '@/assets/quarx-logo.png';
 
 interface FooterLinkProps {
   text: string;
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           {/* Company Logo and Name */}
           <div className="flex items-center gap-2">
             <img 
-              src={bottomLogo} 
+              src={quarxLogo} 
               alt="QUARX Logo" 
               className="w-8 h-8"
             />
