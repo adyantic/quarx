@@ -35,18 +35,18 @@ const Products: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      <main className="h-screen py-12 px-4 flex items-center justify-center">
+      <main className="min-h-screen py-12 px-4 flex items-center justify-center">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-3xl md:text-5xl font-medium text-foreground mb-8 max-w-4xl mx-auto leading-tight">
+          <div className="text-center mb-8 md:mb-16">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium text-foreground mb-8 max-w-4xl mx-auto leading-tight">
               Our Products: for Accelerated Analytics & Insight Generation
             </h1>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-[74px] max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[74px] max-w-6xl mx-auto">
             {products.map((product, index) => {
               return (
-                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col w-[calc(100%+30px)]">
+                <Card key={index} className="bg-card border-0 rounded-[20px] shadow-lg h-[650px] flex flex-col w-full md:w-[calc(100%+30px)]">
                   <CardHeader className="text-center pb-6 pt-8">
                     <CardTitle className="text-5xl font-medium text-foreground mb-6">
                       {product.title}
