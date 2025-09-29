@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, Database, Building2, Shield, ClipboardList } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 
@@ -77,7 +77,7 @@ const ChordDetail: React.FC = () => {
                 {/* Records Section */}
                 <div className="bg-[#E8F4F8] p-4 flex items-center gap-3">
                   <div className="w-8 h-8 flex items-center justify-center">
-                    📄
+                    <Database className="w-6 h-6 text-[#16A085]" />
                   </div>
                   <div>
                     <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
@@ -89,7 +89,7 @@ const ChordDetail: React.FC = () => {
                 <div className="bg-[#FCE4EC] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
-                      🏥
+                      <Building2 className="w-6 h-6 text-[#16A085]" />
                     </div>
                     <div>
                       <span className="text-[#16A085] text-xl font-bold">~6,000</span>
@@ -106,7 +106,7 @@ const ChordDetail: React.FC = () => {
                 <div className="bg-[#E8F4F8] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
-                      🛡️
+                      <Shield className="w-6 h-6 text-[#16A085]" />
                     </div>
                     <div>
                       <span className="text-[#16A085] text-xl font-bold">~2,500</span>
@@ -123,7 +123,7 @@ const ChordDetail: React.FC = () => {
                 <div className="bg-[#E8F4F8] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
-                      📋
+                      <ClipboardList className="w-6 h-6 text-[#16A085]" />
                     </div>
                     <div>
                       <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
