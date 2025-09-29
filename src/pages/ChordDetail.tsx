@@ -115,10 +115,10 @@ const ChordDetail: React.FC = () => {
           </div>
           
           {/* Navigation Buttons */}
-          <div className="flex justify-center items-center gap-20">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20">
             <button
               onClick={() => setActiveTab('why')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
+              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'why'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
@@ -128,7 +128,7 @@ const ChordDetail: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab('what')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
+              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'what'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
@@ -138,7 +138,7 @@ const ChordDetail: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab('how')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
+              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'how'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
