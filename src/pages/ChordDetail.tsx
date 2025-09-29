@@ -68,12 +68,87 @@ const ChordDetail: React.FC = () => {
             {/* Left side - Three columns */}
             <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8">
               {/* Numbers Column */}
-              <div className="flex-1 flex justify-center">
-                <img 
-                  src={NumbersInfographic} 
-                  alt="Numbers infographic showing database statistics" 
-                  className="max-w-full h-auto"
-                />
+              <div className="flex-1 max-w-xs">
+                {/* Header */}
+                <div className="bg-[#5A9BA6] text-white text-center py-3 text-lg font-medium">
+                  NUMBERS
+                </div>
+                
+                {/* Records Section */}
+                <div className="bg-[#E8F4F8] p-4 flex items-center gap-3">
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    📄
+                  </div>
+                  <div>
+                    <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
+                    <span className="text-[#0B3041] text-lg ml-2">Records</span>
+                  </div>
+                </div>
+                
+                {/* Hospitals Section */}
+                <div className="bg-[#FCE4EC] p-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 flex items-center justify-center">
+                      🏥
+                    </div>
+                    <div>
+                      <span className="text-[#16A085] text-xl font-bold">~6,000</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Hospitals</span>
+                    </div>
+                  </div>
+                  <div className="ml-11">
+                    <span className="text-[#16A085] text-xl font-bold">~500</span>
+                    <span className="text-[#0B3041] text-lg ml-2">Health Systems</span>
+                  </div>
+                </div>
+                
+                {/* Payers Section */}
+                <div className="bg-[#E8F4F8] p-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 flex items-center justify-center">
+                      🛡️
+                    </div>
+                    <div>
+                      <span className="text-[#16A085] text-xl font-bold">~2,500</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Payers</span>
+                    </div>
+                  </div>
+                  <div className="ml-11">
+                    <span className="text-[#16A085] text-xl font-bold">&gt;50,000</span>
+                    <span className="text-[#0B3041] text-lg ml-2">Plans</span>
+                  </div>
+                </div>
+                
+                {/* Codes Section */}
+                <div className="bg-[#E8F4F8] p-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 flex items-center justify-center">
+                      📋
+                    </div>
+                    <div>
+                      <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Codes</span>
+                    </div>
+                  </div>
+                  <div className="ml-11 text-[#0B3041] text-sm">
+                    <div>• HCPCS/CPT</div>
+                    <div>• NDC</div>
+                    <div>• APC</div>
+                    <div>• ICD10PCS</div>
+                  </div>
+                </div>
+                
+                {/* Reimbursement Methodology */}
+                <div className="bg-[#2ECC71] p-4 text-center">
+                  <div className="text-white font-bold text-sm mb-1">Reimbursement Methodology</div>
+                  <div className="text-white text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
+                </div>
+                
+                {/* Procedure Modifiers */}
+                <div className="bg-[#27AE60] p-4 text-center">
+                  <div className="text-white font-bold text-sm mb-1">Procedure Modifiers</div>
+                  <div className="text-white text-xs">340B | Drug Waste | Quantity</div>
+                </div>
               </div>
 
               {/* Features Column */}
