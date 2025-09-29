@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronRight } from 'lucide-react';
@@ -7,6 +8,7 @@ import ChordIcon from '@/assets/CHORD.svg';
 import LaraIcon from '@/assets/LARA.svg';
 
 const Products: React.FC = () => {
+  const navigate = useNavigate();
   const products = [
     {
       title: "CHORD",
@@ -70,9 +72,16 @@ const Products: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer">
+                <button
+                  onClick={() => {
+                    if (product.title === 'CHORD') {
+                      navigate('/products/chord');
+                    }
+                  }}
+                  className="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
+                >
                   <ChevronRight className="w-6 h-6 text-white" strokeWidth={2} />
-                </div>
+                </button>
               </div>
             ))}
           </div>
