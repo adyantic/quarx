@@ -139,7 +139,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Reimbursement Methodology */}
-                <div className="bg-[#2ECC71] p-4 text-center">
+                <div className="bg-[#156082] p-4 text-center">
                   <div className="text-white font-bold text-sm mb-1">Reimbursement Methodology</div>
                   <div className="text-white text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
                 </div>
