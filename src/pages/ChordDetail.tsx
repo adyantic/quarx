@@ -63,8 +63,141 @@ const ChordDetail: React.FC = () => {
         return renderWhyContent();
       case 'what':
         return (
-          <div className="w-full flex items-center justify-center py-20">
-            <p className="text-[#0B3041] text-xl">What content coming soon...</p>
+          <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
+            {/* Left side - Three columns */}
+            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8">
+              {/* Numbers Column */}
+              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium mb-4">NUMBERS</h3>
+                <div className="space-y-4 w-full">
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-[#0B3041] rounded flex items-center justify-center">
+                      <span className="text-white text-xs">📊</span>
+                    </div>
+                    <div>
+                      <span className="text-[#0B3041] text-lg font-medium">~1 Billion</span>
+                      <span className="text-[#0B3041] text-sm ml-1">Records</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-[#D8B4FE] rounded flex items-center justify-center">
+                      <span className="text-white text-xs">🏥</span>
+                    </div>
+                    <div>
+                      <span className="text-[#0B3041] text-lg font-medium">~6,000</span>
+                      <span className="text-[#0B3041] text-sm ml-1">Hospitals</span>
+                    </div>
+                  </div>
+                  <div className="text-[#0B3041] text-sm ml-9">~500 Health Systems</div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-[#5A9BA6] rounded flex items-center justify-center">
+                      <span className="text-white text-xs">💰</span>
+                    </div>
+                    <div>
+                      <span className="text-[#0B3041] text-lg font-medium">~2,500</span>
+                      <span className="text-[#0B3041] text-sm ml-1">Payers</span>
+                    </div>
+                  </div>
+                  <div className="text-[#0B3041] text-sm ml-9">&gt;50,000 Plans</div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-[#93C5FD] rounded flex items-center justify-center">
+                      <span className="text-white text-xs">📋</span>
+                    </div>
+                    <div>
+                      <span className="text-[#0B3041] text-lg font-medium">&gt;150,000</span>
+                      <span className="text-[#0B3041] text-sm ml-1">Codes</span>
+                    </div>
+                  </div>
+                  <div className="text-[#0B3041] text-xs mt-2">• HCPCS/CPT • NDC • APC • ICD-RPCS</div>
+                </div>
+              </div>
+
+              {/* Features Column */}
+              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium mb-4">FEATURES</h3>
+                <div className="space-y-6 w-full">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">1</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-medium">ANALYTICS READY DATA MODEL</div>
+                      <div className="text-[#0B3041] text-xs">Standardized Clean and Quality Assured Data</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">2</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-medium">MAXIMUM DATA RESOLUTION</div>
+                      <div className="text-[#0B3041] text-xs">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">3</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-medium">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                      <div className="text-[#0B3041] text-xs">Augment Rate Data with Key Descriptive Characteristics</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">4</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-medium">GEOGRAPHIC DRILLDOWN</div>
+                      <div className="text-[#0B3041] text-xs">Compare Rates at Regional and Local Levels Within a State</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">5</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-medium">CLOUD-BASED DASHBOARD ACCESS</div>
+                      <div className="text-[#0B3041] text-xs">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Levels Column */}
+              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium mb-4">LEVELS</h3>
+                <div className="space-y-3 w-full">
+                  <div className="bg-[#156082] text-white p-2 rounded text-center text-sm font-medium">
+                    Level 1: Channel
+                  </div>
+                  <div className="bg-[#5A9BA6] text-white p-2 rounded text-center text-sm font-medium">
+                    Level 2: Payer
+                  </div>
+                  <div className="bg-[#7FB3D3] text-white p-2 rounded text-center text-sm font-medium">
+                    Level 3: Plan
+                  </div>
+                  <div className="bg-[#9FC5E8] text-white p-2 rounded text-center text-sm font-medium">
+                    Level 4: Health System
+                  </div>
+                  <div className="bg-[#B6D7EE] text-white p-2 rounded text-center text-sm font-medium">
+                    Level 5: Local Geo
+                  </div>
+                  <div className="bg-[#CFE2F3] text-[#0B3041] p-2 rounded text-center text-sm font-medium">
+                    Level 6: Hospital
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Description points */}
+            <div className="lg:w-80 space-y-6">
+              <div>
+                <p className="text-[#0B3041] text-sm font-medium">Payer negotiated rates for all hospital outpatient <span className="text-[#5A9BA6]">and inpatient procedures at the plan level</span></p>
+              </div>
+              <div>
+                <p className="text-[#0B3041] text-sm">Payer reimbursement methodology by plan, provider and procedure <span className="text-[#5A9BA6]">(Fee Schedule vs % Billed Charges, Case Rate, Per Diem etc.)</span></p>
+              </div>
+              <div>
+                <p className="text-[#0B3041] text-sm font-medium">Negotiated rates for APC based payments</p>
+              </div>
+              <div>
+                <p className="text-[#0B3041] text-sm">Hospitals that are operationally and technologically integrated <span className="text-[#5A9BA6]">(set up with the same Charge Data Master)</span></p>
+              </div>
+              <div>
+                <p className="text-[#0B3041] text-sm font-medium">Level of uniformity it negotiated rates across Hospitals in a Health System</p>
+              </div>
+            </div>
           </div>
         );
       case 'how':
