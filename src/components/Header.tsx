@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           <Link 
             to="/products" 
             className={`text-lg lg:text-2xl font-light transition-colors duration-200 ${
-              location.pathname === '/products' 
+              location.pathname.startsWith('/products') 
                 ? 'text-[#5A9BA6]' 
                 : 'text-[#0B3041] hover:text-[#156082]'
             }`}
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
               <Link 
                 to="/products" 
                 className={`text-lg s24:text-xl font-light transition-colors duration-200 ${
-                  location.pathname === '/products' 
+                  location.pathname.startsWith('/products') 
                     ? 'text-[#5A9BA6]' 
                     : 'text-[#0B3041] hover:text-[#156082]'
                 }`}
