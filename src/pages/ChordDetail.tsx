@@ -11,10 +11,12 @@ const ChordDetail: React.FC = () => {
 
   const renderWhyContent = () => (
     <div className="w-full flex flex-col items-center gap-8">
-      <p className="text-center text-[#0B3041] text-3xl font-light max-w-4xl leading-relaxed">
-        To optimize both payer and provider contracting strategy for drugs administered in the hospital 
-        outpatient setting through the analysis of
-      </p>
+      <div className="w-full max-w-[1440px] px-4">
+        <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+          To optimize both payer and provider contracting strategy for drugs administered in the hospital 
+          outpatient setting through the analysis of
+        </p>
+      </div>
       
       <div className="w-full max-w-4xl flex flex-col gap-6">
         <div className="flex items-center gap-4 p-2 rounded-md">
