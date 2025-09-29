@@ -34,7 +34,7 @@ const Products: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      <main className="py-12 px-2.5 overflow-hidden flex flex-col justify-center items-center gap-10">
+      <main className="h-[80vh] px-2.5 overflow-hidden flex flex-col justify-center items-center gap-10">
         <div className="w-full max-w-[1440px] px-2.5 py-12 overflow-hidden flex flex-col justify-center items-center gap-10">
           <div className="flex flex-col justify-start items-center gap-8">
             <h1 className="text-center text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
