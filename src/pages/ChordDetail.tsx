@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
+import NumbersInfographic from '@/assets/numbers-infographic.png';
 
 const ChordDetail: React.FC = () => {
   const navigate = useNavigate();
@@ -67,49 +68,12 @@ const ChordDetail: React.FC = () => {
             {/* Left side - Three columns */}
             <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8">
               {/* Numbers Column */}
-              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
-                <h3 className="text-[#0B3041] text-xl font-medium mb-4">NUMBERS</h3>
-                <div className="space-y-4 w-full">
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-[#0B3041] rounded flex items-center justify-center">
-                      <span className="text-white text-xs">📊</span>
-                    </div>
-                    <div>
-                      <span className="text-[#0B3041] text-lg font-medium">~1 Billion</span>
-                      <span className="text-[#0B3041] text-sm ml-1">Records</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-[#D8B4FE] rounded flex items-center justify-center">
-                      <span className="text-white text-xs">🏥</span>
-                    </div>
-                    <div>
-                      <span className="text-[#0B3041] text-lg font-medium">~6,000</span>
-                      <span className="text-[#0B3041] text-sm ml-1">Hospitals</span>
-                    </div>
-                  </div>
-                  <div className="text-[#0B3041] text-sm ml-9">~500 Health Systems</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-[#5A9BA6] rounded flex items-center justify-center">
-                      <span className="text-white text-xs">💰</span>
-                    </div>
-                    <div>
-                      <span className="text-[#0B3041] text-lg font-medium">~2,500</span>
-                      <span className="text-[#0B3041] text-sm ml-1">Payers</span>
-                    </div>
-                  </div>
-                  <div className="text-[#0B3041] text-sm ml-9">&gt;50,000 Plans</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-[#93C5FD] rounded flex items-center justify-center">
-                      <span className="text-white text-xs">📋</span>
-                    </div>
-                    <div>
-                      <span className="text-[#0B3041] text-lg font-medium">&gt;150,000</span>
-                      <span className="text-[#0B3041] text-sm ml-1">Codes</span>
-                    </div>
-                  </div>
-                  <div className="text-[#0B3041] text-xs mt-2">• HCPCS/CPT • NDC • APC • ICD-RPCS</div>
-                </div>
+              <div className="flex-1 flex justify-center">
+                <img 
+                  src={NumbersInfographic} 
+                  alt="Numbers infographic showing database statistics" 
+                  className="max-w-full h-auto"
+                />
               </div>
 
               {/* Features Column */}
