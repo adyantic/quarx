@@ -11,7 +11,7 @@ const ChordDetail: React.FC = () => {
 
   const renderWhyContent = () => (
     <div className="w-full flex flex-col items-center gap-8">
-      <p className="text-center text-[#0B3041] text-xl md:text-2xl font-medium max-w-4xl leading-relaxed">
+      <p className="text-center text-[#0B3041] text-3xl font-light max-w-4xl leading-relaxed">
         To optimize both payer and provider contracting strategy for drugs administered in the hospital 
         outpatient setting through the analysis of
       </p>
@@ -113,10 +113,10 @@ const ChordDetail: React.FC = () => {
           </div>
           
           {/* Navigation Buttons */}
-          <div className="flex justify-center gap-20">
+          <div className="flex justify-center items-center gap-20">
             <button
               onClick={() => setActiveTab('why')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'why'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
@@ -126,7 +126,7 @@ const ChordDetail: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab('what')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'what'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
@@ -136,7 +136,7 @@ const ChordDetail: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab('how')}
-              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
                 activeTab === 'how'
                   ? 'bg-[#156082] text-white'
                   : 'bg-[#F1F4F1] text-[#156082]'
