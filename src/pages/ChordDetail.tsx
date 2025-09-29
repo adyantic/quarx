@@ -17,37 +17,37 @@ const ChordDetail: React.FC = () => {
       </p>
       
       <div className="w-full max-w-4xl flex flex-col gap-6">
-        <div className="flex items-start gap-4">
-          <div className="w-3 h-3 bg-[#5A9BA6] rounded-full mt-2 flex-shrink-0"></div>
-          <p className="text-[#0B3041] text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-4 p-2 rounded-md">
+          <div className="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+          <p className="text-[#0B3041] text-2xl font-medium">
             Variation in negotiated rates for competing drugs across payers and providers
           </p>
         </div>
         
-        <div className="flex items-start gap-4">
-          <div className="w-3 h-3 bg-[#5A9BA6] rounded-full mt-2 flex-shrink-0"></div>
-          <p className="text-[#0B3041] text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-4 p-2 rounded-md">
+          <div className="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+          <p className="text-[#0B3041] text-2xl font-medium">
             Variation in negotiated rates for competing drugs across payers and providers
           </p>
         </div>
         
-        <div className="flex items-start gap-4">
-          <div className="w-3 h-3 bg-[#5A9BA6] rounded-full mt-2 flex-shrink-0"></div>
-          <p className="text-[#0B3041] text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-4 p-2 rounded-md">
+          <div className="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+          <p className="text-[#0B3041] text-2xl font-medium">
             Relationship between NCR and product preference
           </p>
         </div>
         
-        <div className="flex items-start gap-4">
-          <div className="w-3 h-3 bg-[#5A9BA6] rounded-full mt-2 flex-shrink-0"></div>
-          <p className="text-[#0B3041] text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-4 p-2 rounded-md">
+          <div className="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+          <p className="text-[#0B3041] text-2xl font-medium">
             Provider discounts to position a favorable NCR vis-à-vis competition
           </p>
         </div>
         
-        <div className="flex items-start gap-4">
-          <div className="w-3 h-3 bg-[#5A9BA6] rounded-full mt-2 flex-shrink-0"></div>
-          <p className="text-[#0B3041] text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-4 p-2 rounded-md">
+          <div className="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+          <p className="text-[#0B3041] text-2xl font-medium">
             Level of homogeneity in negotiated rates in a Health system
           </p>
         </div>
@@ -105,7 +105,7 @@ const ChordDetail: React.FC = () => {
                 <h1 className="text-[#0B3041] text-3xl md:text-4xl font-medium">
                   CHORD (Cross-channel Hospital Outpatient Reimbursement Database)
                 </h1>
-                <p className="text-[#5A9BA6] text-xl md:text-2xl font-medium">
+                <p className="text-[#5A9BA6] text-4xl font-medium">
                   is a comprehensive analytics-ready database of payer-provider negotiated rates
                 </p>
               </div>
@@ -113,33 +113,33 @@ const ChordDetail: React.FC = () => {
           </div>
           
           {/* Navigation Buttons */}
-          <div className="flex justify-center gap-0">
+          <div className="flex justify-center gap-20">
             <button
               onClick={() => setActiveTab('why')}
-              className={`px-8 py-3 text-lg font-medium transition-colors ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
                 activeTab === 'why'
-                  ? 'bg-[#5A9BA6] text-white'
-                  : 'bg-[#E5E5E5] text-[#0B3041] hover:bg-[#D0D0D0]'
+                  ? 'bg-[#156082] text-white'
+                  : 'bg-[#F1F4F1] text-[#156082]'
               }`}
             >
               WHY?
             </button>
             <button
               onClick={() => setActiveTab('what')}
-              className={`px-8 py-3 text-lg font-medium transition-colors ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
                 activeTab === 'what'
-                  ? 'bg-[#5A9BA6] text-white'
-                  : 'bg-[#E5E5E5] text-[#0B3041] hover:bg-[#D0D0D0]'
+                  ? 'bg-[#156082] text-white'
+                  : 'bg-[#F1F4F1] text-[#156082]'
               }`}
             >
               WHAT?
             </button>
             <button
               onClick={() => setActiveTab('how')}
-              className={`px-8 py-3 text-lg font-medium transition-colors ${
+              className={`w-50 h-12 px-10 py-4 text-2xl font-medium transition-colors shadow-lg ${
                 activeTab === 'how'
-                  ? 'bg-[#5A9BA6] text-white'
-                  : 'bg-[#E5E5E5] text-[#0B3041] hover:bg-[#D0D0D0]'
+                  ? 'bg-[#156082] text-white'
+                  : 'bg-[#F1F4F1] text-[#156082]'
               }`}
             >
               HOW?
