@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft, Database, Building2, Shield, ClipboardList } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
+import FeaturesInfographic from '@/assets/features-infographic.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 
 const ChordDetail: React.FC = () => {
@@ -152,45 +153,12 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
-                <h3 className="text-[#0B3041] text-xl font-medium mb-4">FEATURES</h3>
-                <div className="space-y-6 w-full">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">1</div>
-                    <div>
-                      <div className="text-[#0B3041] text-sm font-medium">ANALYTICS READY DATA MODEL</div>
-                      <div className="text-[#0B3041] text-xs">Standardized Clean and Quality Assured Data</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">2</div>
-                    <div>
-                      <div className="text-[#0B3041] text-sm font-medium">MAXIMUM DATA RESOLUTION</div>
-                      <div className="text-[#0B3041] text-xs">Able to Distinguish Rates for the Same Code at the Same Provider</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">3</div>
-                    <div>
-                      <div className="text-[#0B3041] text-sm font-medium">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                      <div className="text-[#0B3041] text-xs">Augment Rate Data with Key Descriptive Characteristics</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">4</div>
-                    <div>
-                      <div className="text-[#0B3041] text-sm font-medium">GEOGRAPHIC DRILLDOWN</div>
-                      <div className="text-[#0B3041] text-xs">Compare Rates at Regional and Local Levels Within a State</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[#156082] rounded-full flex items-center justify-center text-white font-bold">5</div>
-                    <div>
-                      <div className="text-[#0B3041] text-sm font-medium">CLOUD-BASED DASHBOARD ACCESS</div>
-                      <div className="text-[#0B3041] text-xs">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex-1 flex justify-center items-center">
+                <img 
+                  src={FeaturesInfographic} 
+                  alt="Features infographic showing analytics ready data model, maximum data resolution, integrated hospital & product profiles, geographic drilldown, and cloud-based dashboard access"
+                  className="max-w-full h-auto"
+                />
               </div>
 
               {/* Levels Column */}
