@@ -72,15 +72,15 @@ const ChordDetail: React.FC = () => {
         return (
           <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left side - Three columns */}
-            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
+            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-stretch">
               {/* Numbers Column */}
-              <div className="flex-1 max-w-xs flex flex-col">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   NUMBERS
                 </div>
                 
-                <div className="flex flex-col bg-[#EBFFFF]">
+                <div className="flex-1 flex flex-col bg-[#EBFFFF]">
                   {/* Records Section */}
                   <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="flex items-center gap-3">
@@ -172,13 +172,13 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 max-w-xs flex flex-col">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   FEATURES
                 </div>
                 
-                <div className="bg-white p-3 relative flex flex-col justify-center">
+                <div className="bg-white p-3 relative flex-1 flex flex-col justify-center">
                   {/* Central vertical line */}
                   <div className="absolute left-1/2 top-3 bottom-3 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
@@ -264,13 +264,13 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Levels Column */}
-              <div className="flex-1 max-w-xs flex flex-col">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   LEVELS
                 </div>
                 
-                <div className="bg-[#EBFFFF] p-3 flex flex-col justify-between">
+                <div className="bg-[#EBFFFF] p-3 flex-1 flex flex-col justify-between">
                   <p className="text-[#0B3041] text-base mb-3 leading-relaxed">
                     Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
                   </p>
