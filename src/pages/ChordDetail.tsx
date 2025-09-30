@@ -362,7 +362,7 @@ const ChordDetail: React.FC = () => {
         return <div className="w-full">
             {/* Description */}
             <div className="text-center mb-16">
-              <p className="text-[30px] font-light text-[#0B3041] max-w-4xl mx-auto leading-relaxed">
+              <p className="text-[30px] font-light text-[#0B3041] w-full mx-auto leading-relaxed">
                 CHORD's analytic-readiness and accessibility is the result of our systematic and rigorous process of 
                 data extraction, curation, mastering, integration and visualization.
               </p>
