@@ -256,7 +256,7 @@ const ChordDetail: React.FC = () => {
                   LEVELS
                 </div>
                 
-                <div className="bg-white p-4">
+                <div className="bg-[#EBFFFF] p-4">
                   <p className="text-[#0B3041] text-xs mb-6 leading-relaxed">
                     Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
                   </p>
