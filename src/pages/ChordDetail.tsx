@@ -403,35 +403,35 @@ const ChordDetail: React.FC = () => {
                        {index === 0 ? <div className="relative">
                            <img src={HospitalShieldIcon} alt="Hospital Published Price Transparency Files" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
-                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                              <div className="text-sm font-bold text-[#0B3041] leading-tight">
                                Hospital Published Price Transparency Files
                              </div>
                            </div>
                          </div> : index === 1 ? <div className="relative">
                            <img src={PayerPlanShieldIcon} alt="Multi-step LLM-based Payer-Plan Mastering" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
-                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                              <div className="text-sm font-bold text-[#0B3041] leading-tight">
                                Multi-step LLM-based Payer-Plan Mastering
                              </div>
                            </div>
                          </div> : index === 2 ? <div className="relative">
                            <img src={ProviderMasteringShieldIcon} alt="Provider Mastering & Hierarchy Mapping" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
-                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                              <div className="text-sm font-bold text-[#0B3041] leading-tight">
                                Provider Mastering & Hierarchy Mapping
                              </div>
                            </div>
                          </div> : index === 3 ? <div className="relative">
                            <img src={CmsDataIntegrationShieldIcon} alt="CMS Data Integration" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
-                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                              <div className="text-sm font-bold text-[#0B3041] leading-tight">
                                CMS Data Integration (Codesets, ASP, Utilization)
                              </div>
                            </div>
                          </div> : index === 4 ? <div className="relative">
                            <img src={CloudDashboardShieldIcon} alt="Cloud-based Dashboard Design & Deployment" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
-                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                             <div className="text-sm font-bold text-[#0B3041] leading-tight">
                                Cloud-based Dashboard Design & Deployment
                              </div>
                            </div>
