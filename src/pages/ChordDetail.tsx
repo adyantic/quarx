@@ -469,17 +469,16 @@ const ChordDetail: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      {/* Sticky Header */}
-      <div className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
-        <div className="w-full max-w-[1440px] mx-auto px-2.5 py-6">
+      <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
+        <div className="w-full max-w-[1440px] px-2.5 py-12 flex flex-col gap-12">
           {/* Back to Products */}
-          <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-6">
+          <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start">
             <ChevronLeft className="w-5 h-5" />
             <span className="text-lg font-medium">Back to Products</span>
           </button>
           
           {/* Title and Icon */}
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-8">
             <div className="flex items-center gap-6">
               <img src={ChordIcon} alt="CHORD icon" className="w-16 h-16" />
               <div className="flex flex-col gap-2">
@@ -492,12 +491,7 @@ const ChordDetail: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
-        <div className="w-full max-w-[1440px] px-2.5 py-12 flex flex-col gap-12">
+          
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20">
             <button onClick={() => setActiveTab('why')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
