@@ -435,7 +435,7 @@ const ChordDetail: React.FC = () => {
                          <img 
                            src={HospitalShieldIcon} 
                            alt="Hospital Published Price Transparency Files"
-                           className="w-32 h-40"
+                           className="w-32 h-auto object-contain"
                          />
                        ) : (
                          <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
