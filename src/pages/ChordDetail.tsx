@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft, Database, Building2, Shield, ClipboardList, Brain, Network, Settings, BarChart3 } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
+import HospitalTransparencyShield from '@/assets/hospital-transparency-shield.png';
 import FeaturesInfographic from '@/assets/features-infographic.png';
 import Number1Icon from '@/assets/number-1.png';
 import Number2Icon from '@/assets/number-2.png';
@@ -395,10 +396,12 @@ const ChordDetail: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
               {[
                 {
-                  icon: Database,
+                  icon: null,
                   title: "Hospital Published Price Transparency Files",
                   description: "Development of custom web-scraping, data validation and ingestion programs to stage Hospital Price Transparency Files",
-                  color: "bg-purple-100 border-purple-300"
+                  color: "bg-purple-100 border-purple-300",
+                  isImage: true,
+                  imageSrc: HospitalTransparencyShield
                 },
                 {
                   icon: Brain,
@@ -431,14 +434,24 @@ const ChordDetail: React.FC = () => {
                     {/* Shield-shaped container */}
                     <div className="relative mb-6">
                       <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
-                        <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mb-3">
-                          <IconComponent className="w-6 h-6 text-white" />
-                        </div>
-                        <div className="text-center">
-                          <div className="text-sm font-semibold text-[#0B3041] leading-tight">
-                            {step.title}
-                          </div>
-                        </div>
+                        {step.isImage ? (
+                          <img 
+                            src={step.imageSrc} 
+                            alt={step.title}
+                            className="w-full h-full object-contain"
+                          />
+                        ) : (
+                          <>
+                            <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mb-3">
+                              <IconComponent className="w-6 h-6 text-white" />
+                            </div>
+                            <div className="text-center">
+                              <div className="text-sm font-semibold text-[#0B3041] leading-tight">
+                                {step.title}
+                              </div>
+                            </div>
+                          </>
+                        )}
                       </div>
                       {/* Bottom point of shield */}
                       <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent ${step.color.includes('purple') ? 'border-t-purple-100' : step.color.includes('orange') ? 'border-t-orange-100' : step.color.includes('teal') ? 'border-t-teal-100' : step.color.includes('emerald') ? 'border-t-emerald-100' : 'border-t-cyan-100'}`}></div>
