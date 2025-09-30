@@ -86,7 +86,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Hospitals Section */}
-                <div className="bg-[#EBFFFF] p-4">
+                <div className="bg-[#FFE9F1] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
                       <Building2 className="w-6 h-6 text-[#16A085]" />
