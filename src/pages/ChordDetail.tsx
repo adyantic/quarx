@@ -471,7 +471,7 @@ const ChordDetail: React.FC = () => {
       
       {/* Header Section */}
       <div className="bg-white">
-        <div className="w-full max-w-[1440px] px-2.5 py-8 pb-16 mx-auto">
+        <div className="w-full max-w-[1440px] px-2.5 py-[30px] mx-auto">
           {/* Back to Products */}
           <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start mb-8">
             <ChevronLeft className="w-5 h-5" />
@@ -508,7 +508,7 @@ const ChordDetail: React.FC = () => {
         </div>
       </div>
       
-      <main className="pt-12 pb-8 md:pb-12 px-2.5 flex flex-col items-center gap-10">
+      <main className="py-[30px] px-2.5 flex flex-col items-center gap-10">
         <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
           <div className="w-full flex justify-center">
