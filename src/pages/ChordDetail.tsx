@@ -12,13 +12,10 @@ import Number4Icon from '@/assets/number-4.png';
 import Number5Icon from '@/assets/number-5.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 import HospitalShieldIcon from '@/assets/hospital-shield-icon.png';
-
 const ChordDetail: React.FC = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('why');
-
-  const renderWhyContent = () => (
-    <div className="w-full flex flex-col items-center gap-8">
+  const renderWhyContent = () => <div className="w-full flex flex-col items-center gap-8">
       <div className="w-full max-w-[1440px] px-4">
         <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
           To optimize both payer and provider contracting strategy for drugs administered in the hospital 
@@ -62,16 +59,13 @@ const ChordDetail: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
-
+    </div>;
   const renderContent = () => {
     switch (activeTab) {
       case 'why':
         return renderWhyContent();
       case 'what':
-        return (
-          <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
+        return <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left side - Three columns */}
             <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-stretch">
               {/* Numbers Column */}
@@ -191,11 +185,7 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-base leading-relaxed">Standardized Clean and Quality Assured Data</div>
                       </div>
                       <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number1Icon} 
-                          alt="Number 1 with arrow pointing to analytics ready data model"
-                          className="h-8 w-auto"
-                        />
+                        <img src={Number1Icon} alt="Number 1 with arrow pointing to analytics ready data model" className="h-8 w-auto" />
                       </div>
                     </div>
                     
@@ -203,11 +193,7 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-center relative">
                       <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number2Icon} 
-                          alt="Number 2 with arrow pointing to maximum data resolution"
-                          className="h-8 w-auto"
-                        />
+                        <img src={Number2Icon} alt="Number 2 with arrow pointing to maximum data resolution" className="h-8 w-auto" />
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-base font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
@@ -222,11 +208,7 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-base leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
                       </div>
                       <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number3Icon} 
-                          alt="Number 3 with arrow pointing to integrated hospital and product profiles"
-                          className="h-8 w-auto"
-                        />
+                        <img src={Number3Icon} alt="Number 3 with arrow pointing to integrated hospital and product profiles" className="h-8 w-auto" />
                       </div>
                     </div>
                     
@@ -234,11 +216,7 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-center relative">
                       <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number4Icon} 
-                          alt="Number 4 with arrow pointing to geographic drilldown"
-                          className="h-8 w-auto"
-                        />
+                        <img src={Number4Icon} alt="Number 4 with arrow pointing to geographic drilldown" className="h-8 w-auto" />
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-base font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
@@ -253,11 +231,7 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-base leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
                       </div>
                       <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number5Icon} 
-                          alt="Number 5 with arrow pointing to cloud-based dashboard access"
-                          className="h-8 w-auto"
-                        />
+                        <img src={Number5Icon} alt="Number 5 with arrow pointing to cloud-based dashboard access" className="h-8 w-auto" />
                       </div>
                     </div>
                   </div>
@@ -379,11 +353,9 @@ const ChordDetail: React.FC = () => {
                 <p className="text-[#0B3041] text-2xl font-medium">Level of uniformity it negotiated rates across Hospitals in a Health System</p>
               </div>
             </div>
-          </div>
-        );
+          </div>;
       case 'how':
-        return (
-          <div className="w-full">
+        return <div className="w-full">
             {/* Description */}
             <div className="text-center mb-16">
               <p className="text-xl text-[#0B3041] max-w-4xl mx-auto leading-relaxed">
@@ -394,58 +366,44 @@ const ChordDetail: React.FC = () => {
 
             {/* Process Steps */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
-              {[
-                {
-                  icon: Database,
-                  title: "Hospital Published Price Transparency Files",
-                  description: "Development of custom web-scraping, data validation and ingestion programs to stage Hospital Price Transparency Files",
-                  color: "bg-purple-100 border-purple-300"
-                },
-                {
-                  icon: Brain,
-                  title: "Multi-step LLM-based Payer-Plan Mastering",
-                  description: "LLM augmented program to incrementally master payer-plan relationships and establish LoB",
-                  color: "bg-orange-100 border-orange-300"
-                },
-                {
-                  icon: Network,
-                  title: "Provider Mastering & Hierarchy Mapping",
-                  description: "Integration of provider ownership, enrollment and cost report data to create hospital profiles",
-                  color: "bg-teal-100 border-teal-300"
-                },
-                {
-                  icon: Settings,
-                  title: "CMS Data Integration (Codesets, ASP, Utilization)",
-                  description: "OpenFDA, RxNorm, CMS codesets to standardize codes; Integration of CMS ASP payment limits",
-                  color: "bg-emerald-100 border-emerald-300"
-                },
-                {
-                  icon: BarChart3,
-                  title: "Database Dashboard Design & Deployment",
-                  description: "Design and deployment of the database on a cloud-based BI platform for ready access and analysis",
-                  color: "bg-cyan-100 border-cyan-300"
-                }
-              ].map((step, index) => {
-                const IconComponent = step.icon;
-                return (
-                  <div key={index} className="flex flex-col items-center">
+              {[{
+              icon: Database,
+              title: "Hospital Published Price Transparency Files",
+              description: "Development of custom web-scraping, data validation and ingestion programs to stage Hospital Price Transparency Files",
+              color: "bg-purple-100 border-purple-300"
+            }, {
+              icon: Brain,
+              title: "Multi-step LLM-based Payer-Plan Mastering",
+              description: "LLM augmented program to incrementally master payer-plan relationships and establish LoB",
+              color: "bg-orange-100 border-orange-300"
+            }, {
+              icon: Network,
+              title: "Provider Mastering & Hierarchy Mapping",
+              description: "Integration of provider ownership, enrollment and cost report data to create hospital profiles",
+              color: "bg-teal-100 border-teal-300"
+            }, {
+              icon: Settings,
+              title: "CMS Data Integration (Codesets, ASP, Utilization)",
+              description: "OpenFDA, RxNorm, CMS codesets to standardize codes; Integration of CMS ASP payment limits",
+              color: "bg-emerald-100 border-emerald-300"
+            }, {
+              icon: BarChart3,
+              title: "Database Dashboard Design & Deployment",
+              description: "Design and deployment of the database on a cloud-based BI platform for ready access and analysis",
+              color: "bg-cyan-100 border-cyan-300"
+            }].map((step, index) => {
+              const IconComponent = step.icon;
+              return <div key={index} className="flex flex-col items-center">
                     {/* Shield-shaped container */}
                     <div className="relative mb-6">
-                       {index === 0 ? (
-                         <div className="relative">
-                           <img 
-                             src={HospitalShieldIcon} 
-                             alt="Hospital Published Price Transparency Files"
-                             className="w-32 h-auto object-contain"
-                           />
+                       {index === 0 ? <div className="relative">
+                           <img src={HospitalShieldIcon} alt="Hospital Published Price Transparency Files" className="w-32 h-auto object-contain" />
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
                              <div className="text-xs font-bold text-[#0B3041] leading-tight">
                                Hospital Published Price Transparency Files
                              </div>
                            </div>
-                         </div>
-                       ) : (
-                         <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
+                         </div> : <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
                            <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mb-3">
                              <IconComponent className="w-6 h-6 text-white" />
                            </div>
@@ -454,34 +412,27 @@ const ChordDetail: React.FC = () => {
                                {step.title}
                              </div>
                            </div>
-                         </div>
-                       )}
+                         </div>}
                       {/* Bottom point of shield - only for non-image items */}
-                      {index !== 0 && (
-                        <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent ${step.color.includes('purple') ? 'border-t-purple-100' : step.color.includes('orange') ? 'border-t-orange-100' : step.color.includes('teal') ? 'border-t-teal-100' : step.color.includes('emerald') ? 'border-t-emerald-100' : 'border-t-cyan-100'}`}></div>
-                      )}
+                      {index !== 0 && <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent ${step.color.includes('purple') ? 'border-t-purple-100' : step.color.includes('orange') ? 'border-t-orange-100' : step.color.includes('teal') ? 'border-t-teal-100' : step.color.includes('emerald') ? 'border-t-emerald-100' : 'border-t-cyan-100'}`}></div>}
                     </div>
 
                     {/* Step indicator */}
-                    <div className="w-3 h-3 rounded-full bg-gray-400 mb-4"></div>
+                    
 
                     {/* Description */}
                     <p className="text-sm text-[#0B3041] text-center leading-relaxed max-w-xs">
                       {step.description}
                     </p>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
-          </div>
-        );
+          </div>;
       default:
         return renderWhyContent();
     }
   };
-
-  return (
-    <div className="bg-white min-h-screen flex flex-col">
+  return <div className="bg-white min-h-screen flex flex-col">
       <Header />
       
       <div className="flex min-h-px w-full bg-muted" />
@@ -489,10 +440,7 @@ const ChordDetail: React.FC = () => {
       <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
         <div className="w-full max-w-[1440px] px-2.5 py-12 flex flex-col gap-12">
           {/* Back to Products */}
-          <button 
-            onClick={() => navigate('/products')}
-            className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start"
-          >
+          <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start">
             <ChevronLeft className="w-5 h-5" />
             <span className="text-lg font-medium">Back to Products</span>
           </button>
@@ -500,11 +448,7 @@ const ChordDetail: React.FC = () => {
           {/* Title and Icon */}
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-center gap-6">
-              <img 
-                src={ChordIcon} 
-                alt="CHORD icon"
-                className="w-16 h-16" 
-              />
+              <img src={ChordIcon} alt="CHORD icon" className="w-16 h-16" />
               <div className="flex flex-col gap-2">
                 <h1 className="text-[#0B3041] text-3xl md:text-4xl font-medium">
                   CHORD (Cross-channel Hospital Outpatient Reimbursement Database)
@@ -518,34 +462,13 @@ const ChordDetail: React.FC = () => {
           
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20">
-            <button
-              onClick={() => setActiveTab('why')}
-              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
-                activeTab === 'why'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#F1F4F1] text-[#156082]'
-              }`}
-            >
+            <button onClick={() => setActiveTab('why')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               WHY?
             </button>
-            <button
-              onClick={() => setActiveTab('what')}
-              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
-                activeTab === 'what'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#F1F4F1] text-[#156082]'
-              }`}
-            >
+            <button onClick={() => setActiveTab('what')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'what' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               WHAT?
             </button>
-            <button
-              onClick={() => setActiveTab('how')}
-              className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${
-                activeTab === 'how'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#F1F4F1] text-[#156082]'
-              }`}
-            >
+            <button onClick={() => setActiveTab('how')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'how' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               HOW?
             </button>
           </div>
@@ -558,8 +481,6 @@ const ChordDetail: React.FC = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ChordDetail;
