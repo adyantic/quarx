@@ -6,6 +6,10 @@ import { ChevronLeft, Database, Building2, Shield, ClipboardList } from 'lucide-
 import ChordIcon from '@/assets/CHORD.svg';
 import FeaturesInfographic from '@/assets/features-infographic.png';
 import Number1Icon from '@/assets/number-1.png';
+import Number2Icon from '@/assets/number-2.png';
+import Number3Icon from '@/assets/number-3.png';
+import Number4Icon from '@/assets/number-4.png';
+import Number5Icon from '@/assets/number-5.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 
 const ChordDetail: React.FC = () => {
@@ -183,9 +187,12 @@ const ChordDetail: React.FC = () => {
                     {/* Feature 2 - Right side */}
                     <div className="flex items-center relative">
                       <div className="w-1/2"></div>
-                      <div className="w-10 h-10 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
-                        2
-                        <div className="absolute left-full w-3 h-0.5 bg-[#FF8C42] top-1/2 transform -translate-y-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number2Icon} 
+                          alt="Number 2 with arrow pointing to maximum data resolution"
+                          className="h-8 w-auto"
+                        />
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
@@ -199,19 +206,24 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
                         <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
                       </div>
-                      <div className="w-10 h-10 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
-                        3
-                        <div className="absolute right-full w-3 h-0.5 bg-[#8B5CF6] top-1/2 transform -translate-y-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number3Icon} 
+                          alt="Number 3 with arrow pointing to integrated hospital and product profiles"
+                          className="h-8 w-auto"
+                        />
                       </div>
-                      <div className="w-1/2"></div>
                     </div>
                     
                     {/* Feature 4 - Right side */}
                     <div className="flex items-center relative">
                       <div className="w-1/2"></div>
-                      <div className="w-10 h-10 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
-                        4
-                        <div className="absolute left-full w-3 h-0.5 bg-[#10B981] top-1/2 transform -translate-y-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number4Icon} 
+                          alt="Number 4 with arrow pointing to geographic drilldown"
+                          className="h-8 w-auto"
+                        />
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
@@ -225,11 +237,13 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
                         <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
                       </div>
-                      <div className="w-10 h-10 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
-                        5
-                        <div className="absolute right-full w-3 h-0.5 bg-[#EC4899] top-1/2 transform -translate-y-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number5Icon} 
+                          alt="Number 5 with arrow pointing to cloud-based dashboard access"
+                          className="h-8 w-auto"
+                        />
                       </div>
-                      <div className="w-1/2"></div>
                     </div>
                   </div>
                 </div>
