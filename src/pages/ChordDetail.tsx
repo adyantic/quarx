@@ -172,7 +172,7 @@ const ChordDetail: React.FC = () => {
                       </div>
                       <div className="w-10 h-10 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
                         1
-                        <div className="absolute left-full w-3 h-0.5 bg-[#40A3BD] top-1/2 transform -translate-y-1/2"></div>
+                        <div className="absolute right-full w-3 h-0.5 bg-[#40A3BD] top-1/2 transform -translate-y-1/2"></div>
                       </div>
                       <div className="w-1/2"></div>
                     </div>
@@ -182,7 +182,7 @@ const ChordDetail: React.FC = () => {
                       <div className="w-1/2"></div>
                       <div className="w-10 h-10 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
                         2
-                        <div className="absolute right-full w-3 h-0.5 bg-[#FF8C42] top-1/2 transform -translate-y-1/2"></div>
+                        <div className="absolute left-full w-3 h-0.5 bg-[#FF8C42] top-1/2 transform -translate-y-1/2"></div>
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
@@ -198,7 +198,7 @@ const ChordDetail: React.FC = () => {
                       </div>
                       <div className="w-10 h-10 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
                         3
-                        <div className="absolute left-full w-3 h-0.5 bg-[#8B5CF6] top-1/2 transform -translate-y-1/2"></div>
+                        <div className="absolute right-full w-3 h-0.5 bg-[#8B5CF6] top-1/2 transform -translate-y-1/2"></div>
                       </div>
                       <div className="w-1/2"></div>
                     </div>
@@ -208,7 +208,7 @@ const ChordDetail: React.FC = () => {
                       <div className="w-1/2"></div>
                       <div className="w-10 h-10 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
                         4
-                        <div className="absolute right-full w-3 h-0.5 bg-[#10B981] top-1/2 transform -translate-y-1/2"></div>
+                        <div className="absolute left-full w-3 h-0.5 bg-[#10B981] top-1/2 transform -translate-y-1/2"></div>
                       </div>
                       <div className="w-1/2 pl-4 text-left">
                         <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
@@ -224,7 +224,7 @@ const ChordDetail: React.FC = () => {
                       </div>
                       <div className="w-10 h-10 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
                         5
-                        <div className="absolute left-full w-3 h-0.5 bg-[#EC4899] top-1/2 transform -translate-y-1/2"></div>
+                        <div className="absolute right-full w-3 h-0.5 bg-[#EC4899] top-1/2 transform -translate-y-1/2"></div>
                       </div>
                       <div className="w-1/2"></div>
                     </div>
