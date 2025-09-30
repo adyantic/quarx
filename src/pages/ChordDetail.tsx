@@ -70,7 +70,7 @@ const ChordDetail: React.FC = () => {
               {/* Numbers Column */}
               <div className="flex-1 max-w-xs">
                 {/* Header */}
-                <div className="bg-[#5A9BA6] text-white text-center py-3 text-lg font-medium">
+                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
                   NUMBERS
                 </div>
                 
