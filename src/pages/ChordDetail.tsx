@@ -82,7 +82,7 @@ const ChordDetail: React.FC = () => {
                 
                 <div className="flex-1 flex flex-col bg-[#EBFFFF]">
                   {/* Records Section */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 flex items-center justify-center">
                         <Database className="w-6 h-6 text-[#16A085]" />
@@ -95,7 +95,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Hospitals Section */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
@@ -114,7 +114,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Payers Section */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
@@ -133,7 +133,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Codes Section */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
@@ -154,7 +154,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Reimbursement Methodology */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div>
                       <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
                       <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
@@ -162,7 +162,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Procedure Modifiers */}
-                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                  <div className="flex-1 bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div>
                       <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
                       <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
