@@ -80,81 +80,93 @@ const ChordDetail: React.FC = () => {
                   NUMBERS
                 </div>
                 
-                <div className="flex-1 flex flex-col justify-between bg-[#EBFFFF]">
+                <div className="flex-1 flex flex-col bg-[#EBFFFF]">
                   {/* Records Section */}
-                  <div className="bg-[#EBFFFF] p-4 flex items-center gap-3">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                      <Database className="w-6 h-6 text-[#16A085]" />
-                    </div>
-                    <div>
-                      <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Records</span>
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <Database className="w-6 h-6 text-[#16A085]" />
+                      </div>
+                      <div className="text-center">
+                        <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Records</span>
+                      </div>
                     </div>
                   </div>
                   
                   {/* Hospitals Section */}
-                  <div className="bg-[#EBFFFF] p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 flex items-center justify-center">
-                        <Building2 className="w-6 h-6 text-[#16A085]" />
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center">
+                    <div className="text-center space-y-2">
+                      <div className="flex items-center gap-3 justify-center">
+                        <div className="w-8 h-8 flex items-center justify-center">
+                          <Building2 className="w-6 h-6 text-[#16A085]" />
+                        </div>
+                        <div>
+                          <span className="text-[#16A085] text-xl font-bold">~6,000</span>
+                          <span className="text-[#0B3041] text-lg ml-2">Hospitals</span>
+                        </div>
                       </div>
                       <div>
-                        <span className="text-[#16A085] text-xl font-bold">~6,000</span>
-                        <span className="text-[#0B3041] text-lg ml-2">Hospitals</span>
+                        <span className="text-[#16A085] text-xl font-bold">~500</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Health Systems</span>
                       </div>
-                    </div>
-                    <div className="ml-11">
-                      <span className="text-[#16A085] text-xl font-bold">~500</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Health Systems</span>
                     </div>
                   </div>
                   
                   {/* Payers Section */}
-                  <div className="bg-[#EBFFFF] p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 flex items-center justify-center">
-                        <Shield className="w-6 h-6 text-[#16A085]" />
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center">
+                    <div className="text-center space-y-2">
+                      <div className="flex items-center gap-3 justify-center">
+                        <div className="w-8 h-8 flex items-center justify-center">
+                          <Shield className="w-6 h-6 text-[#16A085]" />
+                        </div>
+                        <div>
+                          <span className="text-[#16A085] text-xl font-bold">~2,500</span>
+                          <span className="text-[#0B3041] text-lg ml-2">Payers</span>
+                        </div>
                       </div>
                       <div>
-                        <span className="text-[#16A085] text-xl font-bold">~2,500</span>
-                        <span className="text-[#0B3041] text-lg ml-2">Payers</span>
+                        <span className="text-[#16A085] text-xl font-bold">&gt;50,000</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Plans</span>
                       </div>
-                    </div>
-                    <div className="ml-11">
-                      <span className="text-[#16A085] text-xl font-bold">&gt;50,000</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Plans</span>
                     </div>
                   </div>
                   
                   {/* Codes Section */}
-                  <div className="bg-[#EBFFFF] p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 flex items-center justify-center">
-                        <ClipboardList className="w-6 h-6 text-[#16A085]" />
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center">
+                    <div className="text-center space-y-2">
+                      <div className="flex items-center gap-3 justify-center">
+                        <div className="w-8 h-8 flex items-center justify-center">
+                          <ClipboardList className="w-6 h-6 text-[#16A085]" />
+                        </div>
+                        <div>
+                          <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
+                          <span className="text-[#0B3041] text-lg ml-2">Codes</span>
+                        </div>
                       </div>
-                      <div>
-                        <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
-                        <span className="text-[#0B3041] text-lg ml-2">Codes</span>
+                      <div className="text-[#0B3041] text-sm space-y-0.5">
+                        <div>• HCPCS/CPT</div>
+                        <div>• NDC</div>
+                        <div>• APC</div>
+                        <div>• ICD10PCS</div>
                       </div>
-                    </div>
-                    <div className="ml-11 text-[#0B3041] text-sm">
-                      <div>• HCPCS/CPT</div>
-                      <div>• NDC</div>
-                      <div>• APC</div>
-                      <div>• ICD10PCS</div>
                     </div>
                   </div>
                   
                   {/* Reimbursement Methodology */}
-                  <div className="bg-[#EBFFFF] p-4 text-center">
-                    <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
-                    <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center text-center">
+                    <div>
+                      <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
+                      <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
+                    </div>
                   </div>
                   
                   {/* Procedure Modifiers */}
-                  <div className="bg-[#EBFFFF] p-4 text-center">
-                    <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
-                    <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
+                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col items-center justify-center text-center">
+                    <div>
+                      <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
+                      <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
+                    </div>
                   </div>
                 </div>
               </div>
