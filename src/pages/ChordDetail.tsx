@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { ChevronLeft, Database, Building2, Shield, ClipboardList } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
 import FeaturesInfographic from '@/assets/features-infographic.png';
+import Number1Icon from '@/assets/number-1.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 
 const ChordDetail: React.FC = () => {
@@ -170,11 +171,13 @@ const ChordDetail: React.FC = () => {
                         <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
                         <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
                       </div>
-                      <div className="w-10 h-10 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
-                        1
-                        <div className="absolute right-full w-3 h-0.5 bg-[#40A3BD] top-1/2 transform -translate-y-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number1Icon} 
+                          alt="Number 1 with arrow pointing to analytics ready data model"
+                          className="h-8 w-auto"
+                        />
                       </div>
-                      <div className="w-1/2"></div>
                     </div>
                     
                     {/* Feature 2 - Right side */}
