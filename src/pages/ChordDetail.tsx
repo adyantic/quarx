@@ -432,11 +432,18 @@ const ChordDetail: React.FC = () => {
                     {/* Shield-shaped container */}
                     <div className="relative mb-6">
                        {index === 0 ? (
-                         <img 
-                           src={HospitalShieldIcon} 
-                           alt="Hospital Published Price Transparency Files"
-                           className="w-32 h-auto object-contain"
-                         />
+                         <div className="relative">
+                           <img 
+                             src={HospitalShieldIcon} 
+                             alt="Hospital Published Price Transparency Files"
+                             className="w-32 h-auto object-contain"
+                           />
+                           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-2">
+                             <div className="text-xs font-semibold text-[#0B3041] leading-tight">
+                               Hospital Published Price Transparency Files
+                             </div>
+                           </div>
+                         </div>
                        ) : (
                          <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
                            <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mb-3">
