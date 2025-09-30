@@ -80,7 +80,7 @@ const ChordDetail: React.FC = () => {
                   NUMBERS
                 </div>
                 
-                <div className="flex-1 flex flex-col justify-between">
+                <div className="flex-1 flex flex-col justify-between bg-[#EBFFFF]">
                   {/* Records Section */}
                   <div className="bg-[#EBFFFF] p-4 flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center">
@@ -93,7 +93,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Hospitals Section */}
-                  <div className="bg-[#FFE9F1] p-4">
+                  <div className="bg-[#EBFFFF] p-4">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-8 h-8 flex items-center justify-center">
                         <Building2 className="w-6 h-6 text-[#16A085]" />
@@ -127,7 +127,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Codes Section */}
-                  <div className="bg-[#D3FAFB] p-4">
+                  <div className="bg-[#EBFFFF] p-4">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-8 h-8 flex items-center justify-center">
                         <ClipboardList className="w-6 h-6 text-[#16A085]" />
