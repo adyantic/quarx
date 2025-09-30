@@ -508,7 +508,7 @@ const ChordDetail: React.FC = () => {
         </div>
       </div>
       
-      <main className="py-[30px] px-2.5 flex flex-col items-center gap-10">
+      <main className="flex-1 py-[30px] px-2.5 flex flex-col items-center gap-10">
         <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
           <div className="w-full flex justify-center">
