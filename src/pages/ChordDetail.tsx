@@ -10,8 +10,6 @@ import Number2Icon from '@/assets/number-2.png';
 import Number3Icon from '@/assets/number-3.png';
 import Number4Icon from '@/assets/number-4.png';
 import Number5Icon from '@/assets/number-5.png';
-import Pointer2Icon from '@/assets/pointer-2.png';
-import Pointer4Icon from '@/assets/pointer-4.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 
 const ChordDetail: React.FC = () => {
@@ -171,9 +169,12 @@ const ChordDetail: React.FC = () => {
                   <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
                   <div className="space-y-8">
-                    {/* Feature 1 - Right side */}
+                    {/* Feature 1 - Left side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
+                      </div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number1Icon} 
@@ -181,30 +182,30 @@ const ChordDetail: React.FC = () => {
                           className="h-8 w-auto"
                         />
                       </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
-                      </div>
                     </div>
                     
-                    {/* Feature 2 - Left side */}
+                    {/* Feature 2 - Right side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
-                      </div>
+                      <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
-                          src={Pointer2Icon} 
+                          src={Number2Icon} 
                           alt="Number 2 with arrow pointing to maximum data resolution"
                           className="h-8 w-auto"
                         />
                       </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                      </div>
                     </div>
                     
-                    {/* Feature 3 - Right side */}
+                    {/* Feature 3 - Left side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                      </div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number3Icon} 
@@ -212,40 +213,36 @@ const ChordDetail: React.FC = () => {
                           className="h-8 w-auto"
                         />
                       </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
-                      </div>
                     </div>
                     
-                    {/* Feature 4 - Left side */}
+                    {/* Feature 4 - Right side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
-                      </div>
+                      <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
-                          src={Pointer4Icon} 
+                          src={Number4Icon} 
                           alt="Number 4 with arrow pointing to geographic drilldown"
                           className="h-8 w-auto"
                         />
                       </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
+                      </div>
                     </div>
                     
-                    {/* Feature 5 - Right side */}
+                    {/* Feature 5 - Left side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                      </div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number5Icon} 
                           alt="Number 5 with arrow pointing to cloud-based dashboard access"
                           className="h-8 w-auto"
                         />
-                      </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
                       </div>
                     </div>
                   </div>
