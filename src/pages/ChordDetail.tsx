@@ -470,7 +470,7 @@ const ChordDetail: React.FC = () => {
       <div className="flex min-h-px w-full bg-muted" />
       
       {/* Header Section */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-white">
         <div className="w-full max-w-[1440px] px-2.5 py-8 mx-auto">
           {/* Back to Products */}
           <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start mb-8">
@@ -508,7 +508,7 @@ const ChordDetail: React.FC = () => {
         </div>
       </div>
       
-      <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
+      <main className="py-8 md:py-12 px-2.5 flex flex-col items-center gap-10">
         <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
           <div className="w-full flex justify-center">
