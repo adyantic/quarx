@@ -75,7 +75,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Records Section */}
-                <div className="bg-[#E8F4F8] p-4 flex items-center gap-3">
+                <div className="bg-[#EBFFFF] p-4 flex items-center gap-3">
                   <div className="w-8 h-8 flex items-center justify-center">
                     <Database className="w-6 h-6 text-[#16A085]" />
                   </div>
@@ -86,7 +86,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Hospitals Section */}
-                <div className="bg-[#FCE4EC] p-4">
+                <div className="bg-[#EBFFFF] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
                       <Building2 className="w-6 h-6 text-[#16A085]" />
@@ -103,7 +103,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Payers Section */}
-                <div className="bg-[#E8F4F8] p-4">
+                <div className="bg-[#EBFFFF] p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 flex items-center justify-center">
                       <Shield className="w-6 h-6 text-[#16A085]" />
@@ -139,13 +139,13 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 {/* Reimbursement Methodology */}
-                <div className="bg-[#E8F4F8] p-4 text-center">
+                <div className="bg-[#EBFFFF] p-4 text-center">
                   <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
                   <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
                 </div>
                 
                 {/* Procedure Modifiers */}
-                <div className="bg-[#E8F4F8] p-4 text-center">
+                <div className="bg-[#EBFFFF] p-4 text-center">
                   <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
                   <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
                 </div>
