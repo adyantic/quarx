@@ -159,7 +159,7 @@ const ChordDetail: React.FC = () => {
                   FEATURES
                 </div>
                 
-                <div className="bg-[#B8E6E1] p-6 space-y-6">
+                <div className="bg-white p-6 space-y-6">
                   {/* Feature 1 */}
                   <div className="flex items-start gap-4 relative">
                     <div className="flex flex-col items-center">
