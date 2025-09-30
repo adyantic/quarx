@@ -72,17 +72,17 @@ const ChordDetail: React.FC = () => {
         return (
           <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left side - Three columns */}
-            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-stretch">
+            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
               {/* Numbers Column */}
-              <div className="flex-1 max-w-xs flex flex-col h-full">
+              <div className="flex-1 max-w-xs flex flex-col">
                 {/* Header */}
-                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
+                <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   NUMBERS
                 </div>
                 
-                <div className="flex-1 flex flex-col bg-[#EBFFFF]">
+                <div className="flex flex-col bg-[#EBFFFF]">
                   {/* Records Section */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 flex items-center justify-center">
                         <Database className="w-6 h-6 text-[#16A085]" />
@@ -95,8 +95,8 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Hospitals Section */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
-                    <div className="space-y-2">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                    <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
                           <Building2 className="w-6 h-6 text-[#16A085]" />
@@ -114,8 +114,8 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Payers Section */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
-                    <div className="space-y-2">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                    <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
                           <Shield className="w-6 h-6 text-[#16A085]" />
@@ -133,8 +133,8 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Codes Section */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
-                    <div className="space-y-2">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
+                    <div className="space-y-1">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 flex items-center justify-center">
                           <ClipboardList className="w-6 h-6 text-[#16A085]" />
@@ -154,7 +154,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Reimbursement Methodology */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div>
                       <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
                       <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
@@ -162,7 +162,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Procedure Modifiers */}
-                  <div className="flex-1 bg-[#EBFFFF] p-4 flex flex-col justify-center">
+                  <div className="bg-[#EBFFFF] p-2 flex flex-col justify-center">
                     <div>
                       <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
                       <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
@@ -172,110 +172,110 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 max-w-xs flex flex-col h-full">
+              <div className="flex-1 max-w-xs flex flex-col">
                 {/* Header */}
-                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
+                <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   FEATURES
                 </div>
                 
-                <div className="bg-white p-6 relative flex-1 flex flex-col justify-center">
+                <div className="bg-white p-3 relative flex flex-col justify-center">
                   {/* Central vertical line */}
-                  <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
+                  <div className="absolute left-1/2 top-3 bottom-3 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
-                   <div className="space-y-8">
-                     {/* Feature 1 - Left side */}
-                     <div className="flex items-center relative">
-                       <div className="w-1/2 pr-4 text-right">
-                         <div className="text-[#0B3041] text-base font-bold mb-1">ANALYTICS READY DATA MODEL</div>
-                         <div className="text-[#0B3041] text-base leading-relaxed">Standardized Clean and Quality Assured Data</div>
-                       </div>
-                       <div className="w-1/2 flex justify-start pl-4">
-                         <img 
-                           src={Number1Icon} 
-                           alt="Number 1 with arrow pointing to analytics ready data model"
-                           className="h-8 w-auto"
-                         />
-                       </div>
-                     </div>
-                     
-                     {/* Feature 2 - Right side */}
-                     <div className="flex items-center relative">
-                       <div className="w-1/2"></div>
-                       <div className="w-1/2 flex justify-start pl-4">
-                         <img 
-                           src={Number2Icon} 
-                           alt="Number 2 with arrow pointing to maximum data resolution"
-                           className="h-8 w-auto"
-                         />
-                       </div>
-                       <div className="w-1/2 pl-4 text-left">
-                         <div className="text-[#0B3041] text-base font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
-                         <div className="text-[#0B3041] text-base leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
-                       </div>
-                     </div>
-                     
-                     {/* Feature 3 - Left side */}
-                     <div className="flex items-center relative">
-                       <div className="w-1/2 pr-4 text-right">
-                         <div className="text-[#0B3041] text-base font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                         <div className="text-[#0B3041] text-base leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
-                       </div>
-                       <div className="w-1/2 flex justify-start pl-4">
-                         <img 
-                           src={Number3Icon} 
-                           alt="Number 3 with arrow pointing to integrated hospital and product profiles"
-                           className="h-8 w-auto"
-                         />
-                       </div>
-                     </div>
-                     
-                     {/* Feature 4 - Right side */}
-                     <div className="flex items-center relative">
-                       <div className="w-1/2"></div>
-                       <div className="w-1/2 flex justify-start pl-4">
-                         <img 
-                           src={Number4Icon} 
-                           alt="Number 4 with arrow pointing to geographic drilldown"
-                           className="h-8 w-auto"
-                         />
-                       </div>
-                       <div className="w-1/2 pl-4 text-left">
-                         <div className="text-[#0B3041] text-base font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
-                         <div className="text-[#0B3041] text-base leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
-                       </div>
-                     </div>
-                     
-                     {/* Feature 5 - Left side */}
-                     <div className="flex items-center relative">
-                       <div className="w-1/2 pr-4 text-right">
-                         <div className="text-[#0B3041] text-base font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
-                         <div className="text-[#0B3041] text-base leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
-                       </div>
-                       <div className="w-1/2 flex justify-start pl-4">
-                         <img 
-                           src={Number5Icon} 
-                           alt="Number 5 with arrow pointing to cloud-based dashboard access"
-                           className="h-8 w-auto"
-                         />
-                       </div>
-                     </div>
-                   </div>
+                  <div className="space-y-4">
+                    {/* Feature 1 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                        <div className="text-[#0B3041] text-base leading-relaxed">Standardized Clean and Quality Assured Data</div>
+                      </div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number1Icon} 
+                          alt="Number 1 with arrow pointing to analytics ready data model"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* Feature 2 - Right side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number2Icon} 
+                          alt="Number 2 with arrow pointing to maximum data resolution"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                        <div className="text-[#0B3041] text-base leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                      </div>
+                    </div>
+                    
+                    {/* Feature 3 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                        <div className="text-[#0B3041] text-base leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                      </div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number3Icon} 
+                          alt="Number 3 with arrow pointing to integrated hospital and product profiles"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* Feature 4 - Right side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2"></div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number4Icon} 
+                          alt="Number 4 with arrow pointing to geographic drilldown"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
+                        <div className="text-[#0B3041] text-base leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
+                      </div>
+                    </div>
+                    
+                    {/* Feature 5 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                        <div className="text-[#0B3041] text-base leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                      </div>
+                      <div className="w-1/2 flex justify-start pl-4">
+                        <img 
+                          src={Number5Icon} 
+                          alt="Number 5 with arrow pointing to cloud-based dashboard access"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* Levels Column */}
-              <div className="flex-1 max-w-xs flex flex-col h-full">
+              <div className="flex-1 max-w-xs flex flex-col">
                 {/* Header */}
-                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
+                <div className="bg-[#40A3BD] text-white text-center py-2 text-lg font-medium">
                   LEVELS
                 </div>
                 
-                <div className="bg-[#EBFFFF] p-4 flex-1 flex flex-col justify-between">
-                  <p className="text-[#0B3041] text-base mb-6 leading-relaxed">
+                <div className="bg-[#EBFFFF] p-3 flex flex-col justify-between">
+                  <p className="text-[#0B3041] text-base mb-3 leading-relaxed">
                     Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
                   </p>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     {/* Level 1: Channel */}
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-2 bg-[#40A3BD] rounded-full mt-1.5 flex-shrink-0"></div>
@@ -346,7 +346,7 @@ const ChordDetail: React.FC = () => {
                   </div>
                   
                   {/* Bottom text */}
-                  <div className="mt-6 pt-4 border-t border-gray-200">
+                  <div className="mt-3 pt-3 border-t border-gray-200">
                     <div className="text-[#0B3041] text-base font-bold mb-2">
                       Analyze payer reimbursement rates to understand
                     </div>
