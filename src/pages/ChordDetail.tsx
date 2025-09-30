@@ -184,19 +184,18 @@ const ChordDetail: React.FC = () => {
                       </div>
                     </div>
                     
-                    {/* Feature 2 - Right side */}
+                    {/* Feature 2 - Left side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                      </div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number2Icon} 
                           alt="Number 2 with arrow pointing to maximum data resolution"
                           className="h-8 w-auto"
                         />
-                      </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
                       </div>
                     </div>
                     
