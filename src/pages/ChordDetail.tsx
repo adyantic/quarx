@@ -453,7 +453,7 @@ const ChordDetail: React.FC = () => {
                     
 
                     {/* Description */}
-                    <p className="text-sm text-[#0B3041] text-center leading-relaxed max-w-xs">
+                    <p className="text-[18px] text-[#0B3041] text-center leading-relaxed max-w-xs">
                       {step.description}
                     </p>
                   </div>;
