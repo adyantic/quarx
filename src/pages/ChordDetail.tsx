@@ -250,26 +250,97 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Levels Column */}
-              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
-                <h3 className="text-[#0B3041] text-xl font-medium mb-4">LEVELS</h3>
-                <div className="space-y-3 w-full">
-                  <div className="bg-[#156082] text-white p-2 rounded text-center text-sm font-medium">
-                    Level 1: Channel
+              <div className="flex-1 max-w-xs">
+                {/* Header */}
+                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
+                  LEVELS
+                </div>
+                
+                <div className="bg-white p-4">
+                  <p className="text-[#0B3041] text-xs mb-6 leading-relaxed">
+                    Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
+                  </p>
+                  
+                  <div className="space-y-4">
+                    {/* Level 1: Channel */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-2 bg-[#40A3BD] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 1: Channel</div>
+                        <ul className="text-[#0B3041] text-xs space-y-0.5">
+                          <li>• Commercial, Medicare, Medicaid</li>
+                          <li>• exchange, Medicaid managed care</li>
+                          <li>• and Medicare Advantage</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    {/* Level 2: Payer */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-2 bg-[#5A9BA6] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 2: Payer</div>
+                        <div className="text-[#0B3041] text-xs">
+                          Details at the plan products each payer serves with plan and product
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Level 3: Plan */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-5 h-2 bg-[#7FB3D3] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 3: Plan</div>
+                        <div className="text-[#0B3041] text-xs">
+                          Plan level granularity with each plan type (Aml, I-IRA, PPO, HOS-Sage) etc.)
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Level 4: Health System */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-4 h-2 bg-[#9FC5E8] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 4: Health System</div>
+                        <div className="text-[#0B3041] text-xs">
+                          Reimbursement rates by Health System to identify operational owners, links and Health System
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Level 5: Local Geo */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-3 h-2 bg-[#B6D7EE] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 5: Local Geo</div>
+                        <div className="text-[#0B3041] text-xs">
+                          Geographic units mapped at multiple levels - State, MSA, HRR, and Local Geographic Areas
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Level 6: Hospital */}
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-[#CFE2F3] rounded-full mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 6: Hospital</div>
+                        <div className="text-[#0B3041] text-xs">
+                          Reimbursement amounts at the hospital level with the maximum geographical resolution in the Database
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="bg-[#5A9BA6] text-white p-2 rounded text-center text-sm font-medium">
-                    Level 2: Payer
-                  </div>
-                  <div className="bg-[#7FB3D3] text-white p-2 rounded text-center text-sm font-medium">
-                    Level 3: Plan
-                  </div>
-                  <div className="bg-[#9FC5E8] text-white p-2 rounded text-center text-sm font-medium">
-                    Level 4: Health System
-                  </div>
-                  <div className="bg-[#B6D7EE] text-white p-2 rounded text-center text-sm font-medium">
-                    Level 5: Local Geo
-                  </div>
-                  <div className="bg-[#CFE2F3] text-[#0B3041] p-2 rounded text-center text-sm font-medium">
-                    Level 6: Hospital
+                  
+                  {/* Bottom text */}
+                  <div className="mt-6 pt-4 border-t border-gray-200">
+                    <div className="text-[#0B3041] text-xs font-bold mb-2">
+                      Analyze payer reimbursement rates to understand
+                    </div>
+                    <ul className="text-[#0B3041] text-xs space-y-1">
+                      <li>• Variation in reimbursement rates across hospitals</li>
+                      <li>• Homogeneity of reimbursement rates within a health system</li>
+                      <li>• Differential reimbursement across competitive drugs</li>
+                    </ul>
                   </div>
                 </div>
               </div>
