@@ -15,6 +15,7 @@ import HospitalShieldIcon from '@/assets/hospital-shield-icon.png';
 import PayerPlanShieldIcon from '@/assets/payer-plan-shield.png';
 import ProviderMasteringShieldIcon from '@/assets/provider-mastering-shield.png';
 import CmsDataIntegrationShieldIcon from '@/assets/cms-data-integration-shield.png';
+import CloudDashboardShieldIcon from '@/assets/cloud-dashboard-shield.png';
 const ChordDetail: React.FC = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('why');
@@ -425,6 +426,13 @@ const ChordDetail: React.FC = () => {
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
                              <div className="text-xs font-bold text-[#0B3041] leading-tight">
                                CMS Data Integration (Codesets, ASP, Utilization)
+                             </div>
+                           </div>
+                         </div> : index === 4 ? <div className="relative">
+                           <img src={CloudDashboardShieldIcon} alt="Cloud-based Dashboard Design & Deployment" className="w-32 h-auto object-contain" />
+                           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
+                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                               Cloud-based Dashboard Design & Deployment
                              </div>
                            </div>
                          </div> : <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
