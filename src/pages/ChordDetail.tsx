@@ -153,65 +153,53 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 flex flex-col items-center">
-                <div className="bg-[#40A3BD] text-white text-center py-3 px-8 text-lg font-medium mb-8">
+              <div className="flex-1 max-w-xs">
+                {/* Header */}
+                <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
                   FEATURES
                 </div>
-                <div className="space-y-6 w-full max-w-sm">
+                
+                <div className="space-y-0">
                   {/* Feature 1 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">1</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
+                  <div className="bg-[#B8E6E1] p-4 flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
+                    <div>
                       <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
                       <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
                     </div>
                   </div>
                   
                   {/* Feature 2 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">2</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
+                  <div className="bg-[#E8F4F8] p-4 flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
+                    <div>
                       <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
                       <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
                     </div>
                   </div>
                   
                   {/* Feature 3 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">3</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
+                  <div className="bg-[#B8E6E1] p-4 flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
+                    <div>
                       <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
                       <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
                     </div>
                   </div>
                   
                   {/* Feature 4 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">4</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
+                  <div className="bg-[#E8F4F8] p-4 flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">4</div>
+                    <div>
                       <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
                       <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
                     </div>
                   </div>
                   
                   {/* Feature 5 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">5</div>
-                    </div>
-                    <div className="pt-2">
+                  <div className="bg-[#B8E6E1] p-4 flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">5</div>
+                    <div>
                       <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
                       <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
                     </div>
