@@ -159,63 +159,74 @@ const ChordDetail: React.FC = () => {
                   FEATURES
                 </div>
                 
-                <div className="bg-white p-6 space-y-6">
-                  {/* Feature 1 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">1</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
-                      <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
-                      <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
-                    </div>
-                  </div>
+                <div className="bg-white p-6 relative">
+                  {/* Central vertical line */}
+                  <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
-                  {/* Feature 2 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">2</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
+                  <div className="space-y-8">
+                    {/* Feature 1 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
+                      </div>
+                      <div className="w-10 h-10 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
+                        1
+                        <div className="absolute left-full w-3 h-0.5 bg-[#40A3BD] top-1/2 transform -translate-y-1/2"></div>
+                      </div>
+                      <div className="w-1/2"></div>
                     </div>
-                    <div className="pt-2">
-                      <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
-                      <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                    
+                    {/* Feature 2 - Right side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2"></div>
+                      <div className="w-10 h-10 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
+                        2
+                        <div className="absolute right-full w-3 h-0.5 bg-[#FF8C42] top-1/2 transform -translate-y-1/2"></div>
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                      </div>
                     </div>
-                  </div>
-                  
-                  {/* Feature 3 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">3</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
+                    
+                    {/* Feature 3 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                      </div>
+                      <div className="w-10 h-10 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
+                        3
+                        <div className="absolute left-full w-3 h-0.5 bg-[#8B5CF6] top-1/2 transform -translate-y-1/2"></div>
+                      </div>
+                      <div className="w-1/2"></div>
                     </div>
-                    <div className="pt-2">
-                      <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                      <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                    
+                    {/* Feature 4 - Right side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2"></div>
+                      <div className="w-10 h-10 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
+                        4
+                        <div className="absolute right-full w-3 h-0.5 bg-[#10B981] top-1/2 transform -translate-y-1/2"></div>
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
+                      </div>
                     </div>
-                  </div>
-                  
-                  {/* Feature 4 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">4</div>
-                      <div className="w-0.5 h-8 bg-gray-300 mt-1"></div>
-                    </div>
-                    <div className="pt-2">
-                      <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
-                      <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
-                    </div>
-                  </div>
-                  
-                  {/* Feature 5 */}
-                  <div className="flex items-start gap-4 relative">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-lg z-10">5</div>
-                    </div>
-                    <div className="pt-2">
-                      <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
-                      <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                    
+                    {/* Feature 5 - Left side */}
+                    <div className="flex items-center relative">
+                      <div className="w-1/2 pr-4 text-right">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                      </div>
+                      <div className="w-10 h-10 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-sm z-10 relative">
+                        5
+                        <div className="absolute left-full w-3 h-0.5 bg-[#EC4899] top-1/2 transform -translate-y-1/2"></div>
+                      </div>
+                      <div className="w-1/2"></div>
                     </div>
                   </div>
                 </div>
