@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ChevronLeft, Database, Building2, Shield, ClipboardList } from 'lucide-react';
+import { ChevronLeft, Database, Building2, Shield, ClipboardList, Brain, Network, Settings, BarChart3 } from 'lucide-react';
 import ChordIcon from '@/assets/CHORD.svg';
 import FeaturesInfographic from '@/assets/features-infographic.png';
 import Number1Icon from '@/assets/number-1.png';
@@ -382,8 +382,79 @@ const ChordDetail: React.FC = () => {
         );
       case 'how':
         return (
-          <div className="w-full flex items-center justify-center py-20">
-            <p className="text-[#0B3041] text-xl">How content coming soon...</p>
+          <div className="w-full">
+            {/* Description */}
+            <div className="text-center mb-16">
+              <p className="text-xl text-[#0B3041] max-w-4xl mx-auto leading-relaxed">
+                CHORD's analytic-readiness and accessibility is the result of our systematic and rigorous process of 
+                data extraction, curation, mastering, integration and visualization.
+              </p>
+            </div>
+
+            {/* Process Steps */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
+              {[
+                {
+                  icon: Database,
+                  title: "Hospital Published Price Transparency Files",
+                  description: "Development of custom web-scraping, data validation and ingestion programs to stage Hospital Price Transparency Files",
+                  color: "bg-purple-100 border-purple-300"
+                },
+                {
+                  icon: Brain,
+                  title: "Multi-step LLM-based Payer-Plan Mastering",
+                  description: "LLM augmented program to incrementally master payer-plan relationships and establish LoB",
+                  color: "bg-orange-100 border-orange-300"
+                },
+                {
+                  icon: Network,
+                  title: "Provider Mastering & Hierarchy Mapping",
+                  description: "Integration of provider ownership, enrollment and cost report data to create hospital profiles",
+                  color: "bg-teal-100 border-teal-300"
+                },
+                {
+                  icon: Settings,
+                  title: "CMS Data Integration (Codesets, ASP, Utilization)",
+                  description: "OpenFDA, RxNorm, CMS codesets to standardize codes; Integration of CMS ASP payment limits",
+                  color: "bg-emerald-100 border-emerald-300"
+                },
+                {
+                  icon: BarChart3,
+                  title: "Database Dashboard Design & Deployment",
+                  description: "Design and deployment of the database on a cloud-based BI platform for ready access and analysis",
+                  color: "bg-cyan-100 border-cyan-300"
+                }
+              ].map((step, index) => {
+                const IconComponent = step.icon;
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    {/* Shield-shaped container */}
+                    <div className="relative mb-6">
+                      <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
+                        <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mb-3">
+                          <IconComponent className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="text-center">
+                          <div className="text-sm font-semibold text-[#0B3041] leading-tight">
+                            {step.title}
+                          </div>
+                        </div>
+                      </div>
+                      {/* Bottom point of shield */}
+                      <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent ${step.color.includes('purple') ? 'border-t-purple-100' : step.color.includes('orange') ? 'border-t-orange-100' : step.color.includes('teal') ? 'border-t-teal-100' : step.color.includes('emerald') ? 'border-t-emerald-100' : 'border-t-cyan-100'}`}></div>
+                    </div>
+
+                    {/* Step indicator */}
+                    <div className="w-3 h-3 rounded-full bg-gray-400 mb-4"></div>
+
+                    {/* Description */}
+                    <p className="text-sm text-[#0B3041] text-center leading-relaxed max-w-xs">
+                      {step.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         );
       default:
