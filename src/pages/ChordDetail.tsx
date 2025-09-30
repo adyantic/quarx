@@ -72,99 +72,101 @@ const ChordDetail: React.FC = () => {
         return (
           <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left side - Three columns */}
-            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8">
+            <div className="flex-1 flex flex-col sm:flex-row gap-6 lg:gap-8 items-stretch">
               {/* Numbers Column */}
-              <div className="flex-1 max-w-xs">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
                   NUMBERS
                 </div>
                 
-                {/* Records Section */}
-                <div className="bg-[#EBFFFF] p-4 flex items-center gap-3">
-                  <div className="w-8 h-8 flex items-center justify-center">
-                    <Database className="w-6 h-6 text-[#16A085]" />
-                  </div>
-                  <div>
-                    <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
-                    <span className="text-[#0B3041] text-lg ml-2">Records</span>
-                  </div>
-                </div>
-                
-                {/* Hospitals Section */}
-                <div className="bg-[#FFE9F1] p-4">
-                  <div className="flex items-center gap-3 mb-2">
+                <div className="flex-1 flex flex-col justify-between">
+                  {/* Records Section */}
+                  <div className="bg-[#EBFFFF] p-4 flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center">
-                      <Building2 className="w-6 h-6 text-[#16A085]" />
+                      <Database className="w-6 h-6 text-[#16A085]" />
                     </div>
                     <div>
-                      <span className="text-[#16A085] text-xl font-bold">~6,000</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Hospitals</span>
+                      <span className="text-[#16A085] text-xl font-bold">~1 Billion</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Records</span>
                     </div>
                   </div>
-                  <div className="ml-11">
-                    <span className="text-[#16A085] text-xl font-bold">~500</span>
-                    <span className="text-[#0B3041] text-lg ml-2">Health Systems</span>
-                  </div>
-                </div>
-                
-                {/* Payers Section */}
-                <div className="bg-[#EBFFFF] p-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                      <Shield className="w-6 h-6 text-[#16A085]" />
+                  
+                  {/* Hospitals Section */}
+                  <div className="bg-[#FFE9F1] p-4">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <Building2 className="w-6 h-6 text-[#16A085]" />
+                      </div>
+                      <div>
+                        <span className="text-[#16A085] text-xl font-bold">~6,000</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Hospitals</span>
+                      </div>
                     </div>
-                    <div>
-                      <span className="text-[#16A085] text-xl font-bold">~2,500</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Payers</span>
-                    </div>
-                  </div>
-                  <div className="ml-11">
-                    <span className="text-[#16A085] text-xl font-bold">&gt;50,000</span>
-                    <span className="text-[#0B3041] text-lg ml-2">Plans</span>
-                  </div>
-                </div>
-                
-                {/* Codes Section */}
-                <div className="bg-[#D3FAFB] p-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                      <ClipboardList className="w-6 h-6 text-[#16A085]" />
-                    </div>
-                    <div>
-                      <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
-                      <span className="text-[#0B3041] text-lg ml-2">Codes</span>
+                    <div className="ml-11">
+                      <span className="text-[#16A085] text-xl font-bold">~500</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Health Systems</span>
                     </div>
                   </div>
-                  <div className="ml-11 text-[#0B3041] text-sm">
-                    <div>• HCPCS/CPT</div>
-                    <div>• NDC</div>
-                    <div>• APC</div>
-                    <div>• ICD10PCS</div>
+                  
+                  {/* Payers Section */}
+                  <div className="bg-[#EBFFFF] p-4">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <Shield className="w-6 h-6 text-[#16A085]" />
+                      </div>
+                      <div>
+                        <span className="text-[#16A085] text-xl font-bold">~2,500</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Payers</span>
+                      </div>
+                    </div>
+                    <div className="ml-11">
+                      <span className="text-[#16A085] text-xl font-bold">&gt;50,000</span>
+                      <span className="text-[#0B3041] text-lg ml-2">Plans</span>
+                    </div>
                   </div>
-                </div>
-                
-                {/* Reimbursement Methodology */}
-                <div className="bg-[#EBFFFF] p-4 text-center">
-                  <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
-                  <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
-                </div>
-                
-                {/* Procedure Modifiers */}
-                <div className="bg-[#EBFFFF] p-4 text-center">
-                  <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
-                  <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
+                  
+                  {/* Codes Section */}
+                  <div className="bg-[#D3FAFB] p-4">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <ClipboardList className="w-6 h-6 text-[#16A085]" />
+                      </div>
+                      <div>
+                        <span className="text-[#16A085] text-xl font-bold">&gt;150,000</span>
+                        <span className="text-[#0B3041] text-lg ml-2">Codes</span>
+                      </div>
+                    </div>
+                    <div className="ml-11 text-[#0B3041] text-sm">
+                      <div>• HCPCS/CPT</div>
+                      <div>• NDC</div>
+                      <div>• APC</div>
+                      <div>• ICD10PCS</div>
+                    </div>
+                  </div>
+                  
+                  {/* Reimbursement Methodology */}
+                  <div className="bg-[#EBFFFF] p-4 text-center">
+                    <div className="text-[#16A085] font-bold text-sm mb-1">Reimbursement Methodology</div>
+                    <div className="text-[#4A5568] text-xs">Fee Schedule | % of Billed Charges | Case Rate | Per Diem</div>
+                  </div>
+                  
+                  {/* Procedure Modifiers */}
+                  <div className="bg-[#EBFFFF] p-4 text-center">
+                    <div className="text-[#16A085] font-bold text-sm mb-1">Procedure Modifiers</div>
+                    <div className="text-[#4A5568] text-xs">340B | Drug Waste | Quantity</div>
+                  </div>
                 </div>
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 max-w-xs">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
                   FEATURES
                 </div>
                 
-                <div className="bg-white p-6 relative">
+                <div className="bg-white p-6 relative flex-1 flex flex-col justify-center">
                   {/* Central vertical line */}
                   <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
@@ -250,13 +252,13 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Levels Column */}
-              <div className="flex-1 max-w-xs">
+              <div className="flex-1 max-w-xs flex flex-col h-full">
                 {/* Header */}
                 <div className="bg-[#40A3BD] text-white text-center py-3 text-lg font-medium">
                   LEVELS
                 </div>
                 
-                <div className="bg-[#EBFFFF] p-4">
+                <div className="bg-[#EBFFFF] p-4 flex-1 flex flex-col justify-between">
                   <p className="text-[#0B3041] text-xs mb-6 leading-relaxed">
                     Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
                   </p>
