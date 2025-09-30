@@ -76,6 +76,8 @@ const Products: React.FC = () => {
                   onClick={() => {
                     if (product.title === 'CHORD') {
                       navigate('/products/chord');
+                    } else if (product.title === 'BASIS') {
+                      navigate('/products/basis');
                     }
                   }}
                   className="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
