@@ -171,18 +171,19 @@ const ChordDetail: React.FC = () => {
                   <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
                   <div className="space-y-8">
-                    {/* Feature 1 - Left side */}
+                    {/* Feature 1 - Right side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
-                      </div>
+                      <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number1Icon} 
                           alt="Number 1 with arrow pointing to analytics ready data model"
                           className="h-8 w-auto"
                         />
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
                       </div>
                     </div>
                     
@@ -201,18 +202,19 @@ const ChordDetail: React.FC = () => {
                       </div>
                     </div>
                     
-                    {/* Feature 3 - Left side */}
+                    {/* Feature 3 - Right side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
-                      </div>
+                      <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number3Icon} 
                           alt="Number 3 with arrow pointing to integrated hospital and product profiles"
                           className="h-8 w-auto"
                         />
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
                       </div>
                     </div>
                     
@@ -231,18 +233,19 @@ const ChordDetail: React.FC = () => {
                       </div>
                     </div>
                     
-                    {/* Feature 5 - Left side */}
+                    {/* Feature 5 - Right side */}
                     <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
-                      </div>
+                      <div className="w-1/2"></div>
                       <div className="w-1/2 flex justify-start pl-4">
                         <img 
                           src={Number5Icon} 
                           alt="Number 5 with arrow pointing to cloud-based dashboard access"
                           className="h-8 w-auto"
                         />
+                      </div>
+                      <div className="w-1/2 pl-4 text-left">
+                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
                       </div>
                     </div>
                   </div>
