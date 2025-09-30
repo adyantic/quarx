@@ -473,7 +473,10 @@ const ChordDetail: React.FC = () => {
       <div className="bg-white">
         <div className="w-full max-w-[1440px] px-2.5 py-[30px] mx-auto">
           {/* Back to Products */}
-          <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8">
+          <button 
+            onClick={() => navigate('/products')} 
+            className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8 bg-white border border-gray-200 px-4 py-2 rounded-md shadow-sm"
+          >
             <ChevronLeft className="w-5 h-5" />
             <span className="text-lg font-medium">Back to Products</span>
           </button>
