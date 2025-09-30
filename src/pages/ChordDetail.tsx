@@ -469,8 +469,8 @@ const ChordDetail: React.FC = () => {
       
       <div className="flex min-h-px w-full bg-muted" />
       
-      {/* Sticky Header Section */}
-      <div className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
+      {/* Header Section */}
+      <div className="bg-white border-b border-gray-200">
         <div className="w-full max-w-[1440px] px-2.5 py-8 mx-auto">
           {/* Back to Products */}
           <button onClick={() => navigate('/products')} className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors self-start mb-8">
