@@ -363,19 +363,19 @@ const ChordDetail: React.FC = () => {
             {/* Right side - Description points */}
             <div className="lg:w-80 space-y-6">
               <div>
-                <p className="text-[#0B3041] text-lg font-medium">Payer negotiated rates for all hospital outpatient <span className="text-[#5A9BA6]">and inpatient procedures at the plan level</span></p>
+                <p className="text-[#0B3041] text-2xl font-medium">Payer negotiated rates for all hospital outpatient <span className="text-[#5A9BA6]">and inpatient procedures at the plan level</span></p>
               </div>
               <div>
-                <p className="text-[#0B3041] text-lg">Payer reimbursement methodology by plan, provider and procedure <span className="text-[#5A9BA6]">(Fee Schedule vs % Billed Charges, Case Rate, Per Diem etc.)</span></p>
+                <p className="text-[#0B3041] text-2xl">Payer reimbursement methodology by plan, provider and procedure <span className="text-[#5A9BA6]">(Fee Schedule vs % Billed Charges, Case Rate, Per Diem etc.)</span></p>
               </div>
               <div>
-                <p className="text-[#0B3041] text-lg font-medium">Negotiated rates for APC based payments</p>
+                <p className="text-[#0B3041] text-2xl font-medium">Negotiated rates for APC based payments</p>
               </div>
               <div>
-                <p className="text-[#0B3041] text-lg">Hospitals that are operationally and technologically integrated <span className="text-[#5A9BA6]">(set up with the same Charge Data Master)</span></p>
+                <p className="text-[#0B3041] text-2xl">Hospitals that are operationally and technologically integrated <span className="text-[#5A9BA6]">(set up with the same Charge Data Master)</span></p>
               </div>
               <div>
-                <p className="text-[#0B3041] text-lg font-medium">Level of uniformity it negotiated rates across Hospitals in a Health System</p>
+                <p className="text-[#0B3041] text-2xl font-medium">Level of uniformity it negotiated rates across Hospitals in a Health System</p>
               </div>
             </div>
           </div>
