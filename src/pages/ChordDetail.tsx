@@ -153,12 +153,47 @@ const ChordDetail: React.FC = () => {
               </div>
 
               {/* Features Column */}
-              <div className="flex-1 flex justify-center items-center">
-                <img 
-                  src={FeaturesInfographic} 
-                  alt="Features infographic showing analytics ready data model, maximum data resolution, integrated hospital & product profiles, geographic drilldown, and cloud-based dashboard access"
-                  className="max-w-full h-auto"
-                />
+              <div className="flex-1 bg-[#B8E6E1] rounded-lg p-6 flex flex-col items-center gap-4">
+                <div className="bg-[#40A3BD] text-white text-center py-3 px-8 text-lg font-medium mb-4">
+                  FEATURES
+                </div>
+                <div className="space-y-8 w-full">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#40A3BD] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">1</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                      <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#FF8C42] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">2</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                      <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">3</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                      <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">4</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
+                      <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#EC4899] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">5</div>
+                    <div>
+                      <div className="text-[#0B3041] text-sm font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                      <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Levels Column */}
