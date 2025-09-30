@@ -12,6 +12,7 @@ import Number4Icon from '@/assets/number-4.png';
 import Number5Icon from '@/assets/number-5.png';
 import NumbersInfographic from '@/assets/numbers-infographic.png';
 import HospitalShieldIcon from '@/assets/hospital-shield-icon.png';
+import PayerPlanShieldIcon from '@/assets/payer-plan-shield.png';
 const ChordDetail: React.FC = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('why');
@@ -401,6 +402,13 @@ const ChordDetail: React.FC = () => {
                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
                              <div className="text-xs font-bold text-[#0B3041] leading-tight">
                                Hospital Published Price Transparency Files
+                             </div>
+                           </div>
+                         </div> : index === 1 ? <div className="relative">
+                           <img src={PayerPlanShieldIcon} alt="Multi-step LLM-based Payer-Plan Mastering" className="w-32 h-auto object-contain" />
+                           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
+                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
+                               Multi-step LLM-based Payer-Plan Mastering
                              </div>
                            </div>
                          </div> : <div className={`w-32 h-40 ${step.color} border-2 relative flex flex-col items-center justify-center p-4 clip-shield`}>
