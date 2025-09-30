@@ -479,7 +479,7 @@ const ChordDetail: React.FC = () => {
           </button>
           
           {/* Title and Icon */}
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-8 mb-8">
             <div className="flex items-center gap-6">
               <img src={ChordIcon} alt="CHORD icon" className="w-16 h-16" />
               <div className="flex flex-col gap-2">
@@ -492,11 +492,7 @@ const ChordDetail: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
-        <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
+          
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20">
             <button onClick={() => setActiveTab('why')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
@@ -509,7 +505,11 @@ const ChordDetail: React.FC = () => {
               HOW?
             </button>
           </div>
-          
+        </div>
+      </div>
+      
+      <main className="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
+        <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
           <div className="w-full flex justify-center">
             {renderContent()}
