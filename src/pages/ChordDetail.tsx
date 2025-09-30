@@ -182,84 +182,84 @@ const ChordDetail: React.FC = () => {
                   {/* Central vertical line */}
                   <div className="absolute left-1/2 top-6 bottom-6 w-0.5 bg-gray-300 transform -translate-x-px"></div>
                   
-                  <div className="space-y-8">
-                    {/* Feature 1 - Left side */}
-                    <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">ANALYTICS READY DATA MODEL</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Standardized Clean and Quality Assured Data</div>
-                      </div>
-                      <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number1Icon} 
-                          alt="Number 1 with arrow pointing to analytics ready data model"
-                          className="h-8 w-auto"
-                        />
-                      </div>
-                    </div>
-                    
-                    {/* Feature 2 - Right side */}
-                    <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
-                      <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number2Icon} 
-                          alt="Number 2 with arrow pointing to maximum data resolution"
-                          className="h-8 w-auto"
-                        />
-                      </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
-                      </div>
-                    </div>
-                    
-                    {/* Feature 3 - Left side */}
-                    <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
-                      </div>
-                      <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number3Icon} 
-                          alt="Number 3 with arrow pointing to integrated hospital and product profiles"
-                          className="h-8 w-auto"
-                        />
-                      </div>
-                    </div>
-                    
-                    {/* Feature 4 - Right side */}
-                    <div className="flex items-center relative">
-                      <div className="w-1/2"></div>
-                      <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number4Icon} 
-                          alt="Number 4 with arrow pointing to geographic drilldown"
-                          className="h-8 w-auto"
-                        />
-                      </div>
-                      <div className="w-1/2 pl-4 text-left">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
-                      </div>
-                    </div>
-                    
-                    {/* Feature 5 - Left side */}
-                    <div className="flex items-center relative">
-                      <div className="w-1/2 pr-4 text-right">
-                        <div className="text-[#0B3041] text-xs font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
-                        <div className="text-[#0B3041] text-xs leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
-                      </div>
-                      <div className="w-1/2 flex justify-start pl-4">
-                        <img 
-                          src={Number5Icon} 
-                          alt="Number 5 with arrow pointing to cloud-based dashboard access"
-                          className="h-8 w-auto"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                   <div className="space-y-8">
+                     {/* Feature 1 - Left side */}
+                     <div className="flex items-center relative">
+                       <div className="w-1/2 pr-4 text-right">
+                         <div className="text-[#0B3041] text-sm font-bold mb-1">ANALYTICS READY DATA MODEL</div>
+                         <div className="text-[#0B3041] text-sm leading-relaxed">Standardized Clean and Quality Assured Data</div>
+                       </div>
+                       <div className="w-1/2 flex justify-start pl-4">
+                         <img 
+                           src={Number1Icon} 
+                           alt="Number 1 with arrow pointing to analytics ready data model"
+                           className="h-8 w-auto"
+                         />
+                       </div>
+                     </div>
+                     
+                     {/* Feature 2 - Right side */}
+                     <div className="flex items-center relative">
+                       <div className="w-1/2"></div>
+                       <div className="w-1/2 flex justify-start pl-4">
+                         <img 
+                           src={Number2Icon} 
+                           alt="Number 2 with arrow pointing to maximum data resolution"
+                           className="h-8 w-auto"
+                         />
+                       </div>
+                       <div className="w-1/2 pl-4 text-left">
+                         <div className="text-[#0B3041] text-sm font-bold mb-1">MAXIMUM DATA RESOLUTION</div>
+                         <div className="text-[#0B3041] text-sm leading-relaxed">Able to Distinguish Rates for the Same Code at the Same Provider</div>
+                       </div>
+                     </div>
+                     
+                     {/* Feature 3 - Left side */}
+                     <div className="flex items-center relative">
+                       <div className="w-1/2 pr-4 text-right">
+                         <div className="text-[#0B3041] text-sm font-bold mb-1">INTEGRATED HOSPITAL & PRODUCT PROFILES</div>
+                         <div className="text-[#0B3041] text-sm leading-relaxed">Augment Rate Data with Key Descriptive Characteristics</div>
+                       </div>
+                       <div className="w-1/2 flex justify-start pl-4">
+                         <img 
+                           src={Number3Icon} 
+                           alt="Number 3 with arrow pointing to integrated hospital and product profiles"
+                           className="h-8 w-auto"
+                         />
+                       </div>
+                     </div>
+                     
+                     {/* Feature 4 - Right side */}
+                     <div className="flex items-center relative">
+                       <div className="w-1/2"></div>
+                       <div className="w-1/2 flex justify-start pl-4">
+                         <img 
+                           src={Number4Icon} 
+                           alt="Number 4 with arrow pointing to geographic drilldown"
+                           className="h-8 w-auto"
+                         />
+                       </div>
+                       <div className="w-1/2 pl-4 text-left">
+                         <div className="text-[#0B3041] text-sm font-bold mb-1">GEOGRAPHIC DRILLDOWN</div>
+                         <div className="text-[#0B3041] text-sm leading-relaxed">Compare Rates at Regional and Local Levels Within a State</div>
+                       </div>
+                     </div>
+                     
+                     {/* Feature 5 - Left side */}
+                     <div className="flex items-center relative">
+                       <div className="w-1/2 pr-4 text-right">
+                         <div className="text-[#0B3041] text-sm font-bold mb-1">CLOUD-BASED DASHBOARD ACCESS</div>
+                         <div className="text-[#0B3041] text-sm leading-relaxed">Dashboard is Optimized via Cloud Based that Delivers Reports</div>
+                       </div>
+                       <div className="w-1/2 flex justify-start pl-4">
+                         <img 
+                           src={Number5Icon} 
+                           alt="Number 5 with arrow pointing to cloud-based dashboard access"
+                           className="h-8 w-auto"
+                         />
+                       </div>
+                     </div>
+                   </div>
                 </div>
               </div>
 
@@ -271,7 +271,7 @@ const ChordDetail: React.FC = () => {
                 </div>
                 
                 <div className="bg-[#EBFFFF] p-4 flex-1 flex flex-col justify-between">
-                  <p className="text-[#0B3041] text-xs mb-6 leading-relaxed">
+                  <p className="text-[#0B3041] text-sm mb-6 leading-relaxed">
                     Lookup payer reimbursement rates at any level of Payer, Provider and Geographic granularity
                   </p>
                   
@@ -280,8 +280,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-2 bg-[#40A3BD] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 1: Channel</div>
-                        <ul className="text-[#0B3041] text-xs space-y-0.5">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 1: Channel</div>
+                        <ul className="text-[#0B3041] text-sm space-y-0.5">
                           <li>• Commercial, Medicare, Medicaid</li>
                           <li>• exchange, Medicaid managed care</li>
                           <li>• and Medicare Advantage</li>
@@ -293,8 +293,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-2 bg-[#5A9BA6] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 2: Payer</div>
-                        <div className="text-[#0B3041] text-xs">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 2: Payer</div>
+                        <div className="text-[#0B3041] text-sm">
                           Details at the plan products each payer serves with plan and product
                         </div>
                       </div>
@@ -304,8 +304,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-5 h-2 bg-[#7FB3D3] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 3: Plan</div>
-                        <div className="text-[#0B3041] text-xs">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 3: Plan</div>
+                        <div className="text-[#0B3041] text-sm">
                           Plan level granularity with each plan type (Aml, I-IRA, PPO, HOS-Sage) etc.)
                         </div>
                       </div>
@@ -315,8 +315,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-4 h-2 bg-[#9FC5E8] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 4: Health System</div>
-                        <div className="text-[#0B3041] text-xs">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 4: Health System</div>
+                        <div className="text-[#0B3041] text-sm">
                           Reimbursement rates by Health System to identify operational owners, links and Health System
                         </div>
                       </div>
@@ -326,8 +326,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-3 h-2 bg-[#B6D7EE] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 5: Local Geo</div>
-                        <div className="text-[#0B3041] text-xs">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 5: Local Geo</div>
+                        <div className="text-[#0B3041] text-sm">
                           Geographic units mapped at multiple levels - State, MSA, HRR, and Local Geographic Areas
                         </div>
                       </div>
@@ -337,8 +337,8 @@ const ChordDetail: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-[#CFE2F3] rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
-                        <div className="text-[#0B3041] text-sm font-bold mb-1">Level 6: Hospital</div>
-                        <div className="text-[#0B3041] text-xs">
+                        <div className="text-[#0B3041] text-base font-bold mb-1">Level 6: Hospital</div>
+                        <div className="text-[#0B3041] text-sm">
                           Reimbursement amounts at the hospital level with the maximum geographical resolution in the Database
                         </div>
                       </div>
@@ -347,10 +347,10 @@ const ChordDetail: React.FC = () => {
                   
                   {/* Bottom text */}
                   <div className="mt-6 pt-4 border-t border-gray-200">
-                    <div className="text-[#0B3041] text-xs font-bold mb-2">
+                    <div className="text-[#0B3041] text-sm font-bold mb-2">
                       Analyze payer reimbursement rates to understand
                     </div>
-                    <ul className="text-[#0B3041] text-xs space-y-1">
+                    <ul className="text-[#0B3041] text-sm space-y-1">
                       <li>• Variation in reimbursement rates across hospitals</li>
                       <li>• Homogeneity of reimbursement rates within a health system</li>
                       <li>• Differential reimbursement across competitive drugs</li>
