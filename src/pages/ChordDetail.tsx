@@ -438,8 +438,8 @@ const ChordDetail: React.FC = () => {
                              alt="Hospital Published Price Transparency Files"
                              className="w-32 h-auto object-contain"
                            />
-                           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-2">
-                             <div className="text-xs font-semibold text-[#0B3041] leading-tight">
+                           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 w-full">
+                             <div className="text-xs font-bold text-[#0B3041] leading-tight">
                                Hospital Published Price Transparency Files
                              </div>
                            </div>
