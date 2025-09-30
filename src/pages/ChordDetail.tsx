@@ -486,7 +486,7 @@ const ChordDetail: React.FC = () => {
                 <h1 className="text-[#0B3041] text-3xl md:text-4xl font-medium">
                   CHORD (Cross-channel Hospital Outpatient Reimbursement Database)
                 </h1>
-                <p className="text-[#5A9BA6] text-4xl font-medium py-5">
+                <p className="text-[#5A9BA6] text-4xl font-medium">
                   is a comprehensive analytics-ready database of payer-provider negotiated rates
                 </p>
               </div>
