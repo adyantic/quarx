@@ -479,7 +479,7 @@ const ChordDetail: React.FC = () => {
           </button>
           
           {/* Title and Icon */}
-          <div className="flex flex-col items-center gap-8 mb-8">
+          <div className="flex flex-col items-center gap-8 mb-8 py-5">
             <div className="flex items-center gap-6">
               <img src={ChordIcon} alt="CHORD icon" className="w-16 h-16" />
               <div className="flex flex-col gap-2">
