@@ -6,6 +6,7 @@ import { ChevronLeft } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
 import BasisWhatImg1 from '@/assets/basis-what-img1.png';
 import BasisWhatImg2 from '@/assets/basis-what-img2.png';
+import BasisHowDiagram from '@/assets/basis-how-diagram.png';
 
 const BasisDetail: React.FC = () => {
   const navigate = useNavigate();
@@ -81,10 +82,20 @@ const BasisDetail: React.FC = () => {
         );
       case 'how':
         return (
-          <div className="w-full flex flex-col items-center gap-8">
-            <p className="text-center text-[#0B3041] text-2xl">
-              HOW content coming soon...
-            </p>
+          <div className="w-full flex flex-col items-center gap-12">
+            <div className="w-full max-w-[1440px] px-4">
+              <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                Multiple payer, provider and patient sensitivity parameters are structured as inputs into the model to quantify the impact of access changes
+              </p>
+            </div>
+            
+            <div className="w-full max-w-[1440px] px-4 flex justify-center">
+              <img 
+                src={BasisHowDiagram} 
+                alt="BASIS patient flow diagram showing market sizing inputs, patient journey stages from eligible patient base through HCP demand sensitivity, payer approach and patient OOP sensitivity, leading to outputs of patients, units, gross sales, net sales and GTN" 
+                className="w-full max-w-5xl h-auto object-contain"
+              />
+            </div>
           </div>
         );
       default:
