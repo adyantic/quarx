@@ -47,7 +47,7 @@ const BasisHowDiagramWithText: React.FC = () => {
       </div>
 
       {/* Right Side Output Stack */}
-      <div className="flex flex-col justify-center gap-[clamp(0.5rem,1.5vw,1rem)] pl-4">
+      <div className="flex flex-col justify-center gap-2 pl-4">
         <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           Patients
         </div>
