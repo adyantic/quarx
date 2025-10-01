@@ -51,7 +51,7 @@ const Solutions: React.FC = () => {
       title: 'Payer-Provider <br/>Access Strategy',
       questions: [
         { text: 'How does payer management vary by methods and severity across channels?', hoverText: 'Formulary Landscape Analysis' },
-        { text: 'What can I expect my launch access timing and trajectory to look like?' },
+        { text: 'What can I expect my launch access timing and trajectory to look like?', hoverText: 'Time to Access Analysis' },
         { text: 'How do payers vary in their ability to control utilization?' },
         { text: 'Are there local markets where provider influence trumps payer policy?' },
         { text: 'How do I think about my access strategy by specific payer types & segments?' },
