@@ -51,7 +51,7 @@ const BasisDetail: React.FC = () => {
         return renderWhyContent();
       case 'what':
         return (
-          <div className="w-full flex flex-col items-center gap-8">
+          <div className="w-full flex flex-col items-center gap-8 max-h-[450px]">
             <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-8">
                 BASIS enables rapid scenario evaluation to identify optimal contracting strategies
