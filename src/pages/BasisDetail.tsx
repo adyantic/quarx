@@ -64,7 +64,7 @@ const BasisDetail: React.FC = () => {
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
-                  className="h-full w-full object-cover rounded-lg"
+                  className="h-full w-full object-contain rounded-lg"
                 />
               </div>
               
