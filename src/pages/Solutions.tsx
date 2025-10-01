@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useIsMobile } from '@/hooks/use-mobile';
 import PayerProviderAccessIcon from '@/assets/Payer_Provider_Access_Strategy.svg';
 import PayerProviderContractingIcon from '@/assets/Payer_Provider_Contracting_Strategy.svg';
 import PullThroughPerformanceIcon from '@/assets/Pull_through_Performance_Tracking.svg';
@@ -12,19 +13,24 @@ interface QuestionCardProps {
 
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
   const [isHovered, setIsHovered] = React.useState(false);
+  const [isClicked, setIsClicked] = React.useState(false);
+  const isMobile = useIsMobile();
+  
+  const isActive = isMobile ? isClicked : isHovered;
   
   return (
     <div 
       className={`w-full h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
-        isHovered && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
-      }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+        isActive && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
+      } ${isMobile && hoverText ? 'cursor-pointer' : ''}`}
+      onMouseEnter={() => !isMobile && setIsHovered(true)}
+      onMouseLeave={() => !isMobile && setIsHovered(false)}
+      onClick={() => isMobile && hoverText && setIsClicked(!isClicked)}
     >
       <p className={`text-[#0B3041] text-xl font-medium leading-8 ${
-        isHovered && hoverText ? 'text-center' : ''
+        isActive && hoverText ? 'text-center' : ''
       }`}>
-        {isHovered && hoverText ? hoverText : question}
+        {isActive && hoverText ? hoverText : question}
       </p>
     </div>
   );
