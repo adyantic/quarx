@@ -53,7 +53,7 @@ const Solutions: React.FC = () => {
         { text: 'How does payer management vary by methods and severity across channels?', hoverText: 'Formulary Landscape Analysis' },
         { text: 'What can I expect my launch access timing and trajectory to look like?', hoverText: 'Time to Access Analysis' },
         { text: 'How do payers vary in their ability to control utilization?', hoverText: 'Claims-based Impact of UM Analysis' },
-        { text: 'Are there local markets where provider influence trumps payer policy?' },
+        { text: 'Are there local markets where provider influence trumps payer policy?', hoverText: 'Sub-national Payer-Provider Influence Map' },
         { text: 'How do I think about my access strategy by specific payer types & segments?' },
         { text: 'What is the optimal affordability range from a patient OOP standpoint?' }
       ]
