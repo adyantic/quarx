@@ -15,11 +15,15 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
   
   return (
     <div 
-      className="w-full min-h-[90px] px-2.5 py-5 bg-white shadow-md border border-gray-300 flex items-center transition-colors"
+      className={`w-full min-h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
+        isHovered && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <p className="text-[#0B3041] text-xl font-medium leading-8">
+      <p className={`text-[#0B3041] text-xl font-medium leading-8 ${
+        isHovered && hoverText ? 'text-center' : ''
+      }`}>
         {isHovered && hoverText ? hoverText : question}
       </p>
     </div>
