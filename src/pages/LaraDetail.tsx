@@ -70,7 +70,7 @@ const LaraDetail: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
                   Comprehensive drug repository with key absolute and relative characteristics
                 </p>
               </div>
@@ -81,7 +81,7 @@ const LaraDetail: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
                   Streamlined agentic analog selection workflow
                 </p>
               </div>
@@ -92,7 +92,7 @@ const LaraDetail: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
                   AI chatbot to enable to a conversational selection process
                 </p>
               </div>
@@ -103,7 +103,7 @@ const LaraDetail: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
                   Dual mode operation: Guided suggestions-driven process vs. Fully AI-driven recommendations
                 </p>
               </div>
@@ -114,7 +114,7 @@ const LaraDetail: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
                   Structured output formats (analog profiles, selection summary & rationale)
                 </p>
               </div>
