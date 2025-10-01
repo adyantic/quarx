@@ -8,16 +8,16 @@ const BasisHowDiagramWithText: React.FC = () => {
       <div className="flex-1 flex flex-col">
         {/* Top Labels */}
         <div className="flex justify-between mb-4 px-4">
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Eligible Patient<br />Base
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Patients<br />with Rx
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Patients with<br />Approved Rx
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Patients with<br />Dispensed Rx
           </div>
         </div>
@@ -31,16 +31,16 @@ const BasisHowDiagramWithText: React.FC = () => {
 
         {/* Bottom Labels */}
         <div className="flex justify-between mt-4 px-4">
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Market Sizing<br />Inputs
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             HCP Demand<br />Sensitivity
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Payer Approach<br />& Sensitivity
           </div>
-          <div className="flex-1 text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] leading-tight">
+          <div className="flex-1 text-[#2C3E50] font-medium text-[24px] leading-tight">
             Patient OOP<br />Sensitivity
           </div>
         </div>
@@ -48,19 +48,19 @@ const BasisHowDiagramWithText: React.FC = () => {
 
       {/* Right Side Output Stack */}
       <div className="flex flex-col justify-center gap-[clamp(0.5rem,1.5vw,1rem)] pl-4">
-        <div className="text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] whitespace-nowrap">
+        <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           Patients
         </div>
-        <div className="text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] whitespace-nowrap">
+        <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           Units
         </div>
-        <div className="text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] whitespace-nowrap">
+        <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           Gross Sales
         </div>
-        <div className="text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] whitespace-nowrap">
+        <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           Net Sales
         </div>
-        <div className="text-[#2C3E50] font-normal text-[clamp(0.7rem,1.3vw,1.1rem)] whitespace-nowrap">
+        <div className="text-[#2C3E50] font-medium text-[24px] whitespace-nowrap">
           GTN
         </div>
       </div>
