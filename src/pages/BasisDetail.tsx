@@ -72,8 +72,11 @@ const BasisDetail: React.FC = () => {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       
-      <main className="flex-1 w-full">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="flex min-h-px w-full bg-muted" />
+      
+      {/* Header Section */}
+      <div className="bg-white">
+        <div className="w-full max-w-[1440px] px-2.5 pt-24 pb-[30px] mx-auto">
           {/* Back to Products */}
           <button 
             onClick={() => navigate('/products')} 
@@ -107,9 +110,13 @@ const BasisDetail: React.FC = () => {
               HOW?
             </button>
           </div>
-
+        </div>
+      </div>
+      
+      <main className="flex-1 mt-[30px] py-[30px] px-2.5 flex flex-col items-center gap-10">
+        <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
-          <div className="pb-16">
+          <div className="w-full flex justify-center">
             {renderContent()}
           </div>
         </div>
