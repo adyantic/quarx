@@ -27,16 +27,14 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
   
   return (
     <div 
-      className={`w-full h-auto min-h-[70px] md:min-h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
-        isActive && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
+      className={`w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors ${
+        isActive && hoverText ? 'bg-[#F1F4F1]' : 'bg-white'
       } ${isTouchDevice && hoverText ? 'cursor-pointer' : ''}`}
       onMouseEnter={() => !isTouchDevice && setIsHovered(true)}
       onMouseLeave={() => !isTouchDevice && setIsHovered(false)}
       onClick={() => isTouchDevice && hoverText && setIsClicked(!isClicked)}
     >
-      <p className={`text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 ${
-        isActive && hoverText ? 'text-center' : ''
-      }`}>
+      <p className={`text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2`}>
         {isActive && hoverText ? hoverText : question}
       </p>
     </div>
