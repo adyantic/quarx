@@ -123,11 +123,100 @@ const LaraDetail: React.FC = () => {
         );
       case 'how':
         return (
-          <div className="w-full flex flex-col items-center gap-8">
+          <div className="w-full flex flex-col items-center gap-12">
             <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
-                HOW content coming soon
+                LARA leverages LLM to both curate/structure the drug repository and to power the agentic analog selection workflow
               </p>
+            </div>
+            
+            <div className="w-full max-w-[1440px] px-4 flex flex-col lg:flex-row gap-6 items-stretch">
+              {/* Card 1: Conversational AI */}
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#5A9BA6] text-white p-6 text-center rounded-t-3xl">
+                  <h3 className="text-xl font-semibold leading-tight">
+                    Conversational AI<br />& Dual Modality
+                  </h3>
+                </div>
+                <div className="p-6 flex-1">
+                  <ul className="space-y-3 text-[#0B3041]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">AI chatbot for conversational querying and analog selection</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Parallel templated user input interface (in addition to NL query)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">UI designed for iterative and incremental selection process</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Structured exportable outputs with the flexibility to reshape the output</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Card 2: Agentic RAG */}
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#5A9BA6] text-white p-6 text-center rounded-t-3xl">
+                  <h3 className="text-xl font-semibold leading-tight">
+                    Agentic RAG<br />Architecture
+                  </h3>
+                </div>
+                <div className="p-6 flex-1">
+                  <ul className="space-y-3 text-[#0B3041]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Multi-agent architecture: Query router, retrieval and summarization agents</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Reduced/structured data + summarized unstructured information to retain context</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Query builder tool for simple queries and drug look-ups</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Pre-defined deterministic workflow to reduce agent ramble</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Card 3: Comprehensive Drug Repository */}
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#5A9BA6] text-white p-6 text-center rounded-t-3xl">
+                  <h3 className="text-xl font-semibold leading-tight">
+                    Comprehensive Drug<br />Repository
+                  </h3>
+                </div>
+                <div className="p-6 flex-1">
+                  <ul className="space-y-3 text-[#0B3041]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Structured data from OpenFDA, Orange/Purple Book, Rx Norm, NDC Directory.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">LLM based curation and structuring of the FDA labels</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Longitudinal event tracking based on regulatory press releases and FDA documents</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lg mt-1">•</span>
+                      <span className="text-base leading-relaxed">Normalized drug pricing; Derivative drug and market characteristics</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         );
