@@ -78,6 +78,8 @@ const Products: React.FC = () => {
                       navigate('/products/chord');
                     } else if (product.title === 'BASIS') {
                       navigate('/products/basis');
+                    } else if (product.title === 'LARA') {
+                      navigate('/products/lara');
                     }
                   }}
                   className="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
