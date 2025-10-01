@@ -440,7 +440,7 @@ const ChordDetail: React.FC = () => {
                              <IconComponent className="w-6 h-6 text-white" />
                            </div>
                            <div className="text-center">
-                             <div className="text-sm font-semibold text-[#0B3041] leading-tight">
+                             <div className="text-sm font-medium text-[#0B3041] leading-tight">
                                {step.title}
                              </div>
                            </div>

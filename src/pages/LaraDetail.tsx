@@ -134,7 +134,7 @@ const LaraDetail: React.FC = () => {
               {/* Card 1: Conversational AI */}
               <div className="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
                 <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
-                  <h3 className="text-xl font-semibold leading-tight">
+                  <h3 className="text-xl font-medium leading-tight">
                     Conversational AI<br />& Dual Modality
                   </h3>
                 </div>
@@ -163,7 +163,7 @@ const LaraDetail: React.FC = () => {
               {/* Card 2: Agentic RAG */}
               <div className="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
                 <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
-                  <h3 className="text-xl font-semibold leading-tight">
+                  <h3 className="text-xl font-medium leading-tight">
                     Agentic RAG<br />Architecture
                   </h3>
                 </div>
@@ -192,7 +192,7 @@ const LaraDetail: React.FC = () => {
               {/* Card 3: Comprehensive Drug Repository */}
               <div className="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
                 <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
-                  <h3 className="text-xl font-semibold leading-tight">
+                  <h3 className="text-xl font-medium leading-tight">
                     Comprehensive Drug<br />Repository
                   </h3>
                 </div>
