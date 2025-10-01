@@ -142,9 +142,9 @@ const Solutions: React.FC = () => {
               </div>
 
               {/* Three Column Layout */}
-              <div className="w-full px-5 flex flex-col lg:flex-row items-start gap-4">
+              <div className="w-full px-5 grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
                 {accessColumns.map((column, index) => (
-                  <div key={index} className="flex-1 flex flex-col gap-2.5">
+                  <div key={index} className="min-w-0 flex flex-col gap-2.5">
                     <ColumnHeader icon={column.icon} title={column.title} />
                     {column.questions.map((question, qIndex) => (
                       <QuestionCard 
