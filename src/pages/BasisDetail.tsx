@@ -58,22 +58,24 @@ const BasisDetail: React.FC = () => {
               </p>
             </div>
             
-            <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4">
+            <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4 items-start">
               {/* Left Image - Navigation/Form */}
-              <div className="flex-[0.25] flex justify-center items-start">
+              <div className="flex-[0.3] flex justify-center">
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
-                  className="w-full h-auto rounded-lg shadow-lg"
+                  className="w-full rounded-lg shadow-lg"
+                  style={{ height: '500px', objectFit: 'contain' }}
                 />
               </div>
               
               {/* Right Image - Charts */}
-              <div className="flex-[0.75] flex justify-center items-start">
+              <div className="flex-[0.7] flex justify-center">
                 <img 
                   src={BasisWhatImg2} 
                   alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
-                  className="w-full h-auto rounded-lg shadow-lg"
+                  className="w-full rounded-lg shadow-lg"
+                  style={{ height: '500px', objectFit: 'contain' }}
                 />
               </div>
             </div>
