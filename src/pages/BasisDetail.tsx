@@ -51,7 +51,7 @@ const BasisDetail: React.FC = () => {
         return renderWhyContent();
       case 'what':
         return (
-          <div className="w-full flex flex-col items-center gap-8 max-h-[450px]">
+          <div className="w-full flex flex-col items-center gap-8">
             <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-8">
                 BASIS enables rapid scenario evaluation to identify optimal contracting strategies
@@ -60,20 +60,20 @@ const BasisDetail: React.FC = () => {
             
             <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4 items-stretch">
               {/* Left Image - Navigation/Form */}
-              <div className="flex-[0.3] flex justify-center h-[450px]">
+              <div className="flex-[0.3] flex items-center justify-center h-[500px] p-2 sm:p-4">
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
-                  className="h-full w-full object-contain rounded-lg"
+                   className="max-h-full max-w-full object-contain rounded-lg"
                 />
               </div>
               
               {/* Right Image - Charts */}
-              <div className="flex-[0.7] flex justify-center h-[500px]">
+              <div className="flex-[0.7] flex items-center justify-center h-[500px] p-2 sm:p-4">
                 <img 
                   src={BasisWhatImg2} 
                   alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
-                  className="h-full w-full object-contain rounded-lg"
+                  className="max-h-full max-w-full object-contain rounded-lg"
                 />
               </div>
             </div>
