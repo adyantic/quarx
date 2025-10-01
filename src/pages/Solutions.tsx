@@ -103,7 +103,7 @@ const Solutions: React.FC = () => {
       <div className="flex min-h-px w-full bg-muted" />
       
       <main className="flex-1 flex flex-col items-center">
-        <div className="w-full max-w-[1440px] px-2.5 py-[50px] flex flex-col items-center gap-[30px]">
+        <div className="w-full max-w-[1440px] px-2.5 pt-[70px] md:pt-[50px] pb-[50px] flex flex-col items-center gap-[30px]">
           {/* Tab Buttons */}
           <div className="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6">
             <button
