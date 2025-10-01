@@ -55,7 +55,7 @@ const Solutions: React.FC = () => {
         { text: 'How do payers vary in their ability to control utilization?', hoverText: 'Claims-based Impact of UM Analysis' },
         { text: 'Are there local markets where provider influence trumps payer policy?', hoverText: 'Sub-national Payer-Provider Influence Map' },
         { text: 'How do I think about my access strategy by specific payer types & segments?', hoverText: 'Quantitative Payer Segmentation' },
-        { text: 'What is the optimal affordability range from a patient OOP standpoint?' }
+        { text: 'What is the optimal affordability range from a patient OOP standpoint?', hoverText: 'Patient OOP Exposure & Sensitivity Analysis' }
       ]
     },
     {
