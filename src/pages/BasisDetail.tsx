@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
+import BasisWhatImg1 from '@/assets/basis-what-img1.png';
+import BasisWhatImg2 from '@/assets/basis-what-img2.png';
 
 const BasisDetail: React.FC = () => {
   const navigate = useNavigate();
@@ -50,9 +52,31 @@ const BasisDetail: React.FC = () => {
       case 'what':
         return (
           <div className="w-full flex flex-col items-center gap-8">
-            <p className="text-center text-[#0B3041] text-2xl">
-              WHAT content coming soon...
-            </p>
+            <div className="w-full max-w-[1440px] px-4">
+              <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-8">
+                BASIS enables rapid scenario evaluation to identify optimal contracting strategies
+              </p>
+            </div>
+            
+            <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4">
+              {/* Left Image - Navigation/Form */}
+              <div className="flex-1 flex justify-center items-start">
+                <img 
+                  src={BasisWhatImg1} 
+                  alt="BASIS Navigation and Target Access Inputs form" 
+                  className="w-full h-auto max-w-[500px] rounded-lg shadow-lg"
+                />
+              </div>
+              
+              {/* Right Image - Charts */}
+              <div className="flex-1 flex justify-center items-start">
+                <img 
+                  src={BasisWhatImg2} 
+                  alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         );
       case 'how':
