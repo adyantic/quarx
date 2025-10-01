@@ -89,7 +89,7 @@ const BasisDetail: React.FC = () => {
               <img src={BasisIcon} alt="BASIS icon" className="w-16 h-16" />
               <div className="flex flex-col gap-2">
                 <h1 className="text-[#0B3041] text-3xl md:text-4xl font-medium leading-tight">
-                  <span className="font-medium">BASIS</span> (Brand Access Strategy Impact Simulator) is a structure-driven simulation tool to quantify the impact of access shifts on brand utilization & GTN
+                  <span className="font-medium">BASIS</span> (Brand Access Strategy Impact Simulator) is a structure-driven simulation tool <span className="text-[#5A9BA6]">to quantify the impact of access shifts on brand utilization & GTN</span>
                 </h1>
               </div>
             </div>
