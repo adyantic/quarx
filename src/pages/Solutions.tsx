@@ -49,8 +49,8 @@ interface ColumnHeaderProps {
 }
 
 const ColumnHeader: React.FC<ColumnHeaderProps> = ({ icon, title }) => (
-  <div className="w-full h-auto min-h-[90px] md:min-h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
-    <div className="flex-shrink-0 scale-75 md:scale-100">
+  <div className="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+    <div className="flex-shrink-0 w-[44px] md:w-[58px] h-[65px] md:h-[87px] flex items-center justify-center scale-75 md:scale-100">
       {icon}
     </div>
     <h3 className="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9" dangerouslySetInnerHTML={{ __html: title }} />
