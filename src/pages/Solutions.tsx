@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { KeyRound, Handshake, TrendingUp } from 'lucide-react';
+import PayerProviderAccessIcon from '@/assets/Payer_Provider_Access_Strategy.svg';
+import PayerProviderContractingIcon from '@/assets/Payer_Provider_Contracting_Strategy.svg';
+import PullThroughPerformanceIcon from '@/assets/Pull_through_Performance_Tracking.svg';
 
 interface QuestionCardProps {
   question: string;
@@ -22,9 +24,7 @@ interface ColumnHeaderProps {
 
 const ColumnHeader: React.FC<ColumnHeaderProps> = ({ icon, title }) => (
   <div className="w-full h-[115px] px-2.5 py-5 bg-[#7097AA] flex items-center justify-center gap-5">
-    <div className="text-white">
-      {icon}
-    </div>
+    {icon}
     <h3 className="text-white text-2xl font-medium leading-9" dangerouslySetInnerHTML={{ __html: title }} />
   </div>
 );
@@ -34,7 +34,7 @@ const Solutions: React.FC = () => {
 
   const accessColumns = [
     {
-      icon: <KeyRound size={56} strokeWidth={2} />,
+      icon: <img src={PayerProviderAccessIcon} alt="Payer-Provider Access Strategy" className="w-[58px] h-[87px]" />,
       title: 'Payer-Provider <br/>Access Strategy',
       questions: [
         'How does payer management vary by methods and severity across channels?',
@@ -46,7 +46,7 @@ const Solutions: React.FC = () => {
       ]
     },
     {
-      icon: <Handshake size={56} strokeWidth={2} />,
+      icon: <img src={PayerProviderContractingIcon} alt="Payer-Provider Contracting Strategy" className="w-[88px] h-[57px]" />,
       title: 'Payer-Provider <br/>Contracting Strategy',
       questions: [
         'What is the optimal channel contracting strategy that aligns with my brand strategy?',
@@ -57,7 +57,7 @@ const Solutions: React.FC = () => {
       ]
     },
     {
-      icon: <TrendingUp size={56} strokeWidth={2} />,
+      icon: <img src={PullThroughPerformanceIcon} alt="Pull-through & Performance Tracking" className="w-[56px] h-[73px]" />,
       title: 'Pull-through & <br/>Performance Tracking',
       questions: [
         'How do I flex physician targeting to maximize access pull-through at launch?',
