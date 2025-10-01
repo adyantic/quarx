@@ -11,20 +11,19 @@ interface QuestionCardProps {
 }
 
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isToggled, setIsToggled] = React.useState(false);
   
   return (
     <div 
-      className={`w-full h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
-        isHovered && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
+      className={`w-full h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors cursor-pointer ${
+        isToggled && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
       }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onClick={() => hoverText && setIsToggled(!isToggled)}
     >
       <p className={`text-[#0B3041] text-xl font-medium leading-8 ${
-        isHovered && hoverText ? 'text-center' : ''
+        isToggled && hoverText ? 'text-center' : ''
       }`}>
-        {isHovered && hoverText ? hoverText : question}
+        {isToggled && hoverText ? hoverText : question}
       </p>
     </div>
   );
