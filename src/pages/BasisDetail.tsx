@@ -60,7 +60,7 @@ const BasisDetail: React.FC = () => {
             
             <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4 items-stretch">
               {/* Left Image - Navigation/Form */}
-              <div className="flex-[0.3] flex justify-center h-[500px]">
+              <div className="flex-[0.3] flex justify-center h-[450px]">
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
