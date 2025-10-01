@@ -444,10 +444,8 @@ const ChordDetail: React.FC = () => {
                                {step.title}
                              </div>
                            </div>
-                         </div>}
-                      {/* Bottom point of shield - only for non-image items */}
-                      {index !== 0 && <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent ${step.color.includes('purple') ? 'border-t-purple-100' : step.color.includes('orange') ? 'border-t-orange-100' : step.color.includes('teal') ? 'border-t-teal-100' : step.color.includes('emerald') ? 'border-t-emerald-100' : 'border-t-cyan-100'}`}></div>}
-                    </div>
+                          </div>}
+                     </div>
 
                     {/* Step indicator */}
                     
