@@ -63,10 +63,10 @@ const Solutions: React.FC = () => {
       title: 'Payer-Provider <br/>Contracting Strategy',
       questions: [
         { text: 'What is the optimal channel contracting strategy that aligns with my brand strategy?', hoverText: 'Channel Access Strategy Simulation' },
-        { text: 'What is the optimal contracting play for a given PBM or payer?' },
-        { text: 'How much downstream payer coverage can I expect with each of the big 3 PBMs?' },
-        { text: 'What are the rebates my competitor is likely to offer to a specific PBM or payer?' },
-        { text: 'To what extent does practice economics impact provider brand preference?' }
+        { text: 'What is the optimal contracting play for a given PBM or payer?', hoverText: 'Contract Simulation/Deal-View Modeling' },
+        { text: 'How much downstream payer coverage can I expect with each of the big 3 PBMs?', hoverText: 'PBM Downstream Adherence Analysis' },
+        { text: 'What are the rebates my competitor is likely to offer to a specific PBM or payer?', hoverText: 'Competitive Rebate Equilibrium Simulation' },
+        { text: 'To what extent does practice economics impact provider brand preference?', hoverText: 'Reimbursement Landscape & NCR Analysis' }
       ]
     },
     {
