@@ -6,7 +6,7 @@ import { ChevronLeft } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
 import BasisWhatImg1 from '@/assets/basis-what-img1.png';
 import BasisWhatImg2 from '@/assets/basis-what-img2.png';
-import BasisHowDiagram from '@/components/BasisHowDiagram';
+import BasisHowDiagram from '@/assets/basis-how-diagram.png';
 
 const BasisDetail: React.FC = () => {
   const navigate = useNavigate();
@@ -90,7 +90,11 @@ const BasisDetail: React.FC = () => {
             </div>
             
             <div className="w-full max-w-[1440px] px-4 flex justify-center">
-              <BasisHowDiagram />
+              <img 
+                src={BasisHowDiagram} 
+                alt="BASIS patient flow diagram showing market sizing inputs, patient journey stages from eligible patient base through HCP demand sensitivity, payer approach and patient OOP sensitivity, leading to outputs of patients, units, gross sales, net sales and GTN" 
+                className="w-full max-w-5xl h-auto object-contain"
+              />
             </div>
           </div>
         );
