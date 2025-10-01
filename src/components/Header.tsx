@@ -41,9 +41,16 @@ const Header: React.FC = () => {
           >
             PRODUCTS
           </Link>
-          <button className="text-[#0B3041] hover:text-[#156082] text-lg lg:text-2xl font-light transition-colors duration-200">
+          <Link 
+            to="/solutions" 
+            className={`text-lg lg:text-2xl font-light transition-colors duration-200 ${
+              location.pathname === '/solutions' 
+                ? 'text-[#5A9BA6]' 
+                : 'text-[#0B3041] hover:text-[#156082]'
+            }`}
+          >
             SOLUTIONS
-          </button>
+          </Link>
           <button className="text-[#0B3041] hover:text-[#156082] text-lg lg:text-2xl font-light transition-colors duration-200">
             TEAM
           </button>
@@ -81,12 +88,17 @@ const Header: React.FC = () => {
               >
                 PRODUCTS
               </Link>
-              <button 
-                className="text-[#0B3041] hover:text-[#156082] text-lg s24:text-xl font-light transition-colors duration-200 text-left"
+              <Link 
+                to="/solutions" 
+                className={`text-lg s24:text-xl font-light transition-colors duration-200 ${
+                  location.pathname === '/solutions' 
+                    ? 'text-[#5A9BA6]' 
+                    : 'text-[#0B3041] hover:text-[#156082]'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 SOLUTIONS
-              </button>
+              </Link>
               <button 
                 className="text-[#0B3041] hover:text-[#156082] text-lg s24:text-xl font-light transition-colors duration-200 text-left"
                 onClick={() => setIsMenuOpen(false)}
