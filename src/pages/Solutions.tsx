@@ -27,14 +27,14 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
   
   return (
     <div 
-      className={`w-full h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
+      className={`w-full h-auto min-h-[70px] md:min-h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
         isActive && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
       } ${isTouchDevice && hoverText ? 'cursor-pointer' : ''}`}
       onMouseEnter={() => !isTouchDevice && setIsHovered(true)}
       onMouseLeave={() => !isTouchDevice && setIsHovered(false)}
       onClick={() => isTouchDevice && hoverText && setIsClicked(!isClicked)}
     >
-      <p className={`text-[#0B3041] text-xl font-medium leading-8 ${
+      <p className={`text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 ${
         isActive && hoverText ? 'text-center' : ''
       }`}>
         {isActive && hoverText ? hoverText : question}
@@ -49,9 +49,11 @@ interface ColumnHeaderProps {
 }
 
 const ColumnHeader: React.FC<ColumnHeaderProps> = ({ icon, title }) => (
-  <div className="w-full h-[115px] px-2.5 py-5 bg-[#7097AA] flex items-center justify-center gap-5">
-    {icon}
-    <h3 className="text-white text-2xl font-medium leading-9" dangerouslySetInnerHTML={{ __html: title }} />
+  <div className="w-full h-auto min-h-[90px] md:min-h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+    <div className="flex-shrink-0 scale-75 md:scale-100">
+      {icon}
+    </div>
+    <h3 className="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9" dangerouslySetInnerHTML={{ __html: title }} />
   </div>
 );
 
@@ -103,26 +105,26 @@ const Solutions: React.FC = () => {
       <main className="flex-1 flex flex-col items-center">
         <div className="w-full max-w-[1440px] px-2.5 py-[50px] flex flex-col items-center gap-[30px]">
           {/* Tab Buttons */}
-          <div className="self-stretch px-5 flex items-center gap-6">
+          <div className="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6">
             <button
               onClick={() => setActiveTab('access')}
-              className={`px-4 py-[11px] rounded-full border transition-colors ${
+              className={`w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors ${
                 activeTab === 'access'
                   ? 'bg-[#156082] text-white border-[#156082]'
                   : 'bg-transparent text-[#7097AA] border-[#7097AA]'
               }`}
             >
-              <span className="text-xl font-medium leading-8">Access & Reimbursement Analytics</span>
+              <span className="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
             </button>
             <button
               onClick={() => setActiveTab('segmentation')}
-              className={`px-4 py-[11px] rounded-full border transition-colors ${
+              className={`w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors ${
                 activeTab === 'segmentation'
                   ? 'bg-[#156082] text-white border-[#156082]'
                   : 'bg-transparent text-[#7097AA] border-[#7097AA]'
               }`}
             >
-              <span className="text-xl font-medium leading-8">Customer Segmentation</span>
+              <span className="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
             </button>
           </div>
 
@@ -130,8 +132,8 @@ const Solutions: React.FC = () => {
           {activeTab === 'access' && (
             <div className="self-stretch px-2.5 flex flex-col items-center">
               {/* Title */}
-              <div className="w-full max-w-[1400px] text-center mb-5">
-                <h1 className="text-4xl font-medium leading-[48px]">
+              <div className="w-full max-w-[1400px] text-center mb-5 px-2">
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
                   <span className="text-[#0B3041]">
                     Access & Reimbursement Analytics: Our solutions are designed to answer specific questions to{' '}
                   </span>
