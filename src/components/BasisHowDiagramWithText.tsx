@@ -1,5 +1,5 @@
 import React from 'react';
-import BasisHowDiagram from '@/assets/basis-how-diagram.png';
+import BasisHowDiagram from '@/assets/basis-how-diagram-clean.png';
 
 const BasisHowDiagramWithText: React.FC = () => {
   return (
