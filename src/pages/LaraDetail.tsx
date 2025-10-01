@@ -54,9 +54,70 @@ const LaraDetail: React.FC = () => {
         return (
           <div className="w-full flex flex-col items-center gap-8">
             <div className="w-full max-w-[1440px] px-4">
-              <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
-                WHAT content coming soon
+              <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-12">
+                LARA has been specifically designed to make analog selection a fully-informed, efficient and streamlined exercise.
               </p>
+            </div>
+            
+            <div className="w-full max-w-4xl flex flex-col gap-6 px-4">
+              <h2 className="text-[#0B3041] text-2xl font-bold mb-4">
+                Key Features
+              </h2>
+              
+              <div className="flex items-start gap-4 p-2 rounded-md">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                  Comprehensive drug repository with key absolute and relative characteristics
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-4 p-2 rounded-md">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                  Streamlined agentic analog selection workflow
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-4 p-2 rounded-md">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                  AI chatbot to enable to a conversational selection process
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-4 p-2 rounded-md">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                  Dual mode operation: Guided suggestions-driven process vs. Fully AI-driven recommendations
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-4 p-2 rounded-md">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-[#0B3041] text-xl font-normal leading-relaxed">
+                  Structured output formats (analog profiles, selection summary & rationale)
+                </p>
+              </div>
             </div>
           </div>
         );
