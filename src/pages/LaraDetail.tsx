@@ -11,13 +11,13 @@ const LaraDetail: React.FC = () => {
 
   const renderWhyContent = () => (
     <div className="w-full flex flex-col items-center gap-8">
-      <div className="w-3/4 mx-auto px-4">
+      <div className="w-full max-w-[1440px] px-4">
         <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
           Analyzing analog drugs is a critical element of understanding market landscape, setting expectations and developing launch benchmarks.
         </p>
       </div>
       
-      <div className="w-3/4 mx-auto flex flex-col gap-6 px-4">
+      <div className="w-full max-w-4xl flex flex-col gap-6 px-4">
         <p className="text-[#0B3041] text-2xl font-bold">
           But the analog selection is often rushed and handled sub-optimally due to the following challenges:
         </p>
@@ -53,13 +53,13 @@ const LaraDetail: React.FC = () => {
       case 'what':
         return (
           <div className="w-full flex flex-col items-center gap-8">
-            <div className="w-3/4 mx-auto px-4">
+            <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-12">
                 LARA has been specifically designed to make analog selection a fully-informed, efficient and streamlined exercise.
               </p>
             </div>
             
-            <div className="w-3/4 mx-auto flex flex-col gap-6 px-4">
+            <div className="w-full max-w-4xl flex flex-col gap-6 px-4">
               <h2 className="text-[#0B3041] text-2xl font-bold mb-4">
                 Key Features
               </h2>
@@ -124,16 +124,16 @@ const LaraDetail: React.FC = () => {
       case 'how':
         return (
           <div className="w-full flex flex-col items-center gap-12">
-            <div className="w-3/4 mx-auto px-4">
+            <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
                 LARA leverages LLM to both curate/structure the drug repository and to power the agentic analog selection workflow
               </p>
             </div>
             
-            <div className="w-3/4 mx-auto px-4 flex flex-col lg:flex-row gap-6 items-stretch">
+            <div className="w-full max-w-[1440px] px-4 flex flex-col lg:flex-row gap-6 items-stretch">
               {/* Card 1: Conversational AI */}
-              <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="bg-[#7097AA] text-white p-6 text-center">
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
                   <h3 className="text-xl font-semibold leading-tight">
                     Conversational AI<br />& Dual Modality
                   </h3>
@@ -161,8 +161,8 @@ const LaraDetail: React.FC = () => {
               </div>
 
               {/* Card 2: Agentic RAG */}
-              <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="bg-[#7097AA] text-white p-6 text-center">
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
                   <h3 className="text-xl font-semibold leading-tight">
                     Agentic RAG<br />Architecture
                   </h3>
@@ -190,8 +190,8 @@ const LaraDetail: React.FC = () => {
               </div>
 
               {/* Card 3: Comprehensive Drug Repository */}
-              <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="bg-[#7097AA] text-white p-6 text-center">
+              <div className="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
                   <h3 className="text-xl font-semibold leading-tight">
                     Comprehensive Drug<br />Repository
                   </h3>
@@ -233,7 +233,7 @@ const LaraDetail: React.FC = () => {
       
       {/* Header Section */}
       <div className="bg-white">
-        <div className="w-3/4 px-2.5 pt-24 pb-[30px] mx-auto">
+        <div className="w-full max-w-[1440px] px-2.5 pt-24 pb-[30px] mx-auto">
           {/* Back to Products */}
           <button 
             onClick={() => navigate('/products')} 
@@ -271,7 +271,7 @@ const LaraDetail: React.FC = () => {
       </div>
       
       <main className="flex-1 mt-[30px] py-[30px] px-2.5 flex flex-col items-center gap-10">
-        <div className="w-3/4 px-2.5 mx-auto flex flex-col gap-12">
+        <div className="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
           {/* Content */}
           <div className="w-full flex justify-center">
             {renderContent()}
