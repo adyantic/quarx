@@ -7,15 +7,24 @@ import PullThroughPerformanceIcon from '@/assets/Pull_through_Performance_Tracki
 
 interface QuestionCardProps {
   question: string;
+  hoverText?: string;
 }
 
-const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => (
-  <div className="w-full min-h-[90px] px-2.5 py-5 bg-white shadow-md border border-gray-300 flex items-center">
-    <p className="text-[#0B3041] text-xl font-medium leading-8">
-      {question}
-    </p>
-  </div>
-);
+const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+  
+  return (
+    <div 
+      className="w-full min-h-[90px] px-2.5 py-5 bg-white shadow-md border border-gray-300 flex items-center transition-colors"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <p className="text-[#0B3041] text-xl font-medium leading-8">
+        {isHovered && hoverText ? hoverText : question}
+      </p>
+    </div>
+  );
+};
 
 interface ColumnHeaderProps {
   icon: React.ReactNode;
@@ -37,33 +46,33 @@ const Solutions: React.FC = () => {
       icon: <img src={PayerProviderAccessIcon} alt="Payer-Provider Access Strategy" className="w-[58px] h-[87px]" />,
       title: 'Payer-Provider <br/>Access Strategy',
       questions: [
-        'How does payer management vary by methods and severity across channels?',
-        'What can I expect my launch access timing and trajectory to look like?',
-        'How do payers vary in their ability to control utilization?',
-        'Are there local markets where provider influence trumps payer policy?',
-        'How do I think about my access strategy by specific payer types & segments?',
-        'What is the optimal affordability range from a patient OOP standpoint?'
+        { text: 'How does payer management vary by methods and severity across channels?', hoverText: 'Formulary Landscape Analysis' },
+        { text: 'What can I expect my launch access timing and trajectory to look like?' },
+        { text: 'How do payers vary in their ability to control utilization?' },
+        { text: 'Are there local markets where provider influence trumps payer policy?' },
+        { text: 'How do I think about my access strategy by specific payer types & segments?' },
+        { text: 'What is the optimal affordability range from a patient OOP standpoint?' }
       ]
     },
     {
       icon: <img src={PayerProviderContractingIcon} alt="Payer-Provider Contracting Strategy" className="w-[88px] h-[57px]" />,
       title: 'Payer-Provider <br/>Contracting Strategy',
       questions: [
-        'What is the optimal channel contracting strategy that aligns with my brand strategy?',
-        'What is the optimal contracting play for a given PBM or payer?',
-        'How much downstream payer coverage can I expect with each of the big 3 PBMs?',
-        'What are the rebates my competitor is likely to offer to a specific PBM or payer?',
-        'To what extent does practice economics impact provider brand preference?'
+        { text: 'What is the optimal channel contracting strategy that aligns with my brand strategy?' },
+        { text: 'What is the optimal contracting play for a given PBM or payer?' },
+        { text: 'How much downstream payer coverage can I expect with each of the big 3 PBMs?' },
+        { text: 'What are the rebates my competitor is likely to offer to a specific PBM or payer?' },
+        { text: 'To what extent does practice economics impact provider brand preference?' }
       ]
     },
     {
       icon: <img src={PullThroughPerformanceIcon} alt="Pull-through & Performance Tracking" className="w-[56px] h-[73px]" />,
       title: 'Pull-through & <br/>Performance Tracking',
       questions: [
-        'How do I flex physician targeting to maximize access pull-through at launch?',
-        'How do I optimize my reimbursement support to maximize patient acquisition?',
-        'Are there HCPs who are prescribing below expectations despite favorable access?',
-        'How do my brand\'s access & performance KPIs compare with other analog launches?'
+        { text: 'How do I flex physician targeting to maximize access pull-through at launch?' },
+        { text: 'How do I optimize my reimbursement support to maximize patient acquisition?' },
+        { text: 'Are there HCPs who are prescribing below expectations despite favorable access?' },
+        { text: 'How do my brand\'s access & performance KPIs compare with other analog launches?' }
       ]
     }
   ];
@@ -121,7 +130,11 @@ const Solutions: React.FC = () => {
                   <div key={index} className="flex-1 flex flex-col gap-2.5">
                     <ColumnHeader icon={column.icon} title={column.title} />
                     {column.questions.map((question, qIndex) => (
-                      <QuestionCard key={qIndex} question={question} />
+                      <QuestionCard 
+                        key={qIndex} 
+                        question={typeof question === 'string' ? question : question.text}
+                        hoverText={typeof question === 'object' ? question.hoverText : undefined}
+                      />
                     ))}
                   </div>
                 ))}
