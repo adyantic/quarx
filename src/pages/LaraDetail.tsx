@@ -65,56 +65,56 @@ const LaraDetail: React.FC = () => {
               </h2>
               
               <div className="flex items-start gap-4 p-2 rounded-md">
-                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
                   <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-tight">
                   Comprehensive drug repository with key absolute and relative characteristics
                 </p>
               </div>
               
               <div className="flex items-start gap-4 p-2 rounded-md">
-                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
                   <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-tight">
                   Streamlined agentic analog selection workflow
                 </p>
               </div>
               
               <div className="flex items-start gap-4 p-2 rounded-md">
-                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
                   <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-tight">
                   AI chatbot to enable to a conversational selection process
                 </p>
               </div>
               
               <div className="flex items-start gap-4 p-2 rounded-md">
-                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
                   <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-tight">
                   Dual mode operation: Guided suggestions-driven process vs. Fully AI-driven recommendations
                 </p>
               </div>
               
               <div className="flex items-start gap-4 p-2 rounded-md">
-                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
                   <svg className="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-[#0B3041] text-2xl font-medium leading-relaxed">
+                <p className="text-[#0B3041] text-2xl font-medium leading-tight">
                   Structured output formats (analog profiles, selection summary & rationale)
                 </p>
               </div>
