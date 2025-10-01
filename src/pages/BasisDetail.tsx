@@ -74,13 +74,13 @@ const BasisDetail: React.FC = () => {
       
       <main className="flex-1 w-full">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* Back button */}
-          <button
-            onClick={() => navigate('/products')}
-            className="flex items-center gap-2 text-[#5A9BA6] text-xl mb-8 hover:text-[#40A3BD] transition-colors"
+          {/* Back to Products */}
+          <button 
+            onClick={() => navigate('/products')} 
+            className="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8 bg-white py-2 rounded-md"
           >
-            <ChevronLeft className="w-6 h-6" />
-            Back to Products
+            <ChevronLeft className="w-5 h-5" />
+            <span className="text-lg font-medium">Back to Products</span>
           </button>
           
           {/* Title and Icon */}
@@ -95,36 +95,15 @@ const BasisDetail: React.FC = () => {
             </div>
           </div>
 
-          {/* Tab Navigation */}
-          <div className="flex justify-center gap-4 mb-12">
-            <button
-              onClick={() => setActiveTab('why')}
-              className={`px-12 py-3 text-2xl font-light transition-all ${
-                activeTab === 'why'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#E8E8E8] text-[#0B3041] hover:bg-[#D0D0D0]'
-              }`}
-            >
+          {/* Navigation Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20">
+            <button onClick={() => setActiveTab('why')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               WHY?
             </button>
-            <button
-              onClick={() => setActiveTab('what')}
-              className={`px-12 py-3 text-2xl font-light transition-all ${
-                activeTab === 'what'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#E8E8E8] text-[#0B3041] hover:bg-[#D0D0D0]'
-              }`}
-            >
+            <button onClick={() => setActiveTab('what')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'what' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               WHAT?
             </button>
-            <button
-              onClick={() => setActiveTab('how')}
-              className={`px-12 py-3 text-2xl font-light transition-all ${
-                activeTab === 'how'
-                  ? 'bg-[#156082] text-white'
-                  : 'bg-[#E8E8E8] text-[#0B3041] hover:bg-[#D0D0D0]'
-              }`}
-            >
+            <button onClick={() => setActiveTab('how')} className={`w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center ${activeTab === 'how' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'}`}>
               HOW?
             </button>
           </div>
