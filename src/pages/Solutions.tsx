@@ -73,10 +73,10 @@ const Solutions: React.FC = () => {
       icon: <img src={PullThroughPerformanceIcon} alt="Pull-through & Performance Tracking" className="w-[56px] h-[73px]" />,
       title: 'Pull-through & <br/>Performance Tracking',
       questions: [
-        { text: 'How do I flex physician targeting to maximize access pull-through at launch?' },
-        { text: 'How do I optimize my reimbursement support to maximize patient acquisition?' },
-        { text: 'Are there HCPs who are prescribing below expectations despite favorable access?' },
-        { text: 'How do my brand\'s access & performance KPIs compare with other analog launches?' }
+        { text: 'How do I flex physician targeting to maximize access pull-through at launch?', hoverText: 'HCP Targeting for Access Pull-through' },
+        { text: 'How do I optimize my reimbursement support to maximize patient acquisition?', hoverText: 'Reimbursement Support Optimization' },
+        { text: 'Are there HCPs who are prescribing below expectations despite favorable access?', hoverText: 'HCP Access-Performance Benchmarking' },
+        { text: 'How do my brand\'s access & performance KPIs compare with other analog launches?', hoverText: 'Access KPI Tracking/Benchmarking' }
       ]
     }
   ];
