@@ -18,7 +18,7 @@ const LaraDetail: React.FC = () => {
       </div>
       
       <div className="w-full max-w-4xl flex flex-col gap-6 px-4">
-        <p className="text-[#0B3041] text-2xl font-medium">
+        <p className="text-[#0B3041] text-2xl font-bold">
           But the analog selection is often rushed and handled sub-optimally due to the following challenges:
         </p>
         
