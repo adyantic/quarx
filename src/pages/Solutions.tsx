@@ -14,18 +14,25 @@ interface QuestionCardProps {
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, hoverText }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const [isClicked, setIsClicked] = React.useState(false);
-  const isMobile = useIsMobile();
+  const [isTouchDevice, setIsTouchDevice] = React.useState(false);
   
-  const isActive = isMobile ? isClicked : isHovered;
+  React.useEffect(() => {
+    setIsTouchDevice(window.innerWidth < 1024);
+    const handleResize = () => setIsTouchDevice(window.innerWidth < 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+  const isActive = isTouchDevice ? isClicked : isHovered;
   
   return (
     <div 
       className={`w-full h-[90px] px-2.5 py-5 shadow-md border border-gray-300 flex items-center transition-colors ${
         isActive && hoverText ? 'bg-[#F1F4F1] justify-center' : 'bg-white justify-start'
-      } ${isMobile && hoverText ? 'cursor-pointer' : ''}`}
-      onMouseEnter={() => !isMobile && setIsHovered(true)}
-      onMouseLeave={() => !isMobile && setIsHovered(false)}
-      onClick={() => isMobile && hoverText && setIsClicked(!isClicked)}
+      } ${isTouchDevice && hoverText ? 'cursor-pointer' : ''}`}
+      onMouseEnter={() => !isTouchDevice && setIsHovered(true)}
+      onMouseLeave={() => !isTouchDevice && setIsHovered(false)}
+      onClick={() => isTouchDevice && hoverText && setIsClicked(!isClicked)}
     >
       <p className={`text-[#0B3041] text-xl font-medium leading-8 ${
         isActive && hoverText ? 'text-center' : ''
