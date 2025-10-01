@@ -64,7 +64,7 @@ const BasisDetail: React.FC = () => {
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
-                  className="w-full rounded-lg shadow-lg"
+                  className="w-full rounded-lg"
                   style={{ height: '500px', objectFit: 'contain' }}
                 />
               </div>
@@ -74,7 +74,7 @@ const BasisDetail: React.FC = () => {
                 <img 
                   src={BasisWhatImg2} 
                   alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
-                  className="w-full rounded-lg shadow-lg"
+                  className="w-full rounded-lg"
                   style={{ height: '500px', objectFit: 'contain' }}
                 />
               </div>
