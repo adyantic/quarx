@@ -60,16 +60,16 @@ const BasisDetail: React.FC = () => {
             
             <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4">
               {/* Left Image - Navigation/Form */}
-              <div className="flex-1 flex justify-center items-start">
+              <div className="flex-[0.35] flex justify-center items-start">
                 <img 
                   src={BasisWhatImg1} 
                   alt="BASIS Navigation and Target Access Inputs form" 
-                  className="w-full h-auto max-w-[500px] rounded-lg shadow-lg"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
               
               {/* Right Image - Charts */}
-              <div className="flex-1 flex justify-center items-start">
+              <div className="flex-[0.65] flex justify-center items-start">
                 <img 
                   src={BasisWhatImg2} 
                   alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
