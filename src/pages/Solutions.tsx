@@ -62,7 +62,7 @@ const Solutions: React.FC = () => {
       icon: <img src={PayerProviderContractingIcon} alt="Payer-Provider Contracting Strategy" className="w-[88px] h-[57px]" />,
       title: 'Payer-Provider <br/>Contracting Strategy',
       questions: [
-        { text: 'What is the optimal channel contracting strategy that aligns with my brand strategy?' },
+        { text: 'What is the optimal channel contracting strategy that aligns with my brand strategy?', hoverText: 'Channel Access Strategy Simulation' },
         { text: 'What is the optimal contracting play for a given PBM or payer?' },
         { text: 'How much downstream payer coverage can I expect with each of the big 3 PBMs?' },
         { text: 'What are the rebates my competitor is likely to offer to a specific PBM or payer?' },
