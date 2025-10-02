@@ -59,28 +59,28 @@ const PatientJourneyDetail: React.FC = () => {
           </div>
 
           {/* Journey Flow Diagram */}
-          <div className="w-full px-2 md:px-5 mt-12">
+          <div className="w-full px-4 md:px-5 mt-6 md:mt-12">
             <div className="max-w-[1200px] mx-auto">
-              {/* Grid Layout Container */}
-              <div className="grid grid-cols-6 gap-1">
+              {/* Grid Layout Container - Responsive */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-6 lg:gap-1">
                 
                 {/* Column 1 - Awareness & Recognition */}
                 <div className="flex flex-col items-center">
-                  {/* Icon above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon above */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
                       <img src={patientIcon} alt="Patient" className="w-full h-full" />
                     </div>
                   </div>
                   
-                  {/* Arrow box */}
-                  <div className="relative z-10 bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  {/* Arrow box - vertical arrow on mobile, horizontal on desktop */}
+                  <div className="relative z-10 bg-[#9DBFD0] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Awareness &<br />Recognition
                   </div>
                   
-                  {/* Text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text below */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
                       How do patients first become aware of symptoms? How do they seek medical care?
                     </p>
                   </div>
@@ -88,21 +88,27 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 2 - Presentation & Diagnosis */}
                 <div className="flex flex-col items-center">
-                  {/* Text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text above on desktop, icon on mobile */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                      <img src={presentationIcon} alt="Presentation & Diagnosis" className="w-full h-full" />
+                    </div>
+                    <p className="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
                       Where do patients initially present and where are they initially diagnosed?
                     </p>
                   </div>
                   
                   {/* Arrow box */}
-                  <div className="relative z-10 bg-[#7AADC4] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#7AADC4] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Presentation<br />& Diagnosis
                   </div>
                   
-                  {/* Icon below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon below on desktop, text on mobile */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                      Where do patients initially present and where are they initially diagnosed?
+                    </p>
+                    <div className="hidden lg:flex w-20 h-20 items-center justify-center">
                       <img src={presentationIcon} alt="Presentation & Diagnosis" className="w-full h-full" />
                     </div>
                   </div>
@@ -110,21 +116,21 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 3 - Treatment Selection */}
                 <div className="flex flex-col items-center">
-                  {/* Icon above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon above */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
                       <img src={treatmentIcon} alt="Treatment Selection" className="w-full h-full" />
                     </div>
                   </div>
                   
                   {/* Arrow box */}
-                  <div className="relative z-10 bg-[#5A9BA6] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#5A9BA6] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Treatment<br />Selection
                   </div>
                   
-                  {/* Text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text below */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
                       What patient characteristics are most likely to receive your brand?
                     </p>
                   </div>
@@ -132,21 +138,27 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 4 - Brand Selection */}
                 <div className="flex flex-col items-center">
-                  {/* Text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text above on desktop, icon on mobile */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                      <img src={brandSelectionIcon} alt="Brand Selection" className="w-full h-full" />
+                    </div>
+                    <p className="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What patient characteristics and/or external factors influence treatment choice?
                     </p>
                   </div>
                   
                   {/* Arrow box */}
-                  <div className="relative z-10 bg-[#2D7A8F] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#2D7A8F] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Brand<br />Selection
                   </div>
                   
-                  {/* Icon below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon below on desktop, text on mobile */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                      What patient characteristics and/or external factors influence treatment choice?
+                    </p>
+                    <div className="hidden lg:flex w-20 h-20 items-center justify-center">
                       <img src={brandSelectionIcon} alt="Brand Selection" className="w-full h-full" />
                     </div>
                   </div>
@@ -154,21 +166,21 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 5 - Brand Access */}
                 <div className="flex flex-col items-center">
-                  {/* Icon above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon above */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
                       <img src={brandAccessIcon} alt="Brand Access" className="w-full h-full" />
                     </div>
                   </div>
                   
                   {/* Arrow box */}
-                  <div className="relative z-10 bg-[#1E5A6B] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#1E5A6B] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Brand<br />Access
                   </div>
                   
-                  {/* Text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text below */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
                       What access hurdles are patients experiencing related to your brand?
                     </p>
                   </div>
@@ -176,21 +188,27 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 6 - Switching & Progression */}
                 <div className="flex flex-col items-center">
-                  {/* Text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end mb-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  {/* Text above on desktop, icon on mobile */}
+                  <div className="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                    <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                      <img src={switchingIcon} alt="Switching & Progression" className="w-full h-full" />
+                    </div>
+                    <p className="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What are the switching dynamics related to your brand and competitors?
                     </p>
                   </div>
                   
                   {/* Arrow box */}
-                  <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#0B3041] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full [clip-path:polygon(0_0,100%_0,100%_calc(100%-15px),50%_100%,0_calc(100%-15px))] lg:[clip-path:polygon(0_0,calc(100%-20px)_0,100%_50%,calc(100%-20px)_100%,0_100%,15px_50%)]">
                     Switching &<br />Progression
                   </div>
                   
-                  {/* Icon below - fixed height */}
-                  <div className="flex flex-col items-center justify-start mt-6 h-32">
-                    <div className="w-20 h-20 flex items-center justify-center">
+                  {/* Icon below on desktop, text on mobile */}
+                  <div className="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                    <p className="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                      What are the switching dynamics related to your brand and competitors?
+                    </p>
+                    <div className="hidden lg:flex w-20 h-20 items-center justify-center">
                       <img src={switchingIcon} alt="Switching & Progression" className="w-full h-full" />
                     </div>
                   </div>
