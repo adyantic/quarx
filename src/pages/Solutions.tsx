@@ -192,7 +192,7 @@ const Solutions: React.FC = () => {
                   <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
                     <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                       <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
-                        <img src={PatientIcon} alt="Patient" className="w-14 h-14" />
+                        <img src={PatientIcon} alt="Patient" className="w-14 h-14 brightness-0 invert" />
                         <h3 className="text-white text-2xl md:text-3xl font-medium text-center leading-7">
                           Patient<br />Journey &<br />Segmentation
                         </h3>
