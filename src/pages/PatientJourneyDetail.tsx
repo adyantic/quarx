@@ -73,7 +73,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </p>
                     </div>
                     {/* Arrow */}
-                    <div className="bg-[#9DBFD0] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 0)' }}>
+                    <div className="bg-[#9DBFD0] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 0 100%)' }}>
                       Awareness &<br />Recognition
                     </div>
                   </div>
@@ -92,7 +92,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </div>
                     </div>
                     {/* Arrow */}
-                    <div className="bg-[#7AADC4] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%)' }}>
+                    <div className="bg-[#7AADC4] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(25px 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0 50%)' }}>
                       Presentation<br />& Diagnosis
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </p>
                     </div>
                     {/* Arrow */}
-                    <div className="bg-[#5A9BA6] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%)' }}>
+                    <div className="bg-[#5A9BA6] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(25px 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0 50%)' }}>
                       Treatment<br />Selection
                     </div>
                   </div>
@@ -132,7 +132,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </div>
                     </div>
                     {/* Arrow */}
-                    <div className="bg-[#2D7A8F] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%)' }}>
+                    <div className="bg-[#2D7A8F] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(25px 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0 50%)' }}>
                       Brand<br />Selection
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </p>
                     </div>
                     {/* Arrow */}
-                    <div className="bg-[#1E5A6B] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%)' }}>
+                    <div className="bg-[#1E5A6B] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(25px 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0 50%)' }}>
                       Brand<br />Access
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const PatientJourneyDetail: React.FC = () => {
                       </div>
                     </div>
                     {/* Arrow - now with arrow tip at the end */}
-                    <div className="bg-[#0B3041] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%)' }}>
+                    <div className="bg-[#0B3041] text-white px-8 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(25px 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0 50%)' }}>
                       Switching &<br />Progression
                     </div>
                   </div>
