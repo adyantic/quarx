@@ -229,11 +229,11 @@ const Solutions: React.FC = () => {
                         <h3 className="text-white text-2xl md:text-3xl font-medium text-center leading-7">
                           HCP &<br />Provider<br />Segmentation
                         </h3>
-                        <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6">
+                        <Link to="/solutions/hcp-provider" className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
