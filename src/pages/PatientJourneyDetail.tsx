@@ -58,42 +58,42 @@ const PatientJourneyDetail: React.FC = () => {
               {/* Flow Stages */}
               <div className="relative pt-48 pb-48">
                 {/* Arrow Flow Container */}
-                <div className="flex items-center justify-center gap-0">
+                <div className="flex items-center justify-center gap-1">
                   {/* Awareness & Recognition */}
-                  <div className="relative z-10 bg-[#9DBFD0] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Awareness &<br />Recognition
                   </div>
                   
                   {/* Presentation & Diagnosis */}
-                  <div className="relative z-10 bg-[#7AADC4] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px] -ml-[15px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#7AADC4] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Presentation<br />& Diagnosis
                   </div>
                   
                   {/* Treatment Selection */}
-                  <div className="relative z-10 bg-[#5A9BA6] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px] -ml-[15px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#5A9BA6] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Treatment<br />Selection
                   </div>
                   
                   {/* Brand Selection */}
-                  <div className="relative z-10 bg-[#2D7A8F] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px] -ml-[15px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#2D7A8F] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Brand<br />Selection
                   </div>
                   
                   {/* Brand Access */}
-                  <div className="relative z-10 bg-[#1E5A6B] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px] -ml-[15px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#1E5A6B] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Brand<br />Access
                   </div>
                   
                   {/* Switching & Progression */}
-                  <div className="relative z-10 bg-[#0B3041] text-white px-8 py-6 text-center font-medium text-lg md:text-xl min-w-[180px] -ml-[15px]" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%)' }}>
                     Switching &<br />Progression
                   </div>
                 </div>
 
                 {/* Questions Above Flow */}
-                <div className="absolute top-0 left-0 right-0 grid grid-cols-6 gap-4 px-4">
-                  {/* Column 1 */}
-                  <div className="flex flex-col items-center gap-3">
+                <div className="absolute top-0 left-0 right-0 flex justify-between items-start px-4">
+                  {/* Column 1 - Awareness */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -104,11 +104,11 @@ const PatientJourneyDetail: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Column 2 - Empty for spacing */}
-                  <div></div>
+                  {/* Column 2 - Presentation (empty above) */}
+                  <div className="w-[160px]"></div>
 
-                  {/* Column 3 */}
-                  <div className="flex flex-col items-center gap-3">
+                  {/* Column 3 - Treatment */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <div className="w-16 h-16 rounded-full border-4 border-[#5A9BA6] bg-white flex items-center justify-center">
                       <div className="w-10 h-10 rounded-full bg-[#5A9BA6] flex items-center justify-center">
                         <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -121,11 +121,11 @@ const PatientJourneyDetail: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Column 4 - Empty for spacing */}
-                  <div></div>
+                  {/* Column 4 - Brand Selection (empty above) */}
+                  <div className="w-[160px]"></div>
 
-                  {/* Column 5 */}
-                  <div className="flex flex-col items-center gap-3">
+                  {/* Column 5 - Brand Access */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <div className="w-16 h-16 border-4 border-[#0B3041] bg-white rotate-45 flex items-center justify-center">
                       <svg className="w-8 h-8 text-[#0B3041] -rotate-45" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
@@ -136,16 +136,19 @@ const PatientJourneyDetail: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Column 6 - Empty for spacing */}
-                  <div></div>
+                  {/* Column 6 - Switching (empty above) */}
+                  <div className="w-[160px]"></div>
                 </div>
 
                 {/* Questions Below Flow */}
-                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-6 gap-4 px-4">
-                  {/* Column 1 */}
-                  <div className="flex flex-col items-center gap-3">
+                <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end px-4">
+                  {/* Column 1 - Awareness (empty below) */}
+                  <div className="w-[160px]"></div>
+
+                  {/* Column 2 - Presentation */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      How do patients first become aware of symptoms? How to they seek medical care?
+                      How do patients first become aware of symptoms? How do they seek medical care?
                     </p>
                     <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -154,11 +157,11 @@ const PatientJourneyDetail: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Column 2 - Empty for spacing */}
-                  <div></div>
+                  {/* Column 3 - Treatment (empty below) */}
+                  <div className="w-[160px]"></div>
 
-                  {/* Column 3 */}
-                  <div className="flex flex-col items-center gap-3">
+                  {/* Column 4 - Brand Selection */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What patient characteristics and/or external factors influence treatment choice?
                     </p>
@@ -169,11 +172,11 @@ const PatientJourneyDetail: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Column 4 - Empty for spacing */}
-                  <div></div>
+                  {/* Column 5 - Brand Access (empty below) */}
+                  <div className="w-[160px]"></div>
 
-                  {/* Column 5 */}
-                  <div className="flex flex-col items-center gap-3">
+                  {/* Column 6 - Switching */}
+                  <div className="flex flex-col items-center gap-3 w-[160px]">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What access hurdles are patients experiencing related to your brand?
                     </p>
@@ -183,9 +186,6 @@ const PatientJourneyDetail: React.FC = () => {
                       </svg>
                     </div>
                   </div>
-
-                  {/* Column 6 - Empty for spacing */}
-                  <div></div>
                 </div>
               </div>
             </div>
