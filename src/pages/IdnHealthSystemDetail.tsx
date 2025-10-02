@@ -54,7 +54,7 @@ const IdnHealthSystemDetail: React.FC = () => {
           </div>
 
           {/* Diagram */}
-          <div className="w-full px-2 md:px-5 mt-6">
+          <div className="w-full px-2 md:px-5 mt-2">
             <div className="max-w-[1200px] mx-auto">
               <img 
                 src={idnDiagram} 
