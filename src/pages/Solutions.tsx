@@ -176,7 +176,7 @@ const Solutions: React.FC = () => {
               {/* Diamond Cards Section */}
               <div className="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
                 {/* Patient Journey Card */}
-                <div className="flex flex-col items-center gap-16 mt-8">
+                <div className="flex flex-col items-center gap-24 mt-8">
                   <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
                     <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                       <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
@@ -213,7 +213,7 @@ const Solutions: React.FC = () => {
                 </div>
 
                 {/* HCP & Provider Card */}
-                <div className="flex flex-col items-center gap-16 mt-8">
+                <div className="flex flex-col items-center gap-24 mt-8">
                   <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
                     <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                       <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
@@ -250,7 +250,7 @@ const Solutions: React.FC = () => {
                 </div>
 
                 {/* IDN & Health System Card */}
-                <div className="flex flex-col items-center gap-16 mt-8">
+                <div className="flex flex-col items-center gap-24 mt-8">
                   <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
                     <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                       <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
