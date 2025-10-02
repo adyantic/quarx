@@ -60,8 +60,16 @@ const PatientJourneyDetail: React.FC = () => {
                 
                 {/* Column 1 - Awareness & Recognition */}
                 <div className="flex flex-col items-center">
-                  {/* Icon and text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
+                  {/* Empty space above - fixed height */}
+                  <div className="h-32 mb-6"></div>
+                  
+                  {/* Arrow box */}
+                  <div className="relative z-10 bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
+                    Awareness &<br />Recognition
+                  </div>
+                  
+                  {/* Icon and text below - fixed height */}
+                  <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
                     <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -71,14 +79,6 @@ const PatientJourneyDetail: React.FC = () => {
                       Where do patients initially present and where are they initially diagnosed?
                     </p>
                   </div>
-                  
-                  {/* Arrow box */}
-                  <div className="relative z-10 bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Awareness &<br />Recognition
-                  </div>
-                  
-                  {/* Empty space below - fixed height */}
-                  <div className="h-32 mt-6"></div>
                 </div>
 
                 {/* Column 2 - Presentation & Diagnosis */}
