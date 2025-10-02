@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
-import idnDiagram from '@/assets/idn-health-system-diagram.png';
+import idnDiagram from '@/assets/idn-health-system-diagram-new.png';
 
 const IdnHealthSystemDetail: React.FC = () => {
   return (
