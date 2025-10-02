@@ -66,14 +66,11 @@ const PatientJourneyDetail: React.FC = () => {
                 
                 {/* Column 1 - Awareness & Recognition */}
                 <div className="flex flex-col items-center">
-                  {/* Icon and text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
+                  {/* Icon above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={patientIcon} alt="Patient" className="w-full h-full" />
                     </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      How do patients first become aware of symptoms? How do they seek medical care?
-                    </p>
                   </div>
                   
                   {/* Arrow box */}
@@ -81,25 +78,30 @@ const PatientJourneyDetail: React.FC = () => {
                     Awareness &<br />Recognition
                   </div>
                   
-                  {/* Empty space below - fixed height */}
-                  <div className="h-32 mt-6"></div>
+                  {/* Text below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      How do patients first become aware of symptoms? How do they seek medical care?
+                    </p>
+                  </div>
                 </div>
 
                 {/* Column 2 - Presentation & Diagnosis */}
                 <div className="flex flex-col items-center">
-                  {/* Empty space above - fixed height */}
-                  <div className="h-32 mb-6"></div>
+                  {/* Text above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      Where do patients initially present and where are they initially diagnosed?
+                    </p>
+                  </div>
                   
                   {/* Arrow box */}
                   <div className="relative z-10 bg-[#7AADC4] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Presentation<br />& Diagnosis
                   </div>
                   
-                  {/* Icon and text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      Where do patients initially present and where are they initially diagnosed?
-                    </p>
+                  {/* Icon below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={presentationIcon} alt="Presentation & Diagnosis" className="w-full h-full" />
                     </div>
@@ -108,14 +110,11 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 3 - Treatment Selection */}
                 <div className="flex flex-col items-center">
-                  {/* Icon and text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
+                  {/* Icon above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={treatmentIcon} alt="Treatment Selection" className="w-full h-full" />
                     </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What patient characteristics are most likely to receive your brand?
-                    </p>
                   </div>
                   
                   {/* Arrow box */}
@@ -123,25 +122,30 @@ const PatientJourneyDetail: React.FC = () => {
                     Treatment<br />Selection
                   </div>
                   
-                  {/* Empty space below - fixed height */}
-                  <div className="h-32 mt-6"></div>
+                  {/* Text below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      What patient characteristics are most likely to receive your brand?
+                    </p>
+                  </div>
                 </div>
 
                 {/* Column 4 - Brand Selection */}
                 <div className="flex flex-col items-center">
-                  {/* Empty space above - fixed height */}
-                  <div className="h-32 mb-6"></div>
+                  {/* Text above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      What patient characteristics and/or external factors influence treatment choice?
+                    </p>
+                  </div>
                   
                   {/* Arrow box */}
                   <div className="relative z-10 bg-[#2D7A8F] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Brand<br />Selection
                   </div>
                   
-                  {/* Icon and text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What patient characteristics and/or external factors influence treatment choice?
-                    </p>
+                  {/* Icon below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={brandSelectionIcon} alt="Brand Selection" className="w-full h-full" />
                     </div>
@@ -150,14 +154,11 @@ const PatientJourneyDetail: React.FC = () => {
 
                 {/* Column 5 - Brand Access */}
                 <div className="flex flex-col items-center">
-                  {/* Icon and text above - fixed height */}
-                  <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
+                  {/* Icon above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={brandAccessIcon} alt="Brand Access" className="w-full h-full" />
                     </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What access hurdles are patients experiencing related to your brand?
-                    </p>
                   </div>
                   
                   {/* Arrow box */}
@@ -165,25 +166,30 @@ const PatientJourneyDetail: React.FC = () => {
                     Brand<br />Access
                   </div>
                   
-                  {/* Empty space below - fixed height */}
-                  <div className="h-32 mt-6"></div>
+                  {/* Text below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      What access hurdles are patients experiencing related to your brand?
+                    </p>
+                  </div>
                 </div>
 
                 {/* Column 6 - Switching & Progression */}
                 <div className="flex flex-col items-center">
-                  {/* Empty space above - fixed height */}
-                  <div className="h-32 mb-6"></div>
+                  {/* Text above - fixed height */}
+                  <div className="flex flex-col items-center justify-end mb-6 h-32">
+                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                      What are the switching dynamics related to your brand and competitors?
+                    </p>
+                  </div>
                   
                   {/* Arrow box */}
                   <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Switching &<br />Progression
                   </div>
                   
-                  {/* Icon and text below - fixed height */}
-                  <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What are the switching dynamics related to your brand and competitors?
-                    </p>
+                  {/* Icon below - fixed height */}
+                  <div className="flex flex-col items-center justify-start mt-6 h-32">
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={switchingIcon} alt="Switching & Progression" className="w-full h-full" />
                     </div>
