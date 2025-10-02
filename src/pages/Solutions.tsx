@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -187,11 +188,11 @@ const Solutions: React.FC = () => {
                         <h3 className="text-white text-2xl md:text-3xl font-medium text-center leading-7">
                           Patient<br />Journey &<br />Segmentation
                         </h3>
-                        <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6">
+                        <Link to="/solutions/patient-journey" className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

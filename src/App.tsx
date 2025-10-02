@@ -9,6 +9,7 @@ import Solutions from "./pages/Solutions";
 import ChordDetail from "./pages/ChordDetail";
 import BasisDetail from "./pages/BasisDetail";
 import LaraDetail from "./pages/LaraDetail";
+import PatientJourneyDetail from "./pages/PatientJourneyDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<Products />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/solutions/patient-journey" element={<PatientJourneyDetail />} />
           <Route path="/products/chord" element={<ChordDetail />} />
           <Route path="/products/basis" element={<BasisDetail />} />
           <Route path="/products/lara" element={<LaraDetail />} />
