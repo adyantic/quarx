@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
-import idnDiagram from '@/assets/idn-health-system-diagram-new.png';
+import idnIcon from '@/assets/idn-icon.svg';
 
 const IdnHealthSystemDetail: React.FC = () => {
   return (
@@ -55,12 +55,67 @@ const IdnHealthSystemDetail: React.FC = () => {
 
           {/* Diagram */}
           <div className="w-full px-2 md:px-5 mt-12">
-            <div className="max-w-[1200px] mx-auto">
-              <img 
-                src={idnDiagram} 
-                alt="Health System Archetyping Framework showing Organizational Ethos, Structural & Operational Maturity, and Market Specificity around a central health system building" 
-                className="w-full h-auto"
-              />
+            <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+              
+              {/* Left Section: Structural & Operational Maturity */}
+              <div className="flex flex-col items-center lg:items-end text-center lg:text-right space-y-6 lg:mt-32">
+                <h2 className="text-2xl md:text-3xl font-medium text-[#0B3041] mb-4">
+                  Structural & Operational<br />Maturity
+                </h2>
+                <ul className="space-y-3 text-base md:text-lg text-[#0B3041]">
+                  <li>• Vertical Integration</li>
+                  <li>• Centralization &<br />Cohesiveness</li>
+                  <li>• Operational & Technology Integration</li>
+                  <li>• Ability to Control</li>
+                  <li>• Site of Care Coverage</li>
+                </ul>
+              </div>
+
+              {/* Center Section: IDN Icon with 3D Building */}
+              <div className="flex flex-col items-center justify-start space-y-8">
+                {/* Top: Organizational Ethos */}
+                <div className="text-center space-y-6">
+                  <h2 className="text-2xl md:text-3xl font-medium text-[#0B3041] mb-4">
+                    Organizational Ethos
+                  </h2>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B3041]">
+                    <li>• Cost vs. Outcomes</li>
+                    <li>• Level of Risk-Bearing</li>
+                    <li>• Willingness to Control</li>
+                    <li>• Quality Focus</li>
+                    <li>• Clinical Influence &<br />Innovation</li>
+                  </ul>
+                </div>
+
+                {/* Central 3D Building Icon */}
+                <div className="relative w-64 h-64 flex items-center justify-center my-8">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative w-48 h-48">
+                      {/* 3D Building representation using CSS */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#7097AA] to-[#5A9BA6] transform -skew-y-12 skew-x-12 shadow-lg"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#5A9BA6] to-[#156082] transform translate-x-4 -translate-y-4 -skew-y-12 shadow-lg"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#156082] to-[#0B3041] transform translate-y-4 skew-x-12 shadow-lg"></div>
+                      {/* Icon overlay */}
+                      <div className="absolute inset-0 flex items-center justify-center z-10">
+                        <img src={idnIcon} alt="IDN Health System" className="w-20 h-20 brightness-0 invert" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Section: Market Specificity */}
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:mt-32">
+                <h2 className="text-2xl md:text-3xl font-medium text-[#0B3041] mb-4">
+                  Market Specificity
+                </h2>
+                <ul className="space-y-3 text-base md:text-lg text-[#0B3041]">
+                  <li>• Market Coverage</li>
+                  <li>• Willingness to Control<br />Prescribing and Protocol</li>
+                  <li>• Market specific Clinical<br />Influence & Innovation</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
