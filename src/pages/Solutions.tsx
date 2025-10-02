@@ -160,11 +160,127 @@ const Solutions: React.FC = () => {
           )}
 
           {activeTab === 'segmentation' && (
-            <div className="self-stretch px-2.5 flex flex-col items-center">
-              <div className="w-full max-w-[1400px] text-center">
-                <h1 className="text-4xl font-medium leading-[48px] text-[#0B3041]">
-                  Customer Segmentation content coming soon
+            <div className="self-stretch px-2.5 flex flex-col items-center gap-12">
+              {/* Title */}
+              <div className="w-full max-w-[1400px] text-center px-2">
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+                  <span className="text-[#0B3041]">
+                    Our approach to Customer Segmentation is focused not just on observed behavior but also on{' '}
+                  </span>
+                  <span className="text-[#5A9BA6]">
+                    the environment and ecosystem that drives the behavior
+                  </span>
                 </h1>
+              </div>
+
+              {/* Diamond Cards Section */}
+              <div className="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                {/* Patient Journey Card */}
+                <div className="flex flex-col items-center gap-6">
+                  <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                    <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                      <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                          </svg>
+                        </div>
+                        <h3 className="text-white text-lg md:text-xl font-medium text-center leading-6">
+                          Patient<br />Journey &<br />Segmentation
+                        </h3>
+                        <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center mt-2">
+                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>Who are my target patient groups and what is their size and profile?</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>What are key leverage points for my drug along on the treatment pathway?</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>How is patient care coordinated across different HCPs and providers?</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* HCP & Provider Card */}
+                <div className="flex flex-col items-center gap-6">
+                  <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                    <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                      <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                        </div>
+                        <h3 className="text-white text-lg md:text-xl font-medium text-center leading-6">
+                          HCP &<br />Provider<br />Segmentation
+                        </h3>
+                        <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center mt-2">
+                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>How do my high value prescribers differ in their approach and behavior?</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>What are the forces and factors that drive variation in prescriber behavior?</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>What are the imperatives (access, education, support) to drive adoption?</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* IDN & Health System Card */}
+                <div className="flex flex-col items-center gap-6">
+                  <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                    <div className="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                      <div className="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                        </div>
+                        <h3 className="text-white text-lg md:text-xl font-medium text-center leading-6">
+                          IDN & Health<br />System<br />Archetyping
+                        </h3>
+                        <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center mt-2">
+                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>How do the top health systems differ in their approach to care, organizational structure and operational maturity?</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#0B3041] mt-1.5">•</span>
+                      <span>Given the observed behavior and influence profile, how do I customize the engagement strategy with my target systems?</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           )}
