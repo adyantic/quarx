@@ -7,6 +7,7 @@ import patientIcon from '@/assets/patient-icon.svg';
 import treatmentIcon from '@/assets/treatment-icon.svg';
 import brandAccessIcon from '@/assets/brand-access-icon.svg';
 import presentationIcon from '@/assets/presentation-icon.svg';
+import brandSelectionIcon from '@/assets/brand-selection-icon.svg';
 
 const PatientJourneyDetail: React.FC = () => {
   return (
@@ -140,10 +141,8 @@ const PatientJourneyDetail: React.FC = () => {
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What patient characteristics and/or external factors influence treatment choice?
                     </p>
-                    <div className="w-16 h-16 rounded-full bg-[#5A9BA6] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
-                      </svg>
+                    <div className="w-20 h-20 flex items-center justify-center">
+                      <img src={brandSelectionIcon} alt="Brand Selection" className="w-full h-full" />
                     </div>
                   </div>
                 </div>
