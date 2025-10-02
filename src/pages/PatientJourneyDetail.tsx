@@ -56,7 +56,7 @@ const PatientJourneyDetail: React.FC = () => {
           <div className="w-full px-2 md:px-5 mt-12">
             <div className="max-w-[1200px] mx-auto">
               {/* Flow Stages */}
-              <div className="relative">
+              <div className="relative pt-48 pb-48">
                 {/* Arrow Flow Container */}
                 <div className="flex items-center justify-center gap-0">
                   {/* Awareness & Recognition */}
@@ -91,7 +91,7 @@ const PatientJourneyDetail: React.FC = () => {
                 </div>
 
                 {/* Questions Above Flow */}
-                <div className="absolute -top-32 left-0 right-0 grid grid-cols-6 gap-4 px-4">
+                <div className="absolute top-0 left-0 right-0 grid grid-cols-6 gap-4 px-4">
                   {/* Column 1 */}
                   <div className="flex flex-col items-center gap-3">
                     <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
@@ -141,7 +141,7 @@ const PatientJourneyDetail: React.FC = () => {
                 </div>
 
                 {/* Questions Below Flow */}
-                <div className="absolute -bottom-32 left-0 right-0 grid grid-cols-6 gap-4 px-4">
+                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-6 gap-4 px-4">
                   {/* Column 1 */}
                   <div className="flex flex-col items-center gap-3">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
