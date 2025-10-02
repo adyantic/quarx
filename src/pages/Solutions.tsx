@@ -195,7 +195,7 @@ const Solutions: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                  <ul className="space-y-3 text-[#0B3041] text-xl font-medium">
                     <li className="flex gap-2">
                       <span className="text-[#0B3041] mt-1.5">•</span>
                       <span>Who are my target patient groups and what is their size and profile?</span>
@@ -228,7 +228,7 @@ const Solutions: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                  <ul className="space-y-3 text-[#0B3041] text-xl font-medium">
                     <li className="flex gap-2">
                       <span className="text-[#0B3041] mt-1.5">•</span>
                       <span>How do my high value prescribers differ in their approach and behavior?</span>
@@ -261,7 +261,7 @@ const Solutions: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="space-y-3 text-[#0B3041] text-sm md:text-base">
+                  <ul className="space-y-3 text-[#0B3041] text-xl font-medium">
                     <li className="flex gap-2">
                       <span className="text-[#0B3041] mt-1.5">•</span>
                       <span>How do the top health systems differ in their approach to care, organizational structure and operational maturity?</span>
