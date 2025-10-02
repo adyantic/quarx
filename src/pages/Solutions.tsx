@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -60,7 +60,15 @@ const ColumnHeader: React.FC<ColumnHeaderProps> = ({ icon, title }) => (
 );
 
 const Solutions: React.FC = () => {
+  const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState<'access' | 'segmentation'>('access');
+
+  useEffect(() => {
+    const tab = searchParams.get('tab');
+    if (tab === 'segmentation') {
+      setActiveTab('segmentation');
+    }
+  }, [searchParams]);
 
   const accessColumns = [
     {
