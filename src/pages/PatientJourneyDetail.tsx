@@ -85,7 +85,7 @@ const PatientJourneyDetail: React.FC = () => {
                   </div>
                   
                   {/* Switching & Progression */}
-                  <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%)' }}>
+                  <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
                     Switching &<br />Progression
                   </div>
                 </div>
