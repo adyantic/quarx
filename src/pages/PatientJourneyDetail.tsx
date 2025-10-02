@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import patientIcon from '@/assets/patient-icon.svg';
 import treatmentIcon from '@/assets/treatment-icon.svg';
+import brandAccessIcon from '@/assets/brand-access-icon.svg';
 
 const PatientJourneyDetail: React.FC = () => {
   return (
@@ -152,10 +153,8 @@ const PatientJourneyDetail: React.FC = () => {
                 <div className="flex flex-col items-center">
                   {/* Icon and text above - fixed height */}
                   <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
-                    <div className="w-16 h-16 border-4 border-[#0B3041] bg-white rotate-45 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#0B3041] -rotate-45" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                      </svg>
+                    <div className="w-20 h-20 flex items-center justify-center">
+                      <img src={brandAccessIcon} alt="Brand Access" className="w-full h-full" />
                     </div>
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What are the switching dynamics related to your brand and competitors?
