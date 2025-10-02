@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import patientIcon from '@/assets/patient-icon.svg';
+import treatmentIcon from '@/assets/treatment-icon.svg';
 
 const PatientJourneyDetail: React.FC = () => {
   return (
@@ -107,12 +108,8 @@ const PatientJourneyDetail: React.FC = () => {
                 <div className="flex flex-col items-center">
                   {/* Icon and text above - fixed height */}
                   <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
-                    <div className="w-16 h-16 rounded-full border-4 border-[#5A9BA6] bg-white flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-[#5A9BA6] flex items-center justify-center">
-                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                      </div>
+                    <div className="w-20 h-20 flex items-center justify-center">
+                      <img src={treatmentIcon} alt="Treatment Selection" className="w-full h-full" />
                     </div>
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       What patient characteristics are most likely to receive your brand?
