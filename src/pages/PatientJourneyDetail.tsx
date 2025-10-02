@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeft } from 'lucide-react';
+import patientIcon from '@/assets/patient-icon.svg';
 
 const PatientJourneyDetail: React.FC = () => {
   return (
@@ -62,10 +63,8 @@ const PatientJourneyDetail: React.FC = () => {
                 <div className="flex flex-col items-center">
                   {/* Icon and text above - fixed height */}
                   <div className="flex flex-col items-center justify-end gap-3 mb-6 h-32">
-                    <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                    <div className="w-20 h-20 flex items-center justify-center">
+                      <img src={patientIcon} alt="Patient" className="w-full h-full" />
                     </div>
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
                       Where do patients initially present and where are they initially diagnosed?
