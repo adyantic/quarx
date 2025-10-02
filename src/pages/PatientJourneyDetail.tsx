@@ -72,7 +72,7 @@ const PatientJourneyDetail: React.FC = () => {
                       <img src={patientIcon} alt="Patient" className="w-full h-full" />
                     </div>
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      Where do patients initially present and where are they initially diagnosed?
+                      How do patients first become aware of symptoms? How do they seek medical care?
                     </p>
                   </div>
                   
@@ -98,7 +98,7 @@ const PatientJourneyDetail: React.FC = () => {
                   {/* Icon and text below - fixed height */}
                   <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      How do patients first become aware of symptoms? How do they seek medical care?
+                      Where do patients initially present and where are they initially diagnosed?
                     </p>
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={presentationIcon} alt="Presentation & Diagnosis" className="w-full h-full" />
@@ -156,7 +156,7 @@ const PatientJourneyDetail: React.FC = () => {
                       <img src={brandAccessIcon} alt="Brand Access" className="w-full h-full" />
                     </div>
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What are the switching dynamics related to your brand and competitors?
+                      What access hurdles are patients experiencing related to your brand?
                     </p>
                   </div>
                   
@@ -182,7 +182,7 @@ const PatientJourneyDetail: React.FC = () => {
                   {/* Icon and text below - fixed height */}
                   <div className="flex flex-col items-center justify-start gap-3 mt-6 h-32">
                     <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What access hurdles are patients experiencing related to your brand?
+                      What are the switching dynamics related to your brand and competitors?
                     </p>
                     <div className="w-20 h-20 flex items-center justify-center">
                       <img src={switchingIcon} alt="Switching & Progression" className="w-full h-full" />
