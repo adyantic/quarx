@@ -58,132 +58,120 @@ const PatientJourneyDetail: React.FC = () => {
               {/* Flow Stages */}
               <div className="relative pt-48 pb-48">
                 {/* Arrow Flow Container */}
-                <div className="flex items-center justify-center gap-1">
+                <div className="flex items-center justify-center">
                   {/* Awareness & Recognition */}
-                  <div className="relative z-10 bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Awareness &<br />Recognition
-                  </div>
-                  
-                  {/* Presentation & Diagnosis */}
-                  <div className="relative z-10 bg-[#7AADC4] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Presentation<br />& Diagnosis
-                  </div>
-                  
-                  {/* Treatment Selection */}
-                  <div className="relative z-10 bg-[#5A9BA6] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Treatment<br />Selection
-                  </div>
-                  
-                  {/* Brand Selection */}
-                  <div className="relative z-10 bg-[#2D7A8F] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Brand<br />Selection
-                  </div>
-                  
-                  {/* Brand Access */}
-                  <div className="relative z-10 bg-[#1E5A6B] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%)' }}>
-                    Brand<br />Access
-                  </div>
-                  
-                  {/* Switching & Progression */}
-                  <div className="relative z-10 bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base md:text-lg min-w-[160px]" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%)' }}>
-                    Switching &<br />Progression
-                  </div>
-                </div>
-
-                {/* Questions Above Flow */}
-                <div className="absolute top-0 left-0 right-0 flex justify-between items-start px-4">
-                  {/* Column 1 - Awareness */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                  <div className="relative flex flex-col items-center" style={{ width: '180px' }}>
+                    {/* Icon and text above */}
+                    <div className="absolute -top-44 flex flex-col items-center gap-3 w-full px-2">
+                      <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center flex-shrink-0">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                      </div>
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        Where do patients initially present and where are they initially diagnosed?
+                      </p>
                     </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      Where do patients initially present and where are they initially diagnosed?
-                    </p>
+                    {/* Arrow */}
+                    <div className="bg-[#9DBFD0] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)' }}>
+                      Awareness &<br />Recognition
+                    </div>
                   </div>
 
-                  {/* Column 2 - Presentation (empty above) */}
-                  <div className="w-[160px]"></div>
-
-                  {/* Column 3 - Treatment */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <div className="w-16 h-16 rounded-full border-4 border-[#5A9BA6] bg-white flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-[#5A9BA6] flex items-center justify-center">
-                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  {/* Presentation & Diagnosis */}
+                  <div className="relative flex flex-col items-center -ml-5" style={{ width: '180px' }}>
+                    {/* Icon and text below */}
+                    <div className="absolute -bottom-44 flex flex-col items-center gap-3 w-full px-2">
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        How do patients first become aware of symptoms? How do they seek medical care?
+                      </p>
+                      <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center flex-shrink-0">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
                         </svg>
                       </div>
                     </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What patient characteristics are most likely to receive your brand?
-                    </p>
-                  </div>
-
-                  {/* Column 4 - Brand Selection (empty above) */}
-                  <div className="w-[160px]"></div>
-
-                  {/* Column 5 - Brand Access */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <div className="w-16 h-16 border-4 border-[#0B3041] bg-white rotate-45 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#0B3041] -rotate-45" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                      </svg>
-                    </div>
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What are the switching dynamics related to your brand and competitors?
-                    </p>
-                  </div>
-
-                  {/* Column 6 - Switching (empty above) */}
-                  <div className="w-[160px]"></div>
-                </div>
-
-                {/* Questions Below Flow */}
-                <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end px-4">
-                  {/* Column 1 - Awareness (empty below) */}
-                  <div className="w-[160px]"></div>
-
-                  {/* Column 2 - Presentation */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      How do patients first become aware of symptoms? How do they seek medical care?
-                    </p>
-                    <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
-                      </svg>
+                    {/* Arrow */}
+                    <div className="bg-[#7AADC4] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(15px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 15px 100%, 0 50%)' }}>
+                      Presentation<br />& Diagnosis
                     </div>
                   </div>
 
-                  {/* Column 3 - Treatment (empty below) */}
-                  <div className="w-[160px]"></div>
-
-                  {/* Column 4 - Brand Selection */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What patient characteristics and/or external factors influence treatment choice?
-                    </p>
-                    <div className="w-16 h-16 rounded-full bg-[#5A9BA6] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
-                      </svg>
+                  {/* Treatment Selection */}
+                  <div className="relative flex flex-col items-center -ml-5" style={{ width: '180px' }}>
+                    {/* Icon and text above */}
+                    <div className="absolute -top-44 flex flex-col items-center gap-3 w-full px-2">
+                      <div className="w-16 h-16 rounded-full border-4 border-[#5A9BA6] bg-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-10 h-10 rounded-full bg-[#5A9BA6] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        What patient characteristics are most likely to receive your brand?
+                      </p>
+                    </div>
+                    {/* Arrow */}
+                    <div className="bg-[#5A9BA6] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(15px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 15px 100%, 0 50%)' }}>
+                      Treatment<br />Selection
                     </div>
                   </div>
 
-                  {/* Column 5 - Brand Access (empty below) */}
-                  <div className="w-[160px]"></div>
+                  {/* Brand Selection */}
+                  <div className="relative flex flex-col items-center -ml-5" style={{ width: '180px' }}>
+                    {/* Icon and text below */}
+                    <div className="absolute -bottom-44 flex flex-col items-center gap-3 w-full px-2">
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        What patient characteristics and/or external factors influence treatment choice?
+                      </p>
+                      <div className="w-16 h-16 rounded-full bg-[#5A9BA6] flex items-center justify-center flex-shrink-0">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    {/* Arrow */}
+                    <div className="bg-[#2D7A8F] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(15px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 15px 100%, 0 50%)' }}>
+                      Brand<br />Selection
+                    </div>
+                  </div>
 
-                  {/* Column 6 - Switching */}
-                  <div className="flex flex-col items-center gap-3 w-[160px]">
-                    <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
-                      What access hurdles are patients experiencing related to your brand?
-                    </p>
-                    <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                      </svg>
+                  {/* Brand Access */}
+                  <div className="relative flex flex-col items-center -ml-5" style={{ width: '180px' }}>
+                    {/* Icon and text above */}
+                    <div className="absolute -top-44 flex flex-col items-center gap-3 w-full px-2">
+                      <div className="w-16 h-16 border-4 border-[#0B3041] bg-white rotate-45 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-8 h-8 text-[#0B3041] -rotate-45" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                      </div>
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        What are the switching dynamics related to your brand and competitors?
+                      </p>
+                    </div>
+                    {/* Arrow */}
+                    <div className="bg-[#1E5A6B] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(15px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 15px 100%, 0 50%)' }}>
+                      Brand<br />Access
+                    </div>
+                  </div>
+
+                  {/* Switching & Progression */}
+                  <div className="relative flex flex-col items-center -ml-5" style={{ width: '180px' }}>
+                    {/* Icon and text below */}
+                    <div className="absolute -bottom-44 flex flex-col items-center gap-3 w-full px-2">
+                      <p className="text-[#0B3041] text-sm font-medium text-center leading-tight">
+                        What access hurdles are patients experiencing related to your brand?
+                      </p>
+                      <div className="w-16 h-16 rounded-full bg-[#0B3041] flex items-center justify-center flex-shrink-0">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    {/* Arrow - now with arrow tip at the end */}
+                    <div className="bg-[#0B3041] text-white px-6 py-6 text-center font-medium text-base w-full" style={{ clipPath: 'polygon(15px 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%)' }}>
+                      Switching &<br />Progression
                     </div>
                   </div>
                 </div>
