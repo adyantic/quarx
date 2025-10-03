@@ -4,6 +4,7 @@ import HcpSensitivityTrapezoid from '@/assets/hcp-sensitivity-trapezoid.png';
 import PayerAbilityTrapezoid from '@/assets/payer-ability-trapezoid.png';
 import PayerAbilityPill from '@/assets/payer-ability-pill.png';
 import ArrowIcon from '@/assets/arrow-up-bold-outline-1.png';
+import ArrowDownBold from '@/assets/arrow-left-bold.png';
 
 const BasisHowFlowDiagram: React.FC = () => {
   return (
@@ -100,10 +101,7 @@ const BasisHowFlowDiagram: React.FC = () => {
 
       {/* Large Down Arrow */}
       <div className="flex flex-col items-center my-3">
-        <div className="w-2 h-16 bg-[#A8D5E2] rounded-t"></div>
-        <div 
-          className="w-0 h-0 border-l-[35px] border-r-[35px] border-t-[40px] border-l-transparent border-r-transparent border-t-[#A8D5E2]"
-        ></div>
+        <img src={ArrowDownBold} alt="" className="w-20 h-20 md:w-24 md:h-24" />
       </div>
 
       {/* Output List */}
