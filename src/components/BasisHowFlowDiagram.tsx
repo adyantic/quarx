@@ -1,6 +1,6 @@
 import React from 'react';
 import PatientsWithRxTrapezoid from '@/assets/patients-with-rx-trapezoid.png';
-import ArrowIcon from '@/assets/arrow-up-bold-outline.png';
+import ArrowIcon from '@/assets/arrow-up-bold-outline-1.png';
 
 const BasisHowFlowDiagram: React.FC = () => {
   return (
@@ -40,11 +40,11 @@ const BasisHowFlowDiagram: React.FC = () => {
 
       {/* Eligible Patient Base */}
       <div className="flex items-center justify-center gap-3 my-1">
-        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8 opacity-60 grayscale" />
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
         <span className="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
           Eligible Patient Base
         </span>
-        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8 opacity-60 grayscale" />
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
       </div>
 
       {/* HCP Sensitivity to Access - Medium Trapezoid */}
