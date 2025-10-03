@@ -15,17 +15,12 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
       
       {/* Patients with Rx - Large Trapezoid */}
-      <div className="w-full max-w-5xl relative">
+      <div className="w-full max-w-5xl">
         <img 
           src={PatientsWithRxTrapezoid} 
-          alt="Trapezoid background graphic" 
+          alt="Patients with Rx trapezoid" 
           className="w-full h-auto"
         />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-xl md:text-5xl">
-            Patients with Rx
-          </span>
-        </div>
       </div>
 
       {/* Eligible Patient Base */}
