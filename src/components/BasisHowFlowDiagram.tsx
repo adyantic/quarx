@@ -2,6 +2,7 @@ import React from 'react';
 import PatientsWithRxTrapezoid from '@/assets/patients-with-rx-trapezoid.png';
 import HcpSensitivityTrapezoid from '@/assets/hcp-sensitivity-trapezoid.png';
 import PayerAbilityTrapezoid from '@/assets/payer-ability-trapezoid.png';
+import PayerAbilityPill from '@/assets/payer-ability-pill.png';
 import ArrowIcon from '@/assets/arrow-up-bold-outline-1.png';
 
 const BasisHowFlowDiagram: React.FC = () => {
@@ -84,14 +85,16 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Payer Ability to Control - Small Pill Shape */}
-      <div className="w-full max-w-xl">
-        <div 
-          className="bg-[#A8D5E2] text-[#0B3041] font-bold text-xl md:text-2xl py-4 md:py-5 text-center rounded-full"
-          style={{
-            background: 'linear-gradient(135deg, #B8E5F2 0%, #A8D5E2 50%, #98C5D2 100%)'
-          }}
-        >
-          Payer Ability to Control
+      <div className="w-full max-w-xl relative">
+        <img 
+          src={PayerAbilityPill} 
+          alt="Pill shape background graphic" 
+          className="w-full h-auto"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="text-[#0B3041] font-bold text-xl md:text-2xl">
+            Payer Ability to Control
+          </span>
         </div>
       </div>
 
