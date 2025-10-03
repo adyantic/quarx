@@ -24,20 +24,6 @@ const BasisHowFlowDiagram: React.FC = () => {
         </div>
       </div>
 
-      {/* Down Arrow with shadow effect */}
-      <div className="flex flex-col items-center my-1">
-        <div className="flex gap-8">
-          <svg width="40" height="60" viewBox="0 0 40 60" className="opacity-20">
-            <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
-            <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
-          </svg>
-          <svg width="40" height="60" viewBox="0 0 40 60" className="opacity-20">
-            <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
-            <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
-          </svg>
-        </div>
-      </div>
-
       {/* Eligible Patient Base */}
       <div className="flex items-center justify-center gap-3 my-1">
         <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
@@ -67,16 +53,16 @@ const BasisHowFlowDiagram: React.FC = () => {
             <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
             <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
           </svg>
-          <svg width="40" height="60" viewBox="0 0 40 60" className="opacity-20">
-            <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
-            <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
-          </svg>
         </div>
       </div>
 
       {/* Patients with Rx */}
-      <div className="text-[#0B3041] font-normal text-xl md:text-2xl text-center my-1">
-        Patients with Rx
+      <div className="flex items-center justify-center gap-3 my-1">
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
+        <span className="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
+          Patients with Rx
+        </span>
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
       </div>
 
       {/* Payer Ability to Control - Medium-Small Trapezoid */}
@@ -99,16 +85,16 @@ const BasisHowFlowDiagram: React.FC = () => {
             <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
             <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
           </svg>
-          <svg width="40" height="60" viewBox="0 0 40 60" className="opacity-20">
-            <path d="M20 0 L20 40 L10 30 M20 40 L30 30" stroke="#9CA3AF" strokeWidth="8" fill="none" strokeLinecap="round"/>
-            <polygon points="20,60 10,40 30,40" fill="#9CA3AF"/>
-          </svg>
         </div>
       </div>
 
       {/* Patients with approved Rx */}
-      <div className="text-[#0B3041] font-normal text-xl md:text-2xl text-center my-1">
-        Patients with<br />approved Rx
+      <div className="flex items-center justify-center gap-3 my-1">
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
+        <span className="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
+          Patients with<br />approved Rx
+        </span>
+        <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
       </div>
 
       {/* Payer Ability to Control - Small Pill Shape */}
