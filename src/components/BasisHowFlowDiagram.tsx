@@ -1,4 +1,5 @@
 import React from 'react';
+import PatientsWithRxTrapezoid from '@/assets/patients-with-rx-trapezoid.png';
 
 const BasisHowFlowDiagram: React.FC = () => {
   return (
@@ -10,15 +11,11 @@ const BasisHowFlowDiagram: React.FC = () => {
       
       {/* Patients with Rx - Large Trapezoid */}
       <div className="w-full max-w-4xl">
-        <div 
-          className="bg-[#A8D5E2] text-[#0B3041] font-bold text-2xl md:text-4xl py-8 md:py-12 text-center relative"
-          style={{
-            clipPath: 'polygon(2% 0%, 98% 0%, 100% 100%, 0% 100%)',
-            background: 'linear-gradient(135deg, #B8E5F2 0%, #A8D5E2 50%, #98C5D2 100%)'
-          }}
-        >
-          Patients with Rx
-        </div>
+        <img 
+          src={PatientsWithRxTrapezoid} 
+          alt="Patients with Rx trapezoid" 
+          className="w-full h-auto"
+        />
       </div>
 
       {/* Down Arrow with shadow effect */}
