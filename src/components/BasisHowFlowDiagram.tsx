@@ -22,7 +22,7 @@ const BasisHowFlowDiagram: React.FC = () => {
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-3xl md:text-5xl">
+          <span className="text-[#0B3041] font-bold text-xl md:text-5xl">
             Patients with Rx
           </span>
         </div>
@@ -45,7 +45,7 @@ const BasisHowFlowDiagram: React.FC = () => {
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-2xl md:text-4xl">
+          <span className="text-[#0B3041] font-bold text-lg md:text-4xl">
             HCP Sensitivity to Access
           </span>
         </div>
@@ -69,7 +69,7 @@ const BasisHowFlowDiagram: React.FC = () => {
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-xl md:text-3xl">
+          <span className="text-[#0B3041] font-bold text-base md:text-3xl">
             Payer Ability to Control
           </span>
         </div>
@@ -93,7 +93,7 @@ const BasisHowFlowDiagram: React.FC = () => {
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-lg md:text-2xl">
+          <span className="text-[#0B3041] font-bold text-sm md:text-2xl">
             Payer Ability to Control
           </span>
         </div>
