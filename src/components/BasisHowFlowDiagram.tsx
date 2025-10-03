@@ -37,7 +37,7 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* HCP Sensitivity to Access - Medium Trapezoid */}
-      <div className="w-full max-w-4xl relative">
+      <div className="w-full max-w-3xl relative">
         <img 
           src={HcpSensitivityTrapezoid} 
           alt="Trapezoid background graphic" 
@@ -61,7 +61,7 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Payer Ability to Control - Medium-Small Trapezoid */}
-      <div className="w-full max-w-3xl relative">
+      <div className="w-full max-w-2xl relative">
         <img 
           src={PayerAbilityTrapezoid} 
           alt="Trapezoid background graphic" 
@@ -85,7 +85,7 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Payer Ability to Control - Small Pill Shape */}
-      <div className="w-full max-w-2xl relative">
+      <div className="w-full max-w-xl relative">
         <img 
           src={PayerAbilityPill} 
           alt="Pill shape background graphic" 
