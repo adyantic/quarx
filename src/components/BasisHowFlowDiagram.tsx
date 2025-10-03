@@ -80,7 +80,7 @@ const BasisHowFlowDiagram: React.FC = () => {
       <div className="flex items-center justify-center gap-3 my-1">
         <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
         <span className="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
-          Patients with<br />approved Rx
+          Patients with approved Rx
         </span>
         <img src={ArrowIcon} alt="" className="w-6 h-6 md:w-8 md:h-8" />
       </div>
