@@ -100,12 +100,12 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Large Down Arrow */}
-      <div className="flex flex-col items-center my-3">
+      <div className="flex flex-col items-center my-1">
         <img src={ArrowDownBold} alt="" className="w-20 h-20 md:w-24 md:h-24" />
       </div>
 
       {/* Output List */}
-      <div className="flex flex-col gap-3 text-[#0B3041] text-lg md:text-xl mt-2">
+      <div className="flex flex-col gap-3 text-[#0B3041] text-lg md:text-xl mt-0">
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 bg-[#0B3041] rounded-full"></div>
           <span className="font-normal">Patients on Therapy</span>
