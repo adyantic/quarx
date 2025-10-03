@@ -82,7 +82,7 @@ const BasisDetail: React.FC = () => {
         );
       case 'how':
         return (
-          <div className="w-full flex flex-col items-center gap-12">
+          <div className="w-full flex flex-col items-center gap-5">
             <div className="w-full max-w-[1440px] px-4">
               <p className="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
                 Multiple payer, provider and patient sensitivity parameters are structured as inputs into the model to quantify the impact of access changes
