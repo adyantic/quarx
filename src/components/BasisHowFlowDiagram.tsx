@@ -10,12 +10,17 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
       
       {/* Patients with Rx - Large Trapezoid */}
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-4xl relative">
         <img 
           src={PatientsWithRxTrapezoid} 
-          alt="Patients with Rx trapezoid" 
+          alt="Trapezoid background graphic" 
           className="w-full h-auto"
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="text-[#0B3041] font-bold text-2xl md:text-4xl">
+            Patients with Rx
+          </span>
+        </div>
       </div>
 
       {/* Down Arrow with shadow effect */}
