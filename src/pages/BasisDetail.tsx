@@ -6,7 +6,7 @@ import { ChevronLeft } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
 import BasisWhatImg1 from '@/assets/basis-what-img1.png';
 import BasisWhatImg2 from '@/assets/basis-what-img2.png';
-import BasisHowDiagramWithText from '@/components/BasisHowDiagramWithText';
+import BasisHowFlowDiagram from '@/components/BasisHowFlowDiagram';
 
 const BasisDetail: React.FC = () => {
   const navigate = useNavigate();
@@ -90,7 +90,7 @@ const BasisDetail: React.FC = () => {
             </div>
             
             <div className="w-full max-w-[1440px] px-4 flex justify-center">
-              <BasisHowDiagramWithText />
+              <BasisHowFlowDiagram />
             </div>
           </div>
         );
