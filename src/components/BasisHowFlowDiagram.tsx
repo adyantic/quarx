@@ -1,5 +1,6 @@
 import React from 'react';
 import PatientsWithRxTrapezoid from '@/assets/patients-with-rx-trapezoid.png';
+import HcpSensitivityTrapezoid from '@/assets/hcp-sensitivity-trapezoid.png';
 import ArrowIcon from '@/assets/arrow-up-bold-outline-1.png';
 
 const BasisHowFlowDiagram: React.FC = () => {
@@ -34,15 +35,16 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* HCP Sensitivity to Access - Medium Trapezoid */}
-      <div className="w-full max-w-3xl">
-        <div 
-          className="bg-[#A8D5E2] text-[#0B3041] font-bold text-2xl md:text-4xl py-8 md:py-12 text-center"
-          style={{
-            clipPath: 'polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%)',
-            background: 'linear-gradient(135deg, #B8E5F2 0%, #A8D5E2 50%, #98C5D2 100%)'
-          }}
-        >
-          HCP Sensitivity to Access
+      <div className="w-full max-w-3xl relative">
+        <img 
+          src={HcpSensitivityTrapezoid} 
+          alt="Trapezoid background graphic" 
+          className="w-full h-auto"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="text-[#0B3041] font-bold text-2xl md:text-4xl">
+            HCP Sensitivity to Access
+          </span>
         </div>
       </div>
 
