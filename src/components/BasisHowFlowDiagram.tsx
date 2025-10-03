@@ -14,14 +14,14 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
       
       {/* Patients with Rx - Large Trapezoid */}
-      <div className="w-full max-w-4xl relative">
+      <div className="w-full max-w-5xl relative">
         <img 
           src={PatientsWithRxTrapezoid} 
           alt="Trapezoid background graphic" 
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-2xl md:text-4xl">
+          <span className="text-[#0B3041] font-bold text-3xl md:text-5xl">
             Patients with Rx
           </span>
         </div>
@@ -37,7 +37,7 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* HCP Sensitivity to Access - Medium Trapezoid */}
-      <div className="w-full max-w-3xl relative">
+      <div className="w-full max-w-4xl relative">
         <img 
           src={HcpSensitivityTrapezoid} 
           alt="Trapezoid background graphic" 
@@ -61,14 +61,14 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Payer Ability to Control - Medium-Small Trapezoid */}
-      <div className="w-full max-w-2xl relative">
+      <div className="w-full max-w-3xl relative">
         <img 
           src={PayerAbilityTrapezoid} 
           alt="Trapezoid background graphic" 
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-2xl md:text-4xl">
+          <span className="text-[#0B3041] font-bold text-xl md:text-3xl">
             Payer Ability to Control
           </span>
         </div>
@@ -85,14 +85,14 @@ const BasisHowFlowDiagram: React.FC = () => {
       </div>
 
       {/* Payer Ability to Control - Small Pill Shape */}
-      <div className="w-full max-w-xl relative">
+      <div className="w-full max-w-2xl relative">
         <img 
           src={PayerAbilityPill} 
           alt="Pill shape background graphic" 
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-[#0B3041] font-bold text-xl md:text-2xl">
+          <span className="text-[#0B3041] font-bold text-lg md:text-2xl">
             Payer Ability to Control
           </span>
         </div>
