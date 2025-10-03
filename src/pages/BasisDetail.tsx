@@ -6,6 +6,7 @@ import { ChevronLeft } from 'lucide-react';
 import BasisIcon from '@/assets/BASIS.svg';
 import BasisWhatImg1 from '@/assets/basis-what-img1.png';
 import BasisWhatImg2 from '@/assets/basis-what-img2.png';
+import BasisWhatImg3 from '@/assets/basis-what-img3.png';
 import BasisHowFlowDiagram from '@/components/BasisHowFlowDiagram';
 
 const BasisDetail: React.FC = () => {
@@ -59,23 +60,47 @@ const BasisDetail: React.FC = () => {
               </p>
             </div>
             
-            <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-6 px-4 items-stretch">
-              {/* Left Image - Navigation/Form */}
-              <div className="flex-[0.3] flex justify-center h-[500px]">
-                <img 
-                  src={BasisWhatImg1} 
-                  alt="BASIS Navigation and Target Access Inputs form" 
-                  className="h-full w-full object-contain rounded-lg"
-                />
+            <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
+              {/* First Chart - Gross & Net Sales Comparison */}
+              <div className="flex flex-col gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium text-center">
+                  Compare Gross and Net Sales<br />evolution across scenarios
+                </h3>
+                <div className="flex justify-center">
+                  <img 
+                    src={BasisWhatImg1} 
+                    alt="Gross and Net Sales Comparison across scenarios" 
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
               </div>
               
-              {/* Right Image - Charts */}
-              <div className="flex-[0.7] flex justify-center h-[500px]">
-                <img 
-                  src={BasisWhatImg2} 
-                  alt="BASIS scenario comparison charts showing sales and patient volume analysis" 
-                  className="h-full w-auto object-contain rounded-lg"
-                />
+              {/* Second Chart - Patient Volume & Share Comparison */}
+              <div className="flex flex-col gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium text-center">
+                  Compare Patient Volume & Share<br />evolution across scenarios
+                </h3>
+                <div className="flex justify-center">
+                  <img 
+                    src={BasisWhatImg2} 
+                    alt="Patient Volume and Share Comparison across scenarios" 
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+              
+              {/* Third Chart - Sales, Spend & Margin differential */}
+              <div className="flex flex-col gap-4">
+                <h3 className="text-[#0B3041] text-xl font-medium text-center">
+                  Compare Sales, Spend & Margin<br />differential across scenarios
+                </h3>
+                <div className="flex justify-center">
+                  <img 
+                    src={BasisWhatImg3} 
+                    alt="Sales, Spend and Margin differential across scenarios" 
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
