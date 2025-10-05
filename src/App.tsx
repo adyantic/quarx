@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
+import Team from "./pages/Team";
 import ChordDetail from "./pages/ChordDetail";
 import BasisDetail from "./pages/BasisDetail";
 import LaraDetail from "./pages/LaraDetail";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<Products />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/solutions/patient-journey" element={<PatientJourneyDetail />} />
           <Route path="/solutions/hcp-provider" element={<HcpProviderDetail />} />
           <Route path="/solutions/idn-health-system" element={<IdnHealthSystemDetail />} />
