@@ -44,7 +44,7 @@ const Team: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Section */}
           <div className="text-center mb-16 max-w-5xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#0B3041] mb-6 leading-relaxed">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#0B3041] mb-6 leading-relaxed text-justify">
               Our team brings together scientists, strategists, and industry experts with deep biopharma experience.{' '}
               <span className="text-[#5A9BA6]">
                 We bridge science and business, helping organizations accelerate innovation and market success.
