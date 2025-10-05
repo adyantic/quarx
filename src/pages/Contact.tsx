@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import vennDiagram from '@/assets/venn-diagram.png';
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, { message: "Name is required" }).max(100, { message: "Name must be less than 100 characters" }),
@@ -74,11 +73,45 @@ const Contact: React.FC = () => {
 
               {/* Venn Diagram */}
               <div className="relative w-full max-w-md mx-auto lg:mx-0 my-12">
-                <img 
-                  src={vennDiagram} 
-                  alt="QUARX Sweet Spot - Market Access & Commercial Strategy, Life Sciences Data & Analytical Expertise, Intentional Infusion of AI & Technology" 
-                  className="w-full h-auto"
-                />
+                {/* Three overlapping circles */}
+                <div className="relative h-80">
+                  {/* Top Circle */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-56 h-56 rounded-full bg-[#A8D5E2] opacity-70"></div>
+
+                  {/* Bottom Left Circle */}
+                  <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-[#9CC4D4] opacity-70"></div>
+
+                  {/* Bottom Right Circle */}
+                  <div className="absolute bottom-0 right-0 w-56 h-56 rounded-full bg-[#86B5C8] opacity-70"></div>
+
+                  {/* Center Logo */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg z-10">
+                    <img 
+                      src="/quarx-logo.png" 
+                      alt="QUARX Logo" 
+                      className="w-12 h-12"
+                    />
+                  </div>
+
+                  {/* Text Labels */}
+                  <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-64">
+                    <p className="text-[#0B3041] text-base font-light text-center leading-tight">
+                      Market Access &<br />Commercial Strategy
+                    </p>
+                  </div>
+
+                  <div className="absolute -bottom-12 left-0 w-64">
+                    <p className="text-[#0B3041] text-base font-light text-center leading-tight">
+                      Life Sciences Data &<br />Analytical Expertise
+                    </p>
+                  </div>
+
+                  <div className="absolute -bottom-12 right-0 w-64">
+                    <p className="text-[#0B3041] text-base font-light text-center leading-tight">
+                      Intentional Infusion<br />of AI & Technology
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
