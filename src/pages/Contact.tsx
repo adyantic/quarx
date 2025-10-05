@@ -63,9 +63,9 @@ const Contact: React.FC = () => {
       
       <main className="flex-1 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start">
             {/* Left Side - Value Proposition */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col">
               <h1 className="text-3xl lg:text-4xl font-light text-[#0B3041] mb-8 leading-tight">
                 We are in the sweetspot...
                 <br />
