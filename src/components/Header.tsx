@@ -61,9 +61,16 @@ const Header: React.FC = () => {
           >
             TEAM
           </Link>
-          <button className="text-[#0B3041] hover:text-[#156082] text-lg lg:text-2xl font-light transition-colors duration-200">
+          <Link 
+            to="/contact" 
+            className={`text-lg lg:text-2xl font-light transition-colors duration-200 ${
+              location.pathname === '/contact' 
+                ? 'text-[#5A9BA6]' 
+                : 'text-[#0B3041] hover:text-[#156082]'
+            }`}
+          >
             CONTACT
-          </button>
+          </Link>
         </nav>
 
         {/* Mobile & Tablet Hamburger Menu */}
@@ -117,12 +124,17 @@ const Header: React.FC = () => {
               >
                 TEAM
               </Link>
-              <button 
-                className="text-[#0B3041] hover:text-[#156082] text-lg s24:text-xl font-light transition-colors duration-200 text-left"
+              <Link 
+                to="/contact" 
+                className={`text-lg s24:text-xl font-light transition-colors duration-200 ${
+                  location.pathname === '/contact' 
+                    ? 'text-[#5A9BA6]' 
+                    : 'text-[#0B3041] hover:text-[#156082]'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 CONTACT
-              </button>
+              </Link>
           </nav>
         </div>
       )}

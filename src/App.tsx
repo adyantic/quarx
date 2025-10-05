@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
 import Team from "./pages/Team";
+import Contact from "./pages/Contact";
 import ChordDetail from "./pages/ChordDetail";
 import BasisDetail from "./pages/BasisDetail";
 import LaraDetail from "./pages/LaraDetail";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/solutions/patient-journey" element={<PatientJourneyDetail />} />
           <Route path="/solutions/hcp-provider" element={<HcpProviderDetail />} />
           <Route path="/solutions/idn-health-system" element={<IdnHealthSystemDetail />} />
