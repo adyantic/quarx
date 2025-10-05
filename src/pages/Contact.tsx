@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8 lg:p-12">
+            <div className="bg-white rounded-lg shadow-lg px-8 pb-8 pt-0 lg:px-12 lg:pb-12 lg:pt-0">
               <h2 className="text-3xl lg:text-4xl font-light text-[#0B3041] mb-8 leading-tight">
                 Let's connect and explore possibilities!
               </h2>
