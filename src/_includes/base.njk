@@ -14,23 +14,23 @@
   <meta name="theme-color" content="#0B3041">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="{{ page.url | default('/') }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | default('/') }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | default('/') }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | default('/') }}">
   <meta property="og:title" content="{{ title | default('QUARX - Biopharma Consulting') }}">
   <meta property="og:description" content="{{ description | default('We maximize the impact and value of biopharma innovations through real world data and analytics') }}">
-  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:image" content="{{ site.url }}/public/quarx-logo.png">
   <meta property="og:site_name" content="QUARX">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="{{ page.url | default('/') }}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url | default('/') }}">
   <meta name="twitter:title" content="{{ title | default('QUARX - Biopharma Consulting') }}">
   <meta name="twitter:description" content="{{ description | default('We maximize the impact and value of biopharma innovations through real world data and analytics') }}">
-  <meta name="twitter:image" content="/public/quarx-logo.png">
+  <meta name="twitter:image" content="{{ site.url }}/public/quarx-logo.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
