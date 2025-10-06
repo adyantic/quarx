@@ -38,15 +38,17 @@
   <link rel="apple-touch-icon" href="/public/quarx-logo.png">
 
   <!-- Resource Hints -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://api.builder.io">
+  <link rel="preload" href="/public/fonts/zilla-slab-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/fonts/zilla-slab-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/quarx-logo.png" as="image">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/css/output.css">
+  <!-- Styles - Critical CSS inlined, full CSS loaded async -->
+  <style>
+    /* Critical above-the-fold CSS */
+    *{border-color:hsl(var(--border))}body{background-color:hsl(var(--background));color:hsl(var(--foreground))}.bg-white{background-color:#fff}.text-\[#0B3041\]{color:#0B3041}.text-\[#5A9BA6\]{color:#5A9BA6}.fixed{position:fixed}.top-0{top:0}.left-0{left:0}.right-0{right:0}.z-50{z-index:50}.shadow-sm{box-shadow:0 1px 2px 0 rgba(0,0,0,0.05)}.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}.w-8{width:2rem}.h-8{height:2rem}.text-\[28px\]{font-size:28px}.font-medium{font-weight:500}.leading-tight{line-height:1.25}@font-face{font-family:'Zilla Slab';font-style:normal;font-weight:300;font-display:swap;src:url('/public/fonts/zilla-slab-300.woff2') format('woff2')}@font-face{font-family:'Zilla Slab';font-style:normal;font-weight:500;font-display:swap;src:url('/public/fonts/zilla-slab-500.woff2') format('woff2')}body{font-family:'Zilla Slab',serif}
+  </style>
+  <link rel="stylesheet" href="/css/output.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/output.css"></noscript>
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
