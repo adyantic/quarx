@@ -41,6 +41,10 @@
   <link rel="preload" href="/public/fonts/zilla-slab-v12-latin-300.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/fonts/zilla-slab-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/quarx-logo.png" as="image">
+  {% if page.url == "/" %}
+  <!-- LCP Image Preload for Homepage -->
+  <link rel="preload" as="image" href="/assets/optimized/sunflower-400.webp" imagesrcset="/assets/optimized/sunflower-250.webp 250w, /assets/optimized/sunflower-300.webp 300w, /assets/optimized/sunflower-400.webp 400w" imagesizes="(min-width: 768px) 400px, (min-width: 480px) 300px, 250px" fetchpriority="high">
+  {% endif %}
 
   <!-- Styles - Critical CSS inlined, full CSS loaded async -->
   <style>

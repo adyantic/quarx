@@ -41,6 +41,10 @@
   <link rel="preload" href="/public/fonts/zilla-slab-v12-latin-300.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/fonts/zilla-slab-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/quarx-logo.png" as="image">
+  
+  <!-- LCP Image Preload for Homepage -->
+  <link rel="preload" as="image" href="/assets/optimized/sunflower-400.webp" imagesrcset="/assets/optimized/sunflower-250.webp 250w, /assets/optimized/sunflower-300.webp 300w, /assets/optimized/sunflower-400.webp 400w" imagesizes="(min-width: 768px) 400px, (min-width: 480px) 300px, 250px" fetchpriority="high">
+  
 
   <!-- Styles - Critical CSS inlined, full CSS loaded async -->
   <style>
@@ -234,16 +238,29 @@
               
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <picture :class="isDataVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
-                    <source :srcset="dataImages[current].webp400" media="(min-width: 768px)" type="image/webp">
-                    <source :srcset="dataImages[current].webp300" media="(min-width: 480px)" type="image/webp">
-                    <source :srcset="dataImages[current].webp250" type="image/webp">
+                  
+                  <picture x-show="current === 0" :class="isDataVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/sunflower-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-250.webp" type="image/webp">
                     <img
-                      :src="dataImages[current].fallback"
-                      :alt="current === 0 ? 'Sunflower mathematical analysis - Maximum Efficiency' : 'Pinecone mathematical analysis - Optimal Growth'"
+                      src="/assets/optimized/sunflower-250.webp"
+                      alt="Sunflower mathematical analysis - Maximum Efficiency"
                       class="w-full h-full object-contain"
                       loading="eager"
                       fetchpriority="high"
+                    />
+                  </picture>
+                  
+                  <picture x-show="current === 1" x-cloak :class="isDataVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/pinecone-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-250.webp" type="image/webp">
+                    <img
+                      src="/assets/optimized/pinecone-250.webp"
+                      alt="Pinecone mathematical analysis - Optimal Growth"
+                      class="w-full h-full object-contain"
+                      loading="eager"
                     />
                   </picture>
                 </div>
@@ -255,16 +272,28 @@
               
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <picture :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
-                    <source :srcset="behaviourImages[current].webp400" media="(min-width: 768px)" type="image/webp">
-                    <source :srcset="behaviourImages[current].webp300" media="(min-width: 480px)" type="image/webp">
-                    <source :srcset="behaviourImages[current].webp267" type="image/webp">
+                  
+                  <picture x-show="current === 0" :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/sunflower-behaviour-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-behaviour-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-behaviour-267.webp" type="image/webp">
                     <img
-                      :src="behaviourImages[current].fallback"
-                      :alt="current === 0 ? 'Sunflower insight analysis' : 'Pinecone insight analysis'"
+                      src="/assets/optimized/sunflower-behaviour-267.webp"
+                      alt="Sunflower insight analysis"
                       class="w-full h-full object-contain"
                       loading="eager"
-                      fetchpriority="high"
+                    />
+                  </picture>
+                  
+                  <picture x-show="current === 1" x-cloak :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/pinecone-behaviour-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-behaviour-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-behaviour-267.webp" type="image/webp">
+                    <img
+                      src="/assets/optimized/pinecone-behaviour-267.webp"
+                      alt="Pinecone insight analysis"
+                      class="w-full h-full object-contain"
+                      loading="eager"
                     />
                   </picture>
                 </div>
@@ -276,16 +305,28 @@
               
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <picture :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
-                    <source :srcset="insightImages[current].webp400" media="(min-width: 768px)" type="image/webp">
-                    <source :srcset="insightImages[current].webp300" media="(min-width: 480px)" type="image/webp">
-                    <source :srcset="insightImages[current].webp275" type="image/webp">
+                  
+                  <picture x-show="current === 0" :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/sunflower-insight-new-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-insight-new-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/sunflower-insight-new-275.webp" type="image/webp">
                     <img
-                      :src="insightImages[current].fallback"
-                      :alt="current === 0 ? 'Sunflower Golden Ratio insight' : 'Pinecone Golden Ratio insight'"
+                      src="/assets/optimized/sunflower-insight-new-275.webp"
+                      alt="Sunflower Golden Ratio insight"
                       class="w-full h-full object-contain"
                       loading="eager"
-                      fetchpriority="high"
+                    />
+                  </picture>
+                  
+                  <picture x-show="current === 1" x-cloak :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source srcset="/assets/optimized/pinecone-insight-new-400.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-insight-new-300.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="/assets/optimized/pinecone-insight-new-275.webp" type="image/webp">
+                    <img
+                      src="/assets/optimized/pinecone-insight-new-275.webp"
+                      alt="Pinecone Golden Ratio insight"
+                      class="w-full h-full object-contain"
+                      loading="eager"
                     />
                   </picture>
                 </div>
