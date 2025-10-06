@@ -44,6 +44,11 @@ permalink: /contact/
           toastMessage: '',
           toastType: 'success',
           useMockMode: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1', // Enable mock in dev
+          init() {
+            console.log('🚀 Contact form Alpine.js initialized');
+            console.log('📍 Hostname:', window.location.hostname);
+            console.log('🧪 Mock mode:', this.useMockMode);
+          },
           displayToast(message, type = 'success') {
             console.log('displayToast called:', message, type);
             window.dispatchEvent(new CustomEvent('toast', {
@@ -89,8 +94,14 @@ permalink: /contact/
             return Object.keys(this.errors).length === 0;
           },
           async submitForm() {
-            if (!this.validate()) return;
+            console.log('🎯 submitForm called');
 
+            if (!this.validate()) {
+              console.log('❌ Validation failed:', this.errors);
+              return;
+            }
+
+            console.log('✅ Validation passed');
             this.isSubmitting = true;
 
             try {
