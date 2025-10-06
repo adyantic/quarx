@@ -22,9 +22,18 @@ description: We maximize the impact and value of biopharma innovations through r
               current: 0,
               isDataVisible: true,
               isGraphicVisible: true,
-              dataImages: ['/assets/sunflower.png', '/assets/pinecone.png'],
-              behaviourImages: ['/assets/sunflower-behaviour.png', '/assets/pinecone-behaviour.png'],
-              insightImages: ['/assets/sunflower-insight-new.png', '/assets/pinecone-insight-new.png']
+              dataImages: [
+                { webp250: '/assets/optimized/sunflower-250.webp', webp300: '/assets/optimized/sunflower-300.webp', webp400: '/assets/optimized/sunflower-400.webp', fallback: '/assets/sunflower.png' },
+                { webp250: '/assets/optimized/pinecone-250.webp', webp300: '/assets/optimized/pinecone-300.webp', webp400: '/assets/optimized/pinecone-400.webp', fallback: '/assets/pinecone.png' }
+              ],
+              behaviourImages: [
+                { webp267: '/assets/optimized/sunflower-behaviour-267.webp', webp300: '/assets/optimized/sunflower-behaviour-300.webp', webp400: '/assets/optimized/sunflower-behaviour-400.webp', fallback: '/assets/sunflower-behaviour.png' },
+                { webp267: '/assets/optimized/pinecone-behaviour-267.webp', webp300: '/assets/optimized/pinecone-behaviour-300.webp', webp400: '/assets/optimized/pinecone-behaviour-400.webp', fallback: '/assets/pinecone-behaviour.png' }
+              ],
+              insightImages: [
+                { webp275: '/assets/optimized/sunflower-insight-new-275.webp', webp300: '/assets/optimized/sunflower-insight-new-300.webp', webp400: '/assets/optimized/sunflower-insight-new-400.webp', fallback: '/assets/sunflower-insight-new.png' },
+                { webp275: '/assets/optimized/pinecone-insight-new-275.webp', webp300: '/assets/optimized/pinecone-insight-new-300.webp', webp400: '/assets/optimized/pinecone-insight-new-400.webp', fallback: '/assets/pinecone-insight-new.png' }
+              ]
             }"
             x-init="
               setInterval(() => {
@@ -43,12 +52,18 @@ description: We maximize the impact and value of biopharma innovations through r
               {# Column 1: Data Images + Real World Data #}
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <img
-                    :src="dataImages[current]"
-                    :alt="current === 0 ? 'Sunflower mathematical analysis - Maximum Efficiency' : 'Pinecone mathematical analysis - Optimal Growth'"
-                    :class="isDataVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
-                    class="absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform"
-                  />
+                  <picture :class="isDataVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source :srcset="dataImages[current].webp400" media="(min-width: 768px)" type="image/webp">
+                    <source :srcset="dataImages[current].webp300" media="(min-width: 480px)" type="image/webp">
+                    <source :srcset="dataImages[current].webp250" type="image/webp">
+                    <img
+                      :src="dataImages[current].fallback"
+                      :alt="current === 0 ? 'Sunflower mathematical analysis - Maximum Efficiency' : 'Pinecone mathematical analysis - Optimal Growth'"
+                      class="w-full h-full object-contain"
+                      loading="eager"
+                      fetchpriority="high"
+                    />
+                  </picture>
                 </div>
                 <div class="text-center">
                   <div class="text-[#5A9BA6] s24-text-medium text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-light font-sans">REAL WORLD DATA</div>
@@ -58,12 +73,18 @@ description: We maximize the impact and value of biopharma innovations through r
               {# Column 2: Graphic Images + Real Behaviour #}
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <img
-                    :src="behaviourImages[current]"
-                    :alt="current === 0 ? 'Sunflower insight analysis' : 'Pinecone insight analysis'"
-                    :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
-                    class="absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform"
-                  />
+                  <picture :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source :srcset="behaviourImages[current].webp400" media="(min-width: 768px)" type="image/webp">
+                    <source :srcset="behaviourImages[current].webp300" media="(min-width: 480px)" type="image/webp">
+                    <source :srcset="behaviourImages[current].webp267" type="image/webp">
+                    <img
+                      :src="behaviourImages[current].fallback"
+                      :alt="current === 0 ? 'Sunflower insight analysis' : 'Pinecone insight analysis'"
+                      class="w-full h-full object-contain"
+                      loading="eager"
+                      fetchpriority="high"
+                    />
+                  </picture>
                 </div>
                 <div class="text-center">
                   <div class="text-[#5A9BA6] s24-text-medium text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-light font-sans">REAL BEHAVIOUR</div>
@@ -73,12 +94,18 @@ description: We maximize the impact and value of biopharma innovations through r
               {# Column 3: Transitioning Insight + Real Insight #}
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
-                  <img
-                    :src="insightImages[current]"
-                    :alt="current === 0 ? 'Sunflower Golden Ratio insight' : 'Pinecone Golden Ratio insight'"
-                    :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
-                    class="absolute inset-0 w-full h-full object-contain transition-all duration-1000 ease-in-out transform"
-                  />
+                  <picture :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
+                    <source :srcset="insightImages[current].webp400" media="(min-width: 768px)" type="image/webp">
+                    <source :srcset="insightImages[current].webp300" media="(min-width: 480px)" type="image/webp">
+                    <source :srcset="insightImages[current].webp275" type="image/webp">
+                    <img
+                      :src="insightImages[current].fallback"
+                      :alt="current === 0 ? 'Sunflower Golden Ratio insight' : 'Pinecone Golden Ratio insight'"
+                      class="w-full h-full object-contain"
+                      loading="eager"
+                      fetchpriority="high"
+                    />
+                  </picture>
                 </div>
                 <div class="text-center">
                   <div class="text-[#5A9BA6] s24-text-medium text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-light font-sans">REAL INSIGHT</div>
@@ -245,6 +272,7 @@ description: We maximize the impact and value of biopharma innovations through r
                 src="https://api.builder.io/api/v1/image/assets/TEMP/87ebd5298308768e3f4bcdb7b309d155524b6b2e?placeholderIfAbsent=true"
                 alt="Trust is Everything icon"
                 class="aspect-[1] object-contain w-full"
+                loading="lazy"
               />
             </div>
             <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5">
@@ -262,6 +290,7 @@ description: We maximize the impact and value of biopharma innovations through r
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b535de84e72dbcfc2e0ce9e576f0c2851ec39fb2?placeholderIfAbsent=true"
                 alt="Find your Purpose icon"
                 class="aspect-[1] object-contain w-full"
+                loading="lazy"
               />
             </div>
             <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5">
@@ -279,6 +308,7 @@ description: We maximize the impact and value of biopharma innovations through r
                 src="https://api.builder.io/api/v1/image/assets/TEMP/0895aa354967c415b16fa2f8b5402e005492c86a?placeholderIfAbsent=true"
                 alt="Learning is Life-long icon"
                 class="aspect-[1] object-contain w-full"
+                loading="lazy"
               />
             </div>
             <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5">

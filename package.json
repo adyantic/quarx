@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "concurrently \"eleventy --serve\" \"tailwindcss -i src/index.css -o _site/css/output.css --watch\"",
     "build": "eleventy && tailwindcss -i src/index.css -o _site/css/output.css --minify",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "alpinejs": "^3.15.0",
@@ -19,6 +20,7 @@
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.1",
     "postcss": "^8.5.6",
+    "sharp": "^0.34.4",
     "tailwindcss": "^3.4.17"
   }
 }
