@@ -1,0 +1,99 @@
+<header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    {# Logo Section #}
+    <a href="/" class="flex items-center gap-2">
+      {# QUARX Logo #}
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      {# Brand Text #}
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    {# Desktop Navigation Menu #}
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url | startsWith('/products') else 'text-[#0B3041] hover:text-[#156082]' }}"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url | startsWith('/solutions') else 'text-[#0B3041] hover:text-[#156082]' }}"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url == '/team/' or page.url == '/team/index.html' else 'text-[#0B3041] hover:text-[#156082]' }}"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url == '/contact/' or page.url == '/contact/index.html' else 'text-[#0B3041] hover:text-[#156082]' }}"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    {# Mobile & Tablet Hamburger Menu #}
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  {# Mobile & Tablet Navigation Menu #}
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url | startsWith('/products') else 'text-[#0B3041] hover:text-[#156082]' }}"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url | startsWith('/solutions') else 'text-[#0B3041] hover:text-[#156082]' }}"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url == '/team/' or page.url == '/team/index.html' else 'text-[#0B3041] hover:text-[#156082]' }}"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 {{ 'text-[#5A9BA6]' if page.url == '/contact/' or page.url == '/contact/index.html' else 'text-[#0B3041] hover:text-[#156082]' }}"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>

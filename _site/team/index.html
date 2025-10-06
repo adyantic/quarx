@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimal-ui">
+
+  <!-- Primary Meta Tags -->
+  <title>Our Team | QUARX</title>
+  <meta name="title" content="Our Team | QUARX">
+  <meta name="description" content="Meet the QUARX team - scientists, strategists, and industry experts with deep biopharma experience bridging science and business.">
+  <meta name="keywords" content="biopharma, consulting, real world data, analytics, healthcare, market access, customer engagement, BASIS, CHORD, LARA">
+  <meta name="author" content="QUARX">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B3041">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/team/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/team/">
+  <meta property="og:title" content="Our Team | QUARX">
+  <meta property="og:description" content="Meet the QUARX team - scientists, strategists, and industry experts with deep biopharma experience bridging science and business.">
+  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:site_name" content="QUARX">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/team/">
+  <meta name="twitter:title" content="Our Team | QUARX">
+  <meta name="twitter:description" content="Meet the QUARX team - scientists, strategists, and industry experts with deep biopharma experience bridging science and business.">
+  <meta name="twitter:image" content="/public/quarx-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/quarx-logo.png">
+  <link rel="apple-touch-icon" href="/public/quarx-logo.png">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.builder.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "QUARX",
+        "url": "/team/",
+        "logo": "/public/quarx-logo.png",
+        "description": "Biopharma consulting firm maximizing impact through real world data and analytics",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "QUARX - Biopharma Consulting",
+        "url": "/team/",
+        "description": "We maximize the impact and value of biopharma innovations through real world data and analytics",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QUARX"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- htmx -->
+  <script src="/js/htmx.min.js" defer></script>
+
+  <!-- Alpine.js -->
+  <script src="/js/alpine.min.js" defer></script>
+</head>
+<body hx-boost="true" class="bg-white">
+  <header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    
+    <a href="/" class="flex items-center gap-2">
+      
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#5A9BA6]"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#5A9BA6]"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+<main class="bg-white min-h-screen flex flex-col">
+<style>
+  /* 3D Flip Card Styles */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card {
+    transition: transform 0.7s;
+  }
+
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+
+  @media (hover: hover) {
+    .flip-card-container:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+  }
+</style>
+
+<main class="flex-1 pt-24 pb-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <div class="mb-16">
+      <h1 class="w-full text-3xl sm:text-4xl lg:text-5xl font-light text-[#0B3041] mb-6 leading-relaxed text-center">
+        Our team brings together scientists, strategists, and industry experts with deep biopharma experience.
+        <span class="text-[#5A9BA6]">
+          We bridge science and business, helping organizations accelerate innovation and market success.
+        </span>
+      </h1>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+      <!-- Praveen Yedla -->
+      <div class="flip-card-container perspective-1000 h-[600px]"
+        x-data="{ flipped: false }"
+        @click="flipped = !flipped"
+        @mouseenter="if (window.innerWidth >= 1024) flipped = true"
+        @mouseleave="if (window.innerWidth >= 1024) flipped = false">
+        <div class="flip-card relative w-full h-full transform-style-3d" :class="{ 'flipped': flipped }">
+          <!-- Front of card -->
+          <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-[calc(100%-100px)] overflow-hidden">
+              <img
+                src="/assets/team-praveen.jpg"
+                alt="Praveen Yedla - Founder"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-2">
+                Praveen Yedla
+              </h3>
+              <p class="text-lg text-[#5A9BA6] font-light">
+                Founder
+              </p>
+            </div>
+          </div>
+
+          <!-- Back of card -->
+          <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-4">
+                Praveen Yedla
+              </h3>
+              <p class="text-base text-[#0B3041] leading-relaxed">
+                Praveen Yedla, the visionary behind QUARX, brings 15+ years of expertise across biotechnology, pharmaceuticals, and healthcare consulting. With a proven track record of guiding organizations through complex regulatory, scientific, and commercial landscapes, he combines strategic insight with a passion for advancing innovation in life sciences. Driven by the mission to bridge science and business, Praveen leads the team in delivering transformative solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mathew John -->
+      <div class="flip-card-container perspective-1000 h-[600px]"
+        x-data="{ flipped: false }"
+        @click="flipped = !flipped"
+        @mouseenter="if (window.innerWidth >= 1024) flipped = true"
+        @mouseleave="if (window.innerWidth >= 1024) flipped = false">
+        <div class="flip-card relative w-full h-full transform-style-3d" :class="{ 'flipped': flipped }">
+          <!-- Front of card -->
+          <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-[calc(100%-100px)] overflow-hidden">
+              <img
+                src="/assets/team-mathew.jpg"
+                alt="Mathew John - CEO"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-2">
+                Mathew John
+              </h3>
+              <p class="text-lg text-[#5A9BA6] font-light">
+                CEO
+              </p>
+            </div>
+          </div>
+
+          <!-- Back of card -->
+          <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-4">
+                Mathew John
+              </h3>
+              <p class="text-base text-[#0B3041] leading-relaxed">
+                Mathew John brings extensive leadership experience in biopharma strategy and market access. With a deep understanding of healthcare systems and payer dynamics, he drives organizational growth and operational excellence. His expertise spans commercial strategy, product launches, and stakeholder engagement across global markets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mary Spencers -->
+      <div class="flip-card-container perspective-1000 h-[600px]"
+        x-data="{ flipped: false }"
+        @click="flipped = !flipped"
+        @mouseenter="if (window.innerWidth >= 1024) flipped = true"
+        @mouseleave="if (window.innerWidth >= 1024) flipped = false">
+        <div class="flip-card relative w-full h-full transform-style-3d" :class="{ 'flipped': flipped }">
+          <!-- Front of card -->
+          <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-[calc(100%-100px)] overflow-hidden">
+              <img
+                src="/assets/team-mary.jpg"
+                alt="Mary Spencers - COO"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-2">
+                Mary Spencers
+              </h3>
+              <p class="text-lg text-[#5A9BA6] font-light">
+                COO
+              </p>
+            </div>
+          </div>
+
+          <!-- Back of card -->
+          <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-4">
+                Mary Spencers
+              </h3>
+              <p class="text-base text-[#0B3041] leading-relaxed">
+                Mary Spencers oversees operations and ensures seamless execution of strategic initiatives. With expertise in process optimization and cross-functional collaboration, she enables the team to deliver high-quality solutions efficiently. Her background in healthcare operations and project management drives organizational success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jack Stone -->
+      <div class="flip-card-container perspective-1000 h-[600px]"
+        x-data="{ flipped: false }"
+        @click="flipped = !flipped"
+        @mouseenter="if (window.innerWidth >= 1024) flipped = true"
+        @mouseleave="if (window.innerWidth >= 1024) flipped = false">
+        <div class="flip-card relative w-full h-full transform-style-3d" :class="{ 'flipped': flipped }">
+          <!-- Front of card -->
+          <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-[calc(100%-100px)] overflow-hidden">
+              <img
+                src="/assets/team-jack.jpg"
+                alt="Jack Stone - Head of Research"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-2">
+                Jack Stone
+              </h3>
+              <p class="text-lg text-[#5A9BA6] font-light">
+                Head of Research
+              </p>
+            </div>
+          </div>
+
+          <!-- Back of card -->
+          <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+              <h3 class="text-2xl font-light text-[#0B3041] mb-4">
+                Jack Stone
+              </h3>
+              <p class="text-base text-[#0B3041] leading-relaxed">
+                Jack Stone leads research initiatives with a focus on evidence generation and real-world data analytics. His expertise in clinical development, health economics, and outcomes research informs strategic decision-making. Jack combines scientific rigor with practical insights to support market access and commercialization strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="w-full bg-[#0B3041] py-6">
+  <div class="max-w-[2400px] mx-auto px-[30px]">
+    <div class="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+      
+      <div class="flex items-center gap-2">
+        <img
+          src="/public/quarx-logo.png"
+          alt="QUARX Logo"
+          class="w-8 h-8"
+        />
+        <div class="relative">
+          <div class="text-white text-[42px] font-medium leading-tight tracking-wide">
+            QUARX
+          </div>
+          <div class="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+            Biopharma Consulting
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
+            <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
+            <a href="/products/lara/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
+            <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/team/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">TEAM</a>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/contact/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">CONTACT</a>
+        </div>
+
+        
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              alt=""
+              class="w-6 h-6"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+---
+layout: base.njk
+title: LARA - Launch Analog Recommendation Agent | QUARX
+description: Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance
+permalink: /products/lara/
+---
+
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  {# Header Section #}
+  <div class="bg-white">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 pb-[30px] mx-auto">
+      {# Back to Products #}
+      <a
+        href="/products/"
+        class="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8 bg-white py-2 rounded-md"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="text-lg font-medium">Back to Products</span>
+      </a>
+
+      {# Title and Icon #}
+      <div class="flex flex-col items-center gap-8 mb-8 pt-5 pb-5">
+        <div class="flex items-center gap-6">
+          <img src="/assets/LARA.svg" alt="LARA icon" class="w-16 h-16" />
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[#0B3041] text-3xl md:text-4xl font-medium leading-tight">
+              <span class="font-medium">LARA</span> (Launch Analog Recommendation Agent) is an AI-enabled tool <span class="text-[#5A9BA6]">to identify analog drugs to plan and benchmark launch access and performance</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      {# Navigation Tabs #}
+      <div
+        x-data="{ activeTab: 'why' }"
+        class="w-full"
+      >
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20 mb-8">
+          <button
+            @click="activeTab = 'why'"
+            :class="activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHY?
+          </button>
+          <button
+            @click="activeTab = 'what'"
+            :class="activeTab === 'what' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHAT?
+          </button>
+          <button
+            @click="activeTab = 'how'"
+            :class="activeTab === 'how' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            HOW?
+          </button>
+        </div>
+
+        {# Tab Content #}
+        <main class="flex-1 mt-[30px] py-[30px] px-2.5 flex flex-col items-center gap-10">
+          <div class="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
+
+            {# WHY Tab #}
+            <div x-show="activeTab === 'why'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  Analyzing analog drugs is a critical element of understanding market landscape, setting expectations and developing launch benchmarks.
+                </p>
+              </div>
+
+              <div class="w-full max-w-4xl flex flex-col gap-6 px-4">
+                <p class="text-[#0B3041] text-2xl font-bold">
+                  But the analog selection is often rushed and handled sub-optimally due to the following challenges:
+                </p>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Absence of a single comprehensive repository of drugs which captures all the key criteria and characteristics
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Critical drug and market characteristics are only available in an unstructured form need significant secondary research
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Lack of a defined workflow and process for analog selection
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {# WHAT Tab #}
+            <div x-show="activeTab === 'what'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-12">
+                  LARA has been specifically designed to make analog selection a fully-informed, efficient and streamlined exercise.
+                </p>
+              </div>
+
+              <div class="w-full max-w-4xl flex flex-col gap-6 px-4">
+                <h2 class="text-[#0B3041] text-2xl font-bold mb-4">
+                  Key Features
+                </h2>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Comprehensive drug repository with key absolute and relative characteristics
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Streamlined agentic analog selection workflow
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    AI chatbot to enable to a conversational selection process
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Dual mode operation: Guided suggestions-driven process vs. Fully AI-driven recommendations
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Structured output formats (analog profiles, selection summary & rationale)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {# HOW Tab #}
+            <div x-show="activeTab === 'how'" class="w-full flex flex-col items-center gap-12">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  LARA leverages LLM to both curate/structure the drug repository and to power the agentic analog selection workflow
+                </p>
+              </div>
+
+              <div class="w-full max-w-[1440px] px-4 flex flex-col lg:flex-row gap-6 items-stretch">
+                {# Card 1: Conversational AI #}
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Conversational AI<br />& Dual Modality
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">AI chatbot for conversational querying and analog selection</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Parallel templated user input interface (in addition to NL query)</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">UI designed for iterative and incremental selection process</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Structured exportable outputs with the flexibility to reshape the output</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {# Card 2: Agentic RAG #}
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Agentic RAG<br />Architecture
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Multi-agent architecture: Query router, retrieval and summarization agents</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Reduced/structured data + summarized unstructured information to retain context</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Query builder tool for simple queries and drug look-ups</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Pre-defined deterministic workflow to reduce agent ramble</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {# Card 3: Comprehensive Drug Repository #}
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Comprehensive Drug<br />Repository
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Structured data from OpenFDA, Orange/Purple Book, Rx Norm, NDC Directory.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">LLM based curation and structuring of the FDA labels</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Longitudinal event tracking based on regulatory press releases and FDA documents</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Normalized drug pricing; Derivative drug and market characteristics</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>

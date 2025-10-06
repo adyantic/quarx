@@ -1,0 +1,129 @@
+{
+  "access": {
+    "title": "Access & Reimbursement Analytics",
+    "subtitle": "Our solutions are designed to answer specific questions to",
+    "highlightedText": "define target access, secure it and pull it through",
+    "columns": [
+      {
+        "icon": "/assets/Payer_Provider_Access_Strategy.svg",
+        "iconClass": "w-[58px] h-[87px]",
+        "title": "Payer-Provider<br/>Access Strategy",
+        "questions": [
+          {
+            "text": "How does payer management vary by methods and severity across channels?",
+            "hoverText": "Formulary Landscape Analysis"
+          },
+          {
+            "text": "What can I expect my launch access timing and trajectory to look like?",
+            "hoverText": "Time to Access Analysis"
+          },
+          {
+            "text": "How do payers vary in their ability to control utilization?",
+            "hoverText": "Claims-based Impact of UM Analysis"
+          },
+          {
+            "text": "Are there local markets where provider influence trumps payer policy?",
+            "hoverText": "Sub-national Payer-Provider Influence Map"
+          },
+          {
+            "text": "How do I think about my access strategy by specific payer types & segments?",
+            "hoverText": "Quantitative Payer Segmentation"
+          },
+          {
+            "text": "What is the optimal affordability range from a patient OOP standpoint?",
+            "hoverText": "Patient OOP Exposure & Sensitivity Analysis"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/Payer_Provider_Contracting_Strategy.svg",
+        "iconClass": "w-[88px] h-[57px]",
+        "title": "Payer-Provider<br/>Contracting Strategy",
+        "questions": [
+          {
+            "text": "What is the optimal channel contracting strategy that aligns with my brand strategy?",
+            "hoverText": "Channel Access Strategy Simulation"
+          },
+          {
+            "text": "What is the optimal contracting play for a given PBM or payer?",
+            "hoverText": "Contract Simulation/Deal-View Modeling"
+          },
+          {
+            "text": "How much downstream payer coverage can I expect with each of the big 3 PBMs?",
+            "hoverText": "PBM Downstream Adherence Analysis"
+          },
+          {
+            "text": "What are the rebates my competitor is likely to offer to a specific PBM or payer?",
+            "hoverText": "Competitive Rebate Equilibrium Simulation"
+          },
+          {
+            "text": "To what extent does practice economics impact provider brand preference?",
+            "hoverText": "Reimbursement Landscape & NCR Analysis"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/Pull_through_Performance_Tracking.svg",
+        "iconClass": "w-[56px] h-[73px]",
+        "title": "Pull-through &<br/>Performance Tracking",
+        "questions": [
+          {
+            "text": "How do I flex physician targeting to maximize access pull-through at launch?",
+            "hoverText": "HCP Targeting for Access Pull-through"
+          },
+          {
+            "text": "How do I optimize my reimbursement support to maximize patient acquisition?",
+            "hoverText": "Reimbursement Support Optimization"
+          },
+          {
+            "text": "Are there HCPs who are prescribing below expectations despite favorable access?",
+            "hoverText": "HCP Access-Performance Benchmarking"
+          },
+          {
+            "text": "How do my brand's access & performance KPIs compare with other analog launches?",
+            "hoverText": "Access KPI Tracking/Benchmarking"
+          }
+        ]
+      }
+    ]
+  },
+  "segmentation": {
+    "title": "Customer Segmentation",
+    "subtitle": "Our approach to Customer Segmentation is focused not just on observed behavior but also on",
+    "highlightedText": "the environment and ecosystem that drives the behavior",
+    "cards": [
+      {
+        "icon": "/assets/patient-icon.svg",
+        "iconClass": "w-14 h-14 brightness-0 invert",
+        "title": "Patient<br/>Journey &<br/>Segmentation",
+        "link": "/solutions/patient-journey/",
+        "questions": [
+          "Who are my target patient groups and what is their size and profile?",
+          "What are key leverage points for my drug along on the treatment pathway?",
+          "How is patient care coordinated across different HCPs and providers?"
+        ]
+      },
+      {
+        "icon": "/assets/hcp-icon.svg",
+        "iconClass": "w-14 h-16",
+        "title": "HCP &<br/>Provider<br/>Segmentation",
+        "link": "/solutions/hcp-provider/",
+        "questions": [
+          "How do my high value prescribers differ in their approach and behavior?",
+          "What are the forces and factors that drive variation in prescriber behavior?",
+          "What are the imperatives (access, education, support) to drive adoption?"
+        ]
+      },
+      {
+        "icon": "/assets/idn-icon.svg",
+        "iconClass": "w-16 h-12",
+        "title": "IDN & Health<br/>System<br/>Archetyping",
+        "link": "/solutions/idn-health-system/",
+        "questions": [
+          "How do the top health systems differ in their approach to care, organizational structure and operational maturity?",
+          "Given the observed behavior and influence profile, how do I customize the engagement strategy with my target systems?"
+        ]
+      }
+    ]
+  }
+}

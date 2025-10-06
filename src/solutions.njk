@@ -1,0 +1,291 @@
+---
+layout: base.njk
+title: Solutions | QUARX - Access & Reimbursement Analytics, Customer Segmentation
+description: QUARX solutions for access & reimbursement analytics and customer segmentation to define target access, secure it, and pull it through
+permalink: /solutions/
+---
+
+<div class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <main class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 md:pt-28 lg:pt-32 pb-[50px] flex flex-col items-center gap-[30px]">
+      <h1 class="sr-only">QUARX Solutions</h1>
+      {# Tab Buttons #}
+      <div
+        x-data="{
+          activeTab: (new URLSearchParams(window.location.search).get('tab') === 'segmentation') ? 'segmentation' : 'access'
+        }"
+        class="w-full"
+      >
+        <div class="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6 mb-8">
+          <button
+            @click="activeTab = 'access'"
+            :class="activeTab === 'access' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
+            class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
+          >
+            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+          </button>
+          <button
+            @click="activeTab = 'segmentation'"
+            :class="activeTab === 'segmentation' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
+            class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
+          >
+            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+          </button>
+        </div>
+
+        {# Access & Reimbursement Tab Content #}
+        <div x-show="activeTab === 'access'" class="self-stretch px-2.5 flex flex-col items-center">
+          {# Title #}
+          <div class="w-full max-w-[1400px] text-center mb-5 px-2">
+            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+              <span class="text-[#0B3041]">
+                Access & Reimbursement Analytics: Our solutions are designed to answer specific questions to
+              </span>
+              <span class="text-[#5A9BA6]">
+                define target access, secure it and pull it through
+              </span>
+            </h2>
+          </div>
+
+          {# Three Column Layout #}
+          <div class="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            {# Column 1: Payer-Provider Access Strategy #}
+            <div class="min-w-0 flex flex-col gap-2.5">
+              {# Header #}
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[44px] md:w-[58px] h-[65px] md:h-[87px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Payer_Provider_Access_Strategy.svg" alt="Payer-Provider Access Strategy" class="w-[58px] h-[87px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Payer-Provider<br />Access Strategy
+                </h3>
+              </div>
+
+              {# Questions #}
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                {% set questions1 = [
+                  {q: 'How does payer management vary by methods and severity across channels?', h: 'Formulary Landscape Analysis'},
+                  {q: 'What can I expect my launch access timing and trajectory to look like?', h: 'Time to Access Analysis'},
+                  {q: 'How do payers vary in their ability to control utilization?', h: 'Claims-based Impact of UM Analysis'},
+                  {q: 'Are there local markets where provider influence trumps payer policy?', h: 'Sub-national Payer-Provider Influence Map'},
+                  {q: 'How do I think about my access strategy by specific payer types & segments?', h: 'Quantitative Payer Segmentation'},
+                  {q: 'What is the optimal affordability range from a patient OOP standpoint?', h: 'Patient OOP Exposure & Sensitivity Analysis'}
+                ] %}
+                {% for item in questions1 %}
+                <div
+                  @click="clicked = clicked === {{ loop.index0 }} ? null : {{ loop.index0 }}"
+                  :class="clicked === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            {# Column 2: Payer-Provider Contracting Strategy #}
+            <div class="min-w-0 flex flex-col gap-2.5">
+              {# Header #}
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[66px] md:w-[88px] h-[43px] md:h-[57px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Payer_Provider_Contracting_Strategy.svg" alt="Payer-Provider Contracting Strategy" class="w-[88px] h-[57px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Payer-Provider<br />Contracting Strategy
+                </h3>
+              </div>
+
+              {# Questions #}
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                {% set questions2 = [
+                  {q: 'What is the optimal channel contracting strategy that aligns with my brand strategy?', h: 'Channel Access Strategy Simulation'},
+                  {q: 'What is the optimal contracting play for a given PBM or payer?', h: 'Contract Simulation/Deal-View Modeling'},
+                  {q: 'How much downstream payer coverage can I expect with each of the big 3 PBMs?', h: 'PBM Downstream Adherence Analysis'},
+                  {q: 'What are the rebates my competitor is likely to offer to a specific PBM or payer?', h: 'Competitive Rebate Equilibrium Simulation'},
+                  {q: 'To what extent does practice economics impact provider brand preference?', h: 'Reimbursement Landscape & NCR Analysis'}
+                ] %}
+                {% for item in questions2 %}
+                <div
+                  @click="clicked = clicked === {{ loop.index0 }} ? null : {{ loop.index0 }}"
+                  :class="clicked === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            {# Column 3: Pull-through & Performance Tracking #}
+            <div class="min-w-0 flex flex-col gap-2.5">
+              {# Header #}
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[42px] md:w-[56px] h-[55px] md:h-[73px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Pull_through_Performance_Tracking.svg" alt="Pull-through & Performance Tracking" class="w-[56px] h-[73px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Pull-through &<br />Performance Tracking
+                </h3>
+              </div>
+
+              {# Questions #}
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                {% set questions3 = [
+                  {q: 'How do I flex physician targeting to maximize access pull-through at launch?', h: 'HCP Targeting for Access Pull-through'},
+                  {q: 'How do I optimize my reimbursement support to maximize patient acquisition?', h: 'Reimbursement Support Optimization'},
+                  {q: 'Are there HCPs who are prescribing below expectations despite favorable access?', h: 'HCP Access-Performance Benchmarking'},
+                  {q: 'How do my brand&apos;s access & performance KPIs compare with other analog launches?', h: 'Access KPI Tracking/Benchmarking'}
+                ] %}
+                {% for item in questions3 %}
+                <div
+                  @click="clicked = clicked === {{ loop.index0 }} ? null : {{ loop.index0 }}"
+                  :class="clicked === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {# Customer Segmentation Tab Content #}
+        <div x-show="activeTab === 'segmentation'" class="self-stretch px-2.5 flex flex-col items-center gap-12">
+          {# Title #}
+          <div class="w-full max-w-[1400px] text-center px-2">
+            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+              <span class="text-[#0B3041]">
+                Our approach to Customer Segmentation is focused not just on observed behavior but also on
+              </span>
+              <span class="text-[#5A9BA6]">
+                the environment and ecosystem that drives the behavior
+              </span>
+            </h2>
+          </div>
+
+          {# Diamond Cards Section #}
+          <div class="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            {# Patient Journey Card #}
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/patient-icon.svg" alt="Patient" class="w-14 h-14 brightness-0 invert" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      Patient<br />Journey &<br />Segmentation
+                    </h3>
+                    <a href="/solutions/patient-journey/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>Who are my target patient groups and what is their size and profile?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are key leverage points for my drug along on the treatment pathway?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How is patient care coordinated across different HCPs and providers?</span>
+                </li>
+              </ul>
+            </div>
+
+            {# HCP & Provider Card #}
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/hcp-icon.svg" alt="HCP & Provider" class="w-14 h-16" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      HCP &<br />Provider<br />Segmentation
+                    </h3>
+                    <a href="/solutions/hcp-provider/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How do my high value prescribers differ in their approach and behavior?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are the forces and factors that drive variation in prescriber behavior?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are the imperatives (access, education, support) to drive adoption?</span>
+                </li>
+              </ul>
+            </div>
+
+            {# IDN & Health System Card #}
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/idn-icon.svg" alt="IDN & Health System" class="w-16 h-12" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      IDN & Health<br />System<br />Archetyping
+                    </h3>
+                    <a href="/solutions/idn-health-system/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How do the top health systems differ in their approach to care, organizational structure and operational maturity?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>Given the observed behavior and influence profile, how do I customize the engagement strategy with my target systems?</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

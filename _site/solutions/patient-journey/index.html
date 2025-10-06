@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimal-ui">
+
+  <!-- Primary Meta Tags -->
+  <title>Patient Journey &amp; Segmentation | QUARX Solutions</title>
+  <meta name="title" content="Patient Journey &amp; Segmentation | QUARX Solutions">
+  <meta name="description" content="Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to identify discrete target patient segments">
+  <meta name="keywords" content="biopharma, consulting, real world data, analytics, healthcare, market access, customer engagement, BASIS, CHORD, LARA">
+  <meta name="author" content="QUARX">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B3041">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/solutions/patient-journey/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/solutions/patient-journey/">
+  <meta property="og:title" content="Patient Journey &amp; Segmentation | QUARX Solutions">
+  <meta property="og:description" content="Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to identify discrete target patient segments">
+  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:site_name" content="QUARX">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/solutions/patient-journey/">
+  <meta name="twitter:title" content="Patient Journey &amp; Segmentation | QUARX Solutions">
+  <meta name="twitter:description" content="Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to identify discrete target patient segments">
+  <meta name="twitter:image" content="/public/quarx-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/quarx-logo.png">
+  <link rel="apple-touch-icon" href="/public/quarx-logo.png">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.builder.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "QUARX",
+        "url": "/solutions/patient-journey/",
+        "logo": "/public/quarx-logo.png",
+        "description": "Biopharma consulting firm maximizing impact through real world data and analytics",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "QUARX - Biopharma Consulting",
+        "url": "/solutions/patient-journey/",
+        "description": "We maximize the impact and value of biopharma innovations through real world data and analytics",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QUARX"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- htmx -->
+  <script src="/js/htmx.min.js" defer></script>
+
+  <!-- Alpine.js -->
+  <script src="/js/alpine.min.js" defer></script>
+</head>
+<body hx-boost="true" class="bg-white">
+  <header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    
+    <a href="/" class="flex items-center gap-2">
+      
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#5A9BA6]"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#5A9BA6]"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <div class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 md:pt-28 lg:pt-32 pb-[50px] flex flex-col items-center gap-[30px]">
+      
+      <div class="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6">
+        <a
+          href="/solutions/"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-transparent text-[#7097AA] border-[#7097AA] transition-colors hover:bg-[#7097AA]/10"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+        </a>
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-[#156082] text-white border-[#156082] transition-colors"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+        </a>
+      </div>
+
+      
+      <div class="self-stretch px-2 md:px-5">
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="inline-flex items-center gap-2 text-[#5A9BA6] text-lg font-medium hover:underline"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back
+        </a>
+      </div>
+
+      
+      <div class="w-full max-w-[1400px] text-center px-2 md:px-5">
+        <h1 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+          <span class="text-[#0B3041]">
+            Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to
+          </span>
+          <span class="text-[#5A9BA6]">
+            identify discrete target patient segments
+          </span>
+        </h1>
+      </div>
+
+      
+      <div class="w-full px-4 md:px-5 mt-6 md:mt-12">
+        <div class="max-w-[1200px] mx-auto">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-6 lg:gap-1">
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/patient-icon.svg" alt="Patient" class="w-full h-full" />
+                </div>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#9DBFD0] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Awareness &<br />Recognition
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  How do patients first become aware of symptoms? How do they seek medical care?
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/presentation-icon.svg" alt="Presentation & Diagnosis" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  Where do patients initially present and where are they initially diagnosed?
+                </p>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#7AADC4] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Presentation<br />& Diagnosis
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  Where do patients initially present and where are they initially diagnosed?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/presentation-icon.svg" alt="Presentation & Diagnosis" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/treatment-icon.svg" alt="Treatment Selection" class="w-full h-full" />
+                </div>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#5A9BA6] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Treatment<br />Selection
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What patient characteristics are most likely to receive your brand?
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/brand-selection-icon.svg" alt="Brand Selection" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  What patient characteristics and/or external factors influence treatment choice?
+                </p>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#2D7A8F] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Brand<br />Selection
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What patient characteristics and/or external factors influence treatment choice?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/brand-selection-icon.svg" alt="Brand Selection" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/brand-access-icon.svg" alt="Brand Access" class="w-full h-full" />
+                </div>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#1E5A6B] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Brand<br />Access
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What access hurdles are patients experiencing related to your brand?
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center">
+              
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/switching-icon.svg" alt="Switching & Progression" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  What are the switching dynamics related to your brand and competitors?
+                </p>
+              </div>
+
+              
+              <div class="relative z-10 bg-[#0B3041] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Switching &<br />Progression
+              </div>
+
+              
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What are the switching dynamics related to your brand and competitors?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/switching-icon.svg" alt="Switching & Progression" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          
+          <style>
+            @media (min-width: 1024px) {
+              .relative.z-10 {
+                clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%) !important;
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="w-full bg-[#0B3041] py-6">
+  <div class="max-w-[2400px] mx-auto px-[30px]">
+    <div class="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+      
+      <div class="flex items-center gap-2">
+        <img
+          src="/public/quarx-logo.png"
+          alt="QUARX Logo"
+          class="w-8 h-8"
+        />
+        <div class="relative">
+          <div class="text-white text-[42px] font-medium leading-tight tracking-wide">
+            QUARX
+          </div>
+          <div class="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+            Biopharma Consulting
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
+            <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
+            <a href="/products/lara/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
+            <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/team/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">TEAM</a>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/contact/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">CONTACT</a>
+        </div>
+
+        
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              alt=""
+              class="w-6 h-6"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chord",
+    "title": "CHORD",
+    "subtitle": "Cross-Channel Hospital OP\nReimbursement Dashboard",
+    "description": "CHORD is a comprehensive analytics-ready database of reimbursement rates by product, procedure, channel, payer, health system and hospital.",
+    "icon": "/assets/CHORD.svg",
+    "slug": "chord"
+  },
+  {
+    "id": "basis",
+    "title": "BASIS",
+    "subtitle": "Brand Access Strategy\nImpact Simulator",
+    "description": "Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify impact of access shifts on brand utilization & GTN",
+    "icon": "/assets/BASIS.svg",
+    "slug": "basis"
+  },
+  {
+    "id": "lara",
+    "title": "LARA",
+    "subtitle": "Launch Analog\nRecommendation Agent",
+    "description": "Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance",
+    "icon": "/assets/LARA.svg",
+    "slug": "lara"
+  }
+]

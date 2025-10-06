@@ -1,0 +1,227 @@
+---
+layout: base.njk
+title: Patient Journey & Segmentation | QUARX Solutions
+description: Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to identify discrete target patient segments
+permalink: /solutions/patient-journey/
+---
+
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <div class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 md:pt-28 lg:pt-32 pb-[50px] flex flex-col items-center gap-[30px]">
+      {# Tab Buttons #}
+      <div class="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6">
+        <a
+          href="/solutions/"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-transparent text-[#7097AA] border-[#7097AA] transition-colors hover:bg-[#7097AA]/10"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+        </a>
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-[#156082] text-white border-[#156082] transition-colors"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+        </a>
+      </div>
+
+      {# Back Link #}
+      <div class="self-stretch px-2 md:px-5">
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="inline-flex items-center gap-2 text-[#5A9BA6] text-lg font-medium hover:underline"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back
+        </a>
+      </div>
+
+      {# Title #}
+      <div class="w-full max-w-[1400px] text-center px-2 md:px-5">
+        <h1 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+          <span class="text-[#0B3041]">
+            Our quantitative Patient Journey and Segmentation framework captures cross-stakeholder dynamics of treatment choice to
+          </span>
+          <span class="text-[#5A9BA6]">
+            identify discrete target patient segments
+          </span>
+        </h1>
+      </div>
+
+      {# Journey Flow Diagram #}
+      <div class="w-full px-4 md:px-5 mt-6 md:mt-12">
+        <div class="max-w-[1200px] mx-auto">
+          {# Grid Layout Container - Responsive #}
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-6 lg:gap-1">
+
+            {# Column 1 - Awareness & Recognition #}
+            <div class="flex flex-col items-center">
+              {# Icon above #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/patient-icon.svg" alt="Patient" class="w-full h-full" />
+                </div>
+              </div>
+
+              {# Arrow box - vertical arrow on mobile, horizontal on desktop #}
+              <div class="relative z-10 bg-[#9DBFD0] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Awareness &<br />Recognition
+              </div>
+
+              {# Text below #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  How do patients first become aware of symptoms? How do they seek medical care?
+                </p>
+              </div>
+            </div>
+
+            {# Column 2 - Presentation & Diagnosis #}
+            <div class="flex flex-col items-center">
+              {# Text above on desktop, icon on mobile #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/presentation-icon.svg" alt="Presentation & Diagnosis" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  Where do patients initially present and where are they initially diagnosed?
+                </p>
+              </div>
+
+              {# Arrow box #}
+              <div class="relative z-10 bg-[#7AADC4] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Presentation<br />& Diagnosis
+              </div>
+
+              {# Icon below on desktop, text on mobile #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  Where do patients initially present and where are they initially diagnosed?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/presentation-icon.svg" alt="Presentation & Diagnosis" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+            {# Column 3 - Treatment Selection #}
+            <div class="flex flex-col items-center">
+              {# Icon above #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/treatment-icon.svg" alt="Treatment Selection" class="w-full h-full" />
+                </div>
+              </div>
+
+              {# Arrow box #}
+              <div class="relative z-10 bg-[#5A9BA6] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Treatment<br />Selection
+              </div>
+
+              {# Text below #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What patient characteristics are most likely to receive your brand?
+                </p>
+              </div>
+            </div>
+
+            {# Column 4 - Brand Selection #}
+            <div class="flex flex-col items-center">
+              {# Text above on desktop, icon on mobile #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/brand-selection-icon.svg" alt="Brand Selection" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  What patient characteristics and/or external factors influence treatment choice?
+                </p>
+              </div>
+
+              {# Arrow box #}
+              <div class="relative z-10 bg-[#2D7A8F] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Brand<br />Selection
+              </div>
+
+              {# Icon below on desktop, text on mobile #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What patient characteristics and/or external factors influence treatment choice?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/brand-selection-icon.svg" alt="Brand Selection" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+            {# Column 5 - Brand Access #}
+            <div class="flex flex-col items-center">
+              {# Icon above #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <img src="/assets/brand-access-icon.svg" alt="Brand Access" class="w-full h-full" />
+                </div>
+              </div>
+
+              {# Arrow box #}
+              <div class="relative z-10 bg-[#1E5A6B] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Brand<br />Access
+              </div>
+
+              {# Text below #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What access hurdles are patients experiencing related to your brand?
+                </p>
+              </div>
+            </div>
+
+            {# Column 6 - Switching & Progression #}
+            <div class="flex flex-col items-center">
+              {# Text above on desktop, icon on mobile #}
+              <div class="flex flex-col items-center justify-end mb-4 md:mb-6 lg:h-32">
+                <div class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center lg:hidden">
+                  <img src="/assets/switching-icon.svg" alt="Switching & Progression" class="w-full h-full" />
+                </div>
+                <p class="hidden lg:block text-[#0B3041] text-sm font-medium text-center leading-tight">
+                  What are the switching dynamics related to your brand and competitors?
+                </p>
+              </div>
+
+              {# Arrow box #}
+              <div class="relative z-10 bg-[#0B3041] text-white px-4 py-6 md:px-6 lg:py-6 text-center font-medium text-sm md:text-base lg:text-lg w-full" style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px));">
+                Switching &<br />Progression
+              </div>
+
+              {# Icon below on desktop, text on mobile #}
+              <div class="flex flex-col items-center justify-start mt-4 md:mt-6 lg:h-32">
+                <p class="lg:hidden text-[#0B3041] text-xs md:text-sm font-medium text-center leading-tight">
+                  What are the switching dynamics related to your brand and competitors?
+                </p>
+                <div class="hidden lg:flex w-20 h-20 items-center justify-center">
+                  <img src="/assets/switching-icon.svg" alt="Switching & Progression" class="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {# Add note about responsive clip-path #}
+          <style>
+            @media (min-width: 1024px) {
+              .relative.z-10 {
+                clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 15px 50%) !important;
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

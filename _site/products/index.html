@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimal-ui">
+
+  <!-- Primary Meta Tags -->
+  <title>QUARX Products - Accelerated Analytics &amp; Insight Generation</title>
+  <meta name="title" content="QUARX Products - Accelerated Analytics &amp; Insight Generation">
+  <meta name="description" content="Explore QUARX&#39;s analytics products - CHORD for reimbursement data, BASIS for access strategy simulation, and LARA for AI-enabled launch planning">
+  <meta name="keywords" content="biopharma, consulting, real world data, analytics, healthcare, market access, customer engagement, BASIS, CHORD, LARA">
+  <meta name="author" content="QUARX">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B3041">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/products/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/products/">
+  <meta property="og:title" content="QUARX Products - Accelerated Analytics &amp; Insight Generation">
+  <meta property="og:description" content="Explore QUARX&#39;s analytics products - CHORD for reimbursement data, BASIS for access strategy simulation, and LARA for AI-enabled launch planning">
+  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:site_name" content="QUARX">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/products/">
+  <meta name="twitter:title" content="QUARX Products - Accelerated Analytics &amp; Insight Generation">
+  <meta name="twitter:description" content="Explore QUARX&#39;s analytics products - CHORD for reimbursement data, BASIS for access strategy simulation, and LARA for AI-enabled launch planning">
+  <meta name="twitter:image" content="/public/quarx-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/quarx-logo.png">
+  <link rel="apple-touch-icon" href="/public/quarx-logo.png">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.builder.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "QUARX",
+        "url": "/products/",
+        "logo": "/public/quarx-logo.png",
+        "description": "Biopharma consulting firm maximizing impact through real world data and analytics",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "QUARX - Biopharma Consulting",
+        "url": "/products/",
+        "description": "We maximize the impact and value of biopharma innovations through real world data and analytics",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QUARX"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- htmx -->
+  <script src="/js/htmx.min.js" defer></script>
+
+  <!-- Alpine.js -->
+  <script src="/js/alpine.min.js" defer></script>
+</head>
+<body hx-boost="true" class="bg-white">
+  <header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    
+    <a href="/" class="flex items-center gap-2">
+      
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#5A9BA6]"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#5A9BA6]"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <main class="min-h-[90vh] py-8 md:py-12 px-2.5 flex flex-col justify-center items-center gap-10">
+    <div class="w-full max-w-[1440px] px-2.5 py-12 overflow-hidden flex flex-col justify-center items-center gap-10">
+      <div class="flex flex-col justify-start items-center gap-8">
+        <h1 class="text-center text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
+          Our Products: for Accelerated Analytics & Insight Generation
+        </h1>
+      </div>
+
+      <div class="w-full flex flex-col lg:flex-row justify-start items-center gap-5">
+        
+        <div class="flex-1 p-5 bg-[#F1F4F1] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] rounded-[20px] flex flex-col justify-start items-center gap-8 w-full">
+          <h2 class="text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
+            CHORD
+          </h2>
+
+          <div class="w-full text-center text-[#5A9BA6] text-2xl md:text-3xl font-medium leading-10 whitespace-pre-line">
+            Cross-Channel Hospital OP
+Reimbursement Dashboard
+          </div>
+
+          <div class="w-[85px] h-[85px] flex justify-center items-center">
+            <img
+              src="/assets/CHORD.svg"
+              alt="CHORD icon"
+              class="w-[85px] h-[85px]"
+            />
+          </div>
+
+          <div class="w-full flex justify-center items-start gap-2.5">
+            <p class="flex-1 text-center text-[#0B3041] text-xl md:text-2xl font-medium leading-9">
+              CHORD is a comprehensive analytics-ready database of reimbursement rates by product, procedure, channel, payer, health system and hospital.
+            </p>
+          </div>
+
+          <a
+            href="/products/chord/"
+            class="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
+            aria-label="Learn more about CHORD"
+          >
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="flex-1 p-5 bg-[#F1F4F1] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] rounded-[20px] flex flex-col justify-start items-center gap-8 w-full">
+          <h2 class="text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
+            BASIS
+          </h2>
+
+          <div class="w-full text-center text-[#5A9BA6] text-2xl md:text-3xl font-medium leading-10 whitespace-pre-line">
+            Brand Access Strategy
+Impact Simulator
+          </div>
+
+          <div class="w-[85px] h-[85px] flex justify-center items-center">
+            <img
+              src="/assets/BASIS.svg"
+              alt="BASIS icon"
+              class="w-[85px] h-[85px]"
+            />
+          </div>
+
+          <div class="w-full flex justify-center items-start gap-2.5">
+            <p class="flex-1 text-center text-[#0B3041] text-xl md:text-2xl font-medium leading-9">
+              Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify impact of access shifts on brand utilization &amp; GTN
+            </p>
+          </div>
+
+          <a
+            href="/products/basis/"
+            class="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
+            aria-label="Learn more about BASIS"
+          >
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="flex-1 p-5 bg-[#F1F4F1] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] rounded-[20px] flex flex-col justify-start items-center gap-8 w-full">
+          <h2 class="text-[#0B3041] text-4xl md:text-5xl font-medium leading-tight">
+            LARA
+          </h2>
+
+          <div class="w-full text-center text-[#5A9BA6] text-2xl md:text-3xl font-medium leading-10 whitespace-pre-line">
+            Launch Analog
+Recommendation Agent
+          </div>
+
+          <div class="w-[85px] h-[85px] flex justify-center items-center">
+            <img
+              src="/assets/LARA.svg"
+              alt="LARA icon"
+              class="w-[85px] h-[85px]"
+            />
+          </div>
+
+          <div class="w-full flex justify-center items-start gap-2.5">
+            <p class="flex-1 text-center text-[#0B3041] text-xl md:text-2xl font-medium leading-9">
+              Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance
+            </p>
+          </div>
+
+          <a
+            href="/products/lara/"
+            class="w-[58px] h-[58px] relative overflow-hidden rounded-full bg-[#5A9BA6] flex items-center justify-center hover:bg-[#5A9BA6]/80 transition-colors cursor-pointer"
+            aria-label="Learn more about LARA"
+          >
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <footer class="w-full bg-[#0B3041] py-6">
+  <div class="max-w-[2400px] mx-auto px-[30px]">
+    <div class="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+      
+      <div class="flex items-center gap-2">
+        <img
+          src="/public/quarx-logo.png"
+          alt="QUARX Logo"
+          class="w-8 h-8"
+        />
+        <div class="relative">
+          <div class="text-white text-[42px] font-medium leading-tight tracking-wide">
+            QUARX
+          </div>
+          <div class="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+            Biopharma Consulting
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
+            <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
+            <a href="/products/lara/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
+            <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/team/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">TEAM</a>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/contact/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">CONTACT</a>
+        </div>
+
+        
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              alt=""
+              class="w-6 h-6"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

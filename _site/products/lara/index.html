@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimal-ui">
+
+  <!-- Primary Meta Tags -->
+  <title>LARA - Launch Analog Recommendation Agent | QUARX</title>
+  <meta name="title" content="LARA - Launch Analog Recommendation Agent | QUARX">
+  <meta name="description" content="Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance">
+  <meta name="keywords" content="biopharma, consulting, real world data, analytics, healthcare, market access, customer engagement, BASIS, CHORD, LARA">
+  <meta name="author" content="QUARX">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B3041">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/products/lara/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/products/lara/">
+  <meta property="og:title" content="LARA - Launch Analog Recommendation Agent | QUARX">
+  <meta property="og:description" content="Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance">
+  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:site_name" content="QUARX">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/products/lara/">
+  <meta name="twitter:title" content="LARA - Launch Analog Recommendation Agent | QUARX">
+  <meta name="twitter:description" content="Launch Analog Recommendation Agent (LARA) is an AI-enabled tool to identify analog drugs to plan and benchmark launch access and performance">
+  <meta name="twitter:image" content="/public/quarx-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/quarx-logo.png">
+  <link rel="apple-touch-icon" href="/public/quarx-logo.png">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.builder.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "QUARX",
+        "url": "/products/lara/",
+        "logo": "/public/quarx-logo.png",
+        "description": "Biopharma consulting firm maximizing impact through real world data and analytics",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "QUARX - Biopharma Consulting",
+        "url": "/products/lara/",
+        "description": "We maximize the impact and value of biopharma innovations through real world data and analytics",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QUARX"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- htmx -->
+  <script src="/js/htmx.min.js" defer></script>
+
+  <!-- Alpine.js -->
+  <script src="/js/alpine.min.js" defer></script>
+</head>
+<body hx-boost="true" class="bg-white">
+  <header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    
+    <a href="/" class="flex items-center gap-2">
+      
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#5A9BA6]"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#5A9BA6]"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  
+  <div class="bg-white">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 pb-[30px] mx-auto">
+      
+      <a
+        href="/products/"
+        class="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8 bg-white py-2 rounded-md"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="text-lg font-medium">Back to Products</span>
+      </a>
+
+      
+      <div class="flex flex-col items-center gap-8 mb-8 pt-5 pb-5">
+        <div class="flex items-center gap-6">
+          <img src="/assets/LARA.svg" alt="LARA icon" class="w-16 h-16" />
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[#0B3041] text-3xl md:text-4xl font-medium leading-tight">
+              <span class="font-medium">LARA</span> (Launch Analog Recommendation Agent) is an AI-enabled tool <span class="text-[#5A9BA6]">to identify analog drugs to plan and benchmark launch access and performance</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        x-data="{ activeTab: 'why' }"
+        class="w-full"
+      >
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20 mb-8">
+          <button
+            @click="activeTab = 'why'"
+            :class="activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHY?
+          </button>
+          <button
+            @click="activeTab = 'what'"
+            :class="activeTab === 'what' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHAT?
+          </button>
+          <button
+            @click="activeTab = 'how'"
+            :class="activeTab === 'how' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            HOW?
+          </button>
+        </div>
+
+        
+        <main class="flex-1 mt-[30px] py-[30px] px-2.5 flex flex-col items-center gap-10">
+          <div class="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
+
+            
+            <div x-show="activeTab === 'why'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  Analyzing analog drugs is a critical element of understanding market landscape, setting expectations and developing launch benchmarks.
+                </p>
+              </div>
+
+              <div class="w-full max-w-4xl flex flex-col gap-6 px-4">
+                <p class="text-[#0B3041] text-2xl font-bold">
+                  But the analog selection is often rushed and handled sub-optimally due to the following challenges:
+                </p>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Absence of a single comprehensive repository of drugs which captures all the key criteria and characteristics
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Critical drug and market characteristics are only available in an unstructured form need significant secondary research
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Lack of a defined workflow and process for analog selection
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            
+            <div x-show="activeTab === 'what'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-12">
+                  LARA has been specifically designed to make analog selection a fully-informed, efficient and streamlined exercise.
+                </p>
+              </div>
+
+              <div class="w-full max-w-4xl flex flex-col gap-6 px-4">
+                <h2 class="text-[#0B3041] text-2xl font-bold mb-4">
+                  Key Features
+                </h2>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Comprehensive drug repository with key absolute and relative characteristics
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Streamlined agentic analog selection workflow
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    AI chatbot to enable to a conversational selection process
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Dual mode operation: Guided suggestions-driven process vs. Fully AI-driven recommendations
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-2 rounded-md">
+                  <div class="w-6 h-6 rounded-full border-2 border-[#5A9BA6] flex items-center justify-center flex-shrink-0 mt-0">
+                    <svg class="w-4 h-4 text-[#5A9BA6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-[#0B3041] text-2xl font-medium leading-tight">
+                    Structured output formats (analog profiles, selection summary & rationale)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            
+            <div x-show="activeTab === 'how'" class="w-full flex flex-col items-center gap-12">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  LARA leverages LLM to both curate/structure the drug repository and to power the agentic analog selection workflow
+                </p>
+              </div>
+
+              <div class="w-full max-w-[1440px] px-4 flex flex-col lg:flex-row gap-6 items-stretch">
+                
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Conversational AI<br />& Dual Modality
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">AI chatbot for conversational querying and analog selection</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Parallel templated user input interface (in addition to NL query)</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">UI designed for iterative and incremental selection process</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Structured exportable outputs with the flexibility to reshape the output</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Agentic RAG<br />Architecture
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Multi-agent architecture: Query router, retrieval and summarization agents</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Reduced/structured data + summarized unstructured information to retain context</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Query builder tool for simple queries and drug look-ups</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Pre-defined deterministic workflow to reduce agent ramble</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                <div class="flex-1 flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div class="bg-[#7097AA] text-white p-6 text-center rounded-t-3xl">
+                    <h3 class="text-xl font-medium leading-tight">
+                      Comprehensive Drug<br />Repository
+                    </h3>
+                  </div>
+                  <div class="p-6 flex-1">
+                    <ul class="space-y-3 text-[#0B3041]">
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Structured data from OpenFDA, Orange/Purple Book, Rx Norm, NDC Directory.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">LLM based curation and structuring of the FDA labels</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Longitudinal event tracking based on regulatory press releases and FDA documents</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-lg mt-1">•</span>
+                        <span class="text-base leading-relaxed">Normalized drug pricing; Derivative drug and market characteristics</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="w-full bg-[#0B3041] py-6">
+  <div class="max-w-[2400px] mx-auto px-[30px]">
+    <div class="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+      
+      <div class="flex items-center gap-2">
+        <img
+          src="/public/quarx-logo.png"
+          alt="QUARX Logo"
+          class="w-8 h-8"
+        />
+        <div class="relative">
+          <div class="text-white text-[42px] font-medium leading-tight tracking-wide">
+            QUARX
+          </div>
+          <div class="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+            Biopharma Consulting
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
+            <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
+            <a href="/products/lara/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
+            <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/team/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">TEAM</a>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/contact/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">CONTACT</a>
+        </div>
+
+        
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              alt=""
+              class="w-6 h-6"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

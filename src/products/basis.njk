@@ -1,0 +1,279 @@
+---
+layout: base.njk
+title: BASIS - Brand Access Strategy Impact Simulator | QUARX
+description: Brand Access Strategy Impact Simulator (BASIS) is a structure-driven simulation tool to quantify impact of access shifts on brand utilization & GTN
+permalink: /products/basis/
+---
+
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  {# Header Section #}
+  <div class="bg-white">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 pb-[30px] mx-auto">
+      {# Back to Products #}
+      <a
+        href="/products/"
+        class="flex items-center gap-2 text-[#5A9BA6] hover:text-[#5A9BA6]/80 transition-colors mb-8 bg-white py-2 rounded-md"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="text-lg font-medium">Back to Products</span>
+      </a>
+
+      {# Title and Icon #}
+      <div class="flex flex-col items-center gap-8 mb-8 pt-5 pb-5">
+        <div class="flex items-center gap-6">
+          <img src="/assets/BASIS.svg" alt="BASIS icon" class="w-16 h-16" />
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[#0B3041] text-3xl md:text-4xl font-medium leading-tight">
+              <span class="font-medium">BASIS</span> (Brand Access Strategy Impact Simulator) is a structure-driven simulation tool <span class="text-[#5A9BA6]">to quantify the impact of access shifts on brand utilization & GTN</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      {# Navigation Tabs #}
+      <div
+        x-data="{ activeTab: 'why' }"
+        class="w-full"
+      >
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-20 mb-8">
+          <button
+            @click="activeTab = 'why'"
+            :class="activeTab === 'why' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHY?
+          </button>
+          <button
+            @click="activeTab = 'what'"
+            :class="activeTab === 'what' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            WHAT?
+          </button>
+          <button
+            @click="activeTab = 'how'"
+            :class="activeTab === 'how' ? 'bg-[#156082] text-white' : 'bg-[#F1F4F1] text-[#156082]'"
+            class="w-full sm:w-50 h-12 px-6 sm:px-10 py-4 text-lg sm:text-2xl font-medium transition-colors shadow-lg flex items-center justify-center"
+          >
+            HOW?
+          </button>
+        </div>
+
+        {# Tab Content #}
+        <main class="flex-1 mt-[30px] py-[30px] px-2.5 flex flex-col items-center gap-10">
+          <div class="w-full max-w-[1440px] px-2.5 flex flex-col gap-12">
+
+            {# WHY Tab #}
+            <div x-show="activeTab === 'why'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  To optimize both payer and provider contracting strategy for drugs administered in the hospital outpatient setting through the analysis of
+                </p>
+              </div>
+
+              <div class="w-full max-w-4xl flex flex-col gap-6">
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Quantifying the impact of access on brand demand and it's implication on GTN
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Incorporating real world data driven sensitivities and financial rigor into evaluating contracting scenarios
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-4 p-2 rounded-md">
+                  <div class="w-2.5 h-2.5 bg-[#156082] rounded-sm flex-shrink-0"></div>
+                  <p class="text-[#0B3041] text-2xl font-medium">
+                    Providing flexibility to model cross-channel implications of rebate spend allocations as well as individual account level contracts
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {# WHAT Tab #}
+            <div x-show="activeTab === 'what'" class="w-full flex flex-col items-center gap-8">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed mb-8">
+                  BASIS enables rapid scenario evaluation to identify optimal contracting strategies
+                </p>
+              </div>
+
+              <div class="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
+                {# First Chart - Gross & Net Sales Comparison #}
+                <div class="flex flex-col gap-4">
+                  <h3 class="text-[#0B3041] text-xl font-medium text-center">
+                    Compare Gross and Net Sales<br />evolution across scenarios
+                  </h3>
+                  <div class="flex justify-center">
+                    <img
+                      src="/assets/basis-what-img1.png"
+                      alt="Gross and Net Sales Comparison across scenarios"
+                      class="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {# Second Chart - Patient Volume & Share Comparison #}
+                <div class="flex flex-col gap-4">
+                  <h3 class="text-[#0B3041] text-xl font-medium text-center">
+                    Compare Patient Volume & Share<br />evolution across scenarios
+                  </h3>
+                  <div class="flex justify-center">
+                    <img
+                      src="/assets/basis-what-img2.png"
+                      alt="Patient Volume and Share Comparison across scenarios"
+                      class="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {# Third Chart - Sales, Spend & Margin differential #}
+                <div class="flex flex-col gap-4">
+                  <h3 class="text-[#0B3041] text-xl font-medium text-center">
+                    Compare Sales, Spend & Margin<br />differential across scenarios
+                  </h3>
+                  <div class="flex justify-center">
+                    <img
+                      src="/assets/basis-what-img3.png"
+                      alt="Sales, Spend and Margin differential across scenarios"
+                      class="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {# HOW Tab #}
+            <div x-show="activeTab === 'how'" class="w-full flex flex-col items-center gap-5">
+              <div class="w-full max-w-[1440px] px-4">
+                <p class="text-center text-[#0B3041] text-3xl font-light leading-relaxed">
+                  Multiple payer, provider and patient sensitivity parameters are structured as inputs into the model to quantify the impact of access changes
+                </p>
+              </div>
+
+              {# Flow Diagram #}
+              <div class="w-full max-w-[1440px] px-4 flex justify-center">
+                <div class="w-full max-w-5xl mx-auto flex flex-col items-center gap-3 px-4 py-8">
+                  {# Total Patient Opportunity #}
+                  <div class="text-[#0B3041] font-normal text-xl md:text-2xl text-center mb-2">
+                    Total Patient Opportunity
+                  </div>
+
+                  {# Patients with Rx - Large Trapezoid #}
+                  <div class="w-full max-w-5xl relative">
+                    <img
+                      src="/assets/patients-with-rx-trapezoid.png"
+                      alt="Trapezoid background graphic"
+                      class="w-full h-auto"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <span class="text-[#0B3041] font-bold text-xl md:text-5xl">
+                        Patients with Rx
+                      </span>
+                    </div>
+                  </div>
+
+                  {# Eligible Patient Base #}
+                  <div class="flex items-center justify-center gap-3 my-1">
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                    <span class="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
+                      Eligible Patient Base
+                    </span>
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                  </div>
+
+                  {# HCP Sensitivity to Access - Medium Trapezoid #}
+                  <div class="w-full max-w-[52rem] relative">
+                    <img
+                      src="/assets/hcp-sensitivity-trapezoid.png"
+                      alt="Trapezoid background graphic"
+                      class="w-full h-auto"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <span class="text-[#0B3041] font-bold text-lg md:text-4xl">
+                        HCP Sensitivity to Access
+                      </span>
+                    </div>
+                  </div>
+
+                  {# Patients with Rx #}
+                  <div class="flex items-center justify-center gap-3 my-1">
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                    <span class="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
+                      Patients with Rx
+                    </span>
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                  </div>
+
+                  {# Payer Ability to Control - Medium-Small Trapezoid #}
+                  <div class="w-full max-w-[40rem] relative">
+                    <img
+                      src="/assets/payer-ability-trapezoid.png"
+                      alt="Trapezoid background graphic"
+                      class="w-full h-auto"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <span class="text-[#0B3041] font-bold text-base md:text-3xl">
+                        Payer Ability to Control
+                      </span>
+                    </div>
+                  </div>
+
+                  {# Patients with approved Rx #}
+                  <div class="flex items-center justify-center gap-3 my-1">
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                    <span class="text-[#0B3041] font-normal text-xl md:text-2xl text-center">
+                      Patients with<br />approved Rx
+                    </span>
+                    <img src="/assets/arrow-up-bold-outline-1.png" alt="" class="w-6 h-6 md:w-8 md:h-8" />
+                  </div>
+
+                  {# Payer Ability to Control - Small Pill Shape #}
+                  <div class="w-full max-w-[28rem] relative">
+                    <img
+                      src="/assets/payer-ability-pill.png"
+                      alt="Pill shape background graphic"
+                      class="w-full h-auto"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <span class="text-[#0B3041] font-bold text-sm md:text-2xl">
+                        Payer Ability to Control
+                      </span>
+                    </div>
+                  </div>
+
+                  {# Large Down Arrow #}
+                  <div class="flex flex-col items-center my-1">
+                    <img src="/assets/arrow-left-bold.png" alt="" class="w-20 h-20 md:w-24 md:h-24" />
+                  </div>
+
+                  {# Output List #}
+                  <div class="flex flex-col gap-3 text-[#0B3041] text-lg md:text-xl mt-0">
+                    <div class="flex items-center gap-3">
+                      <div class="w-2 h-2 bg-[#0B3041] rounded-full"></div>
+                      <span class="font-normal">Patients on Therapy</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="w-2 h-2 bg-[#0B3041] rounded-full"></div>
+                      <span class="font-normal">Demand/Sales/GTN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>

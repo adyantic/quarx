@@ -1,0 +1,69 @@
+---
+layout: base.njk
+title: IDN & Health System Archetyping | QUARX Solutions
+description: Structure drives behavior when it comes to Health Systems. Our Health System archetyping framework is focused on characterizing the structure and relating it to the observed behavior.
+permalink: /solutions/idn-health-system/
+---
+
+<main class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <div class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 md:pt-28 lg:pt-32 pb-[50px] flex flex-col items-center gap-[30px]">
+      {# Tab Buttons #}
+      <div class="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6">
+        <a
+          href="/solutions/"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-transparent text-[#7097AA] border-[#7097AA] transition-colors hover:bg-[#7097AA]/10"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+        </a>
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border bg-[#156082] text-white border-[#156082] transition-colors"
+        >
+          <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+        </a>
+      </div>
+
+      {# Back Link #}
+      <div class="self-stretch px-2 md:px-5">
+        <a
+          href="/solutions/?tab=segmentation"
+          hx-boost="false"
+          class="inline-flex items-center gap-2 text-[#5A9BA6] text-lg font-medium hover:underline"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back
+        </a>
+      </div>
+
+      {# Title #}
+      <div class="w-full max-w-[1400px] text-center px-2 md:px-5">
+        <h1 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+          <span class="text-[#5A9BA6]">
+            Structure drives behavior when it comes to Health Systems.
+          </span>
+          <span class="text-[#0B3041]">
+            Our Health System archetyping framework is focused on characterizing the structure and relating it to the observed behavior.
+          </span>
+        </h1>
+      </div>
+
+      {# Diagram #}
+      <div class="w-full px-2 md:px-5">
+        <div class="max-w-[1200px] mx-auto">
+          <img
+            src="/assets/idn-health-system-diagram-new.png"
+            alt="Health System Archetyping Framework showing Organizational Ethos, Structural & Operational Maturity, and Market Specificity around a central health system building"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

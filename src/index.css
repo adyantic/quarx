@@ -190,3 +190,8 @@ All colors MUST be HSL.
 .group:hover .group-hover\:rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+/* Alpine.js x-cloak */
+[x-cloak] {
+  display: none !important;
+}

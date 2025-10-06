@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimal-ui">
+
+  <!-- Primary Meta Tags -->
+  <title>Solutions | QUARX - Access &amp; Reimbursement Analytics, Customer Segmentation</title>
+  <meta name="title" content="Solutions | QUARX - Access &amp; Reimbursement Analytics, Customer Segmentation">
+  <meta name="description" content="QUARX solutions for access &amp; reimbursement analytics and customer segmentation to define target access, secure it, and pull it through">
+  <meta name="keywords" content="biopharma, consulting, real world data, analytics, healthcare, market access, customer engagement, BASIS, CHORD, LARA">
+  <meta name="author" content="QUARX">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B3041">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/solutions/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/solutions/">
+  <meta property="og:title" content="Solutions | QUARX - Access &amp; Reimbursement Analytics, Customer Segmentation">
+  <meta property="og:description" content="QUARX solutions for access &amp; reimbursement analytics and customer segmentation to define target access, secure it, and pull it through">
+  <meta property="og:image" content="/public/quarx-logo.png">
+  <meta property="og:site_name" content="QUARX">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/solutions/">
+  <meta name="twitter:title" content="Solutions | QUARX - Access &amp; Reimbursement Analytics, Customer Segmentation">
+  <meta name="twitter:description" content="QUARX solutions for access &amp; reimbursement analytics and customer segmentation to define target access, secure it, and pull it through">
+  <meta name="twitter:image" content="/public/quarx-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/quarx-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/quarx-logo.png">
+  <link rel="apple-touch-icon" href="/public/quarx-logo.png">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.builder.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "QUARX",
+        "url": "/solutions/",
+        "logo": "/public/quarx-logo.png",
+        "description": "Biopharma consulting firm maximizing impact through real world data and analytics",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "QUARX - Biopharma Consulting",
+        "url": "/solutions/",
+        "description": "We maximize the impact and value of biopharma innovations through real world data and analytics",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QUARX"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- htmx -->
+  <script src="/js/htmx.min.js" defer></script>
+
+  <!-- Alpine.js -->
+  <script src="/js/alpine.min.js" defer></script>
+</head>
+<body hx-boost="true" class="bg-white">
+  <header x-data="{ mobileMenuOpen: false }" class="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between px-4 xs:px-6 s24:px-[30px] py-4 s24:py-6 max-w-[2400px] mx-auto">
+    
+    <a href="/" class="flex items-center gap-2">
+      
+      <img
+        src="/public/quarx-logo.png"
+        alt="QUARX Logo"
+        class="w-8 h-8"
+      />
+
+      
+      <div class="relative">
+        <div class="text-[#0B3041] text-[28px] xs:text-[32px] s24:text-[38px] lg:text-[42px] font-medium leading-tight tracking-wide">
+          QUARX
+        </div>
+        <div class="text-[#5A9BA6] text-[8px] xs:text-[9px] s24:text-[10px] lg:text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+          Biopharma Consulting
+        </div>
+      </div>
+    </a>
+
+    
+    <nav class="hidden lg:flex items-center gap-8 lg:gap-12">
+      <a
+        href="/products/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#5A9BA6]"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg lg:text-2xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+      >
+        CONTACT
+      </a>
+    </nav>
+
+    
+    <button
+      class="lg:hidden p-2"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <svg x-show="!mobileMenuOpen" class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg x-show="mobileMenuOpen" x-cloak class="w-6 h-6 text-[#0B3041]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  
+  <div x-show="mobileMenuOpen" x-cloak x-transition class="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+    <nav class="flex flex-col px-4 xs:px-6 s24:px-[30px] py-4 space-y-4">
+      <a
+        href="/products/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        PRODUCTS
+      </a>
+      <a
+        href="/solutions/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#5A9BA6]"
+        @click="mobileMenuOpen = false"
+      >
+        SOLUTIONS
+      </a>
+      <a
+        href="/team/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        TEAM
+      </a>
+      <a
+        href="/contact/"
+        class="text-lg s24:text-xl font-light transition-colors duration-200 text-[#0B3041] hover:text-[#156082]"
+        @click="mobileMenuOpen = false"
+      >
+        CONTACT
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+<div class="bg-white min-h-screen flex flex-col">
+  <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
+
+  <main class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-[1440px] px-2.5 pt-24 md:pt-28 lg:pt-32 pb-[50px] flex flex-col items-center gap-[30px]">
+      <h1 class="sr-only">QUARX Solutions</h1>
+      
+      <div
+        x-data="{
+          activeTab: (new URLSearchParams(window.location.search).get('tab') === 'segmentation') ? 'segmentation' : 'access'
+        }"
+        class="w-full"
+      >
+        <div class="self-stretch px-2 md:px-5 flex flex-col md:flex-row items-center gap-3 md:gap-6 mb-8">
+          <button
+            @click="activeTab = 'access'"
+            :class="activeTab === 'access' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
+            class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
+          >
+            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+          </button>
+          <button
+            @click="activeTab = 'segmentation'"
+            :class="activeTab === 'segmentation' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
+            class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
+          >
+            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+          </button>
+        </div>
+
+        
+        <div x-show="activeTab === 'access'" class="self-stretch px-2.5 flex flex-col items-center">
+          
+          <div class="w-full max-w-[1400px] text-center mb-5 px-2">
+            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+              <span class="text-[#0B3041]">
+                Access & Reimbursement Analytics: Our solutions are designed to answer specific questions to
+              </span>
+              <span class="text-[#5A9BA6]">
+                define target access, secure it and pull it through
+              </span>
+            </h2>
+          </div>
+
+          
+          <div class="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            
+            <div class="min-w-0 flex flex-col gap-2.5">
+              
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[44px] md:w-[58px] h-[65px] md:h-[87px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Payer_Provider_Access_Strategy.svg" alt="Payer-Provider Access Strategy" class="w-[58px] h-[87px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Payer-Provider<br />Access Strategy
+                </h3>
+              </div>
+
+              
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                
+                
+                <div
+                  @click="clicked = clicked === 0 ? null : 0"
+                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 0 ? 'Formulary Landscape Analysis' : 'How does payer management vary by methods and severity across channels?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 0 ? 'Formulary Landscape Analysis' : 'How does payer management vary by methods and severity across channels?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 1 ? null : 1"
+                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 1 ? 'Time to Access Analysis' : 'What can I expect my launch access timing and trajectory to look like?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 1 ? 'Time to Access Analysis' : 'What can I expect my launch access timing and trajectory to look like?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 2 ? null : 2"
+                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 2 ? 'Claims-based Impact of UM Analysis' : 'How do payers vary in their ability to control utilization?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 2 ? 'Claims-based Impact of UM Analysis' : 'How do payers vary in their ability to control utilization?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 3 ? null : 3"
+                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 3 ? 'Sub-national Payer-Provider Influence Map' : 'Are there local markets where provider influence trumps payer policy?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 3 ? 'Sub-national Payer-Provider Influence Map' : 'Are there local markets where provider influence trumps payer policy?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 4 ? null : 4"
+                  :class="clicked === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 4 ? 'Quantitative Payer Segmentation' : 'How do I think about my access strategy by specific payer types &amp; segments?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 4 ? 'Quantitative Payer Segmentation' : 'How do I think about my access strategy by specific payer types &amp; segments?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 5 ? null : 5"
+                  :class="clicked === 5 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 5 ? 'Patient OOP Exposure &amp; Sensitivity Analysis' : 'What is the optimal affordability range from a patient OOP standpoint?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 5 ? 'Patient OOP Exposure &amp; Sensitivity Analysis' : 'What is the optimal affordability range from a patient OOP standpoint?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+              </div>
+            </div>
+
+            
+            <div class="min-w-0 flex flex-col gap-2.5">
+              
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[66px] md:w-[88px] h-[43px] md:h-[57px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Payer_Provider_Contracting_Strategy.svg" alt="Payer-Provider Contracting Strategy" class="w-[88px] h-[57px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Payer-Provider<br />Contracting Strategy
+                </h3>
+              </div>
+
+              
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                
+                
+                <div
+                  @click="clicked = clicked === 0 ? null : 0"
+                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 0 ? 'Channel Access Strategy Simulation' : 'What is the optimal channel contracting strategy that aligns with my brand strategy?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 0 ? 'Channel Access Strategy Simulation' : 'What is the optimal channel contracting strategy that aligns with my brand strategy?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 1 ? null : 1"
+                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 1 ? 'Contract Simulation/Deal-View Modeling' : 'What is the optimal contracting play for a given PBM or payer?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 1 ? 'Contract Simulation/Deal-View Modeling' : 'What is the optimal contracting play for a given PBM or payer?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 2 ? null : 2"
+                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 2 ? 'PBM Downstream Adherence Analysis' : 'How much downstream payer coverage can I expect with each of the big 3 PBMs?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 2 ? 'PBM Downstream Adherence Analysis' : 'How much downstream payer coverage can I expect with each of the big 3 PBMs?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 3 ? null : 3"
+                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 3 ? 'Competitive Rebate Equilibrium Simulation' : 'What are the rebates my competitor is likely to offer to a specific PBM or payer?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 3 ? 'Competitive Rebate Equilibrium Simulation' : 'What are the rebates my competitor is likely to offer to a specific PBM or payer?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 4 ? null : 4"
+                  :class="clicked === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 4 ? 'Reimbursement Landscape &amp; NCR Analysis' : 'To what extent does practice economics impact provider brand preference?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 4 ? 'Reimbursement Landscape &amp; NCR Analysis' : 'To what extent does practice economics impact provider brand preference?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+              </div>
+            </div>
+
+            
+            <div class="min-w-0 flex flex-col gap-2.5">
+              
+              <div class="w-full h-[90px] md:h-[115px] px-2.5 py-4 md:py-5 bg-[#7097AA] flex items-center justify-center gap-3 md:gap-5">
+                <div class="flex-shrink-0 w-[42px] md:w-[56px] h-[55px] md:h-[73px] flex items-center justify-center scale-75 md:scale-100">
+                  <img src="/assets/Pull_through_Performance_Tracking.svg" alt="Pull-through & Performance Tracking" class="w-[56px] h-[73px]" />
+                </div>
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                  Pull-through &<br />Performance Tracking
+                </h3>
+              </div>
+
+              
+              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+                
+                
+                <div
+                  @click="clicked = clicked === 0 ? null : 0"
+                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 0 ? 'HCP Targeting for Access Pull-through' : 'How do I flex physician targeting to maximize access pull-through at launch?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 0 ? 'HCP Targeting for Access Pull-through' : 'How do I flex physician targeting to maximize access pull-through at launch?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 1 ? null : 1"
+                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 1 ? 'Reimbursement Support Optimization' : 'How do I optimize my reimbursement support to maximize patient acquisition?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 1 ? 'Reimbursement Support Optimization' : 'How do I optimize my reimbursement support to maximize patient acquisition?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 2 ? null : 2"
+                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 2 ? 'HCP Access-Performance Benchmarking' : 'Are there HCPs who are prescribing below expectations despite favorable access?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 2 ? 'HCP Access-Performance Benchmarking' : 'Are there HCPs who are prescribing below expectations despite favorable access?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+                <div
+                  @click="clicked = clicked === 3 ? null : 3"
+                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                >
+                  <p
+                    x-text="clicked === 3 ? 'Access KPI Tracking/Benchmarking' : 'How do my brand&amp;apos;s access &amp; performance KPIs compare with other analog launches?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                  ></p>
+                  <p
+                    x-text="clicked === 3 ? 'Access KPI Tracking/Benchmarking' : 'How do my brand&amp;apos;s access &amp; performance KPIs compare with other analog launches?'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                  ></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div x-show="activeTab === 'segmentation'" class="self-stretch px-2.5 flex flex-col items-center gap-12">
+          
+          <div class="w-full max-w-[1400px] text-center px-2">
+            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+              <span class="text-[#0B3041]">
+                Our approach to Customer Segmentation is focused not just on observed behavior but also on
+              </span>
+              <span class="text-[#5A9BA6]">
+                the environment and ecosystem that drives the behavior
+              </span>
+            </h2>
+          </div>
+
+          
+          <div class="w-full px-5 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/patient-icon.svg" alt="Patient" class="w-14 h-14 brightness-0 invert" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      Patient<br />Journey &<br />Segmentation
+                    </h3>
+                    <a href="/solutions/patient-journey/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>Who are my target patient groups and what is their size and profile?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are key leverage points for my drug along on the treatment pathway?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How is patient care coordinated across different HCPs and providers?</span>
+                </li>
+              </ul>
+            </div>
+
+            
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/hcp-icon.svg" alt="HCP & Provider" class="w-14 h-16" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      HCP &<br />Provider<br />Segmentation
+                    </h3>
+                    <a href="/solutions/hcp-provider/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How do my high value prescribers differ in their approach and behavior?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are the forces and factors that drive variation in prescriber behavior?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>What are the imperatives (access, education, support) to drive adoption?</span>
+                </li>
+              </ul>
+            </div>
+
+            
+            <div class="flex flex-col items-center gap-24 mt-8">
+              <div class="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px]">
+                <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
+                  <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
+                    <img src="/assets/idn-icon.svg" alt="IDN & Health System" class="w-16 h-12" />
+                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                      IDN & Health<br />System<br />Archetyping
+                    </h3>
+                    <a href="/solutions/idn-health-system/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>How do the top health systems differ in their approach to care, organizational structure and operational maturity?</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-[#0B3041] mt-1.5">•</span>
+                  <span>Given the observed behavior and influence profile, how do I customize the engagement strategy with my target systems?</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <footer class="w-full bg-[#0B3041] py-6">
+  <div class="max-w-[2400px] mx-auto px-[30px]">
+    <div class="flex items-start justify-between gap-16 max-md:flex-col max-md:gap-8">
+      
+      <div class="flex items-center gap-2">
+        <img
+          src="/public/quarx-logo.png"
+          alt="QUARX Logo"
+          class="w-8 h-8"
+        />
+        <div class="relative">
+          <div class="text-white text-[42px] font-medium leading-tight tracking-wide">
+            QUARX
+          </div>
+          <div class="text-[#7097AA] text-[11px] font-light leading-tight absolute right-0 -bottom-1">
+            Biopharma Consulting
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
+            <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
+            <a href="/products/lara/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">LARA</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
+          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <div class="flex flex-col gap-2">
+            <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
+            <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/team/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">TEAM</a>
+        </div>
+
+        
+        <div class="flex flex-col gap-4 min-w-0">
+          <a href="/contact/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">CONTACT</a>
+        </div>
+
+        
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              alt=""
+              class="w-6 h-6"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
