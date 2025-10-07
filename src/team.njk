@@ -37,24 +37,76 @@ permalink: /team/
       transform: rotateY(180deg);
     }
   }
+
+  /* Word Rotation Animation */
+  .word-rotator {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+  }
+
+  .word-rotator span {
+    opacity: 0;
+    white-space: nowrap;
+    animation: rotateWords 25.5s infinite;
+  }
+
+  .word-rotator span:not(:first-child) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .word-rotator span:nth-child(1) { animation-delay: 0s; }
+  .word-rotator span:nth-child(2) { animation-delay: 1.5s; }
+  .word-rotator span:nth-child(3) { animation-delay: 3s; }
+  .word-rotator span:nth-child(4) { animation-delay: 4.5s; }
+  .word-rotator span:nth-child(5) { animation-delay: 6s; }
+  .word-rotator span:nth-child(6) { animation-delay: 7.5s; }
+  .word-rotator span:nth-child(7) { animation-delay: 9s; }
+  .word-rotator span:nth-child(8) { animation-delay: 10.5s; }
+  .word-rotator span:nth-child(9) { animation-delay: 12s; }
+  .word-rotator span:nth-child(10) { animation-delay: 13.5s; }
+  .word-rotator span:nth-child(11) { animation-delay: 15s; }
+  .word-rotator span:nth-child(12) { animation-delay: 16.5s; }
+  .word-rotator span:nth-child(13) { animation-delay: 18s; }
+  .word-rotator span:nth-child(14) { animation-delay: 19.5s; }
+  .word-rotator span:nth-child(15) { animation-delay: 21s; }
+  .word-rotator span:nth-child(16) { animation-delay: 22.5s; }
+  .word-rotator span:nth-child(17) { animation-delay: 24s; }
+
+  @keyframes rotateWords {
+    0% { opacity: 0; transform: translateY(5px); }
+    2% { opacity: 1; transform: translateY(0); }
+    5.5% { opacity: 1; transform: translateY(0); }
+    7.5% { opacity: 0; transform: translateY(-5px); }
+    100% { opacity: 0; transform: translateY(-5px); }
+  }
 </style>
 
 <main class="flex-1 pt-24 pb-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Hero Section -->
-    <div class="mb-16">
-      <h1 class="w-full text-3xl sm:text-4xl lg:text-5xl font-light text-[#0B3041] mb-6 leading-relaxed text-center">
-        Our team brings together scientists, strategists, and industry experts with deep biopharma experience.
-        <span class="text-[#5A9BA6]">
-          We bridge science and business, helping organizations accelerate innovation and market success.
-        </span>
-      </h1>
+    <div class="mb-16 w-full">
+      <div class="space-y-6 text-left px-4 sm:px-0">
+        <p class="text-xl sm:text-2xl lg:text-[2rem] text-[#0B3041] leading-relaxed">
+          We are an amalgamation of years of experience in biopharma commercial and market access strategy and deep expertise in analytics and data science.
+        </p>
+
+        <p class="text-xl sm:text-2xl lg:text-[2rem] text-[#0B3041] leading-relaxed">
+          We are team of <span class="text-[#5A9BA6] font-medium word-rotator"><span>problem solvers.</span><span>tinkerers.</span><span>explorers.</span><span>learners.</span><span>consultants.</span><span>experts.</span><span>dataphiles.</span><span>analysts.</span><span>thinkers.</span><span>doers.</span><span>technologists.</span><span>builders.</span><span>strategists.</span><span>architects.</span><span>partners.</span><span>inventors.</span><span>scientists.</span></span>
+        </p>
+
+        <p class="text-xl sm:text-2xl lg:text-[2rem] text-[#0B3041] leading-relaxed">
+          We work hard. We work smart. We work <span class="text-[#5A9BA6] font-medium">TOGETHER</span>.
+        </p>
+      </div>
     </div>
 
     <!-- Team Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full">
       <!-- Praveen Yedla -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -81,11 +133,11 @@ permalink: /team/
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Praveen Yedla
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
+              <p class="text-sm text-[#0B3041] leading-snug">
                 Praveen Yedla, the visionary behind QUARX, brings 15+ years of expertise across biotechnology, pharmaceuticals, and healthcare consulting. With a proven track record of guiding organizations through complex regulatory, scientific, and commercial landscapes, he combines strategic insight with a passion for advancing innovation in life sciences. Driven by the mission to bridge science and business, Praveen leads the team in delivering transformative solutions.
               </p>
             </div>
@@ -94,7 +146,7 @@ permalink: /team/
       </div>
 
       <!-- Mathew John -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -121,11 +173,11 @@ permalink: /team/
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Mathew John
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
+              <p class="text-sm text-[#0B3041] leading-snug">
                 Mathew John brings extensive leadership experience in biopharma strategy and market access. With a deep understanding of healthcare systems and payer dynamics, he drives organizational growth and operational excellence. His expertise spans commercial strategy, product launches, and stakeholder engagement across global markets.
               </p>
             </div>
@@ -134,7 +186,7 @@ permalink: /team/
       </div>
 
       <!-- Mary Spencers -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -161,11 +213,11 @@ permalink: /team/
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Mary Spencers
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
+              <p class="text-sm text-[#0B3041] leading-snug">
                 Mary Spencers oversees operations and ensures seamless execution of strategic initiatives. With expertise in process optimization and cross-functional collaboration, she enables the team to deliver high-quality solutions efficiently. Her background in healthcare operations and project management drives organizational success.
               </p>
             </div>
@@ -174,7 +226,7 @@ permalink: /team/
       </div>
 
       <!-- Jack Stone -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -201,11 +253,11 @@ permalink: /team/
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Jack Stone
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
+              <p class="text-sm text-[#0B3041] leading-snug">
                 Jack Stone leads research initiatives with a focus on evidence generation and real-world data analytics. His expertise in clinical development, health economics, and outcomes research informs strategic decision-making. Jack combines scientific rigor with practical insights to support market access and commercialization strategies.
               </p>
             </div>
