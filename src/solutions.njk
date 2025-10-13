@@ -9,7 +9,7 @@ permalink: /solutions/
   <div class="flex min-h-px w-full bg-[#E2E2E9]"></div>
 
   <main class="flex-1 flex flex-col items-center">
-    <div class="w-full max-w-[1440px] px-2.5 pt-32 pb-16 flex flex-col items-center gap-[30px]">
+    <div class="w-full max-w-[1440px] px-2.5 pt-32 2xl:pt-24 pb-16 flex flex-col items-center gap-[30px]">
       <h1 class="sr-only">QUARX Solutions</h1>
       {# Tab Buttons #}
       <div
@@ -24,22 +24,22 @@ permalink: /solutions/
             :class="activeTab === 'access' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
             class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
           >
-            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Access & Reimbursement Analytics</span>
+            <span class="text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8">Access & Reimbursement Analytics</span>
           </button>
           <button
             @click="activeTab = 'segmentation'"
             :class="activeTab === 'segmentation' ? 'bg-[#156082] text-white border-[#156082]' : 'bg-transparent text-[#7097AA] border-[#7097AA]'"
             class="w-full md:w-auto px-3 md:px-4 py-2 md:py-[11px] rounded-full border transition-colors"
           >
-            <span class="text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8">Customer Segmentation</span>
+            <span class="text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8">Customer Segmentation</span>
           </button>
         </div>
 
         {# Access & Reimbursement Tab Content #}
         <div x-show="activeTab === 'access'" class="self-stretch px-2.5 flex flex-col items-center">
           {# Title #}
-          <div class="w-full max-w-[1400px] text-center mb-5 px-2">
-            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+          <div class="w-full max-w-[1400px] text-center mb-12 2xl:mb-8 px-2">
+            <h2 class="text-[2.5rem] 2xl:text-[2rem] font-medium leading-tight">
               <span class="text-[#0B3041]">
                 Access & Reimbursement Analytics: Our solutions are designed to answer specific questions to
               </span>
@@ -58,7 +58,7 @@ permalink: /solutions/
                 <div class="flex-shrink-0 w-[44px] md:w-[58px] h-[65px] md:h-[87px] flex items-center justify-center scale-75 md:scale-100">
                   <img src="/assets/Payer_Provider_Access_Strategy.svg" alt="Payer-Provider Access Strategy" class="w-[58px] h-[87px]" />
                 </div>
-                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-light leading-6 md:leading-9">
                   Payer-Provider<br />Access Strategy
                 </h3>
               </div>
@@ -81,11 +81,11 @@ permalink: /solutions/
                 >
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
                   ></p>
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
                   ></p>
                 </div>
                 {% endfor %}
@@ -99,7 +99,7 @@ permalink: /solutions/
                 <div class="flex-shrink-0 w-[66px] md:w-[88px] h-[43px] md:h-[57px] flex items-center justify-center scale-75 md:scale-100">
                   <img src="/assets/Payer_Provider_Contracting_Strategy.svg" alt="Payer-Provider Contracting Strategy" class="w-[88px] h-[57px]" />
                 </div>
-                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-light leading-6 md:leading-9">
                   Payer-Provider<br />Contracting Strategy
                 </h3>
               </div>
@@ -121,11 +121,11 @@ permalink: /solutions/
                 >
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
                   ></p>
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
                   ></p>
                 </div>
                 {% endfor %}
@@ -139,7 +139,7 @@ permalink: /solutions/
                 <div class="flex-shrink-0 w-[42px] md:w-[56px] h-[55px] md:h-[73px] flex items-center justify-center scale-75 md:scale-100">
                   <img src="/assets/Pull_through_Performance_Tracking.svg" alt="Pull-through & Performance Tracking" class="w-[56px] h-[73px]" />
                 </div>
-                <h3 class="text-white text-base md:text-xl lg:text-2xl font-medium leading-6 md:leading-9">
+                <h3 class="text-white text-base md:text-xl lg:text-2xl font-light leading-6 md:leading-9">
                   Pull-through &<br />Performance Tracking
                 </h3>
               </div>
@@ -160,11 +160,11 @@ permalink: /solutions/
                 >
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 hidden lg:block"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
                   ></p>
                   <p
                     x-text="clicked === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-medium leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
                   ></p>
                 </div>
                 {% endfor %}
@@ -174,10 +174,10 @@ permalink: /solutions/
         </div>
 
         {# Customer Segmentation Tab Content #}
-        <div x-show="activeTab === 'segmentation'" class="self-stretch px-2.5 flex flex-col items-center gap-12">
+        <div x-show="activeTab === 'segmentation'" class="self-stretch px-2.5 flex flex-col items-center gap-12 2xl:gap-8">
           {# Title #}
-          <div class="w-full max-w-[1400px] text-center px-2">
-            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium leading-7 md:leading-9 lg:leading-[48px]">
+          <div class="w-full max-w-[1400px] text-center px-2 mb-12 2xl:mb-8">
+            <h2 class="text-[2.5rem] 2xl:text-[2rem] font-medium leading-tight">
               <span class="text-[#0B3041]">
                 Our approach to Customer Segmentation is focused not just on observed behavior but also on
               </span>
@@ -195,7 +195,7 @@ permalink: /solutions/
                 <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                   <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
                     <img src="/assets/patient-icon.svg" alt="Patient" class="w-14 h-14 brightness-0 invert" />
-                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                    <h3 class="text-white text-2xl md:text-3xl font-light text-center leading-7">
                       Patient<br />Journey &<br />Segmentation
                     </h3>
                     <a href="/solutions/patient-journey/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
@@ -206,7 +206,7 @@ permalink: /solutions/
                   </div>
                 </div>
               </div>
-              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+              <ul class="space-y-3 text-[#0B3041] text-xl font-light">
                 <li class="flex gap-2">
                   <span class="text-[#0B3041] mt-1.5">•</span>
                   <span>Who are my target patient groups and what is their size and profile?</span>
@@ -228,7 +228,7 @@ permalink: /solutions/
                 <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                   <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
                     <img src="/assets/hcp-icon.svg" alt="HCP & Provider" class="w-14 h-16" />
-                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                    <h3 class="text-white text-2xl md:text-3xl font-light text-center leading-7">
                       HCP &<br />Provider<br />Segmentation
                     </h3>
                     <a href="/solutions/hcp-provider/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
@@ -239,7 +239,7 @@ permalink: /solutions/
                   </div>
                 </div>
               </div>
-              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+              <ul class="space-y-3 text-[#0B3041] text-xl font-light">
                 <li class="flex gap-2">
                   <span class="text-[#0B3041] mt-1.5">•</span>
                   <span>How do my high value prescribers differ in their approach and behavior?</span>
@@ -261,7 +261,7 @@ permalink: /solutions/
                 <div class="absolute inset-0 bg-[#7097AA] rotate-45 shadow-lg flex items-center justify-center">
                   <div class="rotate-[-45deg] flex flex-col items-center gap-3 p-6">
                     <img src="/assets/idn-icon.svg" alt="IDN & Health System" class="w-16 h-12" />
-                    <h3 class="text-white text-2xl md:text-3xl font-medium text-center leading-7">
+                    <h3 class="text-white text-2xl md:text-3xl font-light text-center leading-7">
                       IDN & Health<br />System<br />Archetyping
                     </h3>
                     <a href="/solutions/idn-health-system/" class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mt-6 hover:bg-white/20 transition-colors">
@@ -272,7 +272,7 @@ permalink: /solutions/
                   </div>
                 </div>
               </div>
-              <ul class="space-y-3 text-[#0B3041] text-xl font-medium">
+              <ul class="space-y-3 text-[#0B3041] text-xl font-light">
                 <li class="flex gap-2">
                   <span class="text-[#0B3041] mt-1.5">•</span>
                   <span>How do the top health systems differ in their approach to care, organizational structure and operational maturity?</span>
