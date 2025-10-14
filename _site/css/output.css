@@ -1126,6 +1126,14 @@ body {
   width: 10rem;
 }
 
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[460px\] {
+  width: 460px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1200,6 +1208,14 @@ body {
 
 .max-w-\[350px\] {
   max-width: 350px;
+}
+
+.max-w-\[1500px\] {
+  max-width: 1500px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .flex-1 {
@@ -1974,6 +1990,14 @@ body {
   font-size: 2rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2620,6 +2644,16 @@ All colors MUST be HSL.
     gap: 52px;
   }
 
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2701,6 +2735,14 @@ All colors MUST be HSL.
     line-height: 1.75rem;
   }
 
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:text-\[22px\] {
+    font-size: 22px;
+  }
+
   .md\:leading-8 {
     line-height: 2rem;
   }
@@ -2760,6 +2802,10 @@ All colors MUST be HSL.
     width: calc(33.333% - 24px);
   }
 
+  .lg\:w-\[460px\] {
+    width: 460px;
+  }
+
   .lg\:cursor-default {
     cursor: default;
   }
@@ -2788,8 +2834,16 @@ All colors MUST be HSL.
     flex-direction: row;
   }
 
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:gap-1 {
@@ -2918,6 +2972,14 @@ All colors MUST be HSL.
     line-height: 2.25rem;
   }
 
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .lg\:text-\[24px\] {
+    font-size: 24px;
+  }
+
   .lg\:leading-\[48px\] {
     line-height: 48px;
   }
@@ -2925,6 +2987,12 @@ All colors MUST be HSL.
   .lg\:hover\:bg-\[\#F1F4F1\]:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(241 244 241 / var(--tw-bg-opacity, 1));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-12 {
+    gap: 3rem;
   }
 }
 

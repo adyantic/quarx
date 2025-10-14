@@ -306,29 +306,33 @@
               <div class="flex flex-col items-center">
                 <div class="h-[250px] xs:h-[300px] s24:h-[350px] md:h-[400px] w-full flex items-center justify-center relative mb-4 xs:mb-6 s24:mb-8">
                   
-                  <picture x-show="current === 0" :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
-                    <source srcset="/assets/optimized/sunflower-insight-new-400.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="/assets/optimized/sunflower-insight-new-300.webp" media="(min-width: 480px)" type="image/webp">
-                    <source srcset="/assets/optimized/sunflower-insight-new-275.webp" type="image/webp">
-                    <img
-                      src="/assets/optimized/sunflower-insight-new-275.webp"
-                      alt="Sunflower Golden Ratio insight"
-                      class="w-full h-full object-contain"
-                      loading="eager"
-                    />
-                  </picture>
+                  <div x-show="current === 0" :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform flex items-center justify-center bg-white rounded-lg p-4 xs:p-6 md:p-8">
+                    <div class="text-center space-y-2 xs:space-y-3 md:space-y-4">
+                      <div class="text-[#0B3041] text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-medium">
+                        55/34 = Φ = ~1.62
+                      </div>
+                      <div class="text-[#0B3041] text-[16px] xs:text-[18px] s24:text-[20px] md:text-[22px] lg:text-[24px] font-light leading-relaxed">
+                        Sunflower seed packing<br />
+                        follows the <span class="text-[#5A9BA6]">Golden Ratio</span>.<br />
+                        Nature's design for<br />
+                        <span class="text-[#5A9BA6]">Maximum Efficiency</span>.
+                      </div>
+                    </div>
+                  </div>
                   
-                  <picture x-show="current === 1" x-cloak :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform">
-                    <source srcset="/assets/optimized/pinecone-insight-new-400.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="/assets/optimized/pinecone-insight-new-300.webp" media="(min-width: 480px)" type="image/webp">
-                    <source srcset="/assets/optimized/pinecone-insight-new-275.webp" type="image/webp">
-                    <img
-                      src="/assets/optimized/pinecone-insight-new-275.webp"
-                      alt="Pinecone Golden Ratio insight"
-                      class="w-full h-full object-contain"
-                      loading="eager"
-                    />
-                  </picture>
+                  <div x-show="current === 1" x-cloak :class="isGraphicVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out transform flex items-center justify-center bg-white rounded-lg p-4 xs:p-6 md:p-8">
+                    <div class="text-center space-y-2 xs:space-y-3 md:space-y-4">
+                      <div class="text-[#0B3041] text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-medium">
+                        13/8 = Φ = ~1.62
+                      </div>
+                      <div class="text-[#0B3041] text-[16px] xs:text-[18px] s24:text-[20px] md:text-[22px] lg:text-[24px] font-light leading-relaxed">
+                        A pinecone's spirals<br />
+                        follow the <span class="text-[#5A9BA6]">Golden Ratio</span>.<br />
+                        Nature's design for<br />
+                        <span class="text-[#5A9BA6]">Optimal Growth</span>.
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="text-center">
                   <div class="text-[#5A9BA6] s24-text-medium text-[20px] xs:text-[24px] s24:text-[28px] md:text-[32px] lg:text-[36px] font-light font-sans">REAL INSIGHT</div>
@@ -487,9 +491,9 @@
             </h2>
           </div>
         </div>
-        <div class="justify-center items-center flex w-full gap-5 flex-wrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">
+        <div class="justify-center items-stretch flex w-full gap-6 lg:gap-8 xl:gap-12 flex-wrap lg:flex-nowrap mt-16 p-2.5 max-md:max-w-full max-md:mt-10">
           
-          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
+          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] lg:w-[460px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
             <div class="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
               <img
                 src="/assets/trust-icon.png"
@@ -501,13 +505,13 @@
             <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5">
               Trust is Everything
             </h3>
-            <p class="text-[#0B3041] text-center text-2xl font-light leading-9 w-[323px] mt-5">
-              Culture of transparency, mutual respect, and open dialogue. Space for honest communication and shared success.
+            <p class="text-[#0B3041] text-center text-2xl font-light leading-9 w-full max-w-[400px] mt-5">
+              Culture of transparency, respect, and open dialogue. Space for honest communication and shared success.
             </p>
           </article>
 
           
-          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
+          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] lg:w-[460px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
             <div class="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
               <img
                 src="/assets/purpose-icon.png"
@@ -516,7 +520,7 @@
                 loading="lazy"
               />
             </div>
-            <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5">
+            <h3 class="text-[#0B3041] text-center text-3xl font-medium leading-10 mt-5 whitespace-nowrap">
               Find your Purpose, Find your Fuel
             </h3>
             <p class="text-[#0B3041] text-center text-2xl font-light leading-9 w-[323px] mt-5">
@@ -525,7 +529,7 @@
           </article>
 
           
-          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
+          <article class="items-center self-stretch flex min-w-60 min-h-[395px] flex-col overflow-hidden w-[420px] lg:w-[460px] my-auto p-2.5 rounded-[20px] hover:shadow-lg transition-all duration-[1200ms] ease-out">
             <div class="items-center flex w-[102px] flex-col overflow-hidden justify-center h-[102px] bg-[#5A9BA6] px-2.5 rounded-[10px] hover:bg-[#156082] transition-colors duration-300">
               <img
                 src="/assets/learning-icon.png"
