@@ -187,15 +187,15 @@
 
 
   
-<main class="bg-white min-h-screen flex flex-col pt-32 pb-16">
+<main class="bg-white min-h-screen flex flex-col pt-32 2xl:pt-24 pb-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 2xl:gap-10 lg:gap-16 lg:items-start">
       <!-- Left Side - Value Proposition -->
       <div class="flex flex-col">
-        <h1 class="text-3xl lg:text-4xl font-light text-[#0B3041] mb-8 leading-tight">
+        <h1 class="text-[2rem] 2xl:text-[1.75rem] font-medium text-[#0B3041] mb-8 2xl:mb-6 leading-tight text-center lg:text-left">
           We are in the sweetspot...
           <br />
-          and now so are you.
+          and now, so are you.
         </h1>
 
         <!-- Venn Diagram -->
@@ -209,8 +209,8 @@
       </div>
 
       <!-- Right Side - Contact Form -->
-      <div class="bg-white rounded-lg shadow-lg px-8 pb-8 pt-0 lg:px-12 lg:pb-12 lg:pt-0">
-        <h2 class="text-3xl lg:text-4xl font-light text-[#0B3041] mb-8 leading-tight">
+      <div class="bg-[#7097AA] rounded-lg shadow-lg px-8 pb-6 pt-8 lg:px-10 lg:pb-8 lg:pt-10">
+        <h2 class="text-[2rem] 2xl:text-[1.75rem] font-medium text-white mb-6 2xl:mb-4 leading-tight text-center lg:text-left">
           Let's connect and explore possibilities!
         </h2>
 
@@ -364,11 +364,11 @@
           }
         }"
         @submit.prevent="submitForm()"
-        class="space-y-6">
+        class="space-y-4">
 
           <!-- Name Field -->
           <div>
-            <label for="name" class="block text-[#0B3041] text-lg font-light mb-2">
+            <label for="name" class="block text-white text-base font-light mb-1">
               Name
             </label>
             <input
@@ -376,14 +376,14 @@
               type="text"
               x-model="name"
               required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
             />
             <p x-show="errors.name" x-text="errors.name" x-cloak class="text-red-500 text-sm mt-1"></p>
           </div>
 
           <!-- Email Field -->
           <div>
-            <label for="email" class="block text-[#0B3041] text-lg font-light mb-2">
+            <label for="email" class="block text-white text-base font-light mb-1">
               Email
             </label>
             <input
@@ -391,50 +391,50 @@
               type="email"
               x-model="email"
               required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
             />
             <p x-show="errors.email" x-text="errors.email" x-cloak class="text-red-500 text-sm mt-1"></p>
           </div>
 
           <!-- Phone Field -->
           <div>
-            <label for="phone" class="block text-[#0B3041] text-lg font-light mb-2">
+            <label for="phone" class="block text-white text-base font-light mb-1">
               Phone
             </label>
             <input
               id="phone"
               type="tel"
               x-model="phone"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
             />
             <p x-show="errors.phone" x-text="errors.phone" x-cloak class="text-red-500 text-sm mt-1"></p>
           </div>
 
           <!-- Company Field -->
           <div>
-            <label for="company" class="block text-[#0B3041] text-lg font-light mb-2">
+            <label for="company" class="block text-white text-base font-light mb-1">
               Company
             </label>
             <input
               id="company"
               type="text"
               x-model="company"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors"
             />
             <p x-show="errors.company" x-text="errors.company" x-cloak class="text-red-500 text-sm mt-1"></p>
           </div>
 
           <!-- Message Field -->
           <div>
-            <label for="message" class="block text-[#0B3041] text-lg font-light mb-2">
+            <label for="message" class="block text-white text-base font-light mb-1">
               How can we help you?
             </label>
             <textarea
               id="message"
               x-model="message"
-              rows="5"
+              rows="3"
               required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors resize-none"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#5A9BA6] focus:ring-2 focus:ring-[#5A9BA6] focus:outline-none transition-colors resize-none"
             ></textarea>
             <p x-show="errors.message" x-text="errors.message" x-cloak class="text-red-500 text-sm mt-1"></p>
           </div>
@@ -443,7 +443,7 @@
           <button
             type="submit"
             :disabled="isSubmitting"
-            class="w-full bg-[#0B3041] hover:bg-[#156082] text-white text-lg py-6 rounded-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full bg-[#0B3041] hover:bg-[#156082] text-white text-base py-3 rounded-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             x-text="isSubmitting ? 'SENDING...' : 'SUBMIT'"
           >
           </button>
@@ -531,7 +531,7 @@
       <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
         
         <div class="flex flex-col gap-4 min-w-0">
-          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <a href="/products/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">PRODUCTS</a>
           <div class="flex flex-col gap-2">
             <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
             <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
@@ -541,7 +541,7 @@
 
         
         <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
-          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <a href="/solutions/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">SOLUTIONS</a>
           <div class="flex flex-col gap-2">
             <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
             <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
@@ -562,7 +562,7 @@
         <div class="flex items-center">
           <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              src="/assets/linkedin-icon.svg"
               alt=""
               class="w-6 h-6"
               aria-hidden="true"

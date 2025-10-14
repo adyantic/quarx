@@ -219,24 +219,73 @@
       transform: rotateY(180deg);
     }
   }
+
+  /* Word Rotation Animation */
+  .word-rotator {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+  }
+
+  .word-rotator span {
+    opacity: 0;
+    white-space: nowrap;
+    animation: rotateWords 25.5s infinite;
+  }
+
+  .word-rotator span:not(:first-child) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .word-rotator span:nth-child(1) { animation-delay: 0s; }
+  .word-rotator span:nth-child(2) { animation-delay: 1.5s; }
+  .word-rotator span:nth-child(3) { animation-delay: 3s; }
+  .word-rotator span:nth-child(4) { animation-delay: 4.5s; }
+  .word-rotator span:nth-child(5) { animation-delay: 6s; }
+  .word-rotator span:nth-child(6) { animation-delay: 7.5s; }
+  .word-rotator span:nth-child(7) { animation-delay: 9s; }
+  .word-rotator span:nth-child(8) { animation-delay: 10.5s; }
+  .word-rotator span:nth-child(9) { animation-delay: 12s; }
+  .word-rotator span:nth-child(10) { animation-delay: 13.5s; }
+  .word-rotator span:nth-child(11) { animation-delay: 15s; }
+  .word-rotator span:nth-child(12) { animation-delay: 16.5s; }
+  .word-rotator span:nth-child(13) { animation-delay: 18s; }
+  .word-rotator span:nth-child(14) { animation-delay: 19.5s; }
+  .word-rotator span:nth-child(15) { animation-delay: 21s; }
+  .word-rotator span:nth-child(16) { animation-delay: 22.5s; }
+  .word-rotator span:nth-child(17) { animation-delay: 24s; }
+
+  @keyframes rotateWords {
+    0% { opacity: 0; transform: translateY(5px); }
+    2% { opacity: 1; transform: translateY(0); }
+    5.5% { opacity: 1; transform: translateY(0); }
+    7.5% { opacity: 0; transform: translateY(-5px); }
+    100% { opacity: 0; transform: translateY(-5px); }
+  }
 </style>
 
-<main class="flex-1 pt-24 pb-16">
+<main class="flex-1 pt-32 2xl:pt-24 pb-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Hero Section -->
-    <div class="mb-16">
-      <h1 class="w-full text-3xl sm:text-4xl lg:text-5xl font-light text-[#0B3041] mb-6 leading-relaxed text-center">
-        Our team brings together scientists, strategists, and industry experts with deep biopharma experience.
-        <span class="text-[#5A9BA6]">
-          We bridge science and business, helping organizations accelerate innovation and market success.
-        </span>
-      </h1>
+    <div class="mb-16 2xl:mb-12 w-full">
+      <div class="space-y-6 2xl:space-y-4 text-center px-4 sm:px-0">
+        <p class="text-[2.5rem] 2xl:text-[2rem] text-[#0B3041] font-medium leading-tight">
+        QUARX is an amalgamation of years of experience in <span class="text-[#5A9BA6]">market access strategy </span> and deep expertise in <span class="text-[#5A9BA6]">biopharma commercial analytics</span>.
+        </p>
+
+        <p class="text-[2.5rem] 2xl:text-[2rem] text-[#0B3041] font-medium leading-tight">
+          We are a team of <span class="text-[#5A9BA6] word-rotator"><span>problem solvers.</span><span>tinkerers.</span><span>explorers.</span><span>learners.</span><span>consultants.</span><span>experts.</span><span>dataphiles.</span><span>analysts.</span><span>thinkers.</span><span>doers.</span><span>technologists.</span><span>builders.</span><span>strategists.</span><span>architects.</span><span>partners.</span><span>inventors.</span><span>scientists.</span></span>
+        </p>
+        
+      </div>
     </div>
 
     <!-- Team Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+    <div class="flex flex-wrap justify-center gap-6 lg:gap-8 w-full max-w-5xl mx-auto">
       <!-- Praveen Yedla -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px] w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-24px)] max-w-[350px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -263,12 +312,12 @@
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Praveen Yedla
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
-                Praveen Yedla, the visionary behind QUARX, brings 15+ years of expertise across biotechnology, pharmaceuticals, and healthcare consulting. With a proven track record of guiding organizations through complex regulatory, scientific, and commercial landscapes, he combines strategic insight with a passion for advancing innovation in life sciences. Driven by the mission to bridge science and business, Praveen leads the team in delivering transformative solutions.
+              <p class="text-sm text-[#0B3041] leading-snug">
+                With 20+ years of experience in biopharma commercial analytics & consulting, Praveen specializes in optimizing commercial and access strategy through targeted analytics. Over the years, he has built and led multiple high-performing life sciences analytic consulting practices. His idea of Quarx is a place where you are fueled by the joy of problem solving, strive for excellence in insight quality and experience continuous growth that comes through it’s pursuit.
               </p>
             </div>
           </div>
@@ -276,7 +325,7 @@
       </div>
 
       <!-- Mathew John -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px] w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-24px)] max-w-[350px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -286,29 +335,29 @@
           <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
             <div class="h-[calc(100%-100px)] overflow-hidden">
               <img
-                src="/assets/team-mathew.jpg"
-                alt="Mathew John - CEO"
+                src="/assets/team-andrew.jpg"
+                alt="Andrew Karazim - Strategic Advisor"
                 class="w-full h-full object-cover"
               />
             </div>
             <div class="p-6 border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-2">
-                Mathew John
+                Andrew Karazim
               </h3>
               <p class="text-lg text-[#5A9BA6] font-light">
-                CEO
+                Strategic Advisor
               </p>
             </div>
           </div>
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
-                Mathew John
+                Andrew Karazim
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
-                Mathew John brings extensive leadership experience in biopharma strategy and market access. With a deep understanding of healthcare systems and payer dynamics, he drives organizational growth and operational excellence. His expertise spans commercial strategy, product launches, and stakeholder engagement across global markets.
+              <p class="text-sm text-[#0B3041] leading-snug">
+                Andrew Karazim currently leads Aprecia’s commercialization efforts as the Chief Commercial Officer. He brings over 25 years of pharmaceutical and biotechnology experience. Over his 25-year career in the pharma industry, he has held multiple commercial leadership roles at Lilly, Abbott and Kaleo. Andrew serves as the strategic compass to our team through his decades of experience in pharmaceutical commercialization and market access.
               </p>
             </div>
           </div>
@@ -316,7 +365,7 @@
       </div>
 
       <!-- Mary Spencers -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
+      <div class="flip-card-container perspective-1000 h-[500px] w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-24px)] max-w-[350px]"
         x-data="{ flipped: false }"
         @click="flipped = !flipped"
         @mouseenter="if (window.innerWidth >= 1024) flipped = true"
@@ -343,11 +392,11 @@
 
           <!-- Back of card -->
           <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
+            <div class="h-full p-6 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
               <h3 class="text-2xl font-light text-[#0B3041] mb-4">
                 Mary Spencers
               </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
+              <p class="text-sm text-[#0B3041] leading-snug">
                 Mary Spencers oversees operations and ensures seamless execution of strategic initiatives. With expertise in process optimization and cross-functional collaboration, she enables the team to deliver high-quality solutions efficiently. Her background in healthcare operations and project management drives organizational success.
               </p>
             </div>
@@ -355,45 +404,6 @@
         </div>
       </div>
 
-      <!-- Jack Stone -->
-      <div class="flip-card-container perspective-1000 h-[600px]"
-        x-data="{ flipped: false }"
-        @click="flipped = !flipped"
-        @mouseenter="if (window.innerWidth >= 1024) flipped = true"
-        @mouseleave="if (window.innerWidth >= 1024) flipped = false">
-        <div class="flip-card relative w-full h-full transform-style-3d" :class="{ 'flipped': flipped }">
-          <!-- Front of card -->
-          <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-[calc(100%-100px)] overflow-hidden">
-              <img
-                src="/assets/team-jack.jpg"
-                alt="Jack Stone - Head of Research"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="p-6 border-t-4 border-[#5A9BA6]">
-              <h3 class="text-2xl font-light text-[#0B3041] mb-2">
-                Jack Stone
-              </h3>
-              <p class="text-lg text-[#5A9BA6] font-light">
-                Head of Research
-              </p>
-            </div>
-          </div>
-
-          <!-- Back of card -->
-          <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-full p-8 flex flex-col justify-center border-t-4 border-[#5A9BA6]">
-              <h3 class="text-2xl font-light text-[#0B3041] mb-4">
-                Jack Stone
-              </h3>
-              <p class="text-base text-[#0B3041] leading-relaxed">
-                Jack Stone leads research initiatives with a focus on evidence generation and real-world data analytics. His expertise in clinical development, health economics, and outcomes research informs strategic decision-making. Jack combines scientific rigor with practical insights to support market access and commercialization strategies.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </main>
@@ -423,7 +433,7 @@
       <div class="flex items-start gap-20 max-lg:gap-12 max-md:gap-8 max-sm:gap-6 max-xs:gap-4 flex-wrap">
         
         <div class="flex flex-col gap-4 min-w-0">
-          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">PRODUCTS</div>
+          <a href="/products/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">PRODUCTS</a>
           <div class="flex flex-col gap-2">
             <a href="/products/basis/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">BASIS</a>
             <a href="/products/chord/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CHORD</a>
@@ -433,7 +443,7 @@
 
         
         <div class="flex flex-col gap-4 min-w-0 max-sm:w-full">
-          <div class="text-[#7097AA] text-lg font-light max-sm:text-base">SOLUTIONS</div>
+          <a href="/solutions/" class="text-[#7097AA] text-lg font-light max-sm:text-base hover:text-[#5A9BA6] transition-colors">SOLUTIONS</a>
           <div class="flex flex-col gap-2">
             <a href="/solutions/" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">ACCESS & REIMBURSEMENT</a>
             <a href="/solutions/?tab=segmentation" class="text-white text-base font-light hover:text-[#5A9BA6] transition-colors cursor-pointer max-sm:text-sm">CUSTOMER SEGMENTATION</a>
@@ -454,7 +464,7 @@
         <div class="flex items-center">
           <a href="https://www.linkedin.com/company/quarx-biopharma" target="_blank" rel="noopener noreferrer" aria-label="Follow QUARX on LinkedIn" class="hover:scale-110 transition-transform duration-300">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ff692081c1c1efc7173b1868fd27622b77c5b569?placeholderIfAbsent=true"
+              src="/assets/linkedin-icon.svg"
               alt=""
               class="w-6 h-6"
               aria-hidden="true"
