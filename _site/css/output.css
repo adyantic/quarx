@@ -1290,6 +1290,10 @@ body {
   cursor: pointer;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .resize-none {
   resize: none;
 }
@@ -2363,6 +2367,11 @@ All colors MUST be HSL.
 
 .hover\:bg-white\/20:hover {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:bg-\[\#F1F4F1\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 244 241 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-\[\#156082\]:hover {

@@ -246,96 +246,84 @@
               </div>
 
               
-              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
                 
                 
                 <div
-                  @click="clicked = clicked === 0 ? null : 0"
-                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 0"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 0 ? 'Formulary Landscape Analysis' : 'How does payer management vary by methods and severity across channels?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 0 ? 'Formulary Landscape Analysis' : 'How does payer management vary by methods and severity across channels?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 0 ? 'Formulary Landscape Analysis' : 'How does payer management vary by methods and severity across channels?'"
+                    :class="hovered === 0 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 1 ? null : 1"
-                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 1"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 1 ? 'Time to Access Analysis' : 'What can I expect my launch access timing and trajectory to look like?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 1 ? 'Time to Access Analysis' : 'What can I expect my launch access timing and trajectory to look like?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 1 ? 'Time to Access Analysis' : 'What can I expect my launch access timing and trajectory to look like?'"
+                    :class="hovered === 1 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 2 ? null : 2"
-                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 2"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 2 ? 'Claims-based Impact of UM Analysis' : 'How do payers vary in their ability to control utilization?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 2 ? 'Claims-based Impact of UM Analysis' : 'How do payers vary in their ability to control utilization?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 2 ? 'Claims-based Impact of UM Analysis' : 'How do payers vary in their ability to control utilization?'"
+                    :class="hovered === 2 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 3 ? null : 3"
-                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 3"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 3 ? 'Sub-national Payer-Provider Influence Map' : 'Are there local markets where provider influence trumps payer policy?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 3 ? 'Sub-national Payer-Provider Influence Map' : 'Are there local markets where provider influence trumps payer policy?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 3 ? 'Sub-national Payer-Provider Influence Map' : 'Are there local markets where provider influence trumps payer policy?'"
+                    :class="hovered === 3 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 4 ? null : 4"
-                  :class="clicked === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 4"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 4 ? 'Quantitative Payer Segmentation' : 'How do I think about my access strategy by specific payer types &amp; segments?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 4 ? 'Quantitative Payer Segmentation' : 'How do I think about my access strategy by specific payer types &amp; segments?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 4 ? 'Quantitative Payer Segmentation' : 'How do I think about my access strategy by specific payer types &amp; segments?'"
+                    :class="hovered === 4 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 5 ? null : 5"
-                  :class="clicked === 5 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 5"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 5 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 5 ? 'Patient OOP Exposure &amp; Sensitivity Analysis' : 'What is the optimal affordability range from a patient OOP standpoint?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 5 ? 'Patient OOP Exposure &amp; Sensitivity Analysis' : 'What is the optimal affordability range from a patient OOP standpoint?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 5 ? 'Patient OOP Exposure &amp; Sensitivity Analysis' : 'What is the optimal affordability range from a patient OOP standpoint?'"
+                    :class="hovered === 5 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
@@ -355,81 +343,71 @@
               </div>
 
               
-              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
                 
                 
                 <div
-                  @click="clicked = clicked === 0 ? null : 0"
-                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 0"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 0 ? 'Channel Access Strategy Simulation' : 'What is the optimal channel contracting strategy that aligns with my brand strategy?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 0 ? 'Channel Access Strategy Simulation' : 'What is the optimal channel contracting strategy that aligns with my brand strategy?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 0 ? 'Channel Access Strategy Simulation' : 'What is the optimal channel contracting strategy that aligns with my brand strategy?'"
+                    :class="hovered === 0 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 1 ? null : 1"
-                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 1"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 1 ? 'Contract Simulation/Deal-View Modeling' : 'What is the optimal contracting play for a given PBM or payer?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 1 ? 'Contract Simulation/Deal-View Modeling' : 'What is the optimal contracting play for a given PBM or payer?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 1 ? 'Contract Simulation/Deal-View Modeling' : 'What is the optimal contracting play for a given PBM or payer?'"
+                    :class="hovered === 1 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 2 ? null : 2"
-                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 2"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 2 ? 'PBM Downstream Adherence Analysis' : 'How much downstream payer coverage can I expect with each of the big 3 PBMs?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 2 ? 'PBM Downstream Adherence Analysis' : 'How much downstream payer coverage can I expect with each of the big 3 PBMs?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 2 ? 'PBM Downstream Adherence Analysis' : 'How much downstream payer coverage can I expect with each of the big 3 PBMs?'"
+                    :class="hovered === 2 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 3 ? null : 3"
-                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 3"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 3 ? 'Competitive Rebate Equilibrium Simulation' : 'What are the rebates my competitor is likely to offer to a specific PBM or payer?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 3 ? 'Competitive Rebate Equilibrium Simulation' : 'What are the rebates my competitor is likely to offer to a specific PBM or payer?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 3 ? 'Competitive Rebate Equilibrium Simulation' : 'What are the rebates my competitor is likely to offer to a specific PBM or payer?'"
+                    :class="hovered === 3 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 4 ? null : 4"
-                  :class="clicked === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 4"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 4 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 4 ? 'Reimbursement Landscape &amp; NCR Analysis' : 'To what extent does practice economics impact provider brand preference?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 4 ? 'Reimbursement Landscape &amp; NCR Analysis' : 'To what extent does practice economics impact provider brand preference?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 4 ? 'Reimbursement Landscape &amp; NCR Analysis' : 'To what extent does practice economics impact provider brand preference?'"
+                    :class="hovered === 4 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
@@ -449,66 +427,58 @@
               </div>
 
               
-              <div x-data="{ clicked: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
                 
                 
                 <div
-                  @click="clicked = clicked === 0 ? null : 0"
-                  :class="clicked === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 0"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 0 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 0 ? 'HCP Targeting for Access Pull-through' : 'How do I flex physician targeting to maximize access pull-through at launch?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 0 ? 'HCP Targeting for Access Pull-through' : 'How do I flex physician targeting to maximize access pull-through at launch?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 0 ? 'HCP Targeting for Access Pull-through' : 'How do I flex physician targeting to maximize access pull-through at launch?'"
+                    :class="hovered === 0 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 1 ? null : 1"
-                  :class="clicked === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 1"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 1 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 1 ? 'Reimbursement Support Optimization' : 'How do I optimize my reimbursement support to maximize patient acquisition?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 1 ? 'Reimbursement Support Optimization' : 'How do I optimize my reimbursement support to maximize patient acquisition?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 1 ? 'Reimbursement Support Optimization' : 'How do I optimize my reimbursement support to maximize patient acquisition?'"
+                    :class="hovered === 1 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 2 ? null : 2"
-                  :class="clicked === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 2"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 2 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 2 ? 'HCP Access-Performance Benchmarking' : 'Are there HCPs who are prescribing below expectations despite favorable access?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 2 ? 'HCP Access-Performance Benchmarking' : 'Are there HCPs who are prescribing below expectations despite favorable access?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 2 ? 'HCP Access-Performance Benchmarking' : 'Are there HCPs who are prescribing below expectations despite favorable access?'"
+                    :class="hovered === 2 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
                 <div
-                  @click="clicked = clicked === 3 ? null : 3"
-                  :class="clicked === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer lg:cursor-default lg:hover:bg-[#F1F4F1]"
+                  @mouseenter="hovered = 3"
+                  @mouseleave="hovered = null"
+                  :class="hovered === 3 ? 'bg-[#F1F4F1]' : 'bg-white'"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
                 >
                   <p
-                    x-text="clicked === 3 ? 'Access KPI Tracking/Benchmarking' : 'How do my brand&amp;apos;s access &amp; performance KPIs compare with other analog launches?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 hidden lg:block"
-                  ></p>
-                  <p
-                    x-text="clicked === 3 ? 'Access KPI Tracking/Benchmarking' : 'How do my brand&amp;apos;s access &amp; performance KPIs compare with other analog launches?'"
-                    class="text-[#0B3041] text-sm md:text-base lg:text-xl font-light leading-6 md:leading-8 text-center px-2 lg:hidden"
+                    x-text="hovered === 3 ? 'Access KPI Tracking/Benchmarking' : 'How do my brand&amp;apos;s access &amp; performance KPIs compare with other analog launches?'"
+                    :class="hovered === 3 ? 'font-bold' : 'font-light'"
+                    class="text-[#0B3041] text-sm md:text-base lg:text-xl leading-6 md:leading-8 text-center px-2 transition-all"
                   ></p>
                 </div>
                 
