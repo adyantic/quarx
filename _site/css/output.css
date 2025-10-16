@@ -2883,6 +2883,10 @@ All colors MUST be HSL.
     gap: 2.5rem;
   }
 
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+
   .lg\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
