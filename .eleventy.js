@@ -3,6 +3,9 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("public");
 
+  // Copy Google Search Console verification file to root
+  eleventyConfig.addPassthroughCopy({"src/google7c8394d1539e7742.html": "google7c8394d1539e7742.html"});
+
   // Copy htmx and Alpine.js from node_modules
   eleventyConfig.addPassthroughCopy({
     "node_modules/htmx.org/dist/htmx.min.js": "js/htmx.min.js"
