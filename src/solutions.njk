@@ -64,7 +64,7 @@ permalink: /solutions/
               </div>
 
               {# Questions #}
-              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null, isTouch: 'ontouchstart' in window }" class="flex flex-col gap-2.5">
                 {% set questions1 = [
                   {q: 'How does payer management vary by methods and severity across channels?', h: 'Formulary Landscape Analysis'},
                   {q: 'What can I expect my launch access timing and trajectory to look like?', h: 'Time to Access Analysis'},
@@ -75,8 +75,8 @@ permalink: /solutions/
                 ] %}
                 {% for item in questions1 %}
                 <div
-                  @mouseenter="hovered = {{ loop.index0 }}"
-                  @mouseleave="hovered = null"
+                  @mouseenter="!isTouch && (hovered = {{ loop.index0 }})"
+                  @mouseleave="!isTouch && (hovered = null)"
                   @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
                   class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
@@ -104,7 +104,7 @@ permalink: /solutions/
               </div>
 
               {# Questions #}
-              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null, isTouch: 'ontouchstart' in window }" class="flex flex-col gap-2.5">
                 {% set questions2 = [
                   {q: 'What is the optimal channel contracting strategy that aligns with my brand strategy?', h: 'Channel Access Strategy Simulation'},
                   {q: 'What is the optimal contracting play for a given PBM or payer?', h: 'Contract Simulation/Deal-View Modeling'},
@@ -114,8 +114,8 @@ permalink: /solutions/
                 ] %}
                 {% for item in questions2 %}
                 <div
-                  @mouseenter="hovered = {{ loop.index0 }}"
-                  @mouseleave="hovered = null"
+                  @mouseenter="!isTouch && (hovered = {{ loop.index0 }})"
+                  @mouseleave="!isTouch && (hovered = null)"
                   @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
                   class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
@@ -143,7 +143,7 @@ permalink: /solutions/
               </div>
 
               {# Questions #}
-              <div x-data="{ hovered: null }" class="flex flex-col gap-2.5">
+              <div x-data="{ hovered: null, isTouch: 'ontouchstart' in window }" class="flex flex-col gap-2.5">
                 {% set questions3 = [
                   {q: 'How do I flex physician targeting to maximize access pull-through at launch?', h: 'HCP Targeting for Access Pull-through'},
                   {q: 'How do I optimize my reimbursement support to maximize patient acquisition?', h: 'Reimbursement Support Optimization'},
@@ -152,8 +152,8 @@ permalink: /solutions/
                 ] %}
                 {% for item in questions3 %}
                 <div
-                  @mouseenter="hovered = {{ loop.index0 }}"
-                  @mouseleave="hovered = null"
+                  @mouseenter="!isTouch && (hovered = {{ loop.index0 }})"
+                  @mouseleave="!isTouch && (hovered = null)"
                   @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
                   class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
