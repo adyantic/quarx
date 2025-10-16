@@ -77,8 +77,9 @@ permalink: /solutions/
                 <div
                   @mouseenter="hovered = {{ loop.index0 }}"
                   @mouseleave="hovered = null"
+                  @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
                 >
                   <p
                     x-text="hovered === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
@@ -115,8 +116,9 @@ permalink: /solutions/
                 <div
                   @mouseenter="hovered = {{ loop.index0 }}"
                   @mouseleave="hovered = null"
+                  @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
                 >
                   <p
                     x-text="hovered === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
@@ -152,8 +154,9 @@ permalink: /solutions/
                 <div
                   @mouseenter="hovered = {{ loop.index0 }}"
                   @mouseleave="hovered = null"
+                  @click="hovered = hovered === {{ loop.index0 }} ? null : {{ loop.index0 }}"
                   :class="hovered === {{ loop.index0 }} ? 'bg-[#F1F4F1]' : 'bg-white'"
-                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-default hover:bg-[#F1F4F1]"
+                  class="w-full h-[70px] md:h-[90px] px-2.5 py-4 md:py-5 shadow-md border border-gray-300 flex items-center justify-center transition-colors cursor-pointer hover:bg-[#F1F4F1]"
                 >
                   <p
                     x-text="hovered === {{ loop.index0 }} ? '{{ item.h }}' : '{{ item.q }}'"
